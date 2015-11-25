@@ -1,4 +1,4 @@
-#The Sapporo design template for Voog
+#The Longyearbyen design template for Voog
 
 ## Setup
 ### The developing environment
