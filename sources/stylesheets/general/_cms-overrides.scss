@@ -1,0 +1,21 @@
+// CMS DEFAULT STYLES OVERRIDES
+.scheme-light {
+  .edy-empty-bordered {
+    color: rgba($color-white, .5);
+    border-color: rgba($color-white, .5);
+  }
+
+  .placeholder {
+    color: rgba($color-white, .5);
+  }
+  .edy-content-element-hover {
+    border-color: rgba($color-white, .2);
+  }
+  .edy-texteditor-active {
+    outline-color: rgba($color-white, .4);
+
+    &:hover {
+      outline-color: rgba($color-white, .63);
+    }
+  }
+}

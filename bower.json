@@ -1,0 +1,9 @@
+{
+  "name": "voog-design-longyearbyen",
+  "devDependencies": {
+    "bourbon": "~4.2.6"
+  },
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

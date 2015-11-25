@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  color: rgba($color-black, .55);
+}
+
+.site-container {
+  a {
+    text-decoration: none;
+    color: rgba($color-link, 1);
+
+    img {
+      border-style: none;
+    }
+  }
+}
+
+.wrap {
+  margin-right: auto;
+  margin-left: auto;
+
+  .site-container & {
+    max-width: 960px;
+    padding: 40px 20px;
+  }
+}
+
+.page-content {
+  margin-bottom: 30px;
+}
+
+.content-header {
+  .common-page & {
+    $content-header-margin: 25px;
+
+    margin-top: $content-header-margin;
+    margin-bottom: $content-header-margin;
+  }
+}

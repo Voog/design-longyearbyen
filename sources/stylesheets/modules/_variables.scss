@@ -1,0 +1,17 @@
+// VARIABLES
+// Global variables to use in every .scss files.
+// Comment out the "_variables.scss" partial in the "main.scss" file if not used.
+
+// Basic colors.
+$color-black: #000000;
+$color-white: #ffffff;
+
+// Specific colors.
+$color-highlight: #1b2124;
+$color-link: #0066bb;
+$color-error: #cc0000;
+$color-success: #60a740;
+
+// Media query breakpoints.
+$tablet: 1024px;
+$mobile: 640px;

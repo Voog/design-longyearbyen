@@ -1,0 +1,18 @@
+.site-header {
+  margin-bottom: 70px;
+
+  .header-top {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+
+    .site-options {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .header-bottom {
+    margin-top: 50px;
+  }
+}

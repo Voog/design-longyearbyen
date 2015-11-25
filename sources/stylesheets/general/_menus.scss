@@ -1,0 +1,68 @@
+// GENERAL SETTINGS FOR MENUS
+.menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+
+  li {
+    &:hover {
+      a {
+        color: rgba($color-black, .8);
+      }
+    }
+
+    &.current {
+      a {
+        font-weight: 700;
+        color: rgba($color-black, .55);
+      }
+    }
+  }
+}
+
+.menu-horizontal {
+  &.menu-cms {
+    li {
+      @media screen and (min-width: $mobile + 1) {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  li {
+    @media screen and (min-width: $mobile + 1) {
+      display: inline-block;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.menu-vertical {
+  li {
+    &,
+    a {
+      display: block;
+    }
+  }
+}
+
+.menu-popover {
+  position: absolute;
+  display: none;
+  background-color: rgba($color-white, 1);
+  box-shadow: 0 0 5px rgba($color-black, .3);
+}
+
+.menu-options {
+  button {
+    @include button;
+  }
+}
+
+.menu-main {
+  margin-top: 20px;
+}
