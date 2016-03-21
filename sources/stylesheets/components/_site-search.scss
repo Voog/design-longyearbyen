@@ -1,18 +1,81 @@
+.site-search-btn {
+  @include button;
+  vertical-align: middle;
+  height: 19px;
+  width: 20px;
+}
+
+
 .site-search {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 10px;
+  position: fixed;
+  top: 0;
+  right: -280px;
+  bottom: 0;
+  width: 280px;
+  background-color: rgba($color-white, 1);
+  
+  @include transition(transform .2s);
+
+  .site-search-opened & {
+    @include transform(translate3d(-280px, 0, 0));
+  }
+  
+  @media screen and (min-width: $mobile + 1) {
+    .site-search-opened & {
+      box-shadow: 0px 0px 50px rgba(0,0,0,0.1);
+    }
+  }
+
+  .search-form {
+    height: 56px; 
+    border-bottom: 1px solid #e5e5e5;
+  }
 
   .search-input {
     @include input-ios-reset;
     @include inherit-font;
-    width: 128px;
-    padding: 4px 5px 3px;
-    font-size: 14px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba($color-black, .53);
-    border-radius: 3px;
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0px 56px 0px 30px;
+    height: 56px;
+    font-weight: 800;
+    font-size: 13px;
+    border: none;
+
+    @include placeholder() {
+      font-weight: 400;
+    }
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      display: none;
+    }
+
+    &:focus {
+      outline: none;
+      
+    }
+  }
+
+  .search-clear {
+    fill: rgba($color-black, .2);
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+
+    .not-empty & {
+      display: block;
+    }
+
+    &:hover {
+      fill: rgba($color-black, .5);
+    }
   }
 
   .search-submit {
@@ -21,44 +84,21 @@
   }
 }
 
-// Site search results modal custom styles.
 .voog-search-modal {
-  margin-top: 20px;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
 
-  // Search modal has the following state classes:
-  &.loading {
-    // Search is processing the search input.
+  @media screen and (max-width: $mobile) {
+    height: calc(100% - 115px);
+    padding-top: 90px;
   }
 
-  &.no-content {
-    // Search has zero results and the message "No results found!" is displayed in the modal.
-  }
-
-  &.search-results-active {
-    // Search has been triggered and the output is rendered into the modal (Both – with and without the results).
-  }
-
-  &.voog-search-aligned-below {
-    // Search modal is aligned below the search input. (Best position is calculated automatically for the default
-    // container.)
-  }
-
-  &.voog-search-aligned-above {
-    // Search modal is aligned above the search input. (Best position is calculated automatically for the default
-    // container.)
-  }
-
-  &.voog-search-mobile-mode {
-    // Class form mobile mode. Class toggle breakpont is set in the "bindSiteSearch" function in the
-    // "sources/javascript/base.js" file.
-  }
-
-  .voog-search-modal-inner {
-    // Inner container inside the search modal.
-  }
-
-  .voog-search-modal-results {
-    // Inner container inside the .search-modal-inner.
+  @media screen and (min-width: $mobile + 1) {
+    height: calc(100% - 57px);
+    padding-top: 165px;
   }
 
   .voog-search-modal-result {
@@ -66,10 +106,25 @@
 
     h3 {
       // Search result's heading.
+      &:first-child {
+        margin-top: 0;
+      }
+
+      a {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba($color-black, 1);
+      }
     }
 
     p {
       // Search result's excerpt.
+      font-weight: 100;
+    }
+
+    em {
+      font-style: normal;
+      background-color: rgba($color-highlight, .5);
     }
   }
 

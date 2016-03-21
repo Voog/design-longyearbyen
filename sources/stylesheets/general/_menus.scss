@@ -1,31 +1,44 @@
 // GENERAL SETTINGS FOR MENUS
-.menu {
+.menu {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style-type: none;
+  
+  .menu-main & {
+    font-size: 13px; text-transform: uppercase;
+  }
 
   li {
+
+    a {
+      color: $color-light;
+    }
     &:hover {
       a {
-        color: rgba($color-black, .8);
+        color: $color-black;
       }
     }
 
     &.current {
       a {
-        font-weight: 700;
-        color: rgba($color-black, .55);
+        color: $color-black;
       }
     }
   }
 }
 
 .menu-horizontal {
+  
+  display: inline-block;
+  
   &.menu-cms {
+    @media screen and (min-width: $mobile + 1) {
+      margin-left: 10px;
+    }
     li {
       @media screen and (min-width: $mobile + 1) {
-        margin-right: 15px;
+        margin-right: 10px;
       }
     }
   }
@@ -33,19 +46,11 @@
   li {
     @media screen and (min-width: $mobile + 1) {
       display: inline-block;
+      margin-right: 10px;
     }
 
     &:last-child {
       margin-right: 0;
-    }
-  }
-}
-
-.menu-vertical {
-  li {
-    &,
-    a {
-      display: block;
     }
   }
 }
@@ -64,5 +69,26 @@
 }
 
 .menu-main {
-  margin-top: 20px;
+  display: inline-block;
+}
+
+
+.menu-sub {
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  
+  .menu-cms {
+    margin-left: 15px;
+  }
+    
+  li {
+    font-size: 20px; vertical-align: middle;
+    margin-right: 15px;
+  }
+  
+  a {
+    vertical-align: middle;
+  }
 }

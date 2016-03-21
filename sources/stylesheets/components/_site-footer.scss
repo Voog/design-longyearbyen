@@ -1,10 +1,13 @@
 .site-footer {
-  padding-top: 30px;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: rgba($color-black, .53);
-  font-size: 14px;
-
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: $color-light;
+  text-align: center;
+  
+  .footer-body {
+    font-size: 13px; 
+  }
+  
   .voog-reference {
     color: rgba($color-black, 1);
     opacity: .55;

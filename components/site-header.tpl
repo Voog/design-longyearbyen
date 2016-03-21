@@ -1,34 +1,18 @@
 <header class="site-header">
   <div class="header-top">
     {% include "menu-level-1" %}
-
     <div class="site-options">
-      {% include "site-search" %}
-      {% comment %}Simple language menu with titles only.{% endcomment %}
-      {% include "menu-language" %}
-
-      {% comment %}
-        Language popover menu with flags.
-        Follow the steps below to switch to popover menu with flag icons.
-        * Comment out the {% include "menu-language" %} component above these instructions.
-        * Comment out the first ".menu-language" style in "sourdes/stylesheets/_menu-language.scss".
-        * Uncomment everything under the title "Language menu with flags" in the "sourdes/stylesheets/_menu-language.scss".
-        * Uncomment the <button> element under these instructions.
-        * Uncomment language menu popover component at the end of "components/site-footer.tpl".
-        * Uncomment the following in the "sources/javascripts/base.js":
-          * $('.js-toggle-menu-language') button click event in bindButtonClicks function.
-          * "handleMenuLanguagePopoverPositioning" function.
-          * "bindLanguageFlagsToggle" function.
-          * "bindLanguageFlagsToggle: bindLanguageFlagsToggle" line in "window.site" variable.
-      {% endcomment %}
-
-      {% comment %}<button class="menu-language-btn ico-flags ico-flag-{{ page.language_code }} js-toggle-menu-language js-prevent-sideclick">{{ current_language_title }}</button>{% endcomment %}
+      <button class="menu-language-btn ico-flags ico-flag-{{ page.language_code }} js-toggle-menu-language js-prevent-sideclick">{{ current_language_title }}</button>
     </div>
+    
+    {% if site.search.enabled %}
+      <button class="site-search-btn js-toggle-site-search js-prevent-sideclick">
+        <svg class="ico-search" width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="#ico-search"></use>
+        </svg>
+      </button>
+    {% endif %}
   </div>
-
-  {% unless blog %}
-    <div class="header-bottom">
-      {% include "menu-level-2" %}
-    </div>
-  {% endunless %}
+  <div class="header-content">{% xcontentblock name="content_header" publish_default_content="true" %}<h1>Longyearbyen</h1>{% endxcontentblock %}</div>
+  <div class="slogan">{% xcontent name="slogan" %}</div>
 </header>

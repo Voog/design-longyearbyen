@@ -9244,7 +9244,14 @@ return jQuery;
     // that shouldn't trigger the sideclick events.
     $(document).on('click', function(event) {
       if (!$(event.target).closest('.js-prevent-sideclick').length) {
-        $('html').removeClass('menu-language-popover-open');
+        var $html = $('html');
+
+        $html.removeClass('menu-language-popover-open');
+        $html.removeClass('site-search-opened');
+
+        setTimeout(function(){
+          $html.addClass('site-search-closed');
+        }, 200);
       }
     });
 
@@ -9253,7 +9260,7 @@ return jQuery;
     // language menu and popover menu with flags is disabled. Follow the
     // instructions in "components/site-header.tpl" to enable language menu
     // popover with flags.
-    /*
+    
       $('.js-toggle-menu-language').click(function() {
         if (!$('html').hasClass('menu-language-popover-open')) {
           handleMenuLanguagePopoverPositioning();
@@ -9261,8 +9268,34 @@ return jQuery;
           $('html').removeClass('menu-language-popover-open');
         }
       });
-    */
+    
   };
+  
+  
+  // Toggles site search.
+  $('.js-toggle-site-search').click(function() {
+    var $html = $('html');
+
+    if ($html.hasClass('menu-main-opened')) {
+      $html.removeClass('menu-main-opened site-search-closed');
+      $html.addClass('site-search-opened menu-main-closed');
+      $('.js-search-input').focus();
+    } else if ($html.hasClass('site-search-closed')) {
+      $html.removeClass('site-search-closed');
+      $html.addClass('site-search-opened');
+      $('.js-search-input').focus();
+    } else if ($html.hasClass('site-search-opened')) {
+      $html.removeClass('site-search-opened');
+      setTimeout(function(){
+        $html.addClass('site-search-closed');
+     }, 200);
+    }
+
+    if ($html.hasClass('menu-main-opened')) {
+      $html.removeClass('menu-main-opened');
+    }
+  });
+  
 
   //============================================================================
   // Positions language menu popover under the toggleing button.
@@ -9272,7 +9305,7 @@ return jQuery;
   // instructions in "components/site-header.tpl" to enable language menu
   // popover with flags.
   //============================================================================
-  /*
+  
     var handleMenuLanguagePopoverPositioning = function(button) {
       var $menuWrapper = $('.js-menu-language-popover'),
           $offsetItem = $('.js-toggle-menu-language'),
@@ -9289,7 +9322,7 @@ return jQuery;
         right: windowWidth - offsetItemOffsetLeft - offsetItemOuterWidth
       });
     };
-  */
+  
 
   //============================================================================
   // Toggles language flags state.
@@ -9299,7 +9332,7 @@ return jQuery;
   // instructions in "components/site-header.tpl" to enable language menu
   // popover with flags.
   //============================================================================
-  /*
+  
     var bindLanguageFlagsToggle = function() {
       $('.js-toggle-language-flags').click(function() {
         if ($('html').hasClass('language-flags-disabled')) {
@@ -9317,7 +9350,7 @@ return jQuery;
         }
       });
     };
-  */
+  
 
   //============================================================================
   // Binds site search functionality.
@@ -9338,7 +9371,7 @@ return jQuery;
         // Uncomment the <div class="custom-search-container"></div> element in
         // the "components/site-search.tpl" or add your own container to proper
         // place in the code if custom container is used.
-        resultsContainer: null,
+        resultsContainer: $('.js-voog-search-modal').get(0),
 
         // Defines if modal should close on sideclick
         sideclick: true,
@@ -9389,17 +9422,8 @@ return jQuery;
     initCommonPage: initCommonPage,
     initFrontPage: initFrontPage,
     // Initiations for specific functions.
-    bindSiteSearch: bindSiteSearch/*,*/
-    // Initiation for the language flags visibility state saving.
-    // By default this template uses the simple text listing version of the
-    // language menu and popover menu with flags is disabled. Follow the
-    // instructions in "components/site-header.tpl" to enable language menu
-    // popover with flags.
-    // NB! Don't forget to uncomment the comma after "bindSiteSearch" if
-    // enabling the "bindLanguageFlagsToggle"
-    /*
-      bindLanguageFlagsToggle: bindLanguageFlagsToggle
-    */
+    bindSiteSearch: bindSiteSearch,
+    bindLanguageFlagsToggle: bindLanguageFlagsToggle
   });
 
   init();

@@ -12,7 +12,6 @@
           {% if level_1.hidden_children.size > 0 %}
             <li>{% menubtn subitem.hidden_children %}</li>
           {% endif %}
-
           <li>{% menuadd parent="level_1" %}</li>
         </ul>
       {% endif %}

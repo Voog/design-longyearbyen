@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
-<html class="front-page {{ view_mode }} {{ language_flags_mode }}" lang="{{ page.language_code }}">
+<html class="front-page {{ view_mode }} site-search-closed {{ language_flags_mode }}" lang="{{ page.language_code }}">
   <head prefix="og: http://ogp.me/ns#">
     {% include "template-head" %}
   </head>
 
   <body>
+    {% include "template-svg-spritesheet" %}
     <div class="site-container">
       <div class="wrap">
+        
         {% include "site-header" %}
-        {% comment %}{% include "site-sidebar" %}{% endcomment %}
 
         <main class="page-content" role="main">
           <section class="content-area">
-            <header class="content-header">{% contentblock name="content_header" %}<h1>{{ page.site_title }}</h1>{% endcontentblock %}</header>
-            <div class="content-slogan">{% content name="slogan" %}</div>
-            <div class="content-body">{% content %}</div>
+            
+            <div class="content-body">
+              <div class="left">
+                <div class="inner">{% content %}</div>
+              </div>
+              <div class="right">{% content name="content_right" %}</div>
+            </div>
+            
           </section>
         </main>
 
         {% include "site-footer" %}
       </div>
-
-      {% include "template-tools" %}
-      <script>site.initFrontPage();</script>
     </div>
+    
+    {% include "menu-language-popover" %}
+    {% include "template-tools" %}
+    {% include "template-javascripts" %}
+    {% include "site-search "%}
+    
+    <script>site.initFrontPage();</script>
+    
   </body>
 </html>

@@ -113,13 +113,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/site-sidebar.tpl",
-      "layout_name": "site-sidebar",
-      "title": "site-sidebar"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/site-topbar.tpl",
       "layout_name": "site-topbar",
       "title": "site-topbar"
@@ -144,6 +137,13 @@
       "file": "components/template-meta.tpl",
       "layout_name": "template-meta",
       "title": "template-meta"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-svg-spritesheet.tpl",
+      "layout_name": "template-svg-spritesheet",
+      "title": "template-svg-spritesheet"
     },
     {
       "content_type": "component",
@@ -173,24 +173,6 @@
       "file": "assets/ico-flags.svg",
       "kind": "assets",
       "filename": "ico-flags.svg"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/20150621_163046 copy 2.jpg",
-      "kind": "images",
-      "filename": "20150621_163046 copy 2.jpg"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/20150621_163046 copy.jpg",
-      "kind": "images",
-      "filename": "20150621_163046 copy.jpg"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/20150621_163046.jpg",
-      "kind": "images",
-      "filename": "20150621_163046.jpg"
     },
     {
       "content_type": "application/javascript",
