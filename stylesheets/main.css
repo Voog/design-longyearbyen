@@ -955,3 +955,7 @@ body {
 .content-area .form_notice {
   color: #60a740;
 }
+
+.content-inner .edy-gallery-area a {
+    border-bottom: none;
+}
