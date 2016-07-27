@@ -956,6 +956,9 @@ body {
   color: #60a740;
 }
 
-.content-inner .edy-gallery-area a {
-    border-bottom: none;
+.edy-gallery-area a,
+.edy-content-social-buttons-list a {
+  border-bottom: none;
 }
+
+.edy-content-social-buttons-list a:hover { background:none; }
