@@ -64,6 +64,13 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/edicy-tools-styles.tpl",
+      "layout_name": "edicy-tools-styles",
+      "title": "edicy-tools-styles"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/menu-language-popover.tpl",
       "layout_name": "menu-language-popover",
       "title": "menu-language-popover"
@@ -173,6 +180,12 @@
       "file": "assets/ico-flags.svg",
       "kind": "assets",
       "filename": "ico-flags.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-toggle.svg",
+      "kind": "assets",
+      "filename": "ico-toggle.svg"
     },
     {
       "content_type": "application/javascript",

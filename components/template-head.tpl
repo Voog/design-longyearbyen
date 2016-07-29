@@ -15,7 +15,6 @@
 
 {% comment %}STYLESHEETS{% endcomment %}
 {% stylesheet_link "main.min.css" %}
-{% comment %}Comment out the above stylesheet and remove comments from the stylesheet below to use unminified version.{% endcomment %}
 {% comment %}{% stylesheet_link "main.css" %}{% endcomment %}
 {% if editmode %}
   <link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">
@@ -31,3 +30,9 @@
 {% comment %}MISC{% endcomment %}
 {% include "template-meta" %}
 {% if blog %}{{ blog.rss_link }}{% endif %}
+
+{% include "template-variables" %}
+{% include "edicy-tools-styles" %}
+
+{% comment %}TODO: Add functionality after the CMS is going to support it{% endcomment %}
+{% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
