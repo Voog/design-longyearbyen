@@ -956,13 +956,11 @@ body {
   color: #60a740;
 }
 
-.edy-gallery-area a,
-.edy-content-social-buttons-list a {
-  border-bottom: none;
-}
 
-.edy-content-social-buttons-list a:hover { background:none; }
+/* July, 2016 */
 
+.edy-gallery-area a,.edy-content-social-buttons-list a { border-bottom: none;}
+.edy-content-social-buttons-list a:hover { background:none;opacity: .7;}
 
 
 /* Front page bg-picker and padding switcher boxes */
@@ -1045,6 +1043,10 @@ body {
 .dark-background .edy-empty-bordered .edy-empty-header { color: #fff;color: rgba(255,255,255,.63);}
 .dark-background .edy-empty-bordered { border-color: #fff; border-color: rgba(255,255,255,.63);}
 
+.dark-background .edy-content-social-button,
+.dark-background .edy-content-social-placeholder {
+  color:#898989;
+}
 
 /* --------------------------
     MEDIA QUERIES
