@@ -13,7 +13,11 @@
         {% include "site-header" %}
         <main class="page-content" role="main">
           <section class="blog-article content-area">
-            {% include "blog-article-template" with "article_page" %}
+            <div class="content-body">
+              <div class="content-inner">
+                {% include "blog-article-template" with "article_page" %}
+              </div>
+            </div>
           </section>
           {% include "blog-article-comments" %}
         </main>
