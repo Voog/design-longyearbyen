@@ -1111,11 +1111,10 @@ label .form_control_indicator:before {
 }
 
 
-/* Button */
-.form_submit input,
-.submit {
+/* Button - custom and form submit */
+
+.form_submit input {
   border-radius: 0;
-  -webkit-appearance: none;
   background: none;
   box-sizing: border-box;
   cursor: pointer;
@@ -1129,25 +1128,64 @@ label .form_control_indicator:before {
   padding: 0.61em 0.55em;
   text-align: center;
   text-transform: uppercase;
+  color: #333;
+  border: 1px solid #333;
+}
+.form_submit input:hover {
+  background: #333;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.dark-background .form_submit input {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.dark-background .form_submit input:hover {
+  border: 1px solid #333;
 }
 
-.form_submit input,
-.submit {
-  border: 1px solid black;
-  color: black;
+.custom-btn {
+  margin: 5px 0;
+  display: inline-block;
+  padding: 0.61em 0.55em;
+  font-size: 18px;
+  color: #333;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 24px;
+  background-color: none;
+  cursor: pointer;
+  border: 1px solid #333 !important;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 180px;
+  text-align: center;
+  text-transform: uppercase;
 }
-.form_submit input:hover,
-.submit:hover {
-  background: #2b2b2b;
-  border: 1px solid #2b2b2b;
-  color: white;
+.dark-background .custom-btn {
+  margin: 5px 0;
+  display: inline-block;
+  padding: 0.61em 0.55em;
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+  background-color: none;
+  cursor: pointer;
+  border: 1px solid #fff !important;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 180px;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-.dark-background .form_submit {
-    border: 2px solid #fff;
-    color: #fff;
+.custom-btn:hover {
+  color: #fff;
+  background-color: #333 !important;
 }
-
+.dark-background .custom-btn:hover {
+  border: 1px solid #333 !important;
+}
 
 
 
@@ -1172,4 +1210,8 @@ label .form_control_indicator:before {
 }
 @media screen and (max-width: 600px) {
   .feature-section { width: 100%;}
+}
+
+@media screen and (min-width: 1400px) {
+   .content-formatted .custom-btn { padding: 11px 15px;font-size: 20px;}
 }
