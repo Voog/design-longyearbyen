@@ -188,18 +188,6 @@
       "filename": "ico-toggle.svg"
     },
     {
-      "content_type": "image/png",
-      "file": "images/check.png",
-      "kind": "images",
-      "filename": "check.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/check_small.png",
-      "kind": "images",
-      "filename": "check_small.png"
-    },
-    {
       "content_type": "application/javascript",
       "file": "javascripts/main.js",
       "kind": "javascripts",
@@ -228,6 +216,18 @@
       "file": "stylesheets/main.min.css",
       "kind": "stylesheets",
       "filename": "main.min.css"
+    },
+    {
+      "content_type": "image/png",
+      "kind": "images",
+      "file": "images/check.png",
+      "filename": "check.png"
+    },
+    {
+      "content_type": "image/png",
+      "kind": "images",
+      "file": "images/check_small.png",
+      "filename": "check_small.png"
     }
   ]
 }
