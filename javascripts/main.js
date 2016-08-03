@@ -9426,9 +9426,8 @@ return jQuery;
     bindLanguageFlagsToggle: bindLanguageFlagsToggle
   });
 
-
-	// toggleFlags rule
-	var toggleFlags = function() {
+  // toggleFlags rule
+  var toggleFlags = function() {
     $('.js-option-toggle-flags').on('click', function(event) {
       event.stopPropagation();
 
@@ -9445,7 +9444,7 @@ return jQuery;
     });
   };
 
-	// Adds and removes padding to front page content areas when toggled.
+  // Adds and removes padding to front page content areas when toggled.
   var togglePadding = function() {
     $('.voog-padding-switcher').on('click', function(event) {
       event.stopPropagation();
@@ -9464,7 +9463,7 @@ return jQuery;
     });
   };
 
-	// Header background image and color preview logic function.
+  // Header background image and color preview logic function.
   var bgPickerPreview = function(bgPickerArea, data, bgPicker, bgPickerImageColorDataReturn) {
     // Defines the variables used in preview logic.
 
@@ -9511,13 +9510,13 @@ return jQuery;
     $(bgPickerArea).find('.js-background-color').css({'background-color' : bgPickerColor});
   };
 
-	var getCombinedLightness = function(bgColor, fgColor) {
+  var getCombinedLightness = function(bgColor, fgColor) {
     var combinedColor = getCombinedColor(bgColor, fgColor);
     var color = Math.round(((+combinedColor[0]) * 0.2126 + (+combinedColor[1]) * 0.7152 + (+combinedColor[2]) * 0.0722) / 2.55) / 100;
     return color;
   };
 
-	// Header background image and color save logic function.
+  // Header background image and color save logic function.
   var bgPickerCommit = function(dataBgKey, data) {
     var commitData = $.extend(true, {}, data);
     commitData.image = data.image || '';
@@ -9588,61 +9587,61 @@ return jQuery;
     }
   };
 
-	// Checks the lightness sum of header background image and color and sets the lightness class depending on it's value.
+  // Checks the lightness sum of header background image and color and sets the lightness class depending on it's value.
  var bgPickerContentLightnessClass = function(bgPickerArea, bgPickerColorAlpha) {
-	 var bgPickerAreaGlobalAttr = bgPickerArea.attr('data-bg-global'),
-			 bgPickerAreaGlobal = '[data-bg-global="' + bgPickerAreaGlobalAttr + '"]',
-			 bgPickerAreaGlobalBooleanAttr = bgPickerArea.attr('data-bg-global-boolean'),
-			 bgPickerAreaGlobalBoolean = '[data-bg-global-boolean="false"]',
-			 bgPickerAreaMultiSectionAttr = bgPickerArea.attr('data-section-name'),
-			 bgPickerAreaMultiSection = '[data-section-name="' + bgPickerAreaMultiSectionAttr + '"]';
+   var bgPickerAreaGlobalAttr = bgPickerArea.attr('data-bg-global'),
+       bgPickerAreaGlobal = '[data-bg-global="' + bgPickerAreaGlobalAttr + '"]',
+       bgPickerAreaGlobalBooleanAttr = bgPickerArea.attr('data-bg-global-boolean'),
+       bgPickerAreaGlobalBoolean = '[data-bg-global-boolean="false"]',
+       bgPickerAreaMultiSectionAttr = bgPickerArea.attr('data-section-name'),
+       bgPickerAreaMultiSection = '[data-section-name="' + bgPickerAreaMultiSectionAttr + '"]';
 
-	 if (bgPickerCombinedLightness >= 0.5) {
-		 $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
-		 $(bgPickerAreaMultiSection).find('.js-background-type').addClass('light-background').removeClass('dark-background');
+   if (bgPickerCombinedLightness >= 0.5) {
+     $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
+     $(bgPickerAreaMultiSection).find('.js-background-type').addClass('light-background').removeClass('dark-background');
 
-		 if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
-			 $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('light-background').removeClass('dark-background');
-		 }
+     if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
+       $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('light-background').removeClass('dark-background');
+     }
 
-	 } else {
-		 $(bgPickerArea).find('.js-background-type').addClass('dark-background').removeClass('light-background');
-		 $(bgPickerAreaMultiSection).find('.js-background-type').addClass('dark-background').removeClass('light-background');
+   } else {
+     $(bgPickerArea).find('.js-background-type').addClass('dark-background').removeClass('light-background');
+     $(bgPickerAreaMultiSection).find('.js-background-type').addClass('dark-background').removeClass('light-background');
 
-		 if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
-			 $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('dark-background').removeClass('light-background');
-		 }
+     if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
+       $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('dark-background').removeClass('light-background');
+     }
 
-	 };
+   };
 
-	 if ( $('body').find('[data-bg-global-master="true"]').find('.js-background-type').hasClass('light-background') ) {
-		 var bgPickerAreaGlobalClass = 'light-background';
-	 } else {
-		 var bgPickerAreaGlobalClass = 'dark-background';
-	 };
+   if ( $('body').find('[data-bg-global-master="true"]').find('.js-background-type').hasClass('light-background') ) {
+     var bgPickerAreaGlobalClass = 'light-background';
+   } else {
+     var bgPickerAreaGlobalClass = 'dark-background';
+   };
 
-	 // Set mobile base bg when main section image bg isn't covering individual content areas.
-	 $('.container').find('.js-bg-picker-area').removeClass('transparent-dark-background transparent-light-background').addClass('transparent-' + bgPickerAreaGlobalClass);
-	 $('.container').find(bgPickerAreaGlobal).removeClass('transparent-dark-background transparent-light-background').addClass('transparent-' + bgPickerAreaGlobalClass);
+   // Set mobile base bg when main section image bg isn't covering individual content areas.
+   $('.container').find('.js-bg-picker-area').removeClass('transparent-dark-background transparent-light-background').addClass('transparent-' + bgPickerAreaGlobalClass);
+   $('.container').find(bgPickerAreaGlobal).removeClass('transparent-dark-background transparent-light-background').addClass('transparent-' + bgPickerAreaGlobalClass);
 
-	 if ( bgPickerColorAlpha >= 0.5 ) {
-		 $(bgPickerArea).attr('data-bg-global-boolean', false);
-		 $(bgPickerAreaMultiSection).attr('data-bg-global-boolean', false);
-	 } else {
-		 $(bgPickerArea).attr('data-bg-global-boolean', true);
-		 $(bgPickerAreaMultiSection).attr('data-bg-global-boolean', true);
-		 $(bgPickerArea).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
-		 $(bgPickerAreaMultiSection).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
-	 };
+   if ( bgPickerColorAlpha >= 0.5 ) {
+     $(bgPickerArea).attr('data-bg-global-boolean', false);
+     $(bgPickerAreaMultiSection).attr('data-bg-global-boolean', false);
+   } else {
+     $(bgPickerArea).attr('data-bg-global-boolean', true);
+     $(bgPickerAreaMultiSection).attr('data-bg-global-boolean', true);
+     $(bgPickerArea).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
+     $(bgPickerAreaMultiSection).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
+   };
  };
 
-	// Enables the usage of the initiations outside this file.
+  // Enables the usage of the initiations outside this file.
   // For example add "<script>site.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
   window.site = $.extend(window.site || {}, {
     toggleFlags: toggleFlags,
-		togglePadding: togglePadding,
-		bgPickerPreview: bgPickerPreview,
-		bgPickerCommit: bgPickerCommit,
+    togglePadding: togglePadding,
+    bgPickerPreview: bgPickerPreview,
+    bgPickerCommit: bgPickerCommit,
     bgPickerColorScheme: bgPickerColorScheme
   });
 

@@ -43,6 +43,7 @@
     border-style: solid;
     border-color: rgba($color-black, .53);
     border-radius: 3px;
+    font-size:14px;
 
     &.form_field_size_small {
       width: 280px;
@@ -94,4 +95,59 @@
   .form_notice {
     color: rgba($color-success, 1);
   }
+
+  /* Custom checkboxes and radio buttons */
+  label {
+    cursor: pointer;
+  }
+  label:before {
+    display: none;
+    content: url("../images/check.png?1");
+  }
+  label .form_field_checkbox,
+  label .form_field_radio {
+    display: none;
+    display: inline-block\9;
+  }
+  label .form_field_checkbox + .form_control_indicator:before {
+    background: white;
+  }
+  label .form_field_checkbox:checked + .form_control_indicator:before {
+    width: 100%;
+    height: 100%;
+    background: url("../images/check_small.png?1") no-repeat left bottom;
+  }
+  .backgroundsize label .form_field_checkbox:checked + .form_control_indicator:before {
+    width: 100%;
+    height: 100%;
+    background: url("../images/check.png?1") no-repeat left bottom;
+    background-size: 17px 18px;
+  }
+  label .form_field_radio + .form_control_indicator:before {
+    width: 9px;
+    height: 9px;
+    border: 3px solid white;
+  }
+  label .form_field_radio:checked + .form_control_indicator:before {
+    background-color: rgba(0, 0, 0, 0.87);
+  }
+  label .form_control_indicator {
+    position: relative;
+    display: inline-block;
+    display: none\9;
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+    vertical-align: 0;
+  }
+  label .form_control_indicator:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    content: '';
+  }
+
 }
