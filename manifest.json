@@ -216,6 +216,18 @@
       "file": "stylesheets/main.min.css",
       "kind": "stylesheets",
       "filename": "main.min.css"
+    },
+    {
+      "content_type": "image/png",
+      "kind": "images",
+      "file": "images/check.png",
+      "filename": "check.png"
+    },
+    {
+      "content_type": "image/png",
+      "kind": "images",
+      "file": "images/check_small.png",
+      "filename": "check_small.png"
     }
   ]
 }
