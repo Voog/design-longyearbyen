@@ -1289,3 +1289,15 @@ body {
     font-size: 20px;
   }
 }
+.blog-and-news-page {
+  /*.article-title {
+    a {
+      @extend %article-title;
+    }
+  }
+
+}*/
+}
+.blog-and-news-page .article-excerpt {
+  text-align: justify;
+}
