@@ -13,7 +13,7 @@
         {% include "site-header" %}
         <main class="page-content" role="main">
           <section class="blog-article content-area">
-            <div class="content-body">
+            <div class="content-body" data-search-indexing-allowed="true">
               <div class="content-inner">
                 {% include "blog-article-template" with "article_page" %}
               </div>
@@ -27,8 +27,9 @@
 
     {% include "menu-language-popover" %}
     {% include "template-tools" %}
-    {% include "template-javascripts" %}
     {% include "site-search "%}
+    {% include "template-javascripts" %}
+    
     <script>
       site.initArticlePage();
     </script>

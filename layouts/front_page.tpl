@@ -15,7 +15,7 @@
 
         <main class="page-content" role="main">
           <section class="content-area">
-            <div class="content-body">
+            <div class="content-body" data-search-indexing-allowed="true">
 
               <div class="sections {% if site.branding.enabled %}voog-reference-enabled{% endif %}">
                 {% if feature_1_visible or editmode %}
@@ -67,8 +67,8 @@
 
     {% include "menu-language-popover" %}
     {% include "template-tools" %}
-    {% include "template-javascripts" %}
     {% include "site-search "%}
+    {% include "template-javascripts" %}
 
     <script>site.initFrontPage();</script>
 

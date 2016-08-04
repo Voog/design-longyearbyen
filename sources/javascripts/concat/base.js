@@ -145,6 +145,7 @@
   // Binds site search functionality.
   //============================================================================
   var bindSiteSearch = function(searchForm, languageCode) {
+    console.log(searchForm);
     if (searchForm) {
       var search = new VoogSearch(searchForm, {
         // Results are lazy-loaded on scroll.

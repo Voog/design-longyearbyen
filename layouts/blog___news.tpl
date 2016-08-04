@@ -14,7 +14,7 @@
         <main class="page-content" role="main">
 
           <section class="blog-articles content-area">
-            <div class="content-body">
+            <div class="content-body" data-search-indexing-allowed="true">
               <div class="content-inner">
                 {% addbutton %}
                 {% for article in articles %}
@@ -48,8 +48,8 @@
 
     {% include "menu-language-popover" %}
     {% include "template-tools" %}
-    {% include "template-javascripts" %}
     {% include "site-search "%}
+    {% include "template-javascripts" %}
 
     <script>site.initBlogPage();</script>
 

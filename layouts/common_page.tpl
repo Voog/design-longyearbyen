@@ -14,7 +14,7 @@
 
         <main class="page-content" role="main">
           <section class="content-area">
-            <div class="content-body">
+            <div class="content-body" data-search-indexing-allowed="true">
               {% include "menu-level-2" %}
               <div class="content-inner">{% content %}</div>
             </div>
@@ -27,8 +27,8 @@
 
     {% include "menu-language-popover" %}
     {% include "template-tools" %}
+    {% include "site-search" %}
     {% include "template-javascripts" %}
-    {% include "site-search "%}
 
     <script>site.initCommonPage();</script>
 

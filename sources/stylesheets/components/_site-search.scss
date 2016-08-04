@@ -13,13 +13,13 @@
   bottom: 0;
   width: 280px;
   background-color: rgba($color-white, 1);
-  
+
   @include transition(transform .2s);
 
   .site-search-opened & {
     @include transform(translate3d(-280px, 0, 0));
   }
-  
+
   @media screen and (min-width: $mobile + 1) {
     .site-search-opened & {
       box-shadow: 0px 0px 50px rgba(0,0,0,0.1);
@@ -27,7 +27,7 @@
   }
 
   .search-form {
-    height: 56px; 
+    height: 56px;
     border-bottom: 1px solid #e5e5e5;
   }
 
@@ -57,7 +57,7 @@
 
     &:focus {
       outline: none;
-      
+
     }
   }
 
