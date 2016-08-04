@@ -10,7 +10,7 @@
 // menu popover with flags.
 //==============================================================================
  .menu-language-btn {
-   
+
    @include button;
    vertical-align: baseline;
 
@@ -73,10 +73,12 @@
 
  .menu-language {
    text-align: right;
+   padding: 5px 0;
+   min-width: 122px;
 
    &.menu-popover {
      .language-flags-disabled & {
-       margin-right: 4px;
+
      }
    }
 
@@ -89,6 +91,7 @@
      a {
        font-size: 14px;
        text-decoration: none;
+       display: block;
 
        &:before,
        &:after {
@@ -101,7 +104,7 @@
        }
 
        .language-flags-disabled & {
-         padding: 6px;
+         padding: 6px 13px 5px;
        }
      }
    }

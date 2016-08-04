@@ -1,12 +1,5 @@
 .blog-and-news-page {
-  /*.article-title {
-    a {
-      @extend %article-title;
-    }
+  .article-excerpt {
+    text-align: justify;
   }
-
-}*/
-.article-excerpt {
-  text-align: justify;
-}
 }

@@ -468,9 +468,8 @@ body {
 
 .menu-language {
   text-align: right;
-}
-.language-flags-disabled .menu-language.menu-popover {
-  margin-right: 4px;
+  padding: 5px 0;
+  min-width: 122px;
 }
 .menu-language-popover-open .menu-language {
   display: block;
@@ -479,6 +478,7 @@ body {
 .menu-language li a {
   font-size: 14px;
   text-decoration: none;
+  display: block;
 }
 .menu-language li a:before, .menu-language li a:after {
   top: 7px;
@@ -488,7 +488,7 @@ body {
   padding: 6px 33px 6px 6px;
 }
 .language-flags-disabled .menu-language li a {
-  padding: 6px;
+  padding: 6px 13px 5px;
 }
 .menu-language .menu-cms li {
   padding: 1px 13px 11px 6px;
@@ -1288,15 +1288,6 @@ body {
     padding: 11px 15px;
     font-size: 20px;
   }
-}
-.blog-and-news-page {
-  /*.article-title {
-    a {
-      @extend %article-title;
-    }
-  }
-
-}*/
 }
 .blog-and-news-page .article-excerpt {
   text-align: justify;
