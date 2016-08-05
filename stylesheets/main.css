@@ -972,6 +972,11 @@ body {
   padding-left: 20px;
   border-left: 2px solid #333;
 }
+.content-area .dark-background b,
+.content-area .dark-background strong {
+  color: #fff;
+  font-weight: 700;
+}
 
 .content-area {
   /* Custom checkboxes and radio buttons */
