@@ -257,10 +257,19 @@
     border-left: 2px solid #333;
   }
 
+  /* dark-background bold style */
   .dark-background b,
   .dark-background strong {
     color: #fff;
     font-weight: 700;
   }
+
+  /* Link */
+  .edy-gallery-area a,
+  .edy-content-social-buttons-list a,
+  a.edys-gallery-item {
+    border-bottom: none;
+  }
+  .edy-content-social-buttons-list a:hover { background:none;opacity: .7;}
 
 }

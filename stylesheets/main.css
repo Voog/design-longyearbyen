@@ -741,6 +741,8 @@ body {
   /* Button - custom and form submit */
   /* Table */
   /* Blockquote */
+  /* dark-background bold style */
+  /* Link */
 }
 .content-area::after {
   clear: both;
@@ -976,6 +978,15 @@ body {
 .content-area .dark-background strong {
   color: #fff;
   font-weight: 700;
+}
+.content-area .edy-gallery-area a,
+.content-area .edy-content-social-buttons-list a,
+.content-area a.edys-gallery-item {
+  border-bottom: none;
+}
+.content-area .edy-content-social-buttons-list a:hover {
+  background: none;
+  opacity: .7;
 }
 
 .content-area {
