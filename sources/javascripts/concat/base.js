@@ -435,6 +435,29 @@
     bgPickerColorScheme: bgPickerColorScheme
   });
 
+  $('.mobile-menu-toggler').click(function(event) {
+      event.preventDefault();
+      $('body').toggleClass('mobilemenu-open');
+      $('body').removeClass('mobilesearch-open');
+  });
+
+  $('.mobile-menu-close').on('click', function(event) {
+      event.preventDefault();
+
+      if ($('body').hasClass('language-menu-open')) {
+          $('body').removeClass('language-menu-open');
+      }
+      else {
+          $('body').removeClass('mobilemenu-open');
+      }
+  });
+
+  $('.language-menu-btn').on('click', function(event) {
+      event.preventDefault();
+      $('body').addClass('language-menu-open');
+  });
+
+
 
   init();
 })(jQuery);

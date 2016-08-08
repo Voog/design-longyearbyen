@@ -25,11 +25,12 @@
       </div>
     </div>
 
+    {% include "mobilemenu" %}
     {% include "menu-language-popover" %}
     {% include "template-tools" %}
     {% include "site-search "%}
     {% include "template-javascripts" %}
-    
+
     <script>
       site.initArticlePage();
     </script>

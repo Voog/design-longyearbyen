@@ -4,7 +4,7 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style-type: none;
-  
+
   .menu-main & {
     font-size: 13px; text-transform: uppercase;
   }
@@ -29,9 +29,9 @@
 }
 
 .menu-horizontal {
-  
+
   display: inline-block;
-  
+
   &.menu-cms {
     @media screen and (min-width: $mobile + 1) {
       margin-left: 10px;
@@ -78,16 +78,16 @@
   padding-top: 50px;
   padding-left: 80px;
   padding-right: 80px;
-  
+
   .menu-cms {
     margin-left: 15px;
   }
-    
+
   li {
     font-size: 20px; vertical-align: middle;
     margin-right: 15px;
   }
-  
+
   a {
     vertical-align: middle;
   }
