@@ -175,6 +175,18 @@
     }
   };
 
+  // Clears site search input.
+    $('.js-clear-search-input').click(function() {
+      var $searchInput = $('.js-search-input');
+
+      if ($searchInput.val().length > 0) {
+        $searchInput.val('').focus();
+      } else {
+        $('html').removeClass('site-search-opened');
+      }
+    });
+
+
   // Initiations
   var initWindowResize = function() {
     $(window).resize(function() {
