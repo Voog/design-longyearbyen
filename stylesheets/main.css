@@ -236,7 +236,7 @@ body {
 }
 
 .site-header {
-  padding-bottom: 75px;
+  padding: 10px 25px 75px;
 }
 .site-header .header-top {
   padding: 15px 0 50px;
@@ -1279,13 +1279,9 @@ body {
 }
 
 .mobile-menu-toggler {
-  position: absolute;
-  top: calc(50% - 22px);
-  right: 0;
   display: none;
-  width: 43px;
+  width: 20px;
   height: 43px;
-  outline: 0;
 }
 
 .mobile-menu-toggler:hover {
@@ -1297,8 +1293,8 @@ body {
 .mobile-menu-toggler span:after,
 .mobile-menu-toggler span:before {
   position: absolute;
-  top: 14px;
-  left: 11px;
+  top: calc(50% - 22px);
+  right: 12px;
   display: block;
   width: 20px;
   height: 3px;
@@ -1359,8 +1355,8 @@ body {
 
 #mobile-menu .mobile-menu-close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 28px;
+  right: 28px;
   display: block;
   width: 42px;
   height: 42px;
@@ -1552,6 +1548,32 @@ body {
   .site-footer {
     padding: 40px 25px;
   }
+
+  .site-search-btn {
+    margin: 0;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+    vertical-align: middle;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 33px;
+    height: 43px;
+    outline: 0;
+    display: inline-block;
+    padding: 0 10px 0 0;
+  }
+  .site-search-btn:focus {
+    outline: none;
+  }
+  .site-search-btn::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 960px) {
   .public .voog-reference-enabled .feature-section:last-child {
@@ -1579,6 +1601,23 @@ body {
     margin-right: 20px;
     display: inline-block;
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .site-header .header-content h1 {
+    font-size: 30px;
+  }
+
+  .content-area h1 {
+    font-size: 25px;
+  }
+
+  .content-area h2 {
+    font-size: 22px;
+  }
+
+  .content-area h3 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 600px) {

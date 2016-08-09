@@ -1,21 +1,21 @@
 .site-header {
-  
-  padding-bottom: 75px;
-  
+
+  padding: 10px 25px 75px;
+
   .header-top {
     padding: 15px 0 50px;
     text-align: center;
-    
+
     .site-options {
       margin-left: 10px;
       display: inline-block;
     }
   }
-  
+
   .header-content {
-  
-    text-align: center; 
-  
+
+    text-align: center;
+
     h1,
     h2,
     h3,
@@ -34,7 +34,7 @@
 
   .slogan {
     text-align: center;
-    font-size: 13px; 
+    font-size: 13px;
     color: $color-light;
     text-transform: uppercase;
   }
