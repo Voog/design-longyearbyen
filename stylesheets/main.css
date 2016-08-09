@@ -813,7 +813,7 @@ body {
 .content-area h4,
 .content-area h5,
 .content-area h6 {
-  line-height: 1.6;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 .content-area h1 {
@@ -824,7 +824,7 @@ body {
 }
 .content-area h3 {
   font-size: 18px;
-  font-style: italic;
+  font-style: normal;
 }
 .content-area a {
   /*
