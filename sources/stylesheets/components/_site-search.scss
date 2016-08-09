@@ -13,6 +13,9 @@
   bottom: 0;
   width: 280px;
   background-color: rgba($color-white, 1);
+  -webkit-box-shadow: -9px 0px 8px 0px rgba(229, 229, 229, 1);
+-moz-box-shadow:    -9px 0px 8px 0px rgba(229, 229, 229, 1);
+box-shadow:         -9px 0px 8px 0px rgba(229, 229, 229, 1);
 
   @include transition(transform .2s);
 
@@ -40,7 +43,7 @@
     margin-bottom: 0;
     padding: 0px 56px 0px 30px;
     height: 56px;
-    font-weight: 800;
+    font-weight: 400;
     font-size: 13px;
     border: none;
 
@@ -90,6 +93,8 @@
   padding-right: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
+  text-align: left;
+  box-shadow: none !important;
 
   @media screen and (max-width: $mobile) {
     height: calc(100% - 115px);

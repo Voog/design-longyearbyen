@@ -293,6 +293,9 @@ body {
   bottom: 0;
   width: 280px;
   background-color: white;
+  -webkit-box-shadow: -9px 0px 8px 0px #e5e5e5;
+  -moz-box-shadow: -9px 0px 8px 0px #e5e5e5;
+  box-shadow: -9px 0px 8px 0px #e5e5e5;
   -webkit-transition: -webkit-transform 0.2s;
   -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
@@ -326,7 +329,7 @@ body {
   margin-bottom: 0;
   padding: 0px 56px 0px 30px;
   height: 56px;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 13px;
   border: none;
 }
@@ -373,6 +376,8 @@ body {
   padding-right: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
+  text-align: left;
+  box-shadow: none !important;
 }
 @media screen and (max-width: 640px) {
   .voog-search-modal {
