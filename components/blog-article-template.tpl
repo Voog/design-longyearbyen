@@ -13,4 +13,6 @@
     <div class="article-body content-area">{% if blog-article-template == "article_page" %}{% editable article.body %}{% endif %}</div>
   </div>
 
+  {% include "blog-article-tags" %}
+
 </article>

@@ -66,9 +66,7 @@ body {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  /*@include box-sizing(border-box);*/
 }
 .content-body .left .inner {
   width: 100%;
@@ -745,6 +743,101 @@ body {
 }
 .site-footer .voog-reference:hover {
   opacity: .8;
+}
+
+.blog-tags {
+  margin-top: 35px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.blog-tags .tags-editor {
+  text-align: left;
+}
+.dark-background .blog-tags {
+  color: rgba(255, 255, 255, 0.7);
+}
+.blog-tags .tags-toggle {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.blog-tags .tags-icon {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  fill: rgba(0, 0, 0, 0.7);
+}
+.dark-background .blog-tags .tags-icon {
+  fill: rgba(255, 255, 255, 0.7);
+}
+.blog-tags .tags-title {
+  padding: 0px 20px 0 25px;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.blog-tags .ico-arrow {
+  position: absolute;
+  right: 0;
+  top: 3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: black transparent transparent transparent;
+}
+.blog-tags .ico-arrow.active {
+  border-width: 0 5px 8px 5px;
+  border-color: transparent transparent black transparent;
+}
+.dark-background .blog-tags .ico-arrow.active {
+  border-color: white transparent transparent transparent;
+}
+.dark-background .blog-tags .ico-arrow {
+  border-color: transparent transparent white transparent;
+}
+.blog-tags .tags-bottom {
+  display: none;
+  margin-top: 15px;
+}
+.blog-tags .tags-bottom.visible {
+  display: block;
+}
+.blog-tags .menu {
+  display: inline-block;
+  padding-left: 0;
+}
+.blog-tags .menu .menu-item {
+  display: inline-block;
+  margin-top: 5px;
+  vertical-align: top;
+}
+.blog-tags .menu .menu-item:before {
+  display: none;
+}
+.blog-tags .menu .menu-link {
+  padding: 1px 5px;
+  font-size: 12px;
+  color: #a4a4a4;
+  text-decoration: none;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: none;
+}
+.blog-tags .menu .menu-link:hover {
+  opacity: .7;
+}
+.blog-tags .menu .menu-link.active {
+  color: white;
+  background-color: #a4a4a4;
+}
+.dark-background .blog-tags .menu .menu-link {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Blog news layout */
+.blog-news-page .blog-tags {
+  margin-top: 0;
+  margin-bottom: 35px;
 }
 
 .content-area {

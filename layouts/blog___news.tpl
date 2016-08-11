@@ -16,6 +16,7 @@
           <section class="blog-articles content-area">
             <div class="content-body" data-search-indexing-allowed="true">
               <div class="content-inner">
+                {% include "blog-news-tags" %}
                 {% addbutton %}
                 {% for article in articles %}
                   {% include "blog-article-template" %}

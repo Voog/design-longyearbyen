@@ -1,0 +1,110 @@
+.blog-tags  {
+  margin-top: 35px;
+  color: rgba($color-black, .7);
+
+  .tags-editor { text-align: left;}
+
+  .dark-background & {
+    color: rgba($color-white, .7);
+  }
+
+  .tags-toggle {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .tags-icon {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    fill: rgba($color-black, .7);
+
+    .dark-background & {
+      fill: rgba($color-white, .7);
+    }
+  }
+
+  .tags-title {
+    padding: 0px 20px 0 25px;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .ico-arrow {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: rgba($color-black, 1) transparent transparent transparent;
+
+    &.active {
+      border-width: 0 5px 8px 5px;
+      border-color: transparent transparent rgba($color-black, 1) transparent;
+
+      .dark-background & {
+        border-color: rgba($color-white, 1) transparent transparent transparent;
+      }
+    }
+
+    .dark-background & {
+      border-color: transparent transparent rgba($color-white, 1) transparent;
+    }
+  }
+
+  .tags-bottom {
+    display: none;
+    margin-top: 15px;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  .menu {
+    display: inline-block;
+    padding-left: 0;
+
+    .menu-item {
+      display: inline-block;
+      margin-top: 5px;
+      vertical-align: top;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .menu-link {
+      padding: 1px 5px;
+      font-size: 12px;
+      color: rgba(#a4a4a4, 1);
+      text-decoration: none;
+      border-radius: 3px;
+      background-color: rgba($color-black, .03);
+      border-bottom: none;
+
+      &:hover {
+        opacity: .7;
+      }
+
+      &.active {
+        color: rgba($color-white, 1);
+        background-color: rgba(#a4a4a4, 1);
+      }
+
+      .dark-background & {
+        background-color: rgba($color-white, .2);
+      }
+    }
+  }
+}
+
+
+/* Blog news layout */
+
+.blog-news-page .blog-tags  { margin-top:0; margin-bottom: 35px;}

@@ -469,7 +469,10 @@
       $('body').addClass('language-menu-open');
   });
 
-
+  $('.tags-toggle').click(function() {
+      $(this).find('.ico-arrow').toggleClass('active');
+      $('.tags-bottom').toggleClass('visible');
+  });
 
   init();
 })(jQuery);

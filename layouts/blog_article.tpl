@@ -15,7 +15,7 @@
           <section class="blog-article content-area">
             <div class="content-body" data-search-indexing-allowed="true">
               <div class="content-inner">
-                {% include "blog-article-template" with "article_page" %}
+                {% include "blog-article-template" with "blog_article_page" %}
               </div>
             </div>
           </section>
