@@ -1,5 +1,5 @@
 .blog-tags  {
-  margin-top: 35px;
+  margin-top: 10px;
   color: rgba($color-black, .7);
 
   .tags-editor { text-align: left;}
@@ -80,13 +80,14 @@
     }
 
     .menu-link {
-      padding: 1px 5px;
+      padding: 2px 5px;
       font-size: 12px;
-      color: rgba(#a4a4a4, 1);
       text-decoration: none;
       border-radius: 3px;
-      background-color: rgba($color-black, .03);
+      color: rgba($color-white, 1);
+      background-color: rgba(#a4a4a4, 1);
       border-bottom: none;
+      line-height: 16px;
 
       &:hover {
         opacity: .7;

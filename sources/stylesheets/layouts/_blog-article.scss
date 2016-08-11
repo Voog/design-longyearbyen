@@ -1,5 +1,3 @@
 .blog-article-page {
-  .article-title {
-    @extend %article-title;
-  }
+  .article-excerpt.content-area { padding-bottom: 15px;}
 }
