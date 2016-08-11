@@ -1,4 +1,5 @@
 .blog-and-news-page {
-  .article-excerpt { text-align: justify;}
-  .blog-article { padding-bottom: 35px !important;}
+  .article-excerpt { text-align: justify;font-size: 16px;line-height: 20px;}
+  .blog-article { padding-bottom: 50px !important;padding-top: 30px;}
+  .blog-article:last-child { padding-bottom:0 !important;}
 }

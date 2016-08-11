@@ -25,23 +25,6 @@
             </div>
           </section>
 
-          {% assign articles_size = articles | size %}
-          {% if articles_size >= 6 %}
-            <section class="articles-listing content-area">
-              <header class="articles-listing-header">
-                <h2 class="articles-listing-title">{{ "older_news" | lc }}</h2>
-              </header>
-              {% for article in articles offset: 5 %}
-                <article class="blog-article">
-                  <header class="article-header">
-                    <h1 class="article-title"><a href="{{ article.url }}">{{ article.title }}</a></h1>
-                    <time class="article-date" datetime="{{ article.created_at | date: "%Y-%m-%d" }}">{{ article.created_at | format_date: "long" }}</time>
-                  </header>
-                </article>
-              {% endfor %}
-            </section>
-          {% endif %}
-
         </main>
         {% include "site-footer" %}
       </div>
