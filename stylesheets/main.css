@@ -1747,6 +1747,12 @@ body {
   .site-search {
     width: 200px;
   }
+
+  .voog-search-modal {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+  }
 }
 @media screen and (max-width: 600px) {
   .feature-section {
