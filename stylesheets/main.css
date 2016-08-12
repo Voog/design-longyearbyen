@@ -1128,6 +1128,10 @@ body {
 .content-area .form_field_required .form_field_label:after {
   content: '* \a';
 }
+.content-area .edy-fe-label {
+  font-size: 14px;
+  font-weight: 700;
+}
 .content-area .form_field_textfield,
 .content-area .form_field_textarea,
 .content-area .form_field_select {
