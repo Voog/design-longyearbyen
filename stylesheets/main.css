@@ -214,6 +214,7 @@ body {
 }
 .menu-sub a {
   vertical-align: middle;
+  border-bottom: 0;
 }
 
 .scheme-light .edy-empty-bordered {
