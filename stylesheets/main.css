@@ -233,6 +233,10 @@ body {
   outline-color: rgba(255, 255, 255, 0.63);
 }
 
+.edy-tb-iconbtn {
+  border-bottom: 0 !important;
+}
+
 .site-header {
   padding: 10px 25px 75px;
 }
