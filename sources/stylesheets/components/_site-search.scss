@@ -116,22 +116,24 @@
     // Single entity of the search result.
 
     h3 {
+      font-size: 20px;
+      line-height: 1.6;
       // Search result's heading.
       &:first-child {
         margin: 0;
       }
 
       a {
-        font-size: 16px;
-        font-weight: 500;
-        color: rgba($color-black, 1);
+        font-family: "OpenSans-Bold", "Helvetica", "Arial", sans-serif;
+        color: rgba($color-body, 1);
+        text-decoration: none;
       }
     }
 
     p {
       // Search result's excerpt.
-      font-weight: 100;
-      font-size: 14px;
+      font-family: "OpenSans-Light", "Helvetica", "Arial", sans-serif;
+      font-size: 20px;
       margin-top: 0.6em;
     }
 

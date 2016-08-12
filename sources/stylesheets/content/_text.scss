@@ -1,7 +1,7 @@
 .content-area {
   @include clearfix;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
 
   h1,
@@ -166,7 +166,7 @@
     background: none;
     box-sizing: border-box;
     cursor: pointer;
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "OpenSans-Regular", "Helvetica", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     margin: 5px 0;
@@ -200,7 +200,7 @@
     padding: 0.61em 0.55em;
     font-size: 18px;
     color: #333;
-    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "OpenSans-Regular", "Helvetica", "Arial", sans-serif;
     line-height: 24px;
     background-color: none;
     cursor: pointer;
