@@ -457,7 +457,7 @@ body {
   text-transform: uppercase;
   border: 1px solid #cccccc;
   border-radius: 12px;
-  margin: -4px;
+  margin-right: -4px;
 }
 .language-flags-disabled .menu-language-btn:hover {
   opacity: .8;
