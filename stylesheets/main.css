@@ -246,7 +246,7 @@ body {
   text-align: center;
 }
 .site-header .header-top .site-options {
-  margin-left: 10px;
+  margin-left: 16px;
   display: inline-block;
 }
 .site-header .header-content {
@@ -426,7 +426,7 @@ body {
 
 @media screen and (min-width: 641px) {
   .menu-level-1 li {
-    margin-right: 10px;
+    margin-right: 16px;
   }
 }
 
