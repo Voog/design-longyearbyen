@@ -152,11 +152,11 @@
   {% endif %}
 
   {% if content_bg_1_color == nil %}
-    {% assign content_bg_1_color = "rgba(238, 238, 238, 1)" %}
+    {% assign content_bg_1_color = "rgba(244, 244, 244, 1)" %}
   {% endif %}
 
   {% if content_bg_1_color_data == nil %}
-    {% assign content_bg_1_color_data_str = '{"r": 238, "g": 238, "b": 238, "a": 1, "lightness": 1}' %}
+    {% assign content_bg_1_color_data_str = '{"r": 244, "g": 244, "b": 244, "a": 1, "lightness": 1}' %}
   {% else %}
     {% assign content_bg_1_color_data_str = content_bg_1_color_data | json %}
   {% endif %}
@@ -236,11 +236,11 @@
   {% endif %}
 
   {% if content_bg_2_color == nil %}
-    {% assign content_bg_2_color = "rgba(238, 238, 238, 1)" %}
+    {% assign content_bg_2_color = "rgba(244, 244, 244, 1)" %}
   {% endif %}
 
   {% if content_bg_2_color_data == nil %}
-    {% assign content_bg_2_color_data_str = '{"r": 238, "g": 238, "b": 238, "a": 1, "lightness": 0.91}' %}
+    {% assign content_bg_2_color_data_str = '{"r": 244, "g": 244, "b": 244, "a": 1, "lightness": 0.91}' %}
   {% else %}
     {% assign content_bg_2_color_data_str = content_bg_2_color_data | json %}
   {% endif %}
