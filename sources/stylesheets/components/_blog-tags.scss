@@ -1,5 +1,6 @@
 .blog-tags  {
   margin-top: 10px;
+  text-align: center;
   color: rgba($color-black, .7);
 
   .tags-editor { text-align: left;}
@@ -18,6 +19,8 @@
     position: absolute;
     top: -3px;
     left: 0;
+    font-size: 20px;
+    line-height: 1.6;
     fill: rgba($color-black, .7);
 
     .dark-background & {
@@ -29,6 +32,7 @@
     padding: 0px 20px 0 25px;
     font-weight: 400;
     font-size: 14px;
+    line-height: 1.6;
     text-transform: uppercase;
   }
 
@@ -58,7 +62,6 @@
 
   .tags-bottom {
     display: none;
-    margin-top: 15px;
 
     &.visible {
       display: block;
@@ -73,6 +76,7 @@
       display: inline-block;
       margin-top: 5px;
       vertical-align: top;
+      line-height: 1;
 
       &:before {
         display: none;

@@ -759,6 +759,7 @@ body {
 
 .blog-tags {
   margin-top: 10px;
+  text-align: center;
   color: rgba(0, 0, 0, 0.7);
 }
 .blog-tags .tags-editor {
@@ -776,6 +777,8 @@ body {
   position: absolute;
   top: -3px;
   left: 0;
+  font-size: 20px;
+  line-height: 1.6;
   fill: rgba(0, 0, 0, 0.7);
 }
 .dark-background .blog-tags .tags-icon {
@@ -785,6 +788,7 @@ body {
   padding: 0px 20px 0 25px;
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.6;
   text-transform: uppercase;
 }
 .blog-tags .ico-arrow {
@@ -809,7 +813,6 @@ body {
 }
 .blog-tags .tags-bottom {
   display: none;
-  margin-top: 15px;
 }
 .blog-tags .tags-bottom.visible {
   display: block;
@@ -822,6 +825,7 @@ body {
   display: inline-block;
   margin-top: 5px;
   vertical-align: top;
+  line-height: 1;
 }
 .blog-tags .menu .menu-item:before {
   display: none;
