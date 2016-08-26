@@ -242,7 +242,7 @@ body {
   padding: 10px 25px 75px;
 }
 .site-header .header-top {
-  padding: 10px 0 61px;
+  padding: 5px 0 60px;
   text-align: center;
 }
 .site-header .header-top .site-options {
@@ -336,7 +336,7 @@ body {
   padding: 0px 62px 0px 30px;
   height: 56px;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 12px;
   border: none;
 }
 .site-search .search-input::-webkit-input-placeholder {
@@ -362,7 +362,7 @@ body {
   display: none;
   position: absolute;
   top: 18px;
-  right: 26px;
+  right: 15px;
   cursor: pointer;
 }
 .not-empty .site-search .search-clear {

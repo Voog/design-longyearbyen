@@ -46,7 +46,7 @@
     padding: 0px 62px 0px 30px;
     height: 56px;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
     border: none;
 
     @include placeholder() {
@@ -71,7 +71,7 @@
     display: none;
     position: absolute;
     top: 18px;
-    right: 26px;
+    right: 15px;
     cursor: pointer;
 
     .not-empty & {
