@@ -242,7 +242,7 @@ body {
   padding: 10px 25px 75px;
 }
 .site-header .header-top {
-  padding: 15px 0 50px;
+  padding: 10px 0 61px;
   text-align: center;
 }
 .site-header .header-top .site-options {
@@ -1393,10 +1393,6 @@ body {
 .dark-background .edy-content-social-button,
 .dark-background .edy-content-social-placeholder {
   color: #898989;
-}
-
-.site-header .header-top {
-  min-height: 50px;
 }
 
 /* Mobile menu */
