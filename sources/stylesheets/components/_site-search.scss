@@ -64,6 +64,10 @@
       outline: none;
 
     }
+    
+    @media screen and (max-width: $mobile) {
+      padding: 0px 62px 0px 15px;
+    }
   }
 
   .search-clear {
@@ -106,6 +110,7 @@
     height: calc(100% - 115px);
     padding-top: 28px;
     width: 100% !important;
+
   }
 
   @media screen and (min-width: $mobile + 1) {
@@ -147,6 +152,12 @@
       background-color: rgba($color-link-hightlight, 1);
       font-weight: normal;
     }
+
+    @media screen and (max-width: $mobile) {
+      h3 { font-size: 16px;}
+      p { font-size: 14px;}
+    }
+
   }
 
   .voog-search-loader {
