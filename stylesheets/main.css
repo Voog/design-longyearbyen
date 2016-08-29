@@ -391,37 +391,41 @@ body {
 @media screen and (max-width: 640px) {
   .voog-search-modal {
     height: calc(100% - 115px);
-    padding-top: 40px;
+    padding-top: 28px;
     width: 100% !important;
   }
 }
 @media screen and (min-width: 641px) {
   .voog-search-modal {
     height: calc(100% - 57px);
-    padding-top: 40px;
+    padding-top: 28px;
     width: 100% !important;
   }
 }
 .voog-search-modal .voog-search-modal-result h3 {
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.3;
 }
 .voog-search-modal .voog-search-modal-result h3:first-child {
   margin: 0;
 }
 .voog-search-modal .voog-search-modal-result h3 a {
-  font-family: "OpenSans-Bold", "Helvetica", "Arial", sans-serif;
+  font-family: "OpenSans-Regular", "Helvetica", "Arial", sans-serif;
   color: #333333;
   text-decoration: none;
+  font-weight: normal;
 }
 .voog-search-modal .voog-search-modal-result p {
   font-family: "OpenSans-Light", "Helvetica", "Arial", sans-serif;
-  font-size: 20px;
-  margin-top: 0.6em;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #898989;
+  margin-top: 10px;
 }
 .voog-search-modal .voog-search-modal-result em {
   font-style: normal;
   background-color: #fff07f;
+  font-weight: normal;
 }
 
 @media screen and (min-width: 641px) {
