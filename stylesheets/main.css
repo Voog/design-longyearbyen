@@ -88,7 +88,7 @@ body {
 }
 
 .content-inner {
-  padding: 50px 80px 80px 80px;
+  padding: 80px;
 }
 .content-inner::after {
   clear: both;
@@ -1810,7 +1810,14 @@ body {
 .blog-article-page .article-excerpt.content-area {
   padding-bottom: 15px;
 }
+.blog-article-page .blog-article {
+  padding-bottom: 0;
+}
+.blog-article-page .comments {
+  padding: 80px 80px 0;
+}
 
+/* Comment block */
 article.comment {
   font-size: 16px;
   margin-bottom: 10px;
@@ -1824,4 +1831,10 @@ article.comment {
 
 .article-info {
   margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .comments {
+    padding: 25px 25px 0 !important;
+  }
 }
