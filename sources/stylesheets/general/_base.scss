@@ -83,7 +83,7 @@ body {
 
 .content-inner {
   @include clearfix;
-  padding: 50px 80px;
+  padding: 50px 80px 80px 80px;
 
   a {
     border-bottom: 5px solid rgba($color-link-hightlight, 0.7);
@@ -96,7 +96,7 @@ body {
 
   .article-title {
     font-size: 20px;
-    line-height: 1.1;
+    line-height: 1.2;
     color: rgba($color-highlight, 1);
     margin-bottom: 0;
 
