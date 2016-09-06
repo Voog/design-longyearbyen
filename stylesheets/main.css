@@ -891,7 +891,7 @@ body {
   /* Table */
   /* Blockquote */
   /* dark-background bold style */
-  /* Link */
+  /* Other links without common link style */
 }
 .content-area::after {
   clear: both;
@@ -1128,7 +1128,7 @@ body {
   color: #fff;
   font-weight: 700;
 }
-.content-area .edy-gallery-area a,
+.content-area .edys-gallery-area a,
 .content-area .edy-content-social-buttons-list a,
 .content-area a.edys-gallery-item {
   border-bottom: none;
