@@ -75,21 +75,29 @@
 
 .menu-sub {
   text-align: center;
-  padding-top: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 80px 80px 0;
+  margin: 0;
+  display: block;
 
   .menu-cms {
     margin-left: 15px;
   }
 
   li {
-    font-size: 20px; vertical-align: middle;
+    font-size: 20px;
+    vertical-align: middle;
     margin-right: 15px;
   }
 
   a {
     vertical-align: middle;
     border-bottom: 0;
+    color:#898989;
+    &:hover { color:#000;}
   }
+
+  .selected {
+    color:#000;
+  }
+
 }

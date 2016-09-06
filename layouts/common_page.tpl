@@ -11,6 +11,7 @@
       <div class="wrap">
 
         {% include "site-header" %}
+        {% include "common-page-variables" %}
 
         <main class="page-content" role="main">
           <section class="content-area">
