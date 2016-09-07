@@ -1667,8 +1667,8 @@ body {
   }
 
   #mobile-menu.flags-disabled .language-menu-btn {
-    top: 0;
-    left: 0;
+    top: 18px;
+    left: 15px;
     width: auto;
     height: auto;
     display: inline-block;
@@ -1676,6 +1676,7 @@ body {
     padding: 11px 9px 17px;
     color: #fff;
     text-decoration: none;
+    position: absolute;
   }
 
   .site-header {

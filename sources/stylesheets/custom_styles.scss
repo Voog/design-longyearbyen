@@ -298,8 +298,8 @@
   .site-header .header-top .site-options { display: none;}
   .site-header .header-content h1 { font-size: 40px;}
   #mobile-menu.flags-disabled .language-menu-btn {
-    top: 0;
-    left: 0;
+    top: 18px;
+    left: 15px;
     width: auto;
     height: auto;
     display: inline-block;
@@ -307,6 +307,7 @@
     padding: 11px 9px 17px;
     color: #fff;
     text-decoration: none;
+    position: absolute;
   }
   .site-header { padding-bottom: 30px 25px;}
   .site-container .wrap { padding: 0;}

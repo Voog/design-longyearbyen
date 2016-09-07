@@ -3,12 +3,10 @@
   {% if editmode or site.has_many_languages? %}
     <a href="#" role="button" class="language-menu-btn">
       <span class="lang-menu-btn lang-flag lang-flag-{{ page.language_.code }}" data-lang-code="{{ page.language_code }}">
-        {% if editmode or flags_state == false %}
           <span class="lang-title">
             {% for language in site.languages %}{% if language.selected? %}{{ language.title }}{% endif %}{% endfor %}
             <span class="ico-popover-toggle">▼</span>
           </span>
-        {% endif %}
       </span>
     </a>
   {% endif %}
