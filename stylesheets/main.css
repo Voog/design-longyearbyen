@@ -1647,11 +1647,15 @@ li a.untranslated {
 }
 @media screen and (max-width: 1024px) {
   .content-inner {
-    padding: 40px;
+    padding: 40px !important;
   }
 
   .menu-sub {
     padding: 40px 40px 0;
+  }
+
+  .content-inner.older-post {
+    padding: 10px 40px 40px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1709,8 +1713,8 @@ li a.untranslated {
     padding: 0 10px 10px;
   }
 
-  .content-inner {
-    padding: 40px 25px;
+  .content-inner, .content-inner.older-post {
+    padding: 40px 25px !important;
   }
 
   .content-area {
@@ -1819,6 +1823,60 @@ li a.untranslated {
 .blog-and-news-page .blog-article {
   padding-bottom: 0 !important;
   padding-top: 40px;
+}
+.blog-and-news-page .articles-listing {
+  text-align: center;
+}
+.blog-and-news-page .articles-listing .articles-listing-header {
+  padding: 40px 0px 15px;
+  border-top: 1px solid #cacaca;
+}
+.blog-and-news-page .articles-listing .articles-listing-title {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.blog-and-news-page .articles-listing .blog-article {
+  padding: 0;
+  margin-bottom: 20px;
+}
+.blog-and-news-page .articles-listing .blog-article .article-header {
+  margin: 0 0 20px;
+}
+.blog-and-news-page .articles-listing .blog-article .article-date {
+  font-size: 13px;
+  color: #898989;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  position: relative;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+.blog-and-news-page .articles-listing .blog-article .article-title {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0;
+}
+.blog-and-news-page .articles-listing .content-inner a {
+  border-bottom: none;
+}
+@media screen and (max-width: 480px) {
+  .blog-and-news-page .articles-listing {
+    margin: 0;
+  }
+  .blog-and-news-page .articles-listing .blog-article .article-date {
+    position: static;
+  }
+  .blog-and-news-page .articles-listing .blog-article .article-title {
+    margin: 0;
+  }
+}
+.blog-and-news-page .content-inner.older-post {
+  padding: 1px 80px 80px;
+}
+.blog-and-news-page .articles-listing .blog-article:last-child {
+  margin-bottom: 0;
 }
 
 .blog-article-page .article-header {
