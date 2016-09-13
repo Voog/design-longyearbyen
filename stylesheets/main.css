@@ -1590,6 +1590,7 @@ li a.untranslated {
   color: #fff;
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
+  padding: 5px 3px;
 }
 
 #mobile-menu .navigation-menu ul a.active,
