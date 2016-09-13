@@ -13,6 +13,10 @@
 
     a {
       color: $color-light;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 3px;
+      padding-right: 3px;
     }
     &:hover {
       a {
@@ -93,6 +97,7 @@
     vertical-align: middle;
     border-bottom: 0;
     color:#898989;
+    padding: 5px 3px;
     &:hover { color:#000;}
   }
 
