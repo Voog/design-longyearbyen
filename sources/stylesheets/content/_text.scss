@@ -44,6 +44,7 @@
   b,
   strong {
     color: rgba($color-highlight, 1);
+    font-family:"Futura PT W01 Heavy";
   }
 
   h1,
@@ -54,28 +55,21 @@
   h6 {
     line-height: 1.2;
     text-transform: uppercase;
+    text-align: center;
   }
 
   h1 {
     font-size: 36px;
-  }
+    }
 
   h2 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   h3 {
     font-size: 18px;
-    font-style: normal;
   }
 
-  a {
-    /*
-    &:hover {
-      opacity: .8;
-    }
-    */
-  }
 
   pre,
   code,
@@ -200,7 +194,6 @@
     padding: 0.61em 0.55em;
     font-size: 18px;
     color: #333;
-    font-family: "OpenSans-Regular", "Helvetica", "Arial", sans-serif;
     line-height: 24px;
     background-color: none;
     cursor: pointer;

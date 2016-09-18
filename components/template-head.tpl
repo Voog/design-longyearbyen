@@ -39,3 +39,5 @@
 {% if site.search.enabled %}
   <link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-search/latest/edicy-search.css">
 {% endif %}
+
+<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/eeb38f59-b7d9-49cc-9a81-1c3f2ac6ccb0.css"/>

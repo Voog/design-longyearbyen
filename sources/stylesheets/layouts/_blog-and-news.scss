@@ -7,10 +7,7 @@
     padding: 40px 0px 15px;
     border-top: 1px solid #cacaca;
   }
-  .articles-listing-title {
-    font-size: 22px;
-    text-transform: uppercase;
-  }
+
   .blog-article {
     padding: 0;
     margin-bottom: 20px;
@@ -19,17 +16,12 @@
     }
     .article-date {
       font-size: 13px;
-      color: #898989;
-      font-weight: 400;
-      line-height: 18px;
-      margin:0;
-      position: relative;;
+      color: $color-light;
       text-transform: uppercase;
       margin-top: 8px;
     }
     .article-title {
       font-size: 18px;
-      font-weight: 300;
       line-height: 1.4;
       margin: 0;
     }
