@@ -20,19 +20,20 @@
    }
 
    .language-flags-disabled & {
-     padding: 0px 20px 0 12px;
+     padding: 0px 24px 0 12px;
      font-family: inherit; height: 24px;
      font-size: 13px;
      text-transform: uppercase;
      border: 1px solid #cccccc;
      border-radius: 12px;
-     margin-right: -4px;
+     margin-right: 0;
+     background: url('../assets/arrow_down.png') no-repeat 85% 50%;
 
      &:hover {
        opacity: .8;
      }
 
-     &:after {
+     /*&:after {
        position: absolute;
        top: 50%;
        right: 8px;
@@ -44,7 +45,7 @@
        border-style: solid;
        border-width: 6px 3px 0;
        border-color: rgba($color-black, 1) transparent transparent;
-     }
+     }*/
    }
 
    .menu-language-popover-open & {

@@ -245,7 +245,7 @@ li a.untranslated {
   text-align: center;
 }
 .site-header .header-top .site-options {
-  margin-left: 16px;
+  margin-left: 10px;
   display: inline-block;
 }
 .site-header .header-content {
@@ -280,7 +280,7 @@ li a.untranslated {
   height: 19px;
   width: 20px;
   padding: 0;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 10px;
 }
 .site-search-btn:focus {
   outline: none;
@@ -440,7 +440,7 @@ li a.untranslated {
 
 @media screen and (min-width: 641px) {
   .menu-level-1 li {
-    margin-right: 16px;
+    margin-right: 13px;
   }
 }
 
@@ -464,30 +464,31 @@ li a.untranslated {
   vertical-align: middle;
 }
 .language-flags-disabled .menu-language-btn {
-  padding: 0px 20px 0 12px;
+  padding: 0px 24px 0 12px;
   font-family: inherit;
   height: 24px;
   font-size: 13px;
   text-transform: uppercase;
   border: 1px solid #cccccc;
   border-radius: 12px;
-  margin-right: -4px;
+  margin-right: 0;
+  background: url("../assets/arrow_down.png") no-repeat 85% 50%;
+  /*&:after {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top: -3px;
+    content: "";
+    border-style: solid;
+    border-width: 6px 3px 0;
+    border-color: rgba($color-black, 1) transparent transparent;
+  }*/
 }
 .language-flags-disabled .menu-language-btn:hover {
   opacity: .8;
-}
-.language-flags-disabled .menu-language-btn:after {
-  position: absolute;
-  top: 50%;
-  right: 8px;
-  display: block;
-  width: 0;
-  height: 0;
-  margin-top: -3px;
-  content: "";
-  border-style: solid;
-  border-width: 6px 3px 0;
-  border-color: black transparent transparent;
 }
 .menu-language-popover-open .menu-language-btn:after {
   border-width: 0 3px 6px 3px;
@@ -1304,6 +1305,7 @@ li a.untranslated {
 
 .feature-section {
   min-width: 200px;
+  min-height: 400px !important;
   width: 50%;
   float: left;
   box-sizing: border-box;
