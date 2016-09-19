@@ -9,6 +9,8 @@
 .feature-section.section-with-padding { transition: padding 500ms;}
 .feature-section:not(.section-with-padding) .edy-fef-bottom .edy-fef-add { margin-left: 0;}
 .feature-section { min-width: 200px; min-height: 400px !important; width: 50%;float: left;box-sizing: border-box;}
+.front-page .left-introtext { font-size: 50px;line-height: 1.3;}
+
 
 .background-color { position: absolute;top: 0;left: 0;right: 0;bottom: 0;}
 .front-page .content .background-color { z-index: 0;}
@@ -32,8 +34,7 @@
 }
 
 .feature-section.section-with-padding {
-  padding: 50px;
-  padding: 3.125rem;
+  padding: 80px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -283,9 +284,6 @@
     MEDIA QUERIES
 -------------------------- */
 
-@media screen and (max-width: 1366px) {
-  .feature-section.section-with-padding { padding: 35px;padding: 2.1875rem;}
-}
 @media screen and (min-width: 961px) and (max-width: 1366px) {
   .feature-section { min-height: 235px;}
 }

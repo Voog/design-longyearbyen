@@ -269,6 +269,7 @@ li a.untranslated {
   font-size: 13px;
   color: #898989;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .site-search-btn {
@@ -756,8 +757,10 @@ li a.untranslated {
 }
 
 .site-footer {
-  padding-top: 100px;
+  padding-top: 90px;
   padding-bottom: 80px;
+  padding-left: 125px;
+  padding-right: 125px;
   color: #898989;
   text-align: center;
 }
@@ -1311,6 +1314,11 @@ li a.untranslated {
   box-sizing: border-box;
 }
 
+.front-page .left-introtext {
+  font-size: 50px;
+  line-height: 1.3;
+}
+
 .background-color {
   position: absolute;
   top: 0;
@@ -1348,8 +1356,7 @@ li a.untranslated {
 }
 
 .feature-section.section-with-padding {
-  padding: 50px;
-  padding: 3.125rem;
+  padding: 80px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -1615,12 +1622,6 @@ li a.untranslated {
 /* --------------------------
     MEDIA QUERIES
 -------------------------- */
-@media screen and (max-width: 1366px) {
-  .feature-section.section-with-padding {
-    padding: 35px;
-    padding: 2.1875rem;
-  }
-}
 @media screen and (min-width: 961px) and (max-width: 1366px) {
   .feature-section {
     min-height: 235px;

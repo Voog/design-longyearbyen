@@ -28,7 +28,7 @@
                     {% endif %}
 
                     <div class="wrap_s js-background-type {{ content_bg_1_type }}">
-                      <section class="feature-content content-formatted" data-search-indexing-allowed="true">{% content name="feature_1" %}</section>
+                      <section class="feature-content content-formatted left-introtext" data-search-indexing-allowed="true">{% content name="feature_1" %}</section>
                     </div>
                   </div>
                 {% else %}
