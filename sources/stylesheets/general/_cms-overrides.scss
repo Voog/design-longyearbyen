@@ -21,3 +21,17 @@
 }
 
 .edy-tb-iconbtn { border-bottom: 0 !important;}
+
+.edys-gallery-slider .edys-gallery-slider-next,
+.edys-gallery-slider .edys-gallery-slider-prev {
+  width:15px !important;
+  height:29px !important;
+  opacity: 1 !important;
+}
+
+.edys-gallery-slider .edys-gallery-slider-prev {
+    background: url("../assets/ico-prev.png") center center no-repeat !important;
+}
+.edys-gallery-slider .edys-gallery-slider-next {
+    background: url("../assets/ico-next.png") center center no-repeat !important;
+}
