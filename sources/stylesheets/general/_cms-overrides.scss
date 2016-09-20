@@ -31,7 +31,12 @@
   height:29px !important;
   opacity: 1 !important;
 }
-
+.edys-gallery-slider .edys-gallery-slider-prev {
+  left:25px !important;
+}
+.edys-gallery-slider .edys-gallery-slider-next {
+  right: 25px !important;
+}
 .edys-gallery-slider .edys-gallery-slider-prev {
     background: url("../assets/ico-prev.png") center center no-repeat !important;
 }
@@ -51,6 +56,6 @@
   background: #fff;
   color: #333;
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1;
   max-width: 100%;
 }
