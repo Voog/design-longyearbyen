@@ -22,6 +22,9 @@
 
 .edy-tb-iconbtn { border-bottom: 0 !important;}
 
+
+/* Slider */
+
 .edys-gallery-slider .edys-gallery-slider-next,
 .edys-gallery-slider .edys-gallery-slider-prev {
   width:15px !important;
@@ -34,4 +37,20 @@
 }
 .edys-gallery-slider .edys-gallery-slider-next {
     background: url("../assets/ico-next.png") center center no-repeat !important;
+}
+
+.front-page .edys-gallery-slider-item:after {
+  content: attr(data-title);
+}
+.front-page .edys-gallery-slider-item[data-title]:after {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  right: 0;
+  padding: 15px 18px;
+  background: #fff;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 100%;
 }
