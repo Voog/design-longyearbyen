@@ -1353,15 +1353,15 @@ li a.untranslated {
 
 .feature-section {
   min-width: 200px;
-  min-height: 400px !important;
+  min-height: 400px;
   width: 50%;
   float: left;
   box-sizing: border-box;
 }
 
-.front-page .left-introtext {
+.introtext {
   font-size: 50px;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .background-color {
@@ -1667,11 +1667,6 @@ li a.untranslated {
 /* --------------------------
     MEDIA QUERIES
 -------------------------- */
-@media screen and (min-width: 961px) and (max-width: 1366px) {
-  .feature-section {
-    min-height: 235px;
-  }
-}
 @media screen and (max-width: 1024px) {
   .content-inner {
     padding: 40px !important;
