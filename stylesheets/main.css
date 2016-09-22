@@ -340,6 +340,7 @@ li a.untranslated {
   right: -280px;
   bottom: 0;
   width: 280px;
+  z-index: 99;
   background-color: white;
   -webkit-box-shadow: -9px 0 9px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: -9px 0 9px rgba(0, 0, 0, 0.1);
