@@ -197,7 +197,8 @@ body {
 .menu-sub li {
   font-size: 20px;
   vertical-align: middle;
-  margin-right: 15px;
+  margin-right: 18px;
+  letter-spacing: 0.2px;
 }
 .menu-sub a {
   vertical-align: middle;
@@ -1015,6 +1016,8 @@ li a.untranslated {
 }
 .content-area h2 {
   font-size: 20px;
+  margin: 0;
+  padding: 33px 0 20px 0;
 }
 .content-area h3 {
   font-size: 18px;
