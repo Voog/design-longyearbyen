@@ -1848,6 +1848,9 @@ li a.untranslated {
   padding-bottom: 0 !important;
   padding-top: 40px;
 }
+.blog-and-news-page .blog-article:first-child {
+  padding-top: 0;
+}
 .blog-and-news-page .articles-listing {
   text-align: center;
 }
