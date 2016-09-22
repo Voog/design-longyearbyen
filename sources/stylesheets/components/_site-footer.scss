@@ -8,6 +8,16 @@
 
   .footer-body {
     font-size: 13px;
+
+    a {
+      text-decoration: none;
+      color: rgba($color-link, 1);
+
+      &:hover {
+        background: rgba($color-link-hightlight, 0.9);
+        padding: 3px 0;
+      }
+    }
   }
 
   .voog-reference {

@@ -810,6 +810,14 @@ li a.untranslated {
 .site-footer .footer-body {
   font-size: 13px;
 }
+.site-footer .footer-body a {
+  text-decoration: none;
+  color: #333333;
+}
+.site-footer .footer-body a:hover {
+  background: rgba(255, 240, 127, 0.9);
+  padding: 3px 0;
+}
 .site-footer .voog-reference {
   color: black;
   opacity: .55;
@@ -1918,10 +1926,6 @@ article.comment {
   font-style: italic;
   font-weight: 600;
   font-size: 14px;
-}
-
-.article-info {
-  margin-top: 5px;
 }
 
 @media screen and (max-width: 768px) {
