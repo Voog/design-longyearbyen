@@ -351,9 +351,6 @@ li a.untranslated {
   width: 280px;
   z-index: 99;
   background-color: white;
-  -webkit-box-shadow: -9px 0 9px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: -9px 0 9px rgba(0, 0, 0, 0.1);
-  box-shadow: -9px 0 9px rgba(0, 0, 0, 0.1);
   -webkit-transition: -webkit-transform 0.2s;
   -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
@@ -365,6 +362,9 @@ li a.untranslated {
   -o-transform: translate3d(-280px, 0, 0);
   transform: translate3d(-280px, 0, 0);
   background: #fff;
+  -webkit-box-shadow: -9px 0 9px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -9px 0 9px rgba(0, 0, 0, 0.1);
+  box-shadow: -9px 0 9px rgba(0, 0, 0, 0.1);
 }
 @media screen and (min-width: 641px) {
   .site-search-opened .site-search {
