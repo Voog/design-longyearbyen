@@ -59,3 +59,11 @@
   line-height: 1;
   max-width: 100%;
 }
+
+.edy-content-social-buttons-list a,
+.edys-gallery-area a, .edys-gallery-grid a.edys-gallery-grid-item ,
+.edys-gallery-grid-inner a {
+  background: none !important;
+  border: 0;
+  padding: 0;
+}

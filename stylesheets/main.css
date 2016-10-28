@@ -97,6 +97,7 @@ body {
   line-height: 1.2;
   color: #1b2124;
   margin-bottom: 0;
+  padding: 0;
 }
 .article-header .article-title a {
   border-bottom: none;
@@ -278,6 +279,14 @@ li a.untranslated {
   font-size: 18px;
   line-height: 1;
   max-width: 100%;
+}
+
+.edy-content-social-buttons-list a,
+.edys-gallery-area a, .edys-gallery-grid a.edys-gallery-grid-item,
+.edys-gallery-grid-inner a {
+  background: none !important;
+  border: 0;
+  padding: 0;
 }
 
 .site-header {
@@ -1022,6 +1031,8 @@ li a.untranslated {
 }
 .content-area h1 {
   font-size: 36px;
+  margin: 0;
+  padding: 33px 0 20px 0;
 }
 .content-area h2 {
   font-size: 20px;
@@ -1030,6 +1041,8 @@ li a.untranslated {
 }
 .content-area h3 {
   font-size: 18px;
+  margin: 0;
+  padding: 33px 0 20px 0;
 }
 .content-area pre,
 .content-area code {
