@@ -1831,7 +1831,7 @@ li a.untranslated {
     font-size: 30px;
   }
 
-  .content-area h1 {
+  .content-area h1, .introtext {
     font-size: 25px;
   }
 
