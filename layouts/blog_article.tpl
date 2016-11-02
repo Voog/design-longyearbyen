@@ -17,6 +17,31 @@
               <div class="content-inner">
                 {% include "blog-article-template" with "blog_article_page" %}
                 {% include "blog-article-tags" %}
+
+                {% if article.older or article.newer %}
+                  <div class="post-nav">
+                    <div class="post-nav-inner">
+                      {% if article.older %}
+                        <a class="post-nav-link {% if article.newer %}post-nav-link-half{% else %}post-nav-link-full{% endif %}" href="{{ article.older.url }}">
+                          <div class="post-nav-link-inner">
+                            <div class="post-nav-direction">{{ "previous" | lc }}</div>
+                            <div class="post-nav-title">{{ article.older.title }}</div>
+                          </div>
+                        </a>
+                      {% endif %}
+
+                      {% if article.newer %}
+                        <a class="post-nav-link {% if article.older %}post-nav-link-half{% else %}post-nav-link-full{% endif %}" href="{{ article.newer.url }}">
+                          <div class="post-nav-link-inner">
+                            <div class="post-nav-direction">{{ "next" | lc }}</div>
+                            <div class="post-nav-title">{{ article.newer.title }}</div>
+                          </div>
+                        </a>
+                      {% endif %}
+                    </div>
+                  </div>
+                {% endif %}
+
               </div>
             </div>
           </section>

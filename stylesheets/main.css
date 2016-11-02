@@ -20,7 +20,7 @@ body {
 .site-container a img {
   border-style: none;
 }
-.site-container a:hover {
+.site-container a:hover:not(.post-nav-link) {
   background: rgba(255, 240, 127, 0.9);
 }
 
@@ -83,7 +83,7 @@ body {
   content: "";
   display: table;
 }
-.content-inner a {
+.content-inner a:not(.post-nav-link) {
   border-bottom: 5px solid rgba(255, 240, 127, 0.7);
   padding: 5px 0 0 0;
 }
@@ -1930,7 +1930,92 @@ li a.untranslated {
   padding: 80px 80px 0;
 }
 
-/* Comment block */
+.post-nav::before {
+  display: block;
+  margin-top: 33px;
+  border-top: 1px solid currentColor;
+  content: '';
+  opacity: .2;
+}
+
+@media screen and (min-width: 480px) {
+  .post-nav-inner {
+    display: flex;
+  }
+}
+.post-nav-link {
+  position: relative;
+  display: block;
+  flex: 1;
+  padding-top: 33px;
+  color: currentColor;
+}
+@media screen and (min-width: 480px) {
+  .post-nav-link:first-child {
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .post-nav-link:last-child {
+    padding-left: 20px;
+  }
+}
+.post-nav-link:hover .post-nav-direction {
+  opacity: 1;
+}
+.post-nav-link:hover .post-nav-title {
+  opacity: 1;
+}
+
+.post-nav-link-half {
+  /*@media screen and (min-width: $mobile-1) {
+    padding-bottom: 33px;
+  }*/
+}
+@media screen and (max-width: 480px) {
+  .post-nav-link-half {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .post-nav-link-half:first-child {
+    padding-bottom: 33px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .post-nav-link-half:first-child::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-bottom: 1px solid currentColor;
+    content: '';
+    opacity: .2;
+  }
+}
+@media screen and (min-width: 480px) {
+  .post-nav-link-half:last-child {
+    text-align: right;
+  }
+}
+
+.post-nav-link-full {
+  text-align: center;
+}
+
+.post-nav-direction {
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: .5;
+}
+
+.post-nav-title {
+  font-size: 20px;
+  opacity: .7;
+}
+
 article.comment {
   font-size: 16px;
   margin-bottom: 10px;
