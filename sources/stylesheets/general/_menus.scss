@@ -22,12 +22,14 @@
     &:hover {
       a {
         color: $color-black;
+        background: $color-yellow !important;
       }
     }
 
     &.current {
       a {
         color: $color-black;
+        background: $color-yellow;
       }
     }
   }

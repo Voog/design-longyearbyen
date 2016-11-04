@@ -94,6 +94,12 @@
        font-size: 14px;
        text-decoration: none;
        display: block;
+       background: none !important;
+
+       &:hover {
+           color: $color-black;
+           background: none !important;
+       }
 
        &:before,
        &:after {

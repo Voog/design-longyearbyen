@@ -14,7 +14,7 @@
       color: rgba($color-link, 1);
 
       &:hover {
-        background: rgba($color-link-hightlight, 0.9);
+        background: $color-link-hightlight;
         padding: 3px 0;
       }
     }

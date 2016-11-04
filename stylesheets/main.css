@@ -21,7 +21,7 @@ body {
   border-style: none;
 }
 .site-container a:hover:not(.post-nav-link) {
-  background: rgba(255, 240, 127, 0.9);
+  background: #eee077;
 }
 
 .wrap {
@@ -84,7 +84,7 @@ body {
   display: table;
 }
 .content-inner a:not(.post-nav-link) {
-  border-bottom: 5px solid rgba(255, 240, 127, 0.7);
+  border-bottom: 5px solid #eee077;
   padding: 5px 0 0 0;
 }
 
@@ -133,9 +133,11 @@ body {
 }
 .menu li:hover a {
   color: #000000;
+  background: #fff07f !important;
 }
 .menu li.current a {
   color: #000000;
+  background: #fff07f;
 }
 
 .menu-horizontal {
@@ -480,7 +482,7 @@ li a.untranslated {
 }
 .voog-search-modal .voog-search-modal-result em {
   font-style: normal;
-  background-color: #fff07f;
+  background-color: #eee077;
   font-weight: normal;
 }
 @media screen and (max-width: 640px) {
@@ -571,6 +573,11 @@ li a.untranslated {
   font-size: 14px;
   text-decoration: none;
   display: block;
+  background: none !important;
+}
+.menu-language li a:hover {
+  color: #000000;
+  background: none !important;
 }
 .menu-language li a:before, .menu-language li a:after {
   top: 7px;
@@ -825,7 +832,7 @@ li a.untranslated {
   color: #333333;
 }
 .site-footer .footer-body a:hover {
-  background: rgba(255, 240, 127, 0.9);
+  background: #eee077;
   padding: 3px 0;
 }
 .site-footer .voog-reference {
