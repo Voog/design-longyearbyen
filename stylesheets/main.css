@@ -929,6 +929,8 @@ li a.untranslated {
 }
 .blog-tags .menu .menu-link:hover {
   opacity: .7;
+  background: #eee077;
+  color: #000000;
 }
 .blog-tags .menu .menu-link.active {
   color: white;
