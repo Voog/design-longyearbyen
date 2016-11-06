@@ -959,8 +959,10 @@ li a.untranslated {
   font-size: 16px;
   margin-bottom: 10px !important;
 }
-#article-comments .comment-date, #article-comments .comment-author {
+#article-comments .comment-author {
   font-family: "Futura PT W01 Heavy", "Arial", sans-serif;
+}
+#article-comments .comment-date, #article-comments .comment-author {
   font-style: italic;
   font-size: 14px;
 }

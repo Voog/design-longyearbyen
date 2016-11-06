@@ -4,10 +4,10 @@
   {% if article.comments_count > 0 %}
     {% for comment in article.comments %}
       <article class="comment edy-site-blog-comment">
-        <span class="comment-body">{{ comment.body_html }}</span>
-        <span class="comment-author">({{ comment.author }}</span>
-        <span class="comment-date">{{ comment.created_at | format_date: "long" }})</span>
+        <span class="comment-author">{{ comment.author }}, </span>
+        <span class="comment-date">{{ comment.created_at | format_date: "long" }}</span>
         <span class="comment-delete">{% removebutton %}</span>
+        <div class="comment-body">{{ comment.body_html }}</div>
       </article>
     {% endfor %}
   {% endif %}
