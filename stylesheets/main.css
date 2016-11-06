@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* MAIN STYLESHEET */
 html.site-search-opened {
   position: fixed;
@@ -463,7 +462,7 @@ li a.untranslated {
   }
 }
 .voog-search-modal .voog-search-modal-result h3 {
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.3;
 }
 .voog-search-modal .voog-search-modal-result h3:first-child {
@@ -475,9 +474,9 @@ li a.untranslated {
   font-weight: normal;
 }
 .voog-search-modal .voog-search-modal-result p {
-  font-family: "Futura® PT W01 Light", "OpenSans-Regular", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-family: "Futura PT W01 Light", "Arial", sans-serif !important;
+  font-size: 19px;
+  line-height: 1.3;
   color: #898989;
   margin-top: 10px;
 }
