@@ -1,6 +1,6 @@
 .content-area {
   @include clearfix;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 20px;
   line-height: 1.6;
 
@@ -45,6 +45,7 @@
   strong {
     color: rgba($color-highlight, 1);
     font-family:"Futura PT W01 Heavy";
+    font-weight: normal;
   }
 
   h1,
@@ -90,7 +91,7 @@
     padding: 10px;
     font-size: 14px;
     line-height: 1.3;
-    font-weight: 400;
+    font-weight: normal;
     background-color: rgba($color-black, .02);
   }
 
@@ -260,7 +261,6 @@
   .dark-background b,
   .dark-background strong {
     color: #fff;
-    font-weight: 700;
   }
 
   /* Other links without common link style */
