@@ -949,8 +949,20 @@ li a.untranslated {
   border-bottom: 1px solid #cacaca;
 }
 
+#article-comments {
+  padding: 80px 80px 0;
+}
 #article-comments .comments-title {
   font-size: 20px;
+}
+#article-comments .comment {
+  font-size: 16px;
+  margin-bottom: 10px !important;
+}
+#article-comments .comment-date, #article-comments .comment-author {
+  font-family: "Futura PT W01 Heavy", "Arial", sans-serif;
+  font-style: italic;
+  font-size: 14px;
 }
 
 .content-area {
@@ -1705,6 +1717,10 @@ li a.untranslated {
   .content-inner.older-post {
     padding: 10px 40px 40px;
   }
+
+  #article-comments {
+    padding: 25px 25px 0 !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .mobilemenu-open #mobile-menu, .mobile-menu-toggler {
@@ -1930,9 +1946,6 @@ li a.untranslated {
 .blog-article-page .blog-article {
   padding-bottom: 0;
 }
-.blog-article-page .comments {
-  padding: 80px 80px 0;
-}
 
 .post-nav::before {
   display: block;
@@ -2018,20 +2031,4 @@ li a.untranslated {
 .post-nav-title {
   font-size: 20px;
   opacity: .7;
-}
-
-article.comment {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.comment-date, .comment-author {
-  font-style: italic;
-  font-size: 14px;
-}
-
-@media screen and (max-width: 768px) {
-  .comments {
-    padding: 25px 25px 0 !important;
-  }
 }

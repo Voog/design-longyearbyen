@@ -1,1 +1,7 @@
-#article-comments .comments-title { font-size: 20px;}
+#article-comments {
+  padding: 80px 80px 0;
+
+  .comments-title { font-size: 20px;}
+  .comment { font-size: 16px; margin-bottom: 10px !important;}
+  .comment-date, .comment-author { font-family:"Futura PT W01 Heavy", "Arial", sans-serif; font-style:italic; font-size: 14px;}
+}

@@ -2,7 +2,6 @@
   .article-header { padding-bottom: 25px;}
   .article-excerpt.content-area { padding-bottom: 15px;}
   .blog-article { padding-bottom: 0;}
-  .comments { padding: 80px 80px 0;}
 }
 
 .post-nav {
@@ -98,11 +97,4 @@
 .post-nav-title {
   font-size: 20px;
   opacity: .7;
-}
-
-article.comment { font-size: 16px;margin-bottom: 10px;}
-.comment-date, .comment-author { font-style: italic;font-size: 14px;}
-
-@media screen and (max-width: $tablet-1) {
-  .comments { padding: 25px 25px 0 !important;}
 }
