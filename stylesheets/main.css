@@ -273,7 +273,7 @@ li a.untranslated {
 .front-page .edys-gallery-slider-item[data-title]:after {
   display: block;
   position: absolute;
-  bottom: 1px;
+  bottom: 0px;
   right: 0;
   padding: 15px 18px;
   background: #fff;
