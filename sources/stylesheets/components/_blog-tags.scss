@@ -1,4 +1,11 @@
-.blog-tags  {
+// Blog news layout
+.blog-news-page .blog-tags  {
+  margin-top:0;
+  margin-bottom: 20px;
+}
+
+//
+.blog-article-page .blog-tags  {
   margin-top: 10px;
   text-align: center;
   color: rgba($color-black, .7);
@@ -110,10 +117,3 @@
     }
   }
 }
-
-
-/* Blog news layout */
-
-.blog-news-page .blog-tags  { margin-top:0; margin-bottom: 20px;}
-
-.edy-tag-suggestions .edy-tag-suggestion { padding: 4px 10px;border-bottom: 1px solid #cacaca;}

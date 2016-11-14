@@ -23,8 +23,7 @@
 .edy-tb-iconbtn { border-bottom: 0 !important;}
 
 
-/* Slider */
-
+// Slider
 .edys-gallery-slider .edys-gallery-slider-next,
 .edys-gallery-slider .edys-gallery-slider-prev {
   width:15px !important;
@@ -66,4 +65,10 @@
   background: none !important;
   border: 0;
   padding: 0;
+}
+
+// tags
+.edy-tag-suggestions .edy-tag-suggestion {
+  padding: 4px 10px !important;
+  border-bottom: 1px solid #cacaca !important;
 }
