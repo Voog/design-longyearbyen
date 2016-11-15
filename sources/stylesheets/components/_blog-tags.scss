@@ -1,10 +1,18 @@
 // Blog news layout
-.blog-news-page .blog-tags  {
-  margin-top:0;
-  margin-bottom: 20px;
+.blog-news-page {
+  .blog-tags  {
+    margin-top:0;
+    margin-bottom: 20px;
+  }
+
+  .menu-link:hover {
+    background: none !important;
+    color: $color-black;
+  }
 }
 
-//
+
+// Blog article layout
 .blog-article-page .blog-tags  {
   margin-top: 10px;
   text-align: center;

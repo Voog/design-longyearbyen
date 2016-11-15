@@ -216,7 +216,6 @@ body {
   color: #000;
 }
 
-/* Untranslated menu items */
 li a.untranslated {
   color: rgba(161, 155, 75, 0.7);
 }
@@ -852,6 +851,10 @@ li a.untranslated {
   margin-top: 0;
   margin-bottom: 20px;
 }
+.blog-news-page .menu-link:hover {
+  background: none !important;
+  color: #000000;
+}
 
 .blog-article-page .blog-tags {
   margin-top: 10px;
@@ -962,7 +965,8 @@ li a.untranslated {
 #article-comments .comment-author {
   font-family: "Futura PT W01 Heavy", "Arial", sans-serif;
 }
-#article-comments .comment-date, #article-comments .comment-author {
+#article-comments .comment-date,
+#article-comments .comment-author {
   font-style: italic;
   font-size: 14px;
 }
@@ -971,11 +975,6 @@ li a.untranslated {
   font-weight: normal;
   font-size: 20px;
   line-height: 1.6;
-  /* Button - custom and form submit */
-  /* Table */
-  /* Blockquote */
-  /* dark-background bold style */
-  /* Other links without common link style */
 }
 .content-area::after {
   clear: both;
@@ -1352,7 +1351,6 @@ li a.untranslated {
   content: '';
 }
 
-/* Front page bg-picker and padding switcher boxes */
 .sections {
   display: -webkit-flex;
   display: -moz-flex;

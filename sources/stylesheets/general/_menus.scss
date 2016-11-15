@@ -79,7 +79,6 @@
   display: inline-block;
 }
 
-
 .menu-sub {
   text-align: center;
   padding: 80px 80px 0;
@@ -108,10 +107,9 @@
   .selected {
     color:#000;
   }
-
 }
 
-/* Untranslated menu items */
+// Untranslated menu items
 li a.untranslated {
-    color: rgba(161, 155, 75,.7);
+  color: rgba(161, 155, 75,.7);
 }
