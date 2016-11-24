@@ -24,6 +24,10 @@
   flex: 1;
   padding-top: 33px;
   color: currentColor;
+  border-bottom: none !important;
+    &:hover {
+      background: none !important;
+    }
 
   &:first-child {
     @media screen and (min-width: $mobile-1)  {
@@ -52,11 +56,6 @@
   @media screen and (max-width: $mobile-1) {
     text-align: center;
   }
-
-  /*@media screen and (min-width: $mobile-1) {
-    padding-bottom: 33px;
-  }*/
-
   &:first-child {
     @media screen and (max-width: $mobile-1) {
       padding-bottom: 33px;

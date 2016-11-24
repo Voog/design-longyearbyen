@@ -2,9 +2,9 @@
   <div class="tagged-list-header">
     <nav class="tags">
       <ul class="menu-horizontal menu-sub">
-        <li class="menu-item">
+        <!--<li class="menu-item">
           <a class="menu-link js-tags-all{% unless tags.size > 0 %} active{% endunless %}" href="{{ site.url }}{{ site.blogs.first.page.path }}">{{ tags_all }}</a>
-        </li>
+        </li>-->
         {% for tag in site.language_tags %}
           {% assign activestr = "" %}
           {% for tmptag in tags %}

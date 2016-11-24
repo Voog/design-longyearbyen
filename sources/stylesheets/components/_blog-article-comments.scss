@@ -9,11 +9,15 @@
     margin-bottom: 10px !important;
   }
   .comment-author {
-    font-family:"Futura PT W01 Heavy", "Arial", sans-serif;
+    font-family: $font-heavy;
   }
   .comment-date,
   .comment-author {
     font-style:italic;
     font-size: 14px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 25px 25px 0;
   }
 }

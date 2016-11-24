@@ -2,12 +2,18 @@
 // Global variables to use in every .scss files.
 // Comment out the "_variables.scss" partial in the "main.scss" file if not used.
 
+// Font family.
+$font-main: "Futura PT W01 Book", Arial, sans-serif;
+$font-heavy: "Futura PT W01 Heavy", Arial, sans-serif;
+$font-light: "Futura PT W01 Light", Arial, sans-serif;
+
 // Basic colors.
 $color-black: #000000;
 $color-white: #ffffff;
 $color-light: #898989;
 $color-body: #333333;
 $bg-color: #eeeeee;
+
 
 // Specific colors.
 $color-highlight: #1b2124;
@@ -18,8 +24,13 @@ $color-error: #cc0000;
 $color-success: #60a740;
 
 // Media query breakpoints.
+$large: 1400px;
+
 $tablet: 1024px;
+$tablet-0: 960px;
+
 $tablet-1: 768px;
 
 $mobile: 640px;
 $mobile-1: 480px;
+$mobile-2: 400px;

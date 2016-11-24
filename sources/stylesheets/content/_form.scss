@@ -13,7 +13,7 @@
     label,
     .form_field_label {
       display: block;
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 
@@ -94,7 +94,7 @@
     color: rgba($color-success, 1);
   }
 
-  /* Custom checkboxes and radio buttons */
+  // Custom checkboxes and radio buttons
   label {
     cursor: pointer;
   }
@@ -124,7 +124,8 @@
   label .form_field_radio + .form_control_indicator:before {
     width: 9px;
     height: 9px;
-    border: 3px solid white;
+    border: 3px solid $color-white;
+;
   }
   label .form_field_radio:checked + .form_control_indicator:before {
     background-color: rgba(0, 0, 0, 0.87);

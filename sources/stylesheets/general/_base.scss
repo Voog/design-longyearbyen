@@ -10,22 +10,8 @@ html {
 
 body {
   margin: 0;
-  font-family: "Futura PT W01 Book", "Arial", sans-serif;
+  font-family: $font-main;
   color: $color-body;
-}
-
-.site-container {
-  a {
-    text-decoration: none;
-    color: rgba($color-link, 1);
-
-    img {
-      border-style: none;
-    }
-    &:hover:not(.post-nav-link) {
-      background: $color-link-hightlight;
-    }
-  }
 }
 
 .wrap {
@@ -71,9 +57,21 @@ body {
   @include clearfix;
   padding: 80px;
 
-  a:not(.post-nav-link) {
-    border-bottom: 5px solid $color-link-hightlight;
-    padding: 5px 0 0 0;
+  @media screen and (max-width: $tablet) {
+    padding: 40px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    &.older-post {
+      padding: 10px 40px 40px;
+    }
+  }
+  @media screen and (max-width: $tablet-1) {
+    padding: 40px 25px;
+
+    &.older-post {
+      padding: 40px 25px;
+    }
   }
 }
 

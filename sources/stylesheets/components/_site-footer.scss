@@ -1,29 +1,24 @@
 .site-footer {
-  padding-top: 90px;
-  padding-bottom: 80px;
-  padding-left: 125px;
-  padding-right: 125px;
-  color: $color-light;
-  text-align: center;
 
-  .footer-body {
-    font-size: 13px;
+  b,
+  strong  {
+    color: $color-black;
+    font-weight: normal;
+  }
 
-    a {
-      text-decoration: none;
-      color: rgba($color-link, 1);
+  .inner {
+    padding: 98px 125px 80px;
 
-      &:hover {
-        background: $color-link-hightlight;
-        padding: 3px 0;
-      }
+    @media screen and (max-width: $tablet-1) {
+      padding: 40px 25px;
     }
   }
 
   .voog-reference {
-    color: rgba($color-black, 1);
     opacity: .55;
-
+    padding: 0 0 40px;
+    color: rgba($color-black, 1);
+    text-align: center;
     &:hover {
       opacity: .8;
     }
