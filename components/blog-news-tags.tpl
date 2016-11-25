@@ -13,7 +13,7 @@
             {% endif %}
           {% endfor %}
           <li class="menu-item">
-            <a class="menu-link{{ activestr }}" href="{{ site.url }}{{ site.blogs.first.page.path }}/tagged/{{ tag.path }}">{{ tag.name }}</a>
+            <a class="menu-link{{ activestr }}" href="{{ site.url }}{{ blog.page.path_with_lang }}/tagged/{{ tag.path }}">{{ tag.name }}</a>
           </li>
         {% endfor %}
       </ul>
