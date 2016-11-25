@@ -5,7 +5,7 @@
         <!--<li class="menu-item">
           <a class="menu-link js-tags-all{% unless tags.size > 0 %} active{% endunless %}" href="{{ site.url }}{{ site.blogs.first.page.path }}">{{ tags_all }}</a>
         </li>-->
-        {% for tag in site.language_tags %}
+        {% for tag in blog.tags %}
           {% assign activestr = "" %}
           {% for tmptag in tags %}
             {% if tmptag.name == tag.name %}
