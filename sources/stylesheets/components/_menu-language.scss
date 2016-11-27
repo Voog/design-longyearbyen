@@ -29,13 +29,12 @@
      border: 1px solid #cccccc;
      border-radius: 12px;
      margin-right: 0;
-     background: url('../assets/arrow_down.png') no-repeat 85% 50%;
 
      &:hover {
        opacity: .8;
      }
 
-     /*&:after {
+     &:after {
        position: absolute;
        top: 50%;
        right: 8px;
@@ -45,15 +44,15 @@
        margin-top: -3px;
        content: "";
        border-style: solid;
-       border-width: 6px 3px 0;
-       border-color: rgba($color-black, 1) transparent transparent;
-     }*/
+       border-width: 6px 5px 0;
+       border-color: rgba($color-black, 0.5) transparent transparent;
+     }
    }
 
    .menu-language-popover-open & {
      &:after {
-       border-width: 0 3px 6px 3px;
-       border-color: transparent transparent rgba($color-black, 1) transparent;
+       border-width: 0 5px 6px;
+       border-color: transparent transparent rgba($color-black, 0.5) transparent;
      }
    }
 

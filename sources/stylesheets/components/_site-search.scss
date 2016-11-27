@@ -3,8 +3,9 @@
   vertical-align: middle;
   height: 24px;
   width: 24px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 8px;
   background-color: transparent;
+  padding: 0;
 
   @media screen and (max-width: $tablet-1) {
     position: absolute;
@@ -120,7 +121,7 @@
   text-align: left;
   box-shadow: none !important;
   box-sizing: border-box;
-  
+
 
   @media screen and (max-width: $mobile) {
     height: calc(100% - 115px);

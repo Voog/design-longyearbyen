@@ -190,12 +190,6 @@
   ],
   "assets": [
     {
-      "content_type": "image/png",
-      "file": "assets/arrow_down.png",
-      "kind": "assets",
-      "filename": "arrow_down.png"
-    },
-    {
       "content_type": "image/svg+xml",
       "file": "assets/ico-flags.svg",
       "kind": "assets",
