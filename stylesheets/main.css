@@ -1728,6 +1728,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+.content-area ul,
+.content-area ol,
+.content-area dl {
+  list-style-position: inside;
+}
 .content-area a {
   text-decoration: none;
   border-bottom: 5px solid #eee077;

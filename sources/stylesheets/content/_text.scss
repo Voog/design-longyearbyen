@@ -205,6 +205,12 @@
     }
   }
 
+  ul,
+  ol,
+  dl {
+    list-style-position: inside;
+  }
+
   a {
     text-decoration: none;
     border-bottom: 5px solid $color-link-hightlight;
