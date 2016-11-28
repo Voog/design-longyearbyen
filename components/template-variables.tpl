@@ -469,4 +469,14 @@
     {% endif %}
   {% endif %}
 
+  {% assign header_bg_image = header_bg.image %}
+
+  {% if header_bg_image == nil %}
+    {% if front_page %}
+      {% assign header_bg_image = images_path | append: "/front-header-bg_block.jpg" %}
+    {% else %}
+      {% assign header_bg_image = images_path | append: "/page-header-bg_block.jpg" %}
+    {% endif %}
+  {% endif %}
+
 {% endcapture %}
