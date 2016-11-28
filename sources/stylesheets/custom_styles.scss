@@ -102,3 +102,26 @@
     padding: 20px;
   }
 }
+
+
+// Social media
+.dark-background .edy-content-social-button,
+.dark-background .edy-content-social-placeholder {
+  color: $color-light;
+  &:hover {
+    color: $color-light;
+  }
+}
+
+// Other links without common link style
+.edys-gallery-area,
+.edy-content-social-buttons-list {
+  a {
+    border-bottom: none;
+    &:hover {
+      background: none;
+      opacity: .7;
+      /*color: $color-white;*/
+    }
+  }
+}
