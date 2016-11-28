@@ -231,6 +231,27 @@
     }
   }
 
+  .edy-content-social-button,
+  a.edys-gallery-grid-item,
+  a.edys-gallery-item,
+  .edys-gallery-wall-item {
+    border-bottom: 0;
+  }
+  .edy-content-social-button,
+  a.edys-gallery-grid-item,
+  a.edys-gallery-item,
+  .edys-gallery-wall-item {
+    &:hover {
+    background: transparent;
+    }
+  }
+  .dark-background .edy-content-social-button {
+    background: transparent;
+  }
+  .dark-background .edy-content-social-button:hover {
+    background: transparent;
+    color: rgba($color-white, 1);
+  }
 
   pre,
   code,
