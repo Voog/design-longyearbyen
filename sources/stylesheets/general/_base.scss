@@ -21,6 +21,10 @@ body {
   .site-container & {
     max-width: 1000px;
     padding: 0px 20px;
+
+    @media screen and (max-width: $mobile) {
+      padding: 0;
+    }
   }
 }
 
@@ -59,6 +63,9 @@ body {
 
   @media screen and (max-width: $tablet) {
     padding: 40px;
+  }
+  @media screen and (max-width: $tablet-1) {
+    padding: 40px 25px;
   }
 }
 

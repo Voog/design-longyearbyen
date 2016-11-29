@@ -21,6 +21,11 @@ body {
   max-width: 1000px;
   padding: 0px 20px;
 }
+@media screen and (max-width: 640px) {
+  .site-container .wrap {
+    padding: 0;
+  }
+}
 
 .content-body {
   background: #eeeeee;
@@ -75,6 +80,11 @@ body {
 @media screen and (max-width: 1024px) {
   .content-inner {
     padding: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-inner {
+    padding: 40px 25px;
   }
 }
 
