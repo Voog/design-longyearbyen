@@ -175,6 +175,12 @@
   &.introtext h1 {
     font-size: 50px;
     line-height: 1.3;
+    @media screen and (max-width: $tablet-1) {
+      font-size: 45px;
+    }
+    @media screen and (max-width: $mobile-1) {
+      font-size: 35px;
+    }
   }
 
   h2 {
