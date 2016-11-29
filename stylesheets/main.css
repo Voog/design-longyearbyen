@@ -77,19 +77,6 @@ body {
     padding: 40px;
   }
 }
-@media screen and (max-width: 1024px) {
-  .content-inner.older-post {
-    padding: 10px 40px 40px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .content-inner {
-    padding: 40px 25px;
-  }
-  .content-inner.older-post {
-    padding: 40px 25px;
-  }
-}
 
 .article-header {
   text-align: center;
@@ -1396,6 +1383,19 @@ body {
 }
 .blog-news-page .articles-listing .older-post {
   padding: 1px 80px 80px;
+}
+@media screen and (max-width: 1024px) {
+  .blog-news-page .articles-listing .older-post.older-post {
+    padding: 10px 40px 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog-news-page .articles-listing .older-post {
+    padding: 40px 25px;
+  }
+  .blog-news-page .articles-listing .older-post.older-post {
+    padding: 40px 25px;
+  }
 }
 .blog-news-page .articles-listing .articles-listing-header {
   padding: 40px 0px 15px;

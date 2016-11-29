@@ -31,6 +31,18 @@
     }
     .older-post {
       padding: 1px 80px 80px;
+      @media screen and (max-width: $tablet) {
+        &.older-post {
+          padding: 10px 40px 40px;
+        }
+      }
+      @media screen and (max-width: $tablet-1) {
+        padding: 40px 25px;
+
+        &.older-post {
+          padding: 40px 25px;
+        }
+      }
     }
     .articles-listing-header {
       padding: 40px 0px 15px;

@@ -60,19 +60,6 @@ body {
   @media screen and (max-width: $tablet) {
     padding: 40px;
   }
-
-  @media screen and (max-width: $tablet) {
-    &.older-post {
-      padding: 10px 40px 40px;
-    }
-  }
-  @media screen and (max-width: $tablet-1) {
-    padding: 40px 25px;
-
-    &.older-post {
-      padding: 40px 25px;
-    }
-  }
 }
 
 .article-header {
