@@ -193,7 +193,7 @@ body {
 
 .menu-sub {
   text-align: center;
-  padding: 80px 80px 0;
+  padding: 80px 80px 0 !important;
   margin: 0;
 }
 .menu-sub li {
@@ -1543,11 +1543,6 @@ body {
 .content-area .dark-background {
   color: #ffffff;
 }
-.site-footer .content-area {
-  font-size: 13px;
-  color: #898989;
-  text-align: center;
-}
 .content-area .form_fields {
   font-size: 14px;
 }
@@ -1734,8 +1729,20 @@ body {
 .content-area h2 {
   font-size: 22px;
 }
+.site-header .content-area h2 {
+  line-height: 1.1;
+  font-family: "Futura PT W01 Heavy", Arial, sans-serif;
+  padding: 0;
+  text-transform: none;
+}
 .content-area h3 {
   font-size: 20px;
+}
+.site-header .content-area h3 {
+  line-height: 1.1;
+  font-family: "Futura PT W01 Heavy", Arial, sans-serif;
+  padding: 0;
+  text-transform: none;
 }
 .content-area p,
 .content-area ul,
@@ -1749,11 +1756,19 @@ body {
 .content-area dl {
   font-size: 13px;
   color: #898989;
+  text-align: center;
 }
 .site-header .content-area p, .site-header
 .content-area ul, .site-header
 .content-area ol, .site-header
 .content-area dl {
+  text-align: center;
+  font-size: 13px;
+  color: #898989;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.content-area.slogan {
   text-align: center;
   font-size: 13px;
   color: #898989;
@@ -1770,6 +1785,9 @@ body {
   text-decoration: none;
   border-bottom: 5px solid #eee077;
   color: black;
+}
+.site-footer .content-area a {
+  border-bottom: 0;
 }
 .content-area a:hover {
   background: #eee077;
