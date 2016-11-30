@@ -97,6 +97,9 @@
 
        .language-flags-enabled & {
          padding: 6px 33px 6px 6px;
+         &:hover {
+           opacity: .8;
+         }
        }
 
        .language-flags-disabled & {

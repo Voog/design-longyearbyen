@@ -28,7 +28,6 @@
     line-height: 1;
 
     a {
-      color: $color-light;
       padding-top: 5px;
       padding-bottom: 5px;
       padding-left: 3px;
@@ -43,10 +42,6 @@
       &.untranslated {
         color: rgba(161, 155, 75,.7);
       }
-    }
-    &.current {
-      color: $color-black;
-      background: $color-yellow;
     }
   }
 
@@ -69,11 +64,15 @@
     a {
       display: block;
       text-decoration: none;
-      color: $color-black;
+      color: $color-light;
 
       &.untranslated {
         color: rgba(161, 155, 75,.7);
       }
+    }
+    &.current a {
+      color: $color-black !important;
+      background: $color-yellow;
     }
   }
   @media screen and (max-width: $tablet-1) {
