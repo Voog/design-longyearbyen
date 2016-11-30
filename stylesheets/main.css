@@ -1764,6 +1764,7 @@ body {
 .content-area ol,
 .content-area dl {
   list-style-position: inside;
+  padding: 0;
 }
 .content-area a {
   text-decoration: none;
