@@ -137,6 +137,8 @@
 
           siteData.set("language_flags_enabled", false);
         }
+
+        handleMenuLanguagePopoverPositioning();
       });
     };
 
