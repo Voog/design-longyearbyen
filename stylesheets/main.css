@@ -231,12 +231,12 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .menu-sub {
-    padding: 40px 40px 0;
+    padding: 40px 40px 0 !important;
   }
 }
 @media screen and (max-width: 768px) {
   .menu-sub {
-    padding: 25px 25px 0;
+    padding: 25px 25px 0 !important;
     text-align: left;
   }
 }
