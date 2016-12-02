@@ -1746,6 +1746,12 @@ body {
   padding: 0;
   text-transform: none;
 }
+.content-area.slogan h1, .content-area.slogan h2, .content-area.slogan h3 {
+  text-align: center;
+  color: #898989;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
 .content-area p,
 .content-area ul,
 .content-area ol,
@@ -1845,10 +1851,20 @@ body {
   box-sizing: border-box;
   max-width: 100%;
 }
+.content-area.slogan pre {
+  text-align: left;
+  font-size: 13px;
+  background-color: #f4f4f4;
+  text-transform: none;
+}
 .content-area blockquote {
   margin: 20px 40px 20px 0;
   padding-left: 20px;
   border-left: 2px solid #333333;
+}
+.content-area.slogan blockquote {
+  text-align: left;
+  border-left: 2px solid #898989;
 }
 .content-area iframe {
   max-width: 100%;

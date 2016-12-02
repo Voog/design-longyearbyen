@@ -199,6 +199,15 @@
     }
   }
 
+  &.slogan {
+    h1, h2, h3 {
+    text-align: center;
+    color: $color-light;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    }
+  }
+
   // Styling rules for the editable content area paragraphs, lists and links.
   p,
   ul,
@@ -318,10 +327,22 @@
     max-width: 100%;
   }
 
+  &.slogan pre {
+    text-align: left;
+    font-size: 13px;
+    background-color: rgba(244, 244, 244, 1);
+    text-transform: none;
+  }
+
   blockquote {
     margin: 20px 40px 20px 0;
     padding-left: 20px;
     border-left: 2px solid $color-body;
+  }
+
+  &.slogan blockquote {
+    text-align: left;
+    border-left: 2px solid $color-light;
   }
 
   // Styling rules for the editable content area images, embedded videos, preformatted texts, code examples etc.
