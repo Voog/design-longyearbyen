@@ -327,11 +327,13 @@
     max-width: 100%;
   }
 
-  &.slogan pre {
-    text-align: left;
-    font-size: 13px;
-    background-color: rgba(244, 244, 244, 1);
-    text-transform: none;
+  pre {
+    .site-header &,
+    .site-footer & {
+      text-align: left;
+      background-color: rgba(244, 244, 244, 1);
+      text-transform: none;
+    }
   }
 
   blockquote {

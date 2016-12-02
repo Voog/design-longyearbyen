@@ -1851,9 +1851,8 @@ body {
   box-sizing: border-box;
   max-width: 100%;
 }
-.content-area.slogan pre {
+.site-header .content-area pre, .site-footer .content-area pre {
   text-align: left;
-  font-size: 13px;
   background-color: #f4f4f4;
   text-transform: none;
 }
