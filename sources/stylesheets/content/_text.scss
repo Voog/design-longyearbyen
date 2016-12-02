@@ -51,6 +51,39 @@
     }
   }
 
+  // Front page dark/light background text colors
+  .light-background  {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ol,
+    p,
+    table,
+    ul {
+      color: $color-black;
+    }
+  }
+
+  .dark-background {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ol,
+    p,
+    table,
+    ul,
+    b,
+    strong {
+      color: $color-white;
+    }
+  }
+
   // Styling rules for the editable content area headings.
   h1,
   h2,
@@ -112,49 +145,17 @@
     @media screen and (max-width: $mobile) {
       font-size: 25px;
     }
-    .site-header & {
-      font-size: 50px;
-      line-height: 1.1;
-      font-family: $font-heavy;
-      padding: 0;
-      text-transform: none;
-
-      @media screen and (max-width: $mobile) {
-        font-size: 35px;
-      }
-    }
   }
 
-  // Front page dark/light background text colors
-  .light-background  {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    ol,
-    p,
-    table,
-    ul {
-      color: $color-black;
-    }
-  }
+  &.header-content h1 {
+    font-size: 50px;
+    line-height: 1.1;
+    font-family: $font-heavy;
+    padding: 0;
+    text-transform: none;
 
-  .dark-background {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    ol,
-    p,
-    table,
-    ul,
-    b,
-    strong {
-      color: $color-white;
+    @media screen and (max-width: $mobile) {
+      font-size: 35px;
     }
   }
 
@@ -179,24 +180,24 @@
 
   h2 {
     font-size: 22px;
+  }
 
-    .site-header & {
-      line-height: 1.1;
-      font-family: $font-heavy;
-      padding: 0;
-      text-transform: none;
-    }
+  &.header-content h2 {
+    line-height: 1.1;
+    font-family: $font-heavy;
+    padding: 0;
+    text-transform: none;
   }
 
   h3 {
     font-size: 20px;
+  }
 
-    .site-header & {
-      line-height: 1.1;
-      font-family: $font-heavy;
-      padding: 0;
-      text-transform: none;
-    }
+  &.header-content h3 {
+    line-height: 1.1;
+    font-family: $font-heavy;
+    padding: 0;
+    text-transform: none !important;
   }
 
   &.slogan {
@@ -220,16 +221,17 @@
       color: $color-light;
       text-align: center;
     }
-    .site-header & {
-      text-align: center;
-      font-size: 13px;
-      color: $color-light;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
   }
 
-  &.slogan {
+  &.header-content,
+  &.header-content p {
+    color: $color-body;
+    text-transform: none;
+    text-align: center;
+  }
+
+  &.slogan,
+  &.slogan p {
     text-align: center;
     font-size: 13px;
     color: $color-light;
@@ -345,6 +347,10 @@
   &.slogan blockquote {
     text-align: left;
     border-left: 2px solid $color-light;
+  }
+
+  &.header-content blockquote {
+    text-align: left;
   }
 
   // Styling rules for the editable content area images, embedded videos, preformatted texts, code examples etc.

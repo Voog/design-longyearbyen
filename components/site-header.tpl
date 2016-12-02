@@ -24,6 +24,6 @@
       </button>
     {% endif %}
   </div>
-  <div class="header-content content-area">{% xcontentblock name="content_header" publish_default_content="true" %}<h1>Longyearbyen</h1>{% endxcontentblock %}</div>
+  <div class="content-area header-content">{% xcontentblock name="content_header" publish_default_content="true" %}<h1>Longyearbyen</h1>{% endxcontentblock %}</div>
   <div class="content-area slogan">{% xcontent name="slogan" %}</div>
 </header>

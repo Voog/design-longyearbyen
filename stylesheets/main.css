@@ -1596,6 +1596,32 @@ body {
 .content-area .edy-texteditor-container-wrapper-right-block:last-child {
   margin-bottom: 0;
 }
+.content-area .light-background h1,
+.content-area .light-background h2,
+.content-area .light-background h3,
+.content-area .light-background h4,
+.content-area .light-background h5,
+.content-area .light-background h6,
+.content-area .light-background ol,
+.content-area .light-background p,
+.content-area .light-background table,
+.content-area .light-background ul {
+  color: #000000;
+}
+.content-area .dark-background h1,
+.content-area .dark-background h2,
+.content-area .dark-background h3,
+.content-area .dark-background h4,
+.content-area .dark-background h5,
+.content-area .dark-background h6,
+.content-area .dark-background ol,
+.content-area .dark-background p,
+.content-area .dark-background table,
+.content-area .dark-background ul,
+.content-area .dark-background b,
+.content-area .dark-background strong {
+  color: #ffffff;
+}
 .content-area h1,
 .content-area h2,
 .content-area h3,
@@ -1671,7 +1697,7 @@ body {
     font-size: 25px;
   }
 }
-.site-header .content-area h1 {
+.content-area.header-content h1 {
   font-size: 50px;
   line-height: 1.1;
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
@@ -1679,35 +1705,9 @@ body {
   text-transform: none;
 }
 @media screen and (max-width: 640px) {
-  .site-header .content-area h1 {
+  .content-area.header-content h1 {
     font-size: 35px;
   }
-}
-.content-area .light-background h1,
-.content-area .light-background h2,
-.content-area .light-background h3,
-.content-area .light-background h4,
-.content-area .light-background h5,
-.content-area .light-background h6,
-.content-area .light-background ol,
-.content-area .light-background p,
-.content-area .light-background table,
-.content-area .light-background ul {
-  color: #000000;
-}
-.content-area .dark-background h1,
-.content-area .dark-background h2,
-.content-area .dark-background h3,
-.content-area .dark-background h4,
-.content-area .dark-background h5,
-.content-area .dark-background h6,
-.content-area .dark-background ol,
-.content-area .dark-background p,
-.content-area .dark-background table,
-.content-area .dark-background ul,
-.content-area .dark-background b,
-.content-area .dark-background strong {
-  color: #ffffff;
 }
 .content-area.introtext, .content-area.introtext h1, .content-area.introtext h2, .content-area.introtext h3 {
   text-align: left;
@@ -1731,7 +1731,7 @@ body {
 .content-area h2 {
   font-size: 22px;
 }
-.site-header .content-area h2 {
+.content-area.header-content h2 {
   line-height: 1.1;
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
   padding: 0;
@@ -1740,11 +1740,11 @@ body {
 .content-area h3 {
   font-size: 20px;
 }
-.site-header .content-area h3 {
+.content-area.header-content h3 {
   line-height: 1.1;
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
   padding: 0;
-  text-transform: none;
+  text-transform: none !important;
 }
 .content-area.slogan h1, .content-area.slogan h2, .content-area.slogan h3 {
   text-align: center;
@@ -1766,17 +1766,12 @@ body {
   color: #898989;
   text-align: center;
 }
-.site-header .content-area p, .site-header
-.content-area ul, .site-header
-.content-area ol, .site-header
-.content-area dl {
+.content-area.header-content, .content-area.header-content p {
+  color: #333333;
+  text-transform: none;
   text-align: center;
-  font-size: 13px;
-  color: #898989;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
-.content-area.slogan {
+.content-area.slogan, .content-area.slogan p {
   text-align: center;
   font-size: 13px;
   color: #898989;
@@ -1864,6 +1859,9 @@ body {
 .content-area.slogan blockquote {
   text-align: left;
   border-left: 2px solid #898989;
+}
+.content-area.header-content blockquote {
+  text-align: left;
 }
 .content-area iframe {
   max-width: 100%;
