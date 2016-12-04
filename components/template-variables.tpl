@@ -469,4 +469,12 @@
     {% endif %}
   {% endif %}
 
+  {% comment %}ASSIGN FEATURE 2 SECTION WIDTH{% endcomment %}
+  {% assign feature_2_is_wide = page.data.feature_2_is_wide %}
+  {% if feature_2_is_wide == nil or feature_2_is_wide == true %}
+    {% assign feature_2_section_width = "" %}
+  {% else %}
+    {% assign feature_2_section_width = "section-with-padding" %}
+  {% endif %}
+
 {% endcapture %}
