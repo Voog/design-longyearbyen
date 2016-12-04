@@ -190,66 +190,6 @@
   ],
   "assets": [
     {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-flags.svg",
-      "kind": "assets",
-      "filename": "ico-flags.svg"
-    },
-    {
-      "content_type": "image/png",
-      "file": "assets/ico-next.png",
-      "kind": "assets",
-      "filename": "ico-next.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "assets/ico-prev.png",
-      "kind": "assets",
-      "filename": "ico-prev.png"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-search.svg",
-      "kind": "assets",
-      "filename": "ico-search.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-toggle.svg",
-      "kind": "assets",
-      "filename": "ico-toggle.svg"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/check.png",
-      "kind": "images",
-      "filename": "check.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/check_small.png",
-      "kind": "images",
-      "filename": "check_small.png"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/main.js",
-      "kind": "javascripts",
-      "filename": "main.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/main.min.js",
-      "kind": "javascripts",
-      "filename": "main.min.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/modernizr.min.js",
-      "kind": "javascripts",
-      "filename": "modernizr.min.js"
-    },
-    {
       "content_type": "text/css",
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
@@ -260,6 +200,60 @@
       "file": "stylesheets/main.min.css",
       "kind": "stylesheets",
       "filename": "main.min.css"
+    },
+    {
+      "content_type": "application/javascript",
+      "kind": "javascripts",
+      "file": "javascripts/modernizr.min.js",
+      "filename": "modernizr.min.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "kind": "javascripts",
+      "file": "javascripts/main.js",
+      "filename": "main.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "kind": "javascripts",
+      "file": "javascripts/main.min.js",
+      "filename": "main.min.js"
+    },
+    {
+      "content_type": "image/png",
+      "kind": "images",
+      "file": "images/check.png",
+      "filename": "check.png"
+    },
+    {
+      "content_type": "image/png",
+      "kind": "images",
+      "file": "images/check_small.png",
+      "filename": "check_small.png"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-prev.svg",
+      "filename": "ico-prev.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-flags.svg",
+      "filename": "ico-flags.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-next.svg",
+      "filename": "ico-next.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-toggle.svg",
+      "filename": "ico-toggle.svg"
     }
   ]
 }
