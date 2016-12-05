@@ -23,6 +23,7 @@
 .feature-section .voog-bg-picker-btn {
   top: 0;
   left: 0;
+  z-index: 999;
 }
 .feature-section:not(.section-with-padding) .edy-fef-bottom .edy-fef-add {
   margin-left: 0;
@@ -80,7 +81,7 @@
   margin: 10px 10px 0 0;
   width: 45px;
   height: 45px;
-  z-index: 9;
+  z-index: 999;
   background: #06b url("../assets/ico-toggle.svg") center center no-repeat;
   border-radius: 100%;
   opacity: .3;
