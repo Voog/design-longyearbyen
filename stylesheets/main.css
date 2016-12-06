@@ -1095,7 +1095,7 @@ body {
   font-weight: normal;
 }
 .site-footer .inner {
-  padding: 98px 125px 80px;
+  padding: 90px 125px 80px;
 }
 @media screen and (max-width: 768px) {
   .site-footer .inner {
@@ -1729,6 +1729,11 @@ body {
     font-size: 35px;
   }
 }
+.site-footer .content-area h1 {
+  margin: 0;
+  color: #898989;
+  text-transform: none;
+}
 .content-area h2 {
   font-size: 22px;
 }
@@ -1736,6 +1741,11 @@ body {
   line-height: 1.1;
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
   padding: 0;
+  text-transform: none;
+}
+.site-footer .content-area h2 {
+  margin: 0;
+  color: #898989;
   text-transform: none;
 }
 .content-area h3 {
@@ -1753,6 +1763,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+.site-footer .content-area h3 {
+  margin: 0;
+  color: #898989;
+  text-transform: none;
+}
 .content-area p,
 .content-area ul,
 .content-area ol,
@@ -1763,6 +1778,13 @@ body {
 .content-area ul, .site-footer
 .content-area ol, .site-footer
 .content-area dl {
+  margin: 0;
+  font-size: 13px;
+  color: #898989;
+  text-align: center;
+}
+.site-footer .content-area {
+  margin: 0;
   font-size: 13px;
   color: #898989;
   text-align: center;
@@ -1863,6 +1885,11 @@ body {
 }
 .content-area.header-content blockquote {
   text-align: left;
+}
+.site-footer .content-area blockquote {
+  color: #898989;
+  text-align: left;
+  border-left: 2px solid #898989;
 }
 .content-area iframe {
   max-width: 100%;

@@ -178,6 +178,14 @@
     }
   }
 
+  .site-footer & {
+    h1 {
+      margin: 0;
+      color: $color-light;
+      text-transform: none;
+    }
+  }
+
   h2 {
     font-size: 22px;
   }
@@ -187,6 +195,14 @@
     font-family: $font-heavy;
     padding: 0;
     text-transform: none;
+  }
+
+  .site-footer & {
+    h2 {
+      margin: 0;
+      color: $color-light;
+      text-transform: none;
+    }
   }
 
   h3 {
@@ -209,6 +225,14 @@
     }
   }
 
+  .site-footer & {
+    h3 {
+      margin: 0;
+      color: $color-light;
+      text-transform: none;
+    }
+  }
+
   // Styling rules for the editable content area paragraphs, lists and links.
   p,
   ul,
@@ -217,10 +241,18 @@
     font-size: 20px;
 
     .site-footer & {
+      margin: 0;
       font-size: 13px;
       color: $color-light;
       text-align: center;
     }
+  }
+
+  .site-footer & {
+    margin: 0;
+    font-size: 13px;
+    color: $color-light;
+    text-align: center;
   }
 
   &.header-content,
@@ -351,6 +383,14 @@
 
   &.header-content blockquote {
     text-align: left;
+  }
+
+  .site-footer & {
+    blockquote {
+      color: $color-light;
+      text-align: left;
+      border-left: 2px solid $color-light;
+    }
   }
 
   // Styling rules for the editable content area images, embedded videos, preformatted texts, code examples etc.

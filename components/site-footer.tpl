@@ -1,10 +1,6 @@
 <footer class="site-footer">
-  <div class="footer-body content-area">
-    <div class="wrap">
-      <div class="inner content-area">
-        {% xcontent name="footer" %}
-      </div>
-    </div>
+  <div class="inner content-area">
+    {% xcontent name="footer" %}
   </div>
   {% if site.branding.enabled %}
     <div class="voog-reference">
