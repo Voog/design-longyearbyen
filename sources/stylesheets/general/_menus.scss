@@ -50,9 +50,13 @@
     li {
       &.current {
         background: none;
+        a {
+          color: $color-black;
+        }
       }
     }
   }
+
 }
 
 // Main menu
@@ -126,7 +130,7 @@
     padding: 40px 40px 0 !important;
   }
   @media screen and (max-width: $tablet-1) {
-    padding: 25px 25px 0 !important; 
+    padding: 25px 25px 0 !important;
     text-align: left;
   }
   .menu-cms {

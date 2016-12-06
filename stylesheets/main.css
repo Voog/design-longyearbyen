@@ -165,6 +165,9 @@ body {
 .menu.menu-vertical li.current {
   background: none;
 }
+.menu.menu-vertical li.current a {
+  color: #000000;
+}
 
 .menu-main {
   display: inline-block;
@@ -840,6 +843,7 @@ body {
   font-size: 14px;
   text-decoration: none;
   display: block;
+  color: #898989;
 }
 .menu-language li a:hover {
   color: #000000;
