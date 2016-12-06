@@ -74,9 +74,6 @@
  }
 
  .menu-language {
-   text-align: right;
-   padding: 5px 0;
-   min-width: 122px;
 
    li {
      a {
@@ -107,26 +104,19 @@
          padding: 6px 13px 5px;
        }
      }
-   }
-
-   &.menu-popover {
-     .language-flags-disabled & {
-
+     &.edit-btn {
+       padding: 11px 13px 13px 6px;
      }
+
    }
 
    .menu-language-popover-open & {
      display: block;
      z-index: 10;
+     text-align: right;
+     min-width: 122px;
    }
 
-
-
-   .menu-cms {
-     li {
-       padding: 1px 13px 11px 6px;
-     }
-   }
  }
 
  .menu-options {

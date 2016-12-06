@@ -10,7 +10,7 @@
   {% if editmode %}
     <ul class="menu menu-vertical menu-cms">
       {% if editmode %}
-        <li>{% languageadd %}</li>
+        <li class="edit-btn">{% languageadd %}</li>
       {% endif %}
     </ul>
 

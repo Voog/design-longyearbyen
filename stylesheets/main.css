@@ -834,11 +834,6 @@ body {
   opacity: .8;
 }
 
-.menu-language {
-  text-align: right;
-  padding: 5px 0;
-  min-width: 122px;
-}
 .menu-language li a {
   font-size: 14px;
   text-decoration: none;
@@ -862,12 +857,14 @@ body {
 .language-flags-disabled .menu-language li a {
   padding: 6px 13px 5px;
 }
+.menu-language li.edit-btn {
+  padding: 11px 13px 13px 6px;
+}
 .menu-language-popover-open .menu-language {
   display: block;
   z-index: 10;
-}
-.menu-language .menu-cms li {
-  padding: 1px 13px 11px 6px;
+  text-align: right;
+  min-width: 122px;
 }
 
 .menu-options button {
