@@ -1378,9 +1378,6 @@ body {
 .blog-news-page .blog-article:first-child {
   padding-top: 0;
 }
-.blog-news-page .article-header {
-  margin: 0 0 20px;
-}
 .blog-news-page .article-title {
   font-size: 18px;
   line-height: 1.4;
