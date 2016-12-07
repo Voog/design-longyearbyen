@@ -78,6 +78,7 @@
    li {
      a {
        font-size: 14px;
+       line-height: 14px;
        text-decoration: none;
        display: block;
        color: $color-light;
@@ -89,12 +90,12 @@
 
        &:before,
        &:after {
-         top: 7px;
+         top: 5px;
          right: 6px;
        }
 
        .language-flags-enabled & {
-         padding: 6px 33px 6px 6px;
+         padding: 7px 33px 6px 6px;
          &:hover {
            opacity: .8;
          }

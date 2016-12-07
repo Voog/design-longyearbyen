@@ -168,6 +168,10 @@ body {
 .menu.menu-vertical li.current a {
   color: #000000;
 }
+.menu.menu-vertical.padding {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
 .menu-main {
   display: inline-block;
@@ -836,6 +840,7 @@ body {
 
 .menu-language li a {
   font-size: 14px;
+  line-height: 14px;
   text-decoration: none;
   display: block;
   color: #898989;
@@ -845,11 +850,11 @@ body {
   background: none !important;
 }
 .menu-language li a:before, .menu-language li a:after {
-  top: 7px;
+  top: 5px;
   right: 6px;
 }
 .language-flags-enabled .menu-language li a {
-  padding: 6px 33px 6px 6px;
+  padding: 7px 33px 6px 6px;
 }
 .language-flags-enabled .menu-language li a:hover {
   opacity: .8;
