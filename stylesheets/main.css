@@ -860,7 +860,7 @@ body {
   opacity: .8;
 }
 .language-flags-disabled .menu-language li a {
-  padding: 6px 13px 5px;
+  padding: 6px 10px;
 }
 .menu-language li.edit-btn {
   padding: 11px 13px 13px 6px;
