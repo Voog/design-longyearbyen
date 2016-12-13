@@ -1541,7 +1541,7 @@ body {
   display: table;
 }
 .content-area .light-background {
-  color: #000000;
+  color: #333333;
 }
 .content-area .dark-background {
   color: #ffffff;
@@ -1607,7 +1607,7 @@ body {
 .content-area .light-background p,
 .content-area .light-background table,
 .content-area .light-background ul {
-  color: #000000;
+  color: #333333;
 }
 .content-area .dark-background h1,
 .content-area .dark-background h2,
@@ -1718,6 +1718,7 @@ body {
 .content-area.introtext h1 {
   font-size: 50px;
   line-height: 1.3;
+  color: #333333;
 }
 @media screen and (max-width: 768px) {
   .content-area.introtext h1 {
@@ -1743,6 +1744,11 @@ body {
   padding: 0;
   text-transform: none;
 }
+.content-area.introtext h2 {
+  font-size: 35px;
+  line-height: 1.3;
+  color: #333333;
+}
 .site-footer .content-area h2 {
   margin: 0;
   color: #898989;
@@ -1756,6 +1762,11 @@ body {
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
   padding: 0;
   text-transform: none !important;
+}
+.content-area.introtext h3 {
+  font-size: 25px;
+  line-height: 1.3;
+  color: #333333;
 }
 .content-area.slogan h1, .content-area.slogan h2, .content-area.slogan h3 {
   text-align: center;
