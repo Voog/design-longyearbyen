@@ -222,9 +222,11 @@
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 
-.mobilemenu-open & {
-  display: block;
+  @media screen and (min-width: $tablet-1) {
+    display: none;
+  }
 
+.mobilemenu-open & {
   @media screen and (max-width: $tablet-1) {
     display: block;
   }

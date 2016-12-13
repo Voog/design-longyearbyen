@@ -330,8 +330,10 @@ body {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
-.mobilemenu-open #mobile-menu {
-  display: block;
+@media screen and (min-width: 768px) {
+  #mobile-menu {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .mobilemenu-open #mobile-menu {
