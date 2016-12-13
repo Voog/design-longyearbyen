@@ -2,7 +2,7 @@
 <nav class="menu-language">
   <ul class="menu menu-horizontal menu-public">
     {% for language in site.languages %}
-      <li{% if language.selected? %} class="selected current" %}{% endif %}>
+      <li{% if language.selected? %} class="selected" %}{% endif %}>
         <a href="{{ language.url }}">{{ language.title }}</a>
       </li>
     {% endfor %}
@@ -16,4 +16,3 @@
     </ul>
   {% endif %}
 </nav>
-

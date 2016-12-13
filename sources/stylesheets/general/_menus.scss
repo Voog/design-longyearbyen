@@ -48,11 +48,8 @@
   // Vertical language menu
   &.menu-vertical {
     li {
-      &.current {
-        background: none;
-        a {
-          color: $color-black;
-        }
+      &.selected a {
+        color: $color-black !important;
       }
     }
   }
@@ -60,7 +57,6 @@
     padding-top: 5px;
     padding-bottom: 5px;
   }
-
 }
 
 // Main menu
@@ -78,7 +74,7 @@
         color: rgba(161, 155, 75,.7);
       }
     }
-    &.current a {
+    &.selected a {
       color: $color-black !important;
       background: $color-yellow;
     }
@@ -141,6 +137,8 @@
     margin-left: 15px;
   }
 }
+
+
 
 .menu-horizontal {
   &.menu-cms {

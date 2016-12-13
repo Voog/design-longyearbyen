@@ -162,11 +162,8 @@ body {
 .menu li a.untranslated {
   color: rgba(161, 155, 75, 0.7);
 }
-.menu.menu-vertical li.current {
-  background: none;
-}
-.menu.menu-vertical li.current a {
-  color: #000000;
+.menu.menu-vertical li.selected a {
+  color: #000000 !important;
 }
 .menu.menu-vertical.padding {
   padding-top: 5px;
@@ -187,7 +184,7 @@ body {
 .menu-main li a.untranslated {
   color: rgba(161, 155, 75, 0.7);
 }
-.menu-main li.current a {
+.menu-main li.selected a {
   color: #000000 !important;
   background: #fff07f;
 }
