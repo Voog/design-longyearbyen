@@ -619,7 +619,7 @@ body {
   right: -280px;
   bottom: 0;
   width: 280px;
-  z-index: 99;
+  z-index: 9999;
   background-color: white;
   -webkit-transition: -webkit-transform 0.2s;
   -moz-transition: -moz-transform 0.2s;
