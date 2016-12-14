@@ -9427,6 +9427,8 @@ return jQuery;
     // Add site wide functions here.
     // TODO: Replace with click.
     bindButtonClicks();
+    focusFormMessages();
+    removeFormInputErrorHighlight();
   };
 
   // Enables the usage of the initiations outside this file.
@@ -9686,6 +9688,37 @@ return jQuery;
       $(this).find('.ico-arrow').toggleClass('active');
       $('.tags-bottom').toggleClass('visible');
   });
+
+  // ===========================================================================
+  // Scrolls to the form if submit failed or succeeded (to show the error
+  // messages or success notice to the user).
+  // ===========================================================================
+  var focusFormMessages = function() {
+    $(document).ready(function() {
+      if ($('.comment-form').hasClass('form_with_errors')) {
+        $('html, body')
+          .scrollTop($('.comment-form')
+          .offset().top)
+        ;
+      } else if ($('form').find('.form_error, .form_notice').length > 0) {
+        $('html, body')
+          .scrollTop($('.form_error, .form_notice').closest('form')
+          .offset().top)
+        ;
+      }
+    });
+  };
+
+  // ===========================================================================
+  // Removes error highlighting from form input if user modifies the faulty
+  // field.
+  // ===========================================================================
+  var removeFormInputErrorHighlight = function() {
+    $('[class^=form_field_]').on('input change', function() {
+      $(this).closest('.form_field_with_errors').removeClass('form_field_with_errors');
+    });
+  };
+
 
   init();
 })(jQuery);
