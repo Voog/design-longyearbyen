@@ -1354,6 +1354,9 @@ body {
   align-items: center;
   transition: padding 500ms;
 }
+.editmode .feature-section.section-with-padding {
+  padding: 79px;
+}
 @media screen and (max-width: 960px) {
   .feature-section.section-with-padding {
     padding: 20px;

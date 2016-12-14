@@ -99,6 +99,10 @@
   align-items: center;
   transition: padding 500ms;
 
+  .editmode & {
+    padding: 79px;
+  }
+
   @media screen and (max-width: $tablet-0) {
     padding: 20px;
   }
