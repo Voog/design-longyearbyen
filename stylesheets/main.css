@@ -2018,125 +2018,170 @@ body {
   border-color: rgba(0, 0, 0, 0.32);
 }
 
-.content-area .form_fields {
-  margin-top: 20px;
+.content-area .form,
+.content-area form {
+  clear: both;
 }
+.content-area .edy-fe-field,
 .content-area .form_field {
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
-.content-area .form_field:first-child {
-  margin-top: 0;
-}
-.content-area .form_field label,
-.content-area .form_field .form_field_label {
+.content-area .edy-fe-label,
+.content-area .form_field_label {
   display: block;
-  font-size: 16px;
+  padding-bottom: 5px;
 }
-.content-area .form_field_required .form_field_label:after {
-  content: '* \a';
-}
-.content-area .edy-fe-label {
-  font-size: 14px;
+.content-area .form_field label {
+  display: block;
 }
 .content-area .form_field_textfield,
 .content-area .form_field_textarea,
 .content-area .form_field_select {
-  max-width: 100%;
+  width: 30%;
+  padding: 4px 7px 2px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+  background-color: white;
+  border-color: rgba(0, 0, 0, 0.05);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0;
+  outline: none;
+  opacity: .87;
   box-sizing: border-box;
 }
-.content-area .form_field_textfield,
-.content-area .form_field_textarea {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  padding: 7px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.53);
-  border-radius: 3px;
+.content-area .form_field_select {
   font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  vertical-align: bottom;
+  -webkit-appearance: none;
+  border-radius: 0;
+  position: relative;
+  padding-right: 27px;
+  background-image: url("../assets/ico-arrow-white.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  padding: 6px 7px 6px;
 }
-.content-area .form_field_textfield.form_field_size_small,
-.content-area .form_field_textarea.form_field_size_small {
+.content-area .form_field_textfield,
+.content-area .form_field_textarea,
+.content-area .form_field_select,
+.content-area .form_field .jq-select {
+  max-width: 100%;
+}
+.comment-form .content-area .form_field_textarea {
+  height: 35px;
+  min-height: 35px;
+  resize: none;
+}
+.content-area .form_field_size_small,
+.content-area .form_field_select {
   width: 280px;
 }
-.content-area .form_field_textfield.form_field_size_medium,
-.content-area .form_field_textarea.form_field_size_medium {
+.content-area .form_field_size_medium {
   width: 420px;
 }
-.content-area .form_field_textfield.form_field_size_large,
-.content-area .form_field_textarea.form_field_size_large {
-  width: 580px;
-}
-.content-area .form_field_select.form_field_size_small {
-  min-width: auto;
-}
-.content-area .form_field_select.form_field_size_medium {
-  min-width: 124px;
-}
-.content-area .form_field_select.form_field_size_large {
-  min-width: 184px;
-}
-.content-area .form_submit {
-  margin-top: 10px;
+.content-area .form_field_size_large {
+  width: 100%;
 }
 .content-area .form_error,
-.content-area .form_field_error {
-  color: #cc0000;
+.content-area .form_notice {
+  padding-bottom: 20px;
+  font-weight: 400;
 }
-.content-area .form_field_error {
-  font-size: 14px;
+.content-area .form_error {
+  color: #cc0000;
 }
 .content-area .form_notice {
   color: #60a740;
 }
+.content-area .form_field_error {
+  display: none;
+}
+.content-area .form_field_with_errors input,
+.content-area .form_field_with_errors textarea {
+  background-color: rgba(204, 0, 0, 0.2);
+}
+.content-area .form_submit input {
+  padding: 4px 20px 3px;
+  font-family: inherit;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 15px;
+  outline: 0;
+  -webkit-appearance: none;
+}
+.content-area .form_submit input:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+.content-area .form_field_required .form_field_label::after {
+  content: '*';
+}
 .content-area label {
   cursor: pointer;
-}
-.content-area label:before {
-  display: none;
-  content: url("../images/check.png?1");
 }
 .content-area label .form_field_checkbox,
 .content-area label .form_field_radio {
   display: none;
-  display: inline-block\9;
 }
-.content-area label .form_field_checkbox + .form_control_indicator:before {
+.content-area label .form_field_checkbox + .form_control_indicator::before {
   background: white;
+  border-color: #333333;
+  border-style: solid;
+  border-width: 1px;
 }
-.content-area label .form_field_checkbox:checked + .form_control_indicator:before {
+.form_field_with_errors .content-area label .form_field_checkbox + .form_control_indicator::before {
+  border-color: rgba(204, 0, 0, 0.5);
+}
+.content-area label .form_field_checkbox:checked + .form_control_indicator::before {
   width: 100%;
   height: 100%;
-  background: url("../images/check_small.png?1") no-repeat left bottom;
+  background-color: #333333;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  border-style: none;
+          /*.backgroundsize & {
+            background-image: url('../images/ico-check.png');
+            background-size: 17px 19px;
+          }
+
+          .no-backgroundsize & {
+            background-image: url('../images/ico-check-small.png');
+          }*/
 }
-.content-area .backgroundsize label .form_field_checkbox:checked + .form_control_indicator:before {
-  width: 100%;
-  height: 100%;
-  background: url("../images/check.png?1") no-repeat left bottom;
-  background-size: 17px 18px;
-}
-.content-area label .form_field_radio + .form_control_indicator:before {
+.content-area label .form_field_radio + .form_control_indicator::before {
   width: 9px;
   height: 9px;
-  border: 3px solid #ffffff;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+  outline-color: #333333;
+  outline-style: solid;
+  outline-width: 1px;
 }
-.content-area label .form_field_radio:checked + .form_control_indicator:before {
-  background-color: rgba(0, 0, 0, 0.87);
+.content-area label .form_field_radio:checked + .form_control_indicator::before {
+  background-color: #333333;
+  opacity: .84;
 }
 .content-area label .form_control_indicator {
   position: relative;
+  top: 2px;
   display: inline-block;
-  display: none\9;
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
   margin-right: 7px;
-  vertical-align: 0;
 }
-.content-area label .form_control_indicator:before {
+.content-area label .form_control_indicator::before {
   position: absolute;
   bottom: 0;
   left: 0;

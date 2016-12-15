@@ -190,6 +190,18 @@
   ],
   "assets": [
     {
+      "content_type": "image/png",
+      "file": "assets/arrow-down.png",
+      "kind": "assets",
+      "filename": "arrow-down.png"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-arrow-white.svg",
+      "kind": "assets",
+      "filename": "ico-arrow-white.svg"
+    },
+    {
       "content_type": "image/svg+xml",
       "file": "assets/ico-flags.svg",
       "kind": "assets",
@@ -212,6 +224,18 @@
       "file": "assets/ico-toggle.svg",
       "kind": "assets",
       "filename": "ico-toggle.svg"
+    },
+    {
+      "content_type": "image/png",
+      "file": "assets/test.png",
+      "kind": "assets",
+      "filename": "test.png"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/test.svg",
+      "kind": "assets",
+      "filename": "test.svg"
     },
     {
       "content_type": "image/png",
