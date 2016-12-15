@@ -522,9 +522,10 @@
     border: 1px solid #333;
   }
   .form_submit input:hover {
-    background: #333;
     border: 1px solid #333;
-    color: #fff;
+    color: #333;
+    opacity: .6;
+    background-color: transparent;
   }
   .dark-background .form_submit input {
     border: 1px solid #fff;

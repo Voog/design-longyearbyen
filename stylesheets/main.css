@@ -1996,9 +1996,10 @@ body {
   border: 1px solid #333;
 }
 .content-area .form_submit input:hover {
-  background: #333;
   border: 1px solid #333;
-  color: #fff;
+  color: #333;
+  opacity: .6;
+  background-color: transparent;
 }
 .content-area .dark-background .form_submit input {
   border: 1px solid #fff;
@@ -2106,23 +2107,6 @@ body {
 .content-area .form_field_with_errors input,
 .content-area .form_field_with_errors textarea {
   background-color: rgba(204, 0, 0, 0.2);
-}
-.content-area .form_submit input {
-  padding: 4px 20px 3px;
-  font-family: inherit;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.1);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 15px;
-  outline: 0;
-  -webkit-appearance: none;
-}
-.content-area .form_submit input:hover {
-  border-color: rgba(0, 0, 0, 0.3);
 }
 .content-area .form_field_required .form_field_label::after {
   content: '*';
