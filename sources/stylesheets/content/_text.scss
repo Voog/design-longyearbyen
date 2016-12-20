@@ -358,6 +358,13 @@
     -webkit-overflow-scrolling: touch;
     padding: 10px;
 
+    .site-header &,
+    .site-footer & {
+      text-align: left;
+      background-color: rgba(244, 244, 244, 1);
+      text-transform: none;
+    }
+
     code {
       display: inline;
       padding: 0;
@@ -373,15 +380,6 @@
     overflow: auto;
     box-sizing: border-box;
     max-width: 100%;
-  }
-
-  pre {
-    .site-header &,
-    .site-footer & {
-      text-align: left;
-      background-color: rgba(244, 244, 244, 1);
-      text-transform: none;
-    }
   }
 
   blockquote {

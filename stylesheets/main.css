@@ -1871,6 +1871,11 @@ body {
   -webkit-overflow-scrolling: touch;
   padding: 10px;
 }
+.site-header .content-area pre, .site-footer .content-area pre {
+  text-align: left;
+  background-color: #f4f4f4;
+  text-transform: none;
+}
 .content-area pre code {
   display: inline;
   padding: 0;
@@ -1884,11 +1889,6 @@ body {
   overflow: auto;
   box-sizing: border-box;
   max-width: 100%;
-}
-.site-header .content-area pre, .site-footer .content-area pre {
-  text-align: left;
-  background-color: #f4f4f4;
-  text-transform: none;
 }
 .content-area blockquote {
   margin: 20px 40px 20px 0;
