@@ -3,6 +3,8 @@
 // NB! Contact forms, image galleries and tables styling rules are located in the separate partials: "_forms.scss", "_gallery.scss" and "_tables.scss".
 .content-area {
   @include clearfix;
+  @include hyphenate;
+  line-height: 1.7;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.6;
@@ -343,7 +345,7 @@
   iframe,
   table,
   form {
-    // @extend %hyphens-false;
+    @include hyphenate(false);
   }
 
   // Code blocks and preformatted content.

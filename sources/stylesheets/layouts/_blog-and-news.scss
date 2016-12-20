@@ -8,6 +8,7 @@
   }
 
   .article-title {
+    @include hyphenate;
     font-size: 18px;
     line-height: 1.4;
     margin: 0;

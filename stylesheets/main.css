@@ -1381,6 +1381,9 @@ body {
   padding-top: 0;
 }
 .blog-news-page .article-title {
+  hyphens: auto;
+  word-break: break-word;
+  word-wrap: break-word;
   font-size: 18px;
   line-height: 1.4;
   margin: 0;
@@ -1536,6 +1539,10 @@ body {
 }
 
 .content-area {
+  hyphens: auto;
+  word-break: break-word;
+  word-wrap: break-word;
+  line-height: 1.7;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.6;
@@ -1860,6 +1867,15 @@ body {
 .content-area .dark-background .edy-content-social-button:hover {
   background: transparent;
   color: white;
+}
+.content-area pre,
+.content-area code,
+.content-area iframe,
+.content-area table,
+.content-area form {
+  hyphens: none;
+  word-break: normal;
+  word-wrap: normal;
 }
 .content-area pre,
 .content-area code {
