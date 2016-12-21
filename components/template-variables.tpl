@@ -480,6 +480,6 @@
   {% comment %}Product related layouts variables.{% endcomment %}
   {% assign product_list_layout = "Product list" %}
   {% assign product_layout = "Product" %}
-  {% assign front_page_layout = "Front page" %}
 
+  {% assign hide_categories_from_main_menu = site.data.settings_root_item.hide_categories_from_main_menu %}
 {% endcapture %}

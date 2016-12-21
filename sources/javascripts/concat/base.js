@@ -687,6 +687,57 @@
     });
   };
 
+  // ===========================================================================
+  // Toggles product categories visibility in main menu.
+  // ===========================================================================
+  var bindRootItemSettings = function(valuesObj) {
+    if (!('hide_categories_from_main_menu' in valuesObj)) {
+      valuesObj.hide_categories_from_main_menu = false;
+    }
+
+    $('.js-root-item-settings-toggle').each(function(index, languageMenuSettingsButton) {
+      var rootItemSettingsEditor = new Edicy.SettingsEditor(languageMenuSettingsButton, {
+        menuItems: [
+          {
+            "title": "Hide categories from main menu",
+            "type": "checkbox",
+            "key": "hide_categories_from_main_menu",
+            "states": {
+              "on": true,
+              "off": false
+            }
+          }
+        ],
+
+        buttonTitleI18n: "settings",
+
+        values: valuesObj,
+
+        containerClass: ['js-root-item-settings-popover', 'js-prevent-sideclick'],
+
+        preview: function(data) {
+          if (data.hide_categories_from_main_menu === true) {
+            $.each($('.js-menu-item-category'), function() {
+              $(this).addClass('is-hidden');
+            });
+          } else {
+            $.each($('.js-menu-item-category'), function() {
+              $(this).removeClass('is-hidden');
+            });
+          }
+
+          // TODO: Find out why it doesn't work in some edge cases.
+          setHeaderMenuInitialWidth();
+          setHeaderMenuMode();
+        },
+
+        commit: function(data) {
+          siteData.set('settings_root_item', data);
+        }
+      });
+    });
+  };
+
   // Initiations
   var initWindowResize = function() {
     $(window).resize(function() {
@@ -742,6 +793,7 @@
     bindItemBgPickers: bindItemBgPickers,
     bindItemImgDropAreas: bindItemImgDropAreas,
     bindItemImageCropToggle: bindItemImageCropToggle,
+    bindRootItemSettings: bindRootItemSettings
   });
 
   init();

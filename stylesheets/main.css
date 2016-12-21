@@ -12,6 +12,10 @@ body {
   color: #333333;
 }
 
+.float-right {
+  float: right;
+}
+
 .wrap {
   margin-right: auto;
   margin-left: auto;
@@ -146,6 +150,9 @@ body {
   font-size: 13px;
   text-transform: uppercase;
   line-height: 1;
+}
+.menu li.is-hidden {
+  display: none;
 }
 .menu li a {
   padding-top: 5px;
