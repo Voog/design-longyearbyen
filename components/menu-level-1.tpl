@@ -13,14 +13,17 @@
     {% endunless %}
 
     {% for level_1 in site.visible_menuitems %}
-      {% if level_1.layout_title == product_list_layout %}
+      {% if site.root_item.layout_title == product_list_layout %}
         {% if editmode %}
           {% if hide_categories_from_main_menu %}
-            {% menulink level_1 wrapper-tag="li" wrapper-class="is-hidden js-menu-item-category" %}
+            {% if level_1.layout_title == product_list_layout or level_1.layout_title == product_layout %}
+              {% menulink level_1 wrapper-tag="li" wrapper-class="is-hidden js-menu-item-category" %}
+            {% else %}
+              {% menulink level_1 wrapper-tag="li" %}
+            {% endif %}
           {% else %}
             {% menulink level_1 wrapper-tag="li" wrapper-class="js-menu-item-category" %}
           {% endif %}
-          {% comment %}{% include "menu-level-1-link" render_hidden_categories: true %}{% endcomment %}
         {% else %}
           {% if hide_categories_from_main_menu %}
             {% unless level_1.layout_title == product_list_layout or level_1.layout_title == product_layout %}

@@ -142,8 +142,6 @@
   }
 }
 
-
-
 .menu-horizontal {
   &.menu-cms {
     @media screen and (min-width: $mobile + 1) {
@@ -167,6 +165,54 @@
     @media screen and (max-width: $tablet-1) {
       display: block;
     }
+  }
+}
+
+// Product list menu
+.menu-item-list {
+  padding-top: 40px;
+  padding-right: 80px;
+  padding-left: 80px;
+
+  .menu-item {
+    display: inline-block;
+
+    &:not(.current):hover {
+      opacity: .8
+    }
+
+    &.selected {
+      font-weight: 400;
+    }
+
+    &.current {
+      font-weight: 500;
+
+      // scss-lint:disable NestingDepth
+      a {
+        color: $color-black;
+        background: $color-yellow;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: $color-light;
+    }
+  }
+}
+
+.menu-item-cms {
+  margin-left: 15px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &.float-right {
+    float: right;
   }
 }
 

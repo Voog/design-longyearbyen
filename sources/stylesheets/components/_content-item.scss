@@ -360,6 +360,8 @@
 }
 
 .items-body {
+  padding-top: 40px;
+
   @media screen and (min-width: $mobile + 1) {
     display: flex;
   }
