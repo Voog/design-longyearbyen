@@ -10271,41 +10271,76 @@ return jQuery;
     // instructions in "components/site-header.tpl" to enable language menu
     // popover with flags.
 
-      $('.js-toggle-menu-language').click(function() {
-        if (!$('html').hasClass('menu-language-popover-open')) {
-          handleMenuLanguagePopoverPositioning();
-        } else {
-          $('html').removeClass('menu-language-popover-open');
-        }
-      });
+    $('.js-toggle-menu-language').click(function() {
+      if (!$('html').hasClass('menu-language-popover-open')) {
+        handleMenuLanguagePopoverPositioning();
+      } else {
+        $('html').removeClass('menu-language-popover-open');
+      }
+    });
 
+    // Toggles site search.
+    $('.js-toggle-site-search').click(function() {
+      var $html = $('html');
+
+      if ($html.hasClass('menu-main-opened')) {
+        $html.removeClass('menu-main-opened site-search-closed');
+        $html.addClass('site-search-opened menu-main-closed');
+        $('.js-search-input').focus();
+      } else if ($html.hasClass('site-search-closed')) {
+        $html.removeClass('site-search-closed');
+        $html.addClass('site-search-opened');
+        $('.js-search-input').focus();
+      } else if ($html.hasClass('site-search-opened')) {
+        $html.removeClass('site-search-opened');
+        setTimeout(function(){
+          $html.addClass('site-search-closed');
+        }, 200);
+      }
+
+      if ($html.hasClass('menu-main-opened')) {
+        $html.removeClass('menu-main-opened');
+      }
+    });
+
+    // Clears site search input.
+    $('.js-clear-search-input').click(function() {
+      var $searchInput = $('.js-search-input');
+
+      if ($searchInput.val().length > 0) {
+        $searchInput.val('').focus();
+      } else {
+        $('html').removeClass('site-search-opened');
+      }
+    });
+
+    $('.mobile-menu-toggler').click(function(event) {
+      event.preventDefault();
+      $('body').toggleClass('mobilemenu-open');
+      $('body').removeClass('mobilesearch-open');
+    });
+
+    $('.mobile-menu-close').on('click', function(event) {
+      event.preventDefault();
+
+      if ($('body').hasClass('language-menu-open')) {
+        $('body').removeClass('language-menu-open');
+      }
+      else {
+        $('body').removeClass('mobilemenu-open');
+      }
+    });
+
+    $('.language-menu-btn').on('click', function(event) {
+      event.preventDefault();
+      $('body').addClass('language-menu-open');
+    });
+
+    $('.tags-toggle').click(function() {
+      $(this).find('.ico-arrow').toggleClass('active');
+      $('.tags-bottom').toggleClass('visible');
+    });
   };
-
-
-  // Toggles site search.
-  $('.js-toggle-site-search').click(function() {
-    var $html = $('html');
-
-    if ($html.hasClass('menu-main-opened')) {
-      $html.removeClass('menu-main-opened site-search-closed');
-      $html.addClass('site-search-opened menu-main-closed');
-      $('.js-search-input').focus();
-    } else if ($html.hasClass('site-search-closed')) {
-      $html.removeClass('site-search-closed');
-      $html.addClass('site-search-opened');
-      $('.js-search-input').focus();
-    } else if ($html.hasClass('site-search-opened')) {
-      $html.removeClass('site-search-opened');
-      setTimeout(function(){
-        $html.addClass('site-search-closed');
-     }, 200);
-    }
-
-    if ($html.hasClass('menu-main-opened')) {
-      $html.removeClass('menu-main-opened');
-    }
-  });
-
 
   //============================================================================
   // Positions language menu popover under the toggleing button.
@@ -10315,23 +10350,22 @@ return jQuery;
   // instructions in "components/site-header.tpl" to enable language menu
   // popover with flags.
   //============================================================================
+  var handleMenuLanguagePopoverPositioning = function(button) {
+    var $menuWrapper = $('.js-menu-language-popover'),
+    $offsetItem = $('.js-toggle-menu-language'),
+    offsetItemOffsetTop = $offsetItem.offset().top,
+    offsetItemOffsetLeft = $offsetItem.offset().left,
+    offsetItemOuterWidth = $offsetItem.outerWidth(),
+    offsetItemOuterHeight = $offsetItem.outerHeight(),
+    windowWidth = $(window).width();
 
-    var handleMenuLanguagePopoverPositioning = function(button) {
-      var $menuWrapper = $('.js-menu-language-popover'),
-          $offsetItem = $('.js-toggle-menu-language'),
-          offsetItemOffsetTop = $offsetItem.offset().top,
-          offsetItemOffsetLeft = $offsetItem.offset().left,
-          offsetItemOuterWidth = $offsetItem.outerWidth(),
-          offsetItemOuterHeight = $offsetItem.outerHeight(),
-          windowWidth = $(window).width();
+    $('html').addClass('menu-language-popover-open');
 
-      $('html').addClass('menu-language-popover-open');
-
-      $menuWrapper.css({
-        top: offsetItemOffsetTop + offsetItemOuterHeight,
-        right: windowWidth - offsetItemOffsetLeft - offsetItemOuterWidth
-      });
-    };
+    $menuWrapper.css({
+      top: offsetItemOffsetTop + offsetItemOuterHeight,
+      right: windowWidth - offsetItemOffsetLeft - offsetItemOuterWidth
+    });
+  };
 
 
   //============================================================================
@@ -10343,32 +10377,31 @@ return jQuery;
   // popover with flags.
   //============================================================================
 
-    var bindLanguageFlagsToggle = function() {
-      $('.js-toggle-language-flags').click(function() {
-        if ($('html').hasClass('language-flags-disabled')) {
-          $('html')
-            .removeClass('language-flags-disabled')
-            .addClass('language-flags-enabled');
+  var bindLanguageFlagsToggle = function() {
+    $('.js-toggle-language-flags').click(function() {
+      if ($('html').hasClass('language-flags-disabled')) {
+        $('html')
+        .removeClass('language-flags-disabled')
+        .addClass('language-flags-enabled');
 
-          siteData.set("language_flags_enabled", true);
-        } else {
-          $('html')
-            .removeClass('language-flags-enabled')
-            .addClass('language-flags-disabled');
+        siteData.set("language_flags_enabled", true);
+      } else {
+        $('html')
+        .removeClass('language-flags-enabled')
+        .addClass('language-flags-disabled');
 
-          siteData.set("language_flags_enabled", false);
-        }
+        siteData.set("language_flags_enabled", false);
+      }
 
-        handleMenuLanguagePopoverPositioning();
-      });
-    };
+      handleMenuLanguagePopoverPositioning();
+    });
+  };
 
 
   //============================================================================
   // Binds site search functionality.
   //============================================================================
   var bindSiteSearch = function(searchForm, languageCode) {
-    console.log(searchForm);
     if (searchForm) {
       var search = new VoogSearch(searchForm, {
         // Results are lazy-loaded on scroll.
@@ -10397,62 +10430,6 @@ return jQuery;
       });
     }
   };
-
-  // Clears site search input.
-    $('.js-clear-search-input').click(function() {
-      var $searchInput = $('.js-search-input');
-
-      if ($searchInput.val().length > 0) {
-        $searchInput.val('').focus();
-      } else {
-        $('html').removeClass('site-search-opened');
-      }
-    });
-
-
-  // Initiations
-  var initWindowResize = function() {
-    $(window).resize(function() {
-      // Add window resizing functions here.
-    });
-  };
-
-  var initBlogPage = function() {
-    // Add blog listing layout specific functions here.
-  };
-
-  var initArticlePage = function() {
-    // Add single post layout specific functions here.
-  };
-
-  var initCommonPage = function() {
-    // Add common page layout specific functions here.
-  };
-
-  var initFrontPage = function() {
-    // Add front page layout specific functions here.
-  };
-
-  var init = function() {
-    // Add site wide functions here.
-    // TODO: Replace with click.
-    console.trace();
-    bindButtonClicks();
-    focusFormMessages();
-    removeFormInputErrorHighlight();
-  };
-
-  // Enables the usage of the initiations outside this file.
-  window.site = $.extend(window.site || {}, {
-    // Initiations for layouts.
-    initBlogPage: initBlogPage,
-    initArticlePage: initArticlePage,
-    initCommonPage: initCommonPage,
-    initFrontPage: initFrontPage,
-    // Initiations for specific functions.
-    bindSiteSearch: bindSiteSearch,
-    bindLanguageFlagsToggle: bindLanguageFlagsToggle
-  });
 
   // toggleFlags rule
   var toggleFlags = function() {
@@ -10496,17 +10473,17 @@ return jQuery;
     // Defines the variables used in preview logic.
 
     var bgPickerImagePrevious = $(bgPickerArea).find('.js-background-image').css('background-image'),
-        bgPickerImageSuitable = data.imageSizes ? getImageByWidth(data.imageSizes, $(window).width()) : null,
-        bgPickerImage = (data.image && data.image !== '') ? 'url(' + bgPickerImageSuitable.url + ')' : 'none',
-        bgPickerImageSizes = (data.imageSizes && data.imageSizes !== '') ? data.imageSizes : null,
-        bgPickerColor = (data.color && data.color !== '') ? data.color : 'rgba(0,0,0,0)',
-        bgPickerColorDataLightness = (data.colorData && data.colorData !== '') ? data.colorData.a : 0,
-        bgPickerColorAlpha = bgPickerColorDataLightness,
-        bgPickerImageColorDataInternal = bgPickerImageColorDataReturn,
+    bgPickerImageSuitable = data.imageSizes ? getImageByWidth(data.imageSizes, $(window).width()) : null,
+    bgPickerImage = (data.image && data.image !== '') ? 'url(' + bgPickerImageSuitable.url + ')' : 'none',
+    bgPickerImageSizes = (data.imageSizes && data.imageSizes !== '') ? data.imageSizes : null,
+    bgPickerColor = (data.color && data.color !== '') ? data.color : 'rgba(0,0,0,0)',
+    bgPickerColorDataLightness = (data.colorData && data.colorData !== '') ? data.colorData.a : 0,
+    bgPickerColorAlpha = bgPickerColorDataLightness,
+    bgPickerImageColorDataInternal = bgPickerImageColorDataReturn,
 
-        colorExtractImage = $('<img>'),
-        colorExtractCanvas = $('<canvas>'),
-        colorExtractImageUrl = (data.image && data.image !== '') ? data.image : null;
+    colorExtractImage = $('<img>'),
+    colorExtractCanvas = $('<canvas>'),
+    colorExtractImageUrl = (data.image && data.image !== '') ? data.image : null;
 
     if (colorExtractImageUrl) {
       if (bgPickerImageSizesContains(bgPickerImageSizes, bgPickerImagePrevious, bgPickerImageColorDataInternal)) {
@@ -10527,7 +10504,7 @@ return jQuery;
         });
       };
     }
-     else {
+    else {
       bgPickerCombinedLightness = getCombinedLightness('rgba(255,255,255,1)', bgPickerColor);
       bgPickerContentLightnessClass(bgPickerArea, bgPickerColorAlpha);
       bgPickerImageColorData = '';
@@ -10616,89 +10593,52 @@ return jQuery;
   };
 
   // Checks the lightness sum of header background image and color and sets the lightness class depending on it's value.
- var bgPickerContentLightnessClass = function(bgPickerArea, bgPickerColorAlpha) {
-   var bgPickerAreaGlobalAttr = bgPickerArea.attr('data-bg-global'),
-       bgPickerAreaGlobal = '[data-bg-global="' + bgPickerAreaGlobalAttr + '"]',
-       bgPickerAreaGlobalBooleanAttr = bgPickerArea.attr('data-bg-global-boolean'),
-       bgPickerAreaGlobalBoolean = '[data-bg-global-boolean="false"]',
-       bgPickerAreaMultiSectionAttr = bgPickerArea.attr('data-section-name'),
-       bgPickerAreaMultiSection = '[data-section-name="' + bgPickerAreaMultiSectionAttr + '"]';
+  var bgPickerContentLightnessClass = function(bgPickerArea, bgPickerColorAlpha) {
+    var bgPickerAreaGlobalAttr = bgPickerArea.attr('data-bg-global'),
+    bgPickerAreaGlobal = '[data-bg-global="' + bgPickerAreaGlobalAttr + '"]',
+    bgPickerAreaGlobalBooleanAttr = bgPickerArea.attr('data-bg-global-boolean'),
+    bgPickerAreaGlobalBoolean = '[data-bg-global-boolean="false"]',
+    bgPickerAreaMultiSectionAttr = bgPickerArea.attr('data-section-name'),
+    bgPickerAreaMultiSection = '[data-section-name="' + bgPickerAreaMultiSectionAttr + '"]';
 
-   if (bgPickerCombinedLightness >= 0.5) {
-     $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
-     $(bgPickerAreaMultiSection).find('.js-background-type').addClass('light-background').removeClass('dark-background');
+    if (bgPickerCombinedLightness >= 0.5) {
+      $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
+      $(bgPickerAreaMultiSection).find('.js-background-type').addClass('light-background').removeClass('dark-background');
 
-     if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
-       $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('light-background').removeClass('dark-background');
-     }
-
-   } else {
-     $(bgPickerArea).find('.js-background-type').addClass('dark-background').removeClass('light-background');
-     $(bgPickerAreaMultiSection).find('.js-background-type').addClass('dark-background').removeClass('light-background');
-
-     if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
-       $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('dark-background').removeClass('light-background');
-     }
-
-   };
-
-   if ( $('body').find('[data-bg-global-master="true"]').find('.js-background-type').hasClass('light-background') ) {
-     var bgPickerAreaGlobalClass = 'light-background';
-   } else {
-     var bgPickerAreaGlobalClass = 'dark-background';
-   };
-
-   // Set mobile base bg when main section image bg isn't covering individual content areas.
-   $('.container').find('.js-bg-picker-area').removeClass('transparent-dark-background transparent-light-background').addClass('transparent-' + bgPickerAreaGlobalClass);
-   $('.container').find(bgPickerAreaGlobal).removeClass('transparent-dark-background transparent-light-background').addClass('transparent-' + bgPickerAreaGlobalClass);
-
-   if ( bgPickerColorAlpha >= 0.5 ) {
-     $(bgPickerArea).attr('data-bg-global-boolean', false);
-     $(bgPickerAreaMultiSection).attr('data-bg-global-boolean', false);
-   } else {
-     $(bgPickerArea).attr('data-bg-global-boolean', true);
-     $(bgPickerAreaMultiSection).attr('data-bg-global-boolean', true);
-     $(bgPickerArea).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
-     $(bgPickerAreaMultiSection).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
-   };
- };
-
-  // Enables the usage of the initiations outside this file.
-  // For example add "<script>site.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
-  window.site = $.extend(window.site || {}, {
-    toggleFlags: toggleFlags,
-    togglePadding: togglePadding,
-    bgPickerPreview: bgPickerPreview,
-    bgPickerCommit: bgPickerCommit,
-    bgPickerColorScheme: bgPickerColorScheme
-  });
-
-  $('.mobile-menu-toggler').click(function(event) {
-      event.preventDefault();
-      $('body').toggleClass('mobilemenu-open');
-      $('body').removeClass('mobilesearch-open');
-  });
-
-  $('.mobile-menu-close').on('click', function(event) {
-      event.preventDefault();
-
-      if ($('body').hasClass('language-menu-open')) {
-          $('body').removeClass('language-menu-open');
+      if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
+        $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('light-background').removeClass('dark-background');
       }
-      else {
-          $('body').removeClass('mobilemenu-open');
+
+    } else {
+      $(bgPickerArea).find('.js-background-type').addClass('dark-background').removeClass('light-background');
+      $(bgPickerAreaMultiSection).find('.js-background-type').addClass('dark-background').removeClass('light-background');
+
+      if ( $(bgPickerArea).is('[data-bg-global-master="true"]') ) {
+        $(bgPickerAreaGlobal).not(bgPickerAreaGlobalBoolean).find('.js-background-type').addClass('dark-background').removeClass('light-background');
       }
-  });
 
-  $('.language-menu-btn').on('click', function(event) {
-      event.preventDefault();
-      $('body').addClass('language-menu-open');
-  });
+    };
 
-  $('.tags-toggle').click(function() {
-      $(this).find('.ico-arrow').toggleClass('active');
-      $('.tags-bottom').toggleClass('visible');
-  });
+    if ( $('body').find('[data-bg-global-master="true"]').find('.js-background-type').hasClass('light-background') ) {
+      var bgPickerAreaGlobalClass = 'light-background';
+    } else {
+      var bgPickerAreaGlobalClass = 'dark-background';
+    };
+
+    // Set mobile base bg when main section image bg isn't covering individual content areas.
+    $('.container').find('.js-bg-picker-area').removeClass('transparent-dark-background transparent-light-background').addClass('transparent-' + bgPickerAreaGlobalClass);
+    $('.container').find(bgPickerAreaGlobal).removeClass('transparent-dark-background transparent-light-background').addClass('transparent-' + bgPickerAreaGlobalClass);
+
+    if ( bgPickerColorAlpha >= 0.5 ) {
+      $(bgPickerArea).attr('data-bg-global-boolean', false);
+      $(bgPickerAreaMultiSection).attr('data-bg-global-boolean', false);
+    } else {
+      $(bgPickerArea).attr('data-bg-global-boolean', true);
+      $(bgPickerAreaMultiSection).attr('data-bg-global-boolean', true);
+      $(bgPickerArea).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
+      $(bgPickerAreaMultiSection).find('.js-background-type').removeClass('light-background dark-background').addClass(bgPickerAreaGlobalClass);
+    };
+  };
 
   // ===========================================================================
   // Scrolls to the form if submit failed or succeeded (to show the error
@@ -10708,13 +10648,13 @@ return jQuery;
     $(document).ready(function() {
       if ($('.comment-form').hasClass('form_with_errors')) {
         $('html, body')
-          .scrollTop($('.comment-form')
-          .offset().top)
+        .scrollTop($('.comment-form')
+        .offset().top)
         ;
       } else if ($('form').find('.form_error, .form_notice').length > 0) {
         $('html, body')
-          .scrollTop($('.form_error, .form_notice').closest('form')
-          .offset().top)
+        .scrollTop($('.form_error, .form_notice').closest('form')
+        .offset().top)
         ;
       }
     });
@@ -10730,6 +10670,53 @@ return jQuery;
     });
   };
 
+  // Initiations
+  var initWindowResize = function() {
+    $(window).resize(function() {
+      // Add window resizing functions here.
+    });
+  };
+
+  var initBlogPage = function() {
+    // Add blog listing layout specific functions here.
+  };
+
+  var initArticlePage = function() {
+    // Add single post layout specific functions here.
+  };
+
+  var initCommonPage = function() {
+    // Add common page layout specific functions here.
+  };
+
+  var initFrontPage = function() {
+    // Add front page layout specific functions here.
+  };
+
+  var init = function() {
+    // Add site wide functions here.
+    bindButtonClicks();
+    focusFormMessages();
+    removeFormInputErrorHighlight();
+  };
+
+  // Enables the usage of the initiations outside this file.
+  // For example add "<script>site.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
+  window.site = $.extend(window.site || {}, {
+    // Initiations for layouts.
+    initBlogPage: initBlogPage,
+    initArticlePage: initArticlePage,
+    initCommonPage: initCommonPage,
+    initFrontPage: initFrontPage,
+    // Initiations for specific functions.
+    bindSiteSearch: bindSiteSearch,
+    bindLanguageFlagsToggle: bindLanguageFlagsToggle,
+    toggleFlags: toggleFlags,
+    togglePadding: togglePadding,
+    bgPickerPreview: bgPickerPreview,
+    bgPickerCommit: bgPickerCommit,
+    bgPickerColorScheme: bgPickerColorScheme
+  });
 
   init();
 })(jQuery);
