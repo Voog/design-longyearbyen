@@ -8,20 +8,6 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/common_page.tpl",
-      "layout_name": "page_default",
-      "title": "Common page"
-    },
-    {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/front_page.tpl",
-      "layout_name": "page_front",
-      "title": "Front page"
-    },
-    {
-      "content_type": "page",
-      "component": false,
       "file": "layouts/product.tpl",
       "layout_name": "product",
       "title": "Product"
@@ -32,6 +18,20 @@
       "file": "layouts/product_list.tpl",
       "layout_name": "product_list",
       "title": "Product list"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/common_page.tpl",
+      "layout_name": "page_default",
+      "title": "Common page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_front",
+      "title": "Front page"
     },
     {
       "content_type": "blog",
@@ -53,6 +53,13 @@
       "file": "components/edicy-tools-styles.tpl",
       "layout_name": "edicy-tools-styles",
       "title": "edicy-tools-styles"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/item-list-tools.tpl",
+      "layout_name": "item-list-tools",
+      "title": "item-list-tools"
     },
     {
       "content_type": "component",
@@ -88,6 +95,13 @@
       "file": "components/mobilemenu.tpl",
       "layout_name": "mobilemenu",
       "title": "mobilemenu"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/product-list-item.tpl",
+      "layout_name": "product-list-item",
+      "title": "product-list-item"
     },
     {
       "content_type": "component",
