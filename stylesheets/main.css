@@ -272,18 +272,20 @@ body {
   }
 }
 
-.mobilemenu-open,
-.mobilesearch-open {
-  position: fixed;
-  overflow: hidden;
-  width: 100%;
-}
-.mobilemenu-open .wrap,
-.mobilesearch-open .wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+@media screen and (max-width: 768px) {
+  .mobilemenu-open,
+  .mobilesearch-open {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+  }
+  .mobilemenu-open .wrap,
+  .mobilesearch-open .wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .mobile-menu-toggler {
