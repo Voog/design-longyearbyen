@@ -1553,12 +1553,19 @@ body {
   margin-bottom: 5px;
 }
 
+.content-illustrations {
+  font-size: 0;
+}
 @media screen and (min-width: 641px) {
   .content-illustrations {
     flex: 1;
     max-width: 520px;
     margin-right: 40px;
   }
+}
+
+.content-item-title {
+  text-align: left;
 }
 
 @media screen and (max-width: 640px) {
@@ -1572,10 +1579,6 @@ body {
   }
 }
 
-.items-body {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 @media screen and (min-width: 641px) {
   .items-body {
     display: flex;
@@ -2040,6 +2043,10 @@ body {
 }
 .content-area h1 {
   font-size: 36px;
+}
+.content-area h1.content-item-title {
+  margin-bottom: 20px;
+  text-align: left;
 }
 @media screen and (max-width: 640px) {
   .content-area h1 {

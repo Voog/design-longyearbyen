@@ -334,11 +334,17 @@
 }
 
 .content-illustrations {
+  font-size: 0;
+
   @media screen and (min-width: $mobile + 1) {
     flex: 1;
     max-width: 520px;
     margin-right: 40px;
   }
+}
+
+.content-item-title {
+  text-align: left;
 }
 
 .content-body-inner {
@@ -354,9 +360,6 @@
 }
 
 .items-body {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
   @media screen and (min-width: $mobile + 1) {
     display: flex;
   }

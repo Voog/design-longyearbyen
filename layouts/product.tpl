@@ -15,7 +15,7 @@
 
         <main class="page-content" role="main">
           <section class="content-body">
-            <div class="items-body" {{ edy_intro_edit_text }}>
+            <div class="content-inner items-body" {{ edy_intro_edit_text }}>
               <div class="content-illustrations">
                 {% if editmode %}
                   <div class="content-item-box {{ page_image_state }} js-content-item-box" data-item-type="page" data-item-id="{{ page.page_id }}">
@@ -51,10 +51,10 @@
                 <div class="content-gallery content-area">{% content name="gallery" %}</div>
               </div>
 
-              <div class="content-inner content-body-inner">
+              <div class="content-body-inner">
                 <header class="content-header">
                   <div class="content-area">
-                    <h1 class="align-left">{% contentblock name="content_header" publish_default_content="true" single="plaintext" %}{{ page.title }}{% endcontentblock %}</h1>
+                    <h1 class="content-item-title">{% contentblock name="content_header" publish_default_content="true" single="plaintext" %}{{ page.title }}{% endcontentblock %}</h1>
                   </div>
                 </header>
 
@@ -70,11 +70,13 @@
 
     {% include "mobilemenu" %}
     {% include "menu-language-popover" %}
-    {% include "template-tools" %}
     {% include "site-search" %}
-    {% include "template-javascripts" %}
 
-    <script>site.initCommonPage();</script>
+    {% include "template-javascripts" %}
+    {% include "template-tools" %}
+    {% include "item-list-tools" %}
+
+    <script>site.initItemsPage();</script>
 
   </body>
 </html>
