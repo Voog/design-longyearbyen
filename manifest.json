@@ -20,20 +20,6 @@
       "title": "Front page"
     },
     {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/product.tpl",
-      "layout_name": "product",
-      "title": "Product"
-    },
-    {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/product_list.tpl",
-      "layout_name": "product_list",
-      "title": "Product list"
-    },
-    {
       "content_type": "blog",
       "component": false,
       "file": "layouts/blog___news.tpl",
@@ -46,6 +32,20 @@
       "file": "layouts/blog_article.tpl",
       "layout_name": "blog_article",
       "title": "Blog article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-news-tags.tpl",
+      "layout_name": "blog-news-tags",
+      "title": "blog-news-tags"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/common-page-variables.tpl",
+      "layout_name": "common-page-variables",
+      "title": "common-page-variables"
     },
     {
       "content_type": "component",
@@ -186,20 +186,6 @@
       "file": "components/blog-article-template.tpl",
       "layout_name": "blog-article-template",
       "title": "blog-article-template"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-news-tags.tpl",
-      "layout_name": "blog-news-tags",
-      "title": "blog-news-tags"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/common-page-variables.tpl",
-      "layout_name": "common-page-variables",
-      "title": "common-page-variables"
     }
   ],
   "assets": [
