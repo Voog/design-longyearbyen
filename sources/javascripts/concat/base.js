@@ -50,41 +50,49 @@
     // instructions in "components/site-header.tpl" to enable language menu
     // popover with flags.
 
-      $('.js-toggle-menu-language').click(function() {
-        if (!$('html').hasClass('menu-language-popover-open')) {
-          handleMenuLanguagePopoverPositioning();
-        } else {
-          $('html').removeClass('menu-language-popover-open');
-        }
-      });
+    $('.js-toggle-menu-language').click(function() {
+      if (!$('html').hasClass('menu-language-popover-open')) {
+        handleMenuLanguagePopoverPositioning();
+      } else {
+        $('html').removeClass('menu-language-popover-open');
+      }
+    });
 
+    // Toggles site search.
+    $('.js-toggle-site-search').click(function() {
+      var $html = $('html');
+
+      if ($html.hasClass('menu-main-opened')) {
+        $html.removeClass('menu-main-opened site-search-closed');
+        $html.addClass('site-search-opened menu-main-closed');
+        $('.js-search-input').focus();
+      } else if ($html.hasClass('site-search-closed')) {
+        $html.removeClass('site-search-closed');
+        $html.addClass('site-search-opened');
+        $('.js-search-input').focus();
+      } else if ($html.hasClass('site-search-opened')) {
+        $html.removeClass('site-search-opened');
+        setTimeout(function(){
+          $html.addClass('site-search-closed');
+       }, 200);
+      }
+
+      if ($html.hasClass('menu-main-opened')) {
+        $html.removeClass('menu-main-opened');
+      }
+    });
+
+    // Clears site search input.
+    $('.js-clear-search-input').click(function() {
+      var $searchInput = $('.js-search-input');
+
+      if ($searchInput.val().length > 0) {
+        $searchInput.val('').focus();
+      } else {
+        $('html').removeClass('site-search-opened');
+      }
+    });
   };
-
-
-  // Toggles site search.
-  $('.js-toggle-site-search').click(function() {
-    var $html = $('html');
-
-    if ($html.hasClass('menu-main-opened')) {
-      $html.removeClass('menu-main-opened site-search-closed');
-      $html.addClass('site-search-opened menu-main-closed');
-      $('.js-search-input').focus();
-    } else if ($html.hasClass('site-search-closed')) {
-      $html.removeClass('site-search-closed');
-      $html.addClass('site-search-opened');
-      $('.js-search-input').focus();
-    } else if ($html.hasClass('site-search-opened')) {
-      $html.removeClass('site-search-opened');
-      setTimeout(function(){
-        $html.addClass('site-search-closed');
-     }, 200);
-    }
-
-    if ($html.hasClass('menu-main-opened')) {
-      $html.removeClass('menu-main-opened');
-    }
-  });
-
 
   //============================================================================
   // Positions language menu popover under the toggleing button.
@@ -147,7 +155,6 @@
   // Binds site search functionality.
   //============================================================================
   var bindSiteSearch = function(searchForm, languageCode) {
-    console.log(searchForm);
     if (searchForm) {
       var search = new VoogSearch(searchForm, {
         // Results are lazy-loaded on scroll.
@@ -176,18 +183,6 @@
       });
     }
   };
-
-  // Clears site search input.
-    $('.js-clear-search-input').click(function() {
-      var $searchInput = $('.js-search-input');
-
-      if ($searchInput.val().length > 0) {
-        $searchInput.val('').focus();
-      } else {
-        $('html').removeClass('site-search-opened');
-      }
-    });
-
 
   // Initiations
   var initWindowResize = function() {
