@@ -1,4 +1,4 @@
-#The Longyearbyen design template for Voog
+#The Longyearbyen design template for [Voog](https://www.voog.com)
 
 ## Setup
 ### The developing environment
