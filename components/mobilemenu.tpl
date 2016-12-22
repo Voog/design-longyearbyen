@@ -40,11 +40,43 @@
   <div class="navigation-menu">
     <ul>
       {% unless site.root_item.hidden? %}
-        {% menulink site.root_item wrapper-tag="li" %}
+        {% if site.root_item.layout_title == product_list_layout and hide_categories_from_main_menu %}
+          {% if page.layout_title == product_list_layout or page.layout_title == product_layout %}
+            {% menulink site.root_item wrapper-tag="li" wrapper-class="selected" %}
+          {% else %}
+            {% menulink site.root_item wrapper-tag="li" %}
+          {% endif %}
+        {% else %}
+          {% menulink site.root_item wrapper-tag="li" %}
+        {% endif %}
       {% endunless %}
 
-      {% for item in site.visible_menuitems %}
-        {% menulink item wrapper-tag="li" %}
+      {% for level_1 in site.visible_menuitems %}
+        {% if site.root_item.layout_title == product_list_layout %}
+          {% if editmode %}
+            {% if hide_categories_from_main_menu %}
+              {% if level_1.layout_title == product_list_layout or level_1.layout_title == product_layout %}
+                {% menulink level_1 wrapper-tag="li" wrapper-class="is-hidden js-menu-item-category" %}
+              {% else %}
+                {% menulink level_1 wrapper-tag="li" %}
+              {% endif %}
+            {% else %}
+              {% menulink level_1 wrapper-tag="li" wrapper-class="js-menu-item-category" %}
+            {% endif %}
+          {% else %}
+            {% if hide_categories_from_main_menu %}
+              {% unless level_1.layout_title == product_list_layout or level_1.layout_title == product_layout %}
+                {% menulink level_1 wrapper-tag="li" %}
+              {% endunless %}
+            {% else %}
+              {% unless level_1.layout_title == product_layout %}
+                {% menulink level_1 wrapper-tag="li" %}
+              {% endunless %}
+            {% endif %}
+          {% endif %}
+        {% else %}
+          {% menulink level_1 wrapper-tag="li" %}
+        {% endif %}
       {% endfor %}
 
       {% if editmode %}

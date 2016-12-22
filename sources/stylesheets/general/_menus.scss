@@ -390,6 +390,17 @@
 #mobile-menu .language-menu ul .current a {
   color: #fff;
 }
+#mobile-menu {
+  .navigation-menu {
+    ul {
+      li {
+        &.is-hidden {
+          display: none;
+        }
+      }
+    }
+  }
+}
 #mobile-menu .navigation-menu ul a:hover,
 #mobile-menu .language-menu ul a:hover {
   background: rgba(255,240,127,.9);
