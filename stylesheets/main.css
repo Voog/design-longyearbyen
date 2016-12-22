@@ -2090,6 +2090,9 @@ body {
 .content-area .form_field_size_large {
   width: 100%;
 }
+.content-area .comment-form {
+  margin-top: 20px;
+}
 .content-area .form_error,
 .content-area .form_notice {
   padding-bottom: 20px;
@@ -2101,15 +2104,17 @@ body {
 .content-area .form_notice {
   color: #60a740;
 }
-.content-area .form_field_error {
-  display: none;
-}
 .content-area .form_field_with_errors input,
 .content-area .form_field_with_errors textarea {
   background-color: rgba(204, 0, 0, 0.2);
 }
 .content-area .form_field_required .form_field_label::after {
   content: '*';
+}
+.content-area .form_field_error {
+  margin-top: 5px;
+  margin-left: 1px;
+  color: #cc0000;
 }
 .content-area label {
   cursor: pointer;
