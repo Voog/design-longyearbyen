@@ -386,8 +386,8 @@
   text-decoration: none;
   padding: 5px 3px;
 }
-#mobile-menu .navigation-menu ul a.active,
-#mobile-menu .language-menu ul a.active {
+#mobile-menu .navigation-menu ul .current a,
+#mobile-menu .language-menu ul .current a {
   color: #fff;
 }
 #mobile-menu .navigation-menu ul a:hover,
