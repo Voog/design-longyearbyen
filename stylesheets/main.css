@@ -178,6 +178,7 @@ body {
 
 .menu-main {
   display: inline-block;
+  vertical-align: middle;
 }
 .menu-main li {
   display: inline-block;
