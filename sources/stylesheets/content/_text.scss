@@ -5,7 +5,7 @@
   @include clearfix;
   @include hyphenate;
   line-height: 1.7;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
 
@@ -100,19 +100,18 @@
   code,
   table {
     color: rgba($color-highlight, 1);
-    font-weight: normal;
 
     b,
     strong {
       font-family: $font-heavy;
-      font-weight: normal;
+      font-weight: 700;
     }
   }
 
   b,
   strong {
     font-family: $font-heavy;
-    font-weight: normal;
+    font-weight: 700;
   }
 
   h1,
@@ -125,6 +124,7 @@
     text-align: center;
     text-transform: uppercase;
     font-family: $font-heavy;
+    font-weight: 700;
     margin: 45px 0 35px 0;
   }
 
@@ -158,6 +158,7 @@
     font-size: 50px;
     line-height: 1.1;
     font-family: $font-heavy;
+    font-weight: 700;
     padding: 0;
     text-transform: none;
 
@@ -172,6 +173,7 @@
   &.introtext h3 {
     text-align: left;
     font-family: $font-main;
+    font-weight: 400;
     text-transform: none;
   }
   &.introtext h1 {
@@ -202,6 +204,7 @@
   &.header-content h2 {
     line-height: 1.1;
     font-family: $font-heavy;
+    font-weight: 700;
     padding: 0;
     text-transform: none;
   }
@@ -227,6 +230,7 @@
   &.header-content h3 {
     line-height: 1.1;
     font-family: $font-heavy;
+    font-weight: 700;
     padding: 0;
     text-transform: none !important;
   }
@@ -514,6 +518,7 @@
     box-sizing: border-box;
     cursor: pointer;
     font-family: $font-main;
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     margin: 5px 0;

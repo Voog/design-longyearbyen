@@ -9,6 +9,7 @@ html.site-search-opened {
 body {
   margin: 0;
   font-family: "Futura PT W01 Book", Arial, sans-serif;
+  font-weight: 400;
   color: #333333;
 }
 
@@ -366,6 +367,7 @@ body {
 
 #mobile-menu {
   font-family: "Futura PT W01 Book", Arial, sans-serif;
+  font-weight: 400;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -408,6 +410,7 @@ body {
 
 #mobile-menu {
   font-family: "Futura PT W01 Book", Arial, sans-serif;
+  font-weight: 400;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -604,6 +607,7 @@ body {
 
 .pswp__caption__center {
   font-family: "Futura PT W01 Book", Arial, sans-serif !important;
+  font-weight: 400;
 }
 
 .feature-section .edy-content-element {
@@ -721,16 +725,16 @@ body {
   border: none;
 }
 .site-search .search-input::-webkit-input-placeholder {
-  font-weight: normal;
+  font-weight: 400;
 }
 .site-search .search-input::-moz-placeholder {
-  font-weight: normal;
+  font-weight: 400;
 }
 .site-search .search-input:-moz-placeholder {
-  font-weight: normal;
+  font-weight: 400;
 }
 .site-search .search-input:-ms-input-placeholder {
-  font-weight: normal;
+  font-weight: 400;
 }
 .site-search .search-input::-webkit-search-decoration, .site-search .search-input::-webkit-search-cancel-button, .site-search .search-input::-webkit-search-results-button, .site-search .search-input::-webkit-search-results-decoration {
   display: none;
@@ -812,10 +816,11 @@ body {
 .voog-search-modal .voog-search-modal-result h3 a {
   color: #333333;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: 400;
 }
 .voog-search-modal .voog-search-modal-result p {
   font-family: "Futura PT W01 Light", Arial, sans-serif;
+  font-weight: 300;
   font-size: 19px;
   line-height: 1.3;
   color: #898989;
@@ -829,7 +834,7 @@ body {
 .voog-search-modal .voog-search-modal-result em {
   font-style: normal;
   background-color: #fff07f;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .menu-language-btn {
@@ -1151,7 +1156,6 @@ body {
 .site-footer b,
 .site-footer strong {
   color: #000000;
-  font-weight: normal;
 }
 .site-footer .inner {
   padding: 90px 125px 80px;
@@ -1209,7 +1213,7 @@ body {
 }
 .blog-article-page .blog-tags .tags-title {
   padding: 0px 20px 0 25px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.6;
   text-transform: uppercase;
@@ -1288,6 +1292,7 @@ body {
 }
 #article-comments .comment-author {
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
+  font-weight: 700;
 }
 #article-comments .comment-date,
 #article-comments .comment-author {
@@ -1783,7 +1788,7 @@ body {
   line-height: 1.4;
   margin: 0;
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 700;
 }
 .blog-news-page .article-date {
   font-size: 13px;
@@ -1822,6 +1827,7 @@ body {
 }
 .blog-news-page .articles-listing .article-title {
   font-family: "Futura PT W01 Book", Arial, sans-serif;
+  font-weight: 400;
 }
 @media screen and (max-width: 480px) {
   .blog-news-page .articles-listing {
@@ -1938,7 +1944,7 @@ body {
   word-break: break-word;
   word-wrap: break-word;
   line-height: 1.7;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
 }
@@ -2043,7 +2049,6 @@ body {
 .content-area code,
 .content-area table {
   color: #1b2124;
-  font-weight: normal;
 }
 .content-area h1 b,
 .content-area h1 strong,
@@ -2070,12 +2075,12 @@ body {
 .content-area table b,
 .content-area table strong {
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 700;
 }
 .content-area b,
 .content-area strong {
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
-  font-weight: normal;
+  font-weight: 700;
 }
 .content-area h1,
 .content-area h2,
@@ -2087,6 +2092,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
+  font-weight: 700;
   margin: 45px 0 35px 0;
 }
 .site-header .content-area h1:first-child, .site-header
@@ -2113,6 +2119,7 @@ body {
   font-size: 50px;
   line-height: 1.1;
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
+  font-weight: 700;
   padding: 0;
   text-transform: none;
 }
@@ -2124,6 +2131,7 @@ body {
 .content-area.introtext, .content-area.introtext h1, .content-area.introtext h2, .content-area.introtext h3 {
   text-align: left;
   font-family: "Futura PT W01 Book", Arial, sans-serif;
+  font-weight: 400;
   text-transform: none;
 }
 .content-area.introtext h1 {
@@ -2152,6 +2160,7 @@ body {
 .content-area.header-content h2 {
   line-height: 1.1;
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
+  font-weight: 700;
   padding: 0;
   text-transform: none;
 }
@@ -2171,6 +2180,7 @@ body {
 .content-area.header-content h3 {
   line-height: 1.1;
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
+  font-weight: 700;
   padding: 0;
   text-transform: none !important;
 }
@@ -2398,6 +2408,7 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   font-family: "Futura PT W01 Book", Arial, sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   margin: 5px 0;
