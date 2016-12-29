@@ -13,7 +13,7 @@
     line-height: 1.4;
     margin: 0;
     font-family: $font-heavy;
-    font-weight: normal;
+    font-weight: 700;
   }
   .article-date {
     font-size: 13px;
@@ -52,6 +52,7 @@
     }
     .article-title {
       font-family: $font-main;
+      font-weight: 400;
     }
     @media screen and (max-width: $mobile-1) {
       margin: 0;
