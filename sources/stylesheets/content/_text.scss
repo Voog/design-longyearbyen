@@ -144,6 +144,11 @@
   h1 {
     font-size: 36px;
 
+    &.content-item-title {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
     @media screen and (max-width: $mobile) {
       font-size: 25px;
     }

@@ -27,6 +27,10 @@
     text-transform: uppercase;
     line-height: 1;
 
+    &.is-hidden {
+      display: none;
+    }
+
     a {
       padding-top: 5px;
       padding-bottom: 5px;
@@ -62,6 +66,7 @@
 // Main menu
 .menu-main {
   display: inline-block;
+  vertical-align: middle;
 
   li {
     display: inline-block;
@@ -138,8 +143,6 @@
   }
 }
 
-
-
 .menu-horizontal {
   &.menu-cms {
     @media screen and (min-width: $mobile + 1) {
@@ -166,18 +169,68 @@
   }
 }
 
+// Product list menu
+.menu-item-list {
+  padding-top: 40px;
+  padding-right: 25px;
+  padding-left: 25px;
+
+  .menu-item {
+    display: inline-block;
+
+    &:not(.current):hover {
+      opacity: .8
+    }
+
+    &.selected {
+      font-weight: 400;
+    }
+
+    &.current {
+      font-weight: 500;
+
+      // scss-lint:disable NestingDepth
+      a {
+        color: $color-black;
+        background: $color-yellow;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: $color-light;
+    }
+  }
+}
+
+.menu-item-cms {
+  margin-left: 15px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &.float-right {
+    float: right;
+  }
+}
+
 // Mobile menu
 .mobilemenu-open,
 .mobilesearch-open {
-  position: fixed;
-  overflow: hidden;
-  width: 100%;
-
-  .wrap {
+  @media screen and (max-width: $tablet-1) {
     position: fixed;
-    top: 0;
-    left: 0;
+    overflow: hidden;
     width: 100%;
+
+    .wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
   }
 }
 
@@ -336,9 +389,20 @@
   text-decoration: none;
   padding: 5px 3px;
 }
-#mobile-menu .navigation-menu ul a.active,
-#mobile-menu .language-menu ul a.active {
+#mobile-menu .navigation-menu ul .current a,
+#mobile-menu .language-menu ul .current a {
   color: #fff;
+}
+#mobile-menu {
+  .navigation-menu {
+    ul {
+      li {
+        &.is-hidden {
+          display: none;
+        }
+      }
+    }
+  }
 }
 #mobile-menu .navigation-menu ul a:hover,
 #mobile-menu .language-menu ul a:hover {

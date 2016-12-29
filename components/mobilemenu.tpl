@@ -40,15 +40,50 @@
   <div class="navigation-menu">
     <ul>
       {% unless site.root_item.hidden? %}
-        <li><a href="{{site.root_item.url}}"{% if site.root_item.selected? %} class="active"{% endif %}>{{site.root_item.title}}</a></li>
+        {% if site.root_item.layout_title == product_list_layout and hide_categories_from_main_menu %}
+          {% if page.layout_title == product_list_layout or page.layout_title == product_layout %}
+            {% menulink site.root_item wrapper-tag="li" wrapper-class="selected" %}
+          {% else %}
+            {% menulink site.root_item wrapper-tag="li" %}
+          {% endif %}
+        {% else %}
+          {% menulink site.root_item wrapper-tag="li" %}
+        {% endif %}
       {% endunless %}
-      {% for item in site.visible_menuitems %}
-        <li><a href="{{ item.url }}" {% if item.selected? %} class="active"{% endif %}{% unless item.translated? %} class="fci-editor-menuadd untranslated"{% endunless %}>{{ item.title }}</a></li>
+
+      {% for level_1 in site.visible_menuitems %}
+        {% if site.root_item.layout_title == product_list_layout %}
+          {% if editmode %}
+            {% if level_1.layout_title == product_list_layout or level_1.layout_title == product_layout %}
+              {% if hide_categories_from_main_menu %}
+                {% menulink level_1 wrapper-tag="li" wrapper-class="is-hidden js-menu-item-category" %}
+              {% else %}
+                {% menulink level_1 wrapper-tag="li" wrapper-class="js-menu-item-category" %}
+              {% endif %}
+            {% else %}
+              {% menulink level_1 wrapper-tag="li" %}
+            {% endif %}
+          {% else %}
+            {% if hide_categories_from_main_menu %}
+              {% unless level_1.layout_title == product_list_layout or level_1.layout_title == product_layout %}
+                {% menulink level_1 wrapper-tag="li" %}
+              {% endunless %}
+            {% else %}
+              {% unless level_1.layout_title == product_layout %}
+                {% menulink level_1 wrapper-tag="li" %}
+              {% endunless %}
+            {% endif %}
+          {% endif %}
+        {% else %}
+          {% menulink level_1 wrapper-tag="li" %}
+        {% endif %}
       {% endfor %}
+
       {% if editmode %}
         {% if site.hidden_menuitems.size > 0 %}
           <li>{% menubtn site.hidden_menuitems %}</li>
         {% endif %}
+
         <li>{% menuadd %}</li>
       {% endif %}
     </ul>

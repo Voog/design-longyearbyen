@@ -477,4 +477,9 @@
     {% assign feature_2_section_width = "section-with-padding" %}
   {% endif %}
 
+  {% comment %}Product related layouts variables.{% endcomment %}
+  {% assign product_list_layout = "Product list" %}
+  {% assign product_layout = "Product" %}
+
+  {% assign hide_categories_from_main_menu = site.data.settings_root_item.hide_categories_from_main_menu %}
 {% endcapture %}

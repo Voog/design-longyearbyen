@@ -1,9 +1,11 @@
-/* MAIN STYLESHEET */
+// =============================================================================
+// MAIN STYLSEHEET
+//
 // Uncomment the partials you want to use in your template and comment out those
 // that you don't need.
+// =============================================================================
 
 // MODULES
-
 @import '../../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import 'modules/variables';
 @import 'modules/mixins';
@@ -24,16 +26,16 @@
 @import 'components/site-footer';
 @import 'components/blog-tags';
 @import 'components/blog-article-comments';
-
+@import 'components/content-item';
 
 // CUSTOM LAYOUT STYLE
-@import 'custom_styles';
+@import 'custom-styles';
 
 // LAYOUTS
- @import 'layouts/_blog-and-news';
- @import 'layouts/_blog-article';
-  @import 'layouts/_front-page';
+@import 'layouts/blog-and-news';
+@import 'layouts/blog-article';
+@import 'layouts/front-page';
 
  // CONTENT AREAS
- @import 'content/text';
- @import 'content/form';
+@import 'content/text';
+@import 'content/form';
