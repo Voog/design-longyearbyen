@@ -556,6 +556,10 @@ body {
   font-family: "Futura PT W01 Book", Arial, sans-serif !important;
 }
 
+.feature-section .edy-content-element {
+  border: 0;
+}
+
 .site-header {
   padding: 18px 25px 75px;
 }
@@ -2025,11 +2029,6 @@ body {
   border: 1px solid #fff !important;
   background-color: #fff !important;
   color: #333 !important;
-}
-.content-area table td {
-  padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.36);
-  border-color: rgba(0, 0, 0, 0.32);
 }
 .content-area .table-container {
   max-width: 100%;
