@@ -2,6 +2,8 @@
 // CONTENT ITEM BOXES
 // =============================================================================
 .content-item-boxes {
+  padding-right: 5px;
+  padding-left: 5px;
   font-size: 0;
 }
 
@@ -24,15 +26,15 @@
 
     @media screen and (min-width: $nano + 1) and (max-width: $mobile) {
       width: 50%;
-      padding-right: 10px;
-      padding-left: 10px;
+      padding-right: 20px;
+      padding-left: 20px;
     }
 
     @media screen and (min-width: $mobile + 1) {
       width: 33.3%;
-      min-width: 213px;
-      padding-right: 20px;
-      padding-left: 20px;
+      min-width: 197px;
+      padding-right: 2%;
+      padding-left: 2%;
     }
   }
 
@@ -46,6 +48,18 @@
 
   .top-inner {
     opacity: 1;
+  }
+
+  &:nth-child(odd) {
+    @media screen and (min-width: $nano + 1) and (max-width: $mobile) {
+      padding-right: 10px;
+    }
+  }
+
+  &:nth-child(even) {
+    @media screen and (min-width: $nano + 1) and (max-width: $mobile) {
+      padding-left: 10px;
+    }
   }
 
   &:hover {

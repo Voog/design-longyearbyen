@@ -282,8 +282,8 @@ body {
 
 .menu-item-list {
   padding-top: 40px;
-  padding-right: 80px;
-  padding-left: 80px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 .menu-item-list .menu-item {
   display: inline-block;
@@ -1297,6 +1297,8 @@ body {
 }
 
 .content-item-boxes {
+  padding-right: 5px;
+  padding-left: 5px;
   font-size: 0;
 }
 
@@ -1322,16 +1324,16 @@ body {
 @media screen and (min-width: 241px) and (max-width: 640px) {
   .item-list-page .content-item-box {
     width: 50%;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 @media screen and (min-width: 641px) {
   .item-list-page .content-item-box {
     width: 33.3%;
-    min-width: 213px;
-    padding-right: 20px;
-    padding-left: 20px;
+    min-width: 197px;
+    padding-right: 2%;
+    padding-left: 2%;
   }
 }
 .blog-article-page .content-item-box {
@@ -1342,6 +1344,16 @@ body {
 }
 .content-item-box .top-inner {
   opacity: 1;
+}
+@media screen and (min-width: 241px) and (max-width: 640px) {
+  .content-item-box:nth-child(odd) {
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 241px) and (max-width: 640px) {
+  .content-item-box:nth-child(even) {
+    padding-left: 10px;
+  }
 }
 .editmode .content-item-box:hover .top-inner, .item-list-page .content-item-box:hover .top-inner {
   opacity: .8;
