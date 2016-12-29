@@ -89,6 +89,10 @@
   width: 100%;
 }
 
+.comment-form {
+  margin-top: 20px;
+}
+
 .form_error,
 .form_notice {
   padding-bottom: 20px;
@@ -101,10 +105,6 @@
 
 .form_notice {
   color: $color-success;
-}
-
-.form_field_error {
-  display: none;
 }
 
 .form_field_with_errors {
@@ -122,6 +122,12 @@
       content: '*';
     }
   }
+}
+
+.form_field_error {
+  margin-top: 5px;
+  margin-left: 1px;
+  color: $color-error;
 }
 
 // Custom checkboxes and radio buttons

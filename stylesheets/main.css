@@ -606,6 +606,10 @@ body {
   font-family: "Futura PT W01 Book", Arial, sans-serif !important;
 }
 
+.feature-section .edy-content-element {
+  border: 0;
+}
+
 .site-header {
   padding: 18px 25px 75px;
 }
@@ -2433,13 +2437,21 @@ body {
   background-color: #fff !important;
   color: #333 !important;
 }
+.content-area .table-container {
+  max-width: 100%;
+  overflow: auto;
+}
 .content-area table {
   border-collapse: collapse;
 }
-.content-area table td {
+.content-area table td,
+.content-area table th {
   padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.36);
   border-color: rgba(0, 0, 0, 0.32);
+  border: 1px solid rgba(0, 0, 0, 0.36);
+}
+.content-area table th {
+  font-weight: bold;
 }
 
 .content-area .form,
@@ -2513,6 +2525,9 @@ body {
 .content-area .form_field_size_large {
   width: 100%;
 }
+.content-area .comment-form {
+  margin-top: 20px;
+}
 .content-area .form_error,
 .content-area .form_notice {
   padding-bottom: 20px;
@@ -2524,15 +2539,17 @@ body {
 .content-area .form_notice {
   color: #60a740;
 }
-.content-area .form_field_error {
-  display: none;
-}
 .content-area .form_field_with_errors input,
 .content-area .form_field_with_errors textarea {
   background-color: rgba(204, 0, 0, 0.2);
 }
 .content-area .form_field_required .form_field_label::after {
   content: '*';
+}
+.content-area .form_field_error {
+  margin-top: 5px;
+  margin-left: 1px;
+  color: #cc0000;
 }
 .content-area label {
   cursor: pointer;

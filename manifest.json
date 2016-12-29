@@ -1,16 +1,23 @@
 {
-  "description": "Icy fresh wonder",
-  "name": "Longyearbyen",
+  "description": "New design",
+  "name": "New design",
   "preview_medium": "",
   "preview_small": "",
-  "author": "Tõnu Runnel",
+  "author": "",
   "layouts": [
     {
       "content_type": "page",
       "component": false,
       "file": "layouts/product_list.tpl",
-      "layout_name": "product_list",
+      "layout_name": "page_default",
       "title": "Product list"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/blog_article.tpl",
+      "layout_name": "page_default",
+      "title": "Blog article"
     },
     {
       "content_type": "page",
@@ -23,29 +30,22 @@
       "content_type": "page",
       "component": false,
       "file": "layouts/front_page.tpl",
-      "layout_name": "page_front",
+      "layout_name": "page_default",
       "title": "Front page"
     },
     {
       "content_type": "page",
       "component": false,
       "file": "layouts/product.tpl",
-      "layout_name": "product",
+      "layout_name": "page_default",
       "title": "Product"
     },
     {
-      "content_type": "blog",
+      "content_type": "page",
       "component": false,
       "file": "layouts/blog___news.tpl",
-      "layout_name": "blog",
-      "title": "Blog & News"
-    },
-    {
-      "content_type": "blog_article",
-      "component": false,
-      "file": "layouts/blog_article.tpl",
-      "layout_name": "blog_article",
-      "title": "Blog article"
+      "layout_name": "page_default",
+      "title": "Blog   news"
     },
     {
       "content_type": "component",

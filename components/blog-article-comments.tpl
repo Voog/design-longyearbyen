@@ -14,6 +14,9 @@
 
   <div class="comment-form{% unless comment.valid? %} form_with_errors{% endunless %}">
     {% commentform %}
+      {% assign comment_name_error = false %}
+      {% assign comment_email_error = false %}
+      {% assign comment_body_error = false %}
       {% unless comment.valid? %}
           {% for error in comment.errors %}
             {% if error == "comment_author_blank" %}{% assign comment_name_error = true %}{% endif %}
