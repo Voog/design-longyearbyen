@@ -11207,10 +11207,6 @@ return jQuery;
               $(this).removeClass('is-hidden');
             });
           }
-
-          // TODO: Find out why it doesn't work in some edge cases.
-          setHeaderMenuInitialWidth();
-          setHeaderMenuMode();
         },
 
         commit: function(data) {
