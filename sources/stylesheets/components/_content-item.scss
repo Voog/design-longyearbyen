@@ -38,10 +38,6 @@
     }
   }
 
-  .blog-article-page & {
-    padding-bottom: 30px;
-  }
-
   .content-illustrations & {
     margin-bottom: 40px;
   }
@@ -217,12 +213,6 @@
     @media screen and (min-width: $tablet + 1) {
       font-size: 30px;
     }
-
-    .cms-blog-article-add-button & {
-      border-color: rgba($color-black, .4);
-      border-style: dashed;
-      border-width: 1px;
-    }
   }
 
   .image-drop-area {
@@ -282,10 +272,6 @@
   width: 100%;
   padding: .5em;
   box-sizing: border-box;
-}
-
-.article-header {
-  margin-top: 9px;
 }
 
 .item-title {
