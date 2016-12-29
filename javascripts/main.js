@@ -10641,6 +10641,16 @@ return jQuery;
   };
 
   // ===========================================================================
+  // Wraps content area tables with the parent <div>. (Enables horizontal
+  // scrolling if table's width is wider than the content area itself).
+  // ===========================================================================
+  var wrapContentAreaTables = function() {
+    $.each($('.content-area'), function() {
+      $(this).find('table').wrap('<div class="table-container"></div>');
+    });
+  };
+
+  // ===========================================================================
   // Scrolls to the form if submit failed or succeeded (to show the error
   // messages or success notice to the user).
   // ===========================================================================
@@ -10698,6 +10708,7 @@ return jQuery;
     bindButtonClicks();
     focusFormMessages();
     removeFormInputErrorHighlight();
+    wrapContentAreaTables();
   };
 
   // Enables the usage of the initiations outside this file.

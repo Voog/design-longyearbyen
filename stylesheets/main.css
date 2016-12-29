@@ -2026,13 +2026,26 @@ body {
   background-color: #fff !important;
   color: #333 !important;
 }
-.content-area table {
-  border-collapse: collapse;
-}
 .content-area table td {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.36);
   border-color: rgba(0, 0, 0, 0.32);
+}
+.content-area .table-container {
+  max-width: 100%;
+  overflow: auto;
+}
+.content-area table {
+  border-collapse: collapse;
+}
+.content-area table td,
+.content-area table th {
+  padding: 10px;
+  border-color: rgba(0, 0, 0, 0.32);
+  border: 1px solid rgba(0, 0, 0, 0.36);
+}
+.content-area table th {
+  font-weight: bold;
 }
 
 .content-area .form,
