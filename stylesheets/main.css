@@ -675,16 +675,16 @@ body {
   border: none;
 }
 .site-search .search-input::-webkit-input-placeholder {
-  font-weight: normal;
+  font-weight: 400;
 }
 .site-search .search-input::-moz-placeholder {
-  font-weight: normal;
+  font-weight: 400;
 }
 .site-search .search-input:-moz-placeholder {
-  font-weight: normal;
+  font-weight: 400;
 }
 .site-search .search-input:-ms-input-placeholder {
-  font-weight: normal;
+  font-weight: 400;
 }
 .site-search .search-input::-webkit-search-decoration, .site-search .search-input::-webkit-search-cancel-button, .site-search .search-input::-webkit-search-results-button, .site-search .search-input::-webkit-search-results-decoration {
   display: none;
@@ -766,7 +766,7 @@ body {
 .voog-search-modal .voog-search-modal-result h3 a {
   color: #333333;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: 400;
 }
 .voog-search-modal .voog-search-modal-result p {
   font-family: "Futura PT W01 Light", Arial, sans-serif;
@@ -784,7 +784,7 @@ body {
 .voog-search-modal .voog-search-modal-result em {
   font-style: normal;
   background-color: #fff07f;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .menu-language-btn {
@@ -1106,7 +1106,6 @@ body {
 .site-footer b,
 .site-footer strong {
   color: #000000;
-  font-weight: normal;
 }
 .site-footer .inner {
   padding: 90px 125px 80px;
@@ -1164,7 +1163,7 @@ body {
 }
 .blog-article-page .blog-tags .tags-title {
   padding: 0px 20px 0 25px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.6;
   text-transform: uppercase;
@@ -1554,7 +1553,7 @@ body {
   word-break: break-word;
   word-wrap: break-word;
   line-height: 1.7;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
 }
@@ -1659,7 +1658,6 @@ body {
 .content-area code,
 .content-area table {
   color: #1b2124;
-  font-weight: normal;
 }
 .content-area h1 b,
 .content-area h1 strong,

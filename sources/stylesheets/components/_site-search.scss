@@ -65,7 +65,7 @@
     border: none;
 
     @include placeholder() {
-      font-weight: normal;
+      font-weight: 400;
     }
 
     &::-webkit-search-decoration,
@@ -156,7 +156,7 @@
       a {
         color: rgba($color-body, 1);
         text-decoration: none;
-        font-weight: normal;
+        font-weight: 400;
       }
     }
 
@@ -177,7 +177,7 @@
     em {
       font-style: normal;
       background-color: $color-yellow;
-      font-weight: normal;
+      font-weight: 400;
     }
   }
 
