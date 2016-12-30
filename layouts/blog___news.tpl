@@ -15,6 +15,7 @@
           <section class="blog-articles content-area">
             <div class="content-body" data-search-indexing-allowed="true">
               {% include "blog-news-tags" %}
+
               <div class="content-inner">
                 {% addbutton %}
                 {% for article in articles limit: 5 %}
@@ -44,7 +45,6 @@
               </div>
             </section>
           {% endif %}
-
         </main>
 
         {% include "site-footer" %}
