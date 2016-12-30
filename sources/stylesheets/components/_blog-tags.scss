@@ -20,10 +20,6 @@
 
   .tags-editor { text-align: left;}
 
-  .dark-background & {
-    color: rgba($color-white, .7);
-  }
-
   .tags-toggle {
     position: relative;
     display: inline-block;
@@ -37,10 +33,6 @@
     font-size: 20px;
     line-height: 1.6;
     fill: rgba($color-black, .7);
-
-    .dark-background & {
-      fill: rgba($color-white, .7);
-    }
   }
 
   .tags-title {
@@ -64,14 +56,6 @@
     &.active {
       border-width: 0 5px 8px 5px;
       border-color: transparent transparent rgba($color-black, 1) transparent;
-
-      .dark-background & {
-        border-color: rgba($color-white, 1) transparent transparent transparent;
-      }
-    }
-
-    .dark-background & {
-      border-color: transparent transparent rgba($color-white, 1) transparent;
     }
   }
 
@@ -118,10 +102,6 @@
       &.active {
         color: rgba($color-white, 1);
         background-color: rgba(#a4a4a4, 1);
-      }
-
-      .dark-background & {
-        background-color: rgba($color-white, .2);
       }
     }
   }

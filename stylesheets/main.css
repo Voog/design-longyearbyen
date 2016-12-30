@@ -1154,9 +1154,6 @@ body {
 .blog-article-page .blog-tags .tags-editor {
   text-align: left;
 }
-.dark-background .blog-article-page .blog-tags {
-  color: rgba(255, 255, 255, 0.7);
-}
 .blog-article-page .blog-tags .tags-toggle {
   position: relative;
   display: inline-block;
@@ -1169,9 +1166,6 @@ body {
   font-size: 20px;
   line-height: 1.6;
   fill: rgba(0, 0, 0, 0.7);
-}
-.dark-background .blog-article-page .blog-tags .tags-icon {
-  fill: rgba(255, 255, 255, 0.7);
 }
 .blog-article-page .blog-tags .tags-title {
   padding: 0px 20px 0 25px;
@@ -1193,12 +1187,6 @@ body {
 .blog-article-page .blog-tags .ico-arrow.active {
   border-width: 0 5px 8px 5px;
   border-color: transparent transparent black transparent;
-}
-.dark-background .blog-article-page .blog-tags .ico-arrow.active {
-  border-color: white transparent transparent transparent;
-}
-.dark-background .blog-article-page .blog-tags .ico-arrow {
-  border-color: transparent transparent white transparent;
 }
 .blog-article-page .blog-tags .tags-bottom {
   display: none;
@@ -1237,9 +1225,6 @@ body {
 .blog-article-page .blog-tags .menu .menu-link.active {
   color: white;
   background-color: #a4a4a4;
-}
-.dark-background .blog-article-page .blog-tags .menu .menu-link {
-  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #article-comments {
@@ -1915,17 +1900,12 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.6;
+  color: #333333;
 }
 .content-area::after {
   clear: both;
   content: "";
   display: table;
-}
-.content-area .light-background {
-  color: #333333;
-}
-.content-area .dark-background {
-  color: #ffffff;
 }
 .content-area .form_fields {
   font-size: 14px;
@@ -1978,43 +1958,31 @@ body {
 .content-area .edy-texteditor-container-wrapper-right-block:last-child {
   margin-bottom: 0;
 }
-.content-area .light-background h1,
-.content-area .light-background h2,
-.content-area .light-background h3,
-.content-area .light-background h4,
-.content-area .light-background h5,
-.content-area .light-background h6,
-.content-area .light-background ol,
-.content-area .light-background p,
-.content-area .light-background table,
-.content-area .light-background ul {
+.front-page .content-area h1, .front-page
+.content-area h2, .front-page
+.content-area h3, .front-page
+.content-area h4, .front-page
+.content-area h5, .front-page
+.content-area h6, .front-page
+.content-area p, .front-page
+.content-area ul, .front-page
+.content-area ol, .front-page
+.content-area pre, .front-page
+.content-area code, .front-page
+.content-area table {
   color: #333333;
 }
-.content-area .dark-background h1,
-.content-area .dark-background h2,
-.content-area .dark-background h3,
-.content-area .dark-background h4,
-.content-area .dark-background h5,
-.content-area .dark-background h6,
-.content-area .dark-background ol,
-.content-area .dark-background p,
-.content-area .dark-background table,
-.content-area .dark-background ul,
-.content-area .dark-background b,
-.content-area .dark-background strong {
-  color: #ffffff;
-}
-.content-area h1,
-.content-area h2,
-.content-area h3,
-.content-area h4,
-.content-area h5,
-.content-area h6,
-.content-area p,
-.content-area ul,
-.content-area ol,
-.content-area pre,
-.content-area code,
+.content-page .content-area h1, .content-page
+.content-area h2, .content-page
+.content-area h3, .content-page
+.content-area h4, .content-page
+.content-area h5, .content-page
+.content-area h6, .content-page
+.content-area p, .content-page
+.content-area ul, .content-page
+.content-area ol, .content-page
+.content-area pre, .content-page
+.content-area code, .content-page
 .content-area table {
   color: #1b2124;
 }
@@ -2219,13 +2187,6 @@ body {
   background: #eee077;
   color: black;
 }
-.dark-background .content-area a {
-  color: white;
-}
-.dark-background .content-area a:hover {
-  background: #eee077;
-  color: black;
-}
 .content-area .edy-content-social-button,
 .content-area a.edys-gallery-grid-item,
 .content-area a.edys-gallery-item,
@@ -2237,13 +2198,6 @@ body {
 .content-area a.edys-gallery-item:hover,
 .content-area .edys-gallery-wall-item:hover {
   background: transparent;
-}
-.content-area .dark-background .edy-content-social-button {
-  background: transparent;
-}
-.content-area .dark-background .edy-content-social-button:hover {
-  background: transparent;
-  color: white;
 }
 .content-area pre,
 .content-area code,
@@ -2323,21 +2277,8 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-.dark-background .content-area .custom-btn {
-  color: #ffffff;
-  border: 1px solid #ffffff !important;
-}
 .content-area .custom-btn:hover {
   opacity: 0.6;
-  background-color: transparent;
-}
-.light-background .content-area .custom-btn:hover {
-  color: #000000;
-  background-color: transparent;
-}
-.dark-background .content-area .custom-btn:hover {
-  border: 1px solid #ffffff !important;
-  color: #ffffff !important;
   background-color: transparent;
 }
 @media screen and (min-width: 1400px) {
@@ -2394,15 +2335,6 @@ body {
   color: #333;
   opacity: .6;
   background-color: transparent;
-}
-.content-area .dark-background .form_submit input {
-  border: 1px solid #fff;
-  color: #fff;
-}
-.content-area .dark-background .form_submit input:hover {
-  border: 1px solid #fff !important;
-  background-color: #fff !important;
-  color: #333 !important;
 }
 .content-area .table-container {
   max-width: 100%;

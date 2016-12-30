@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
-<html class="common-page {{ view_mode }} site-search-closed {{ language_flags_mode }}" lang="{{ page.language_code }}">
+<html class="common-page item-page content-page{{ view_mode }} site-search-closed {{ language_flags_mode }}" lang="{{ page.language_code }}">
   <head prefix="og: http://ogp.me/ns#">
     {% include "template-head" %}
   </head>
 
-  <body class="item-page">
+  <body>
     {% include "template-svg-spritesheet" %}
     <div class="site-container">
       <div class="wrap">

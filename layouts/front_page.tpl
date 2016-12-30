@@ -5,7 +5,7 @@
     {% include "template-head" %}
   </head>
 
-  <body class="front-page">
+  <body>
     {% include "template-svg-spritesheet" %}
     <div class="site-container">
       <div class="wrap">
