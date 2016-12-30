@@ -12,6 +12,7 @@
     });
 
     // Initiates language flag toggling functionality.
+    // TODO: remove duplicate function.
     site.bindLanguageFlagsToggle();
     site.toggleFlags();
     site.togglePadding();

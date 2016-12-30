@@ -52,7 +52,7 @@
     {% include "mobilemenu" %}
     {% include "menu-language-popover" %}
     {% include "template-tools" %}
-    {% include "site-search "%}
+    {% include "site-search" %}
     {% include "template-javascripts" %}
 
     <script>site.initFrontPage();</script>

@@ -20,6 +20,12 @@
   <link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">
 {% endif %}
 
+{% if site.search.enabled %}
+  <link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-search/latest/edicy-search.css">
+{% endif %}
+
+<link rel="stylesheet" href="http://fast.fonts.net/cssapi/eeb38f59-b7d9-49cc-9a81-1c3f2ac6ccb0.css">
+
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}
 <script src="{{ javascripts_path }}/modernizr.min.js"></script>
 
@@ -33,9 +39,3 @@
 
 {% comment %}TODO: Add functionality after the CMS is going to support it{% endcomment %}
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
-
-{% if site.search.enabled %}
-  <link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-search/latest/edicy-search.css">
-{% endif %}
-
-<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/eeb38f59-b7d9-49cc-9a81-1c3f2ac6ccb0.css"/>

@@ -9,6 +9,7 @@
 {% endif %}
 
 {% comment %}Button{% endcomment %}
+<!-- TODO: Move to main.js file. -->
 {% if editmode %}
   <script type="text/javascript">
      window.edy = window.edy || [];

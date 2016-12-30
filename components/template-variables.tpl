@@ -21,19 +21,18 @@
     {% assign language_flags_mode = "language-flags-enabled" %}
   {% endif %}
 
-  {% comment %}Assign feature 1 section padding class.{% endcomment %}
+  {% comment %}== FRONT PAGE FEATURE 1 RELATED ASSIGNMENTS START =={% endcomment %}
   {% unless page.data.feature_1_is_wide %}
     {% assign feature_1_section_padding_class = "section-with-padding" %}
   {% endunless %}
 
-  {% comment %}Empty content area detection.{% endcomment %}
   {% capture feature_1_html %}{% unless editmode %}{% content name="feature_1" %}{% endunless %}{% endcapture %}
   {% capture feature_1_size %}{{ feature_1_html | size | minus : 1 }}{% endcapture %}
+
   {% unless feature_1_size contains "-" %}
     {% assign feature_1_has_content = true %}
   {% endunless %}
 
-  {% comment %}Front page content area 1 related variables.{% endcomment %}
   {% assign content_bg_1 = page.data.content_bg_1 %}
   {% assign content_bg_1_color = content_bg_1.color %}
 
@@ -46,21 +45,22 @@
   {% else %}
     {% assign content_bg_1_str = content_bg_1 | json %}
   {% endif %}
+  {% comment %}== FRONT PAGE FEATURE 1 RELATED ASSIGNMENTS END =={% endcomment %}
 
-  {% comment %}Assign feature 2 section padding class.{% endcomment %}
-    {% assign feature_2_is_wide = page.data.feature_2_is_wide %}
-    {% unless feature_2_is_wide == nil or feature_2_is_wide == true %}
-      {% assign feature_2_section_padding_class = "section-with-padding" %}
-    {% endunless %}
+  {% comment %}== FRONT PAGE FEATURE 2 RELATED ASSIGNMENTS START =={% endcomment %}
+  {% assign feature_2_is_wide = page.data.feature_2_is_wide %}
 
-  {% comment %}Empty content area detection.{% endcomment %}
+  {% unless feature_2_is_wide == nil or feature_2_is_wide == true %}
+    {% assign feature_2_section_padding_class = "section-with-padding" %}
+  {% endunless %}
+
   {% capture feature_2_html %}{% unless editmode %}{% content name="feature_2" %}{% endunless %}{% endcapture %}
   {% capture feature_2_size %}{{ feature_2_html | size | minus : 1 }}{% endcapture %}
+
   {% unless feature_2_size contains "-" %}
     {% assign feature_2_has_content = true %}
   {% endunless %}
 
-  {% comment %}Front page content area 1 related variables.{% endcomment %}
   {% assign content_bg_2 = page.data.content_bg_2 %}
   {% assign content_bg_2_color = content_bg_2.color %}
 
@@ -73,6 +73,7 @@
   {% else %}
     {% assign content_bg_2_str = content_bg_2 | json %}
   {% endif %}
+  {% comment %}== FRONT PAGE FEATURE 2 RELATED ASSIGNMENTS END =={% endcomment %}
 
   {% comment %}Product related layouts variables.{% endcomment %}
   {% assign product_list_layout = "Product list" %}

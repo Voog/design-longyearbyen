@@ -8,13 +8,6 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/front_page.tpl",
-      "layout_name": "page_default",
-      "title": "Front page"
-    },
-    {
-      "content_type": "page",
-      "component": false,
       "file": "layouts/product.tpl",
       "layout_name": "page_default",
       "title": "Product"
@@ -43,23 +36,16 @@
     {
       "content_type": "page",
       "component": false,
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_default",
+      "title": "Front page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
       "file": "layouts/blog___news.tpl",
       "layout_name": "page_default",
       "title": "Blog   news"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-language-popover.tpl",
-      "layout_name": "menu-language-popover",
-      "title": "menu-language-popover"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-language.tpl",
-      "layout_name": "menu-language",
-      "title": "menu-language"
     },
     {
       "content_type": "component",
@@ -120,13 +106,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/site-topbar.tpl",
-      "layout_name": "site-topbar",
-      "title": "site-topbar"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/template-head.tpl",
       "layout_name": "template-head",
       "title": "template-head"
@@ -158,13 +137,6 @@
       "file": "components/template-tools.tpl",
       "layout_name": "template-tools",
       "title": "template-tools"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-translations.tpl",
-      "layout_name": "template-translations",
-      "title": "template-translations"
     },
     {
       "content_type": "component",
@@ -204,9 +176,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/common-page-variables.tpl",
-      "layout_name": "common-page-variables",
-      "title": "common-page-variables"
+      "file": "components/menu-language-popover.tpl",
+      "layout_name": "menu-language-popover",
+      "title": "menu-language-popover"
     }
   ],
   "assets": [
