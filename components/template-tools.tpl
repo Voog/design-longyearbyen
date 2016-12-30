@@ -17,6 +17,14 @@
     site.toggleFlags();
     site.togglePadding();
 
+    //==========================================================================
+    // Binds custom styles under wysihtml editor.
+    //==========================================================================
+    site.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale }}');
+
+    //==========================================================================
+    // Binds "Front page" color pickers.
+    //==========================================================================
     $('.js-bg-picker-area').each(function(index, bgPickerArea) {
       var bgPickerButton = $(bgPickerArea).find('.js-background-settings'),
           dataBgKey = $(bgPickerButton).data('bg-key');

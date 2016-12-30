@@ -10729,6 +10729,11 @@ return jQuery;
     });
   };
 
+  var bindCustomTexteditorStyles = function(buttonTranslation) {
+    window.edy = window.edy || [];
+    edy.push(['texteditorStyles', {name: buttonTranslation, tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
+  };
+
   // BG-Picker background image and color preview logic function.
   var bgPickerPreview = function(bgPickerArea, data) {
     console.log(data);
@@ -11112,6 +11117,7 @@ return jQuery;
     bindLanguageFlagsToggle: bindLanguageFlagsToggle,
     toggleFlags: toggleFlags,
     togglePadding: togglePadding,
+    bindCustomTexteditorStyles: bindCustomTexteditorStyles,
     bgPickerPreview: bgPickerPreview,
     bgPickerCommit: bgPickerCommit,
     bindItemBgPickers: bindItemBgPickers,
