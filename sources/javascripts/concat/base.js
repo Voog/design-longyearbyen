@@ -247,153 +247,15 @@
     });
   };
 
-  // Returns the suitable version of the image depending on the viewport width.
-  var getImageByWidth = function(sizes, targetWidth) {
-    var prevImage;
-
-    for (var i = 0, max = sizes.length; i < max; i++) {
-      if (sizes[i].width < targetWidth) {
-        return prevImage || sizes[i];
-      }
-      prevImage = sizes[i];
-    }
-    // Makes sure that smallest is returned if all images bigger than targetWidth.
-    return sizes[sizes.length - 1];
-  };
-
-  var bgPickerImageSizesContains = function(sizes, url) {
-    for (var i = sizes.length; i--;) {
-      if (url.indexOf(sizes[i].url.trim()) > -1) {
-        return true;
-      }
-    }
-    return false;
-  };
-
-  // Checks the lightness sum of header background image and color and sets the lightness class depending on it's value.
-  var bgPickerContentLightnessClass = function(bgPickerArea, combinedLightness) {
-    if (combinedLightness > 0.6) {
-      $(bgPickerArea).find('.js-background-type').addClass('light-background').removeClass('dark-background');
-    } else {
-      $(bgPickerArea).find('.js-background-type').addClass('dark-background').removeClass('light-background');
-    }
-  };
-
   // BG-Picker background image and color preview logic function.
-  var bgPickerPreview = function(bgPickerArea, data, bgPicker, defaultImageColor) {
-    // Defines the variables used in preview logic.
-
-    var bgPickerImagePrevious = $(bgPickerArea).find('.js-background-image').css('background-image'),
-        bgPickerImageSuitable = data.imageSizes ? getImageByWidth(data.imageSizes, $(window).width()) : null,
-        bgPickerImage = (data.image && data.image !== '') ? 'url(' + bgPickerImageSuitable.url + ')' : 'none',
-        bgPickerImageSizes = (data.imageSizes && data.imageSizes !== '') ? data.imageSizes : null,
-        bgPickerColor = (data.color && data.color !== '') ? data.color : 'rgba(0,0,0,0)',
-        bgPickerColorDataLightness = (data.colorData && data.colorData !== '') ? data.colorData.lightness : 1,
-        colorExtractImage = $('<img>'),
-        colorExtractCanvas = $('<canvas>'),
-        colorExtractImageUrl = (data.image && data.image !== '') ? data.image : null;
-
-    if (colorExtractImageUrl) {
-      if (bgPickerImageSizesContains(bgPickerImageSizes, bgPickerImagePrevious)) {
-        bgPicker.imageColor = bgPicker.imageColor ? bgPicker.imageColor : defaultImageColor;
-        bgPicker.combinedLightness = getCombinedLightness(bgPicker.imageColor, bgPickerColor);
-        bgPickerContentLightnessClass(bgPickerArea, bgPicker.combinedLightness);
-
-      } else {
-        colorExtractImage.attr('src', colorExtractImageUrl.replace(/.*\/(photos|voogstock)/g,'/photos'));
-        colorExtractImage.on('load', function() {
-          ColorExtract.extract(colorExtractImage[0], colorExtractCanvas[0], function(data) {
-            bgPicker.imageColor = data.bgColor ? data.bgColor : 'rgba(255,255,255,1)';
-            bgPicker.combinedLightness = getCombinedLightness(bgPicker.imageColor, bgPickerColor);
-            bgPickerContentLightnessClass(bgPickerArea, bgPicker.combinedLightness);
-
-          });
-        });
-      };
-    } else {
-      bgPicker.imageColor = 'rgba(255,255,255,1)';
-      bgPicker.combinedLightness = getCombinedLightness(bgPicker.imageColor, bgPickerColor);
-      bgPickerContentLightnessClass(bgPickerArea, bgPicker.combinedLightness);
-
-    };
-
-    // Updates the bgPickerContent background image and background color.
-    if (pageType === 'articlePage' && bgPickerArea.hasClass('site-header')) {
-      $('#preview-style').html('.photo-article.site-header .js-background-image { background-image: ' + bgPickerImage + ' } .photo-article.site-header .js-background-color { background-color: ' + bgPickerColor + ' }');
-    } else {
-      $(bgPickerArea).find('.js-background-image').css({'background-image' : bgPickerImage});
-      $(bgPickerArea).find('.js-background-color').css({'background-color' : bgPickerColor});
-    }
+  var bgPickerPreview = function(bgPickerArea, data) {
+    console.log(data);
+    $(bgPickerArea).find('.js-background-color').css({'background-color' : data.color ? data.color : 'transparent'});
   };
 
   // Header background image and color save logic function.
-  var bgPickerCommit = function(dataBgKey, data, bgPicker, pageType) {
-    var commitData = $.extend(true, {}, data);
-    commitData.image = data.image || '';
-    commitData.imageSizes = data.imageSizes || '';
-    commitData.color = data.color || '';
-    commitData.combinedLightness = bgPicker.combinedLightness;
-
-    if (pageType === 'articlePage') {
-      if (dataBgKey == 'footer_bg') {
-        siteData.set(dataBgKey, commitData);
-      } else {
-        Edicy.articles.currentArticle.setData(dataBgKey, commitData);
-      }
-    } else {
-      if (pageType === 'contentPage' && (dataBgKey === 'footer_bg') || (dataBgKey === 'body_bg')) {
-        siteData.set(dataBgKey, commitData);
-      } else {
-        pageData.set(dataBgKey, commitData);
-      }
-    }
-  };
-
-  var colorSum = function(bgColor, fgColor) {
-    if (bgColor && fgColor) {
-      if (typeof bgColor == 'string') {
-        bgColor = bgColor.replace(/rgba?\(/,'').replace(/\)/,'').split(',');
-        $.each(bgColor, function(n, x) {bgColor[n] = +x;});
-      }
-      if (typeof fgColor == 'string') {
-        fgColor = fgColor.replace(/rgba?\(/,'').replace(/\)/,'').split(',');
-        $.each(fgColor, function(n, x) {fgColor[n] = +x;});
-      }
-      if (typeof bgColor == 'object' && bgColor.hasOwnProperty('length')) {
-        if (bgColor.length == 3) { bgColor.push(1.0); }
-      }
-      if (typeof fgColor == 'object' && fgColor.hasOwnProperty('length')) {
-        if (fgColor.length == 3) { fgColor.push(1.0); }
-      }
-      var result = [0, 0, 0, 0];
-      result[3] = 1 - (1 - fgColor[3]) * (1 - bgColor[3]);
-      if (result[3] === 0) { result[3] = 1e-6; }
-      result[0] = Math.min(fgColor[0] * fgColor[3] / result[3] + bgColor[0] * bgColor[3] * (1 - fgColor[3]) / result[3], 255);
-      result[1] = Math.min(fgColor[1] * fgColor[3] / result[3] + bgColor[1] * bgColor[3] * (1 - fgColor[3]) / result[3], 255);
-      result[2] = Math.min(fgColor[2] * fgColor[3] / result[3] + bgColor[2] * bgColor[3] * (1 - fgColor[3]) / result[3], 255);
-      return $.map(result, function(e) { return Math.floor(e); });
-    }
-  };
-
-  var getCombinedColor = function(bgColor, fgColor) {
-    var sum = colorSum(bgColor || [255,255,255,1], fgColor || [255,255,255,1]);
-    return sum;
-  };
-
-  var getCombinedLightness = function(bgColor, fgColor) {
-    var combinedColor = getCombinedColor(bgColor, fgColor);
-    var color = Math.round(((+combinedColor[0]) * 0.2126 + (+combinedColor[1]) * 0.7152 + (+combinedColor[2]) * 0.0722) / 2.55) / 100;
-    return color;
-  };
-
-  var bgPickerColorScheme = function(lightness) {
-    if (typeof lightness != 'undefined') {
-      if (lightness > 0.6) {
-        $('.header-wrapper').addClass('light').removeClass('dark');
-      } else {
-        $('.header-wrapper').addClass('dark').removeClass('light');
-      }
-    }
+  var bgPickerCommit = function(dataBgKey, data) {
+    pageData.set(dataBgKey, data);
   };
 
   // ===========================================================================
@@ -423,6 +285,16 @@
         .offset().top)
         ;
       }
+    });
+  };
+
+  // ===========================================================================
+  // Removes error highlighting from form input if user modifies the faulty
+  // field.
+  // ===========================================================================
+  var removeFormInputErrorHighlight = function() {
+    $('[class^=form_field_]').on('input change', function() {
+      $(this).closest('.form_field_with_errors').removeClass('form_field_with_errors');
     });
   };
 
@@ -470,9 +342,6 @@
     } else {
       apiType = 'pages';
     }
-
-    console.log(apiType);
-    console.log('/admin/api/' + apiType +'/' + itemId);
 
     $.ajax({
        type: 'PATCH',
@@ -661,16 +530,6 @@
           $contentItemBox.find('.js-loader').remove();
         }, 3000);
       }
-    });
-  };
-
-  // ===========================================================================
-  // Removes error highlighting from form input if user modifies the faulty
-  // field.
-  // ===========================================================================
-  var removeFormInputErrorHighlight = function() {
-    $('[class^=form_field_]').on('input change', function() {
-      $(this).closest('.form_field_with_errors').removeClass('form_field_with_errors');
     });
   };
 

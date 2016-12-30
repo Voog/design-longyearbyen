@@ -31,8 +31,6 @@
 {% include "template-meta" %}
 {% if blog %}{{ blog.rss_link }}{% endif %}
 
-{% include "edicy-tools-styles" %}
-
 {% comment %}TODO: Add functionality after the CMS is going to support it{% endcomment %}
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
