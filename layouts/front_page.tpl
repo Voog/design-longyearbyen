@@ -9,7 +9,6 @@
     {% include "template-svg-spritesheet" %}
     <div class="site-container">
       <div class="wrap">
-
         {% include "site-header" %}
 
         <main class="page-content" role="main">
@@ -42,7 +41,6 @@
                   </div>
                 {% endif %}
               </div>
-
             </div>
           </section>
         </main>
@@ -58,6 +56,5 @@
     {% include "template-javascripts" %}
 
     <script>site.initFrontPage();</script>
-
   </body>
 </html>

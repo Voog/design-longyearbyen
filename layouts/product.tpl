@@ -79,6 +79,5 @@
     {% include "item-list-tools" %}
 
     <script>site.initItemsPage();</script>
-
   </body>
 </html>

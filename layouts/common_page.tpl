@@ -9,7 +9,6 @@
     {% include "template-svg-spritesheet" %}
     <div class="site-container">
       <div class="wrap">
-
         {% include "site-header" %}
         {% include "common-page-variables" %}
 
@@ -33,6 +32,5 @@
     {% include "template-javascripts" %}
 
     <script>site.initCommonPage();</script>
-
   </body>
 </html>
