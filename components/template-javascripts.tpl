@@ -5,16 +5,8 @@
 {% comment %}Site search related javascript components.{% endcomment %}
 {% if site.search.enabled %}
   <script src="{{ site.static_asset_host }}/libs/edicy-search/latest/edicy-search.js"></script>
-  <script>site.bindSiteSearch($('.js-search-form').get(0), '{{ page.language_code }}');</script>
+  <script>template.bindSiteSearch($('.js-search-form').get(0), '{{ page.language_code }}');</script>
 {% endif %}
-
-{% comment %}Button{% endcomment %}
-{% if editmode %}
-  <script type="text/javascript">
-     window.edy = window.edy || [];
-     edy.push(['texteditorStyles', {name: 'Button', tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
-   </script>
- {% endif %}
 
 {% comment %}CMS related javascripts components.{% endcomment %}
 {% sitejs_include %}

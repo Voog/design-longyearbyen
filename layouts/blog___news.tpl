@@ -2,7 +2,6 @@
 {% include "template-variables" %}
 <html class="blog-page blog-and-news-page {{ view_mode }} site-search-closed {{ language_flags_mode }}" lang="{{ page.language_code }}">
   <head prefix="og: http://ogp.me/ns#">
-    {% assign blog_page = true %}
     {% include "template-head" %}
   </head>
 
@@ -55,10 +54,9 @@
     {% include "mobilemenu" %}
     {% include "menu-language-popover" %}
     {% include "template-tools" %}
-    {% include "site-search "%}
+    {% include "site-search" %}
     {% include "template-javascripts" %}
 
-    <script>site.initBlogPage();</script>
-
+    <script>template.initBlogPage();</script>
   </body>
 </html>

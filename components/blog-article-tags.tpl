@@ -1,4 +1,4 @@
-{% if editmode and blog_article_page %}
+{% if editmode %}
   <div class="blog-tags">
     <div class="tags-editor">{% editable article.tags %}</div>
   </div>

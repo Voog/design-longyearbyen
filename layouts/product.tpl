@@ -75,10 +75,8 @@
     {% include "site-search" %}
 
     {% include "template-javascripts" %}
-    {% include "template-tools" %}
-    {% include "item-list-tools" %}
+    {% include "template-tools" items_page: true %}
 
-    <script>site.initItemsPage();</script>
-
+    <script>template.initItemsPage();</script>
   </body>
 </html>
