@@ -13,14 +13,14 @@
 
     // Initiates language flag toggling functionality.
     // TODO: remove duplicate function.
-    site.bindLanguageFlagsToggle();
-    site.toggleFlags();
-    site.togglePadding();
+    template.bindLanguageFlagsToggle();
+    template.toggleFlags();
+    template.togglePadding();
 
     //==========================================================================
     // Binds custom styles under wysihtml editor.
     //==========================================================================
-    site.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale }}');
+    template.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale }}');
 
     //==========================================================================
     // Binds "Front page" color pickers.
@@ -34,18 +34,18 @@
         color: true,
         showAlpha: true,
         preview: function(data) {
-          site.bgPickerPreview($(bgPickerArea), data);
+          template.bgPickerPreview($(bgPickerArea), data);
         },
         commit: function(data) {
-          site.bgPickerCommit(dataBgKey, data);
+          template.bgPickerCommit(dataBgKey, data);
         }
       });
     });
 
     {% if items_page %}
-      site.bindItemBgPickers();
-      site.bindItemImgDropAreas();
-      site.bindItemImageCropToggle();
+      template.bindItemBgPickers();
+      template.bindItemImgDropAreas();
+      template.bindItemImageCropToggle();
 
       {%if site.data.settings_root_item %}
         rootItemValuesObj = {{ site.data.settings_root_item | json }};
@@ -53,7 +53,7 @@
         rootItemValuesObj = {};
       {% endif %};
 
-      site.bindRootItemSettings(rootItemValuesObj);
+      template.bindRootItemSettings(rootItemValuesObj);
     {% endif %}
   </script>
 {% endeditorjsblock %}

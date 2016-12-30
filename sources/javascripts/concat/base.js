@@ -622,8 +622,8 @@
   };
 
   // Enables the usage of the initiations outside this file.
-  // For example add "<script>site.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
-  window.site = $.extend(window.site || {}, {
+  // For example add "<script>template.initBlogPage();</script>" at the end of the "Blog & News" page to initiate blog listing view functions.
+  window.template = $.extend(window.template || {}, {
     // Initiations for layouts.
     initBlogPage: initBlogPage,
     initArticlePage: initArticlePage,

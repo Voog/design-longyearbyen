@@ -55,6 +55,6 @@
     {% include "site-search" %}
     {% include "template-javascripts" %}
 
-    <script>site.initFrontPage();</script>
+    <script>template.initFrontPage();</script>
   </body>
 </html>

@@ -31,6 +31,6 @@
     {% include "site-search" %}
     {% include "template-javascripts" %}
 
-    <script>site.initCommonPage();</script>
+    <script>template.initCommonPage();</script>
   </body>
 </html>

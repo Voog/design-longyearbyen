@@ -57,7 +57,7 @@
     {% include "template-javascripts" %}
 
     <script>
-      site.initArticlePage();
+      template.initArticlePage();
     </script>
   </body>
 

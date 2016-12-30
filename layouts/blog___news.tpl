@@ -57,6 +57,6 @@
     {% include "site-search" %}
     {% include "template-javascripts" %}
 
-    <script>site.initBlogPage();</script>
+    <script>template.initBlogPage();</script>
   </body>
 </html>
