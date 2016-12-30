@@ -8,6 +8,13 @@
     {
       "content_type": "page",
       "component": false,
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_default",
+      "title": "Front page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
       "file": "layouts/product.tpl",
       "layout_name": "page_default",
       "title": "Product"
@@ -36,23 +43,9 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/front_page.tpl",
-      "layout_name": "page_default",
-      "title": "Front page"
-    },
-    {
-      "content_type": "page",
-      "component": false,
       "file": "layouts/blog___news.tpl",
       "layout_name": "page_default",
       "title": "Blog   news"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/item-list-tools.tpl",
-      "layout_name": "item-list-tools",
-      "title": "item-list-tools"
     },
     {
       "content_type": "component",

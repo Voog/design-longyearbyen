@@ -33,5 +33,18 @@
       });
     });
 
+    {% if items_page %}
+      site.bindItemBgPickers();
+      site.bindItemImgDropAreas();
+      site.bindItemImageCropToggle();
+
+      {%if site.data.settings_root_item %}
+        rootItemValuesObj = {{ site.data.settings_root_item | json }};
+      {% else %}
+        rootItemValuesObj = {};
+      {% endif %};
+
+      site.bindRootItemSettings(rootItemValuesObj);
+    {% endif %}
   </script>
 {% endeditorjsblock %}
