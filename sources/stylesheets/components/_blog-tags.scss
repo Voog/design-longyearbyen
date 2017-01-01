@@ -1,22 +1,22 @@
 // Blog news layout
 .blog-news-page {
-  .blog-tags  {
-    margin-top:0;
+  .blog-tags {
+    margin-top: 0;
     margin-bottom: 20px;
   }
 
   .menu-link:hover {
-    background: none !important;
     color: $color-black;
+    background: none;
   }
 }
 
 
 // Blog article layout
-.blog-article-page .blog-tags  {
+.blog-article-page .blog-tags {
   margin-top: 10px;
-  text-align: center;
   color: rgba($color-black, .7);
+  text-align: center;
 
   .tags-editor { text-align: left;}
 
@@ -36,26 +36,26 @@
   }
 
   .tags-title {
-    padding: 0px 20px 0 25px;
-    font-weight: 400;
+    padding: 0 20px 0 25px;
     font-size: 14px;
+    font-weight: 400;
     line-height: 1.6;
     text-transform: uppercase;
   }
 
   .ico-arrow {
     position: absolute;
-    right: 0;
     top: 7px;
+    right: 0;
     width: 0;
     height: 0;
+    border-color: rgba($color-black, 1) transparent transparent;
     border-style: solid;
-    border-width: 8px 5px 0 5px;
-    border-color: rgba($color-black, 1) transparent transparent transparent;
+    border-width: 8px 5px 0;
 
     &.active {
-      border-width: 0 5px 8px 5px;
-      border-color: transparent transparent rgba($color-black, 1) transparent;
+      border-color: transparent transparent rgba($color-black, 1);
+      border-width: 0 5px 8px;
     }
   }
 
@@ -75,10 +75,10 @@
     .menu-item {
       display: inline-block;
       margin-top: 5px;
-      vertical-align: top;
       line-height: 1;
+      vertical-align: top;
 
-      &:before {
+      &::before {
         display: none;
       }
     }
@@ -86,22 +86,22 @@
     .menu-link {
       padding: 2px 5px;
       font-size: 12px;
-      text-decoration: none;
-      border-radius: 3px;
-      color: rgba($color-white, 1);
-      background-color: rgba(#a4a4a4, 1);
-      border-bottom: none;
       line-height: 16px;
+      color: rgba($color-white, 1);
+      text-decoration: none;
+      background-color: rgba($color-grey, 1);
+      border-bottom: 0;
+      border-radius: 3px;
 
       &:hover {
-        opacity: .7;
-        background: #eee077;
         color: $color-black;
+        background: $color-link-hightlight;
+        opacity: .7;
       }
 
       &.active {
         color: rgba($color-white, 1);
-        background-color: rgba(#a4a4a4, 1);
+        background-color: rgba($color-grey, 1);
       }
     }
   }
