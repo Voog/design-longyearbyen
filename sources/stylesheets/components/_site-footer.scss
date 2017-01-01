@@ -1,7 +1,7 @@
 .site-footer {
 
   b,
-  strong  {
+  strong {
     color: $color-black;
   }
 
@@ -14,10 +14,11 @@
   }
 
   .voog-reference {
-    opacity: .55;
     padding: 0 0 40px;
     color: rgba($color-black, 1);
     text-align: center;
+    opacity: .55;
+
     &:hover {
       opacity: .8;
     }
