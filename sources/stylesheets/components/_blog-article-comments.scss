@@ -1,21 +1,24 @@
-#article-comments {
+.article-comments {
   padding: 80px 80px 0;
 
   .comments-title {
     font-size: 20px;
   }
+
   .comment {
+    margin-bottom: 10px;
     font-size: 16px;
-    margin-bottom: 10px !important;
   }
+
   .comment-author {
     font-family: $font-heavy;
     font-weight: 700;
   }
+
   .comment-date,
   .comment-author {
-    font-style:italic;
     font-size: 14px;
+    font-style: italic;
   }
 
   @media screen and (max-width: $tablet) {
