@@ -819,19 +819,19 @@ body {
   vertical-align: middle;
 }
 .language-flags-disabled .menu-language-btn {
-  padding: 0px 24px 0 12px;
-  font-family: inherit;
   height: 24px;
+  padding: 0 24px 0 12px;
+  margin-right: 0;
+  font-family: inherit;
   font-size: 13px;
   text-transform: uppercase;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 12px;
-  margin-right: 0;
 }
 .language-flags-disabled .menu-language-btn:hover {
   opacity: .8;
 }
-.language-flags-disabled .menu-language-btn:after {
+.language-flags-disabled .menu-language-btn::after {
   position: absolute;
   top: 50%;
   right: 8px;
@@ -839,37 +839,37 @@ body {
   width: 0;
   height: 0;
   margin-top: -3px;
-  content: "";
+  border-color: rgba(0, 0, 0, 0.5) transparent transparent;
   border-style: solid;
   border-width: 6px 5px 0;
-  border-color: rgba(0, 0, 0, 0.5) transparent transparent;
+  content: '';
 }
-.menu-language-popover-open .menu-language-btn:after {
+.menu-language-popover-open .menu-language-btn::after {
+  border-color: transparent transparent rgba(0, 0, 0, 0.5);
   border-width: 0 5px 6px;
-  border-color: transparent transparent rgba(0, 0, 0, 0.5) transparent;
 }
-.menu-language-btn:before, .menu-language-btn:after {
+.menu-language-btn::before, .menu-language-btn::after {
   top: 5px;
 }
-.language-flags-enabled .menu-language-btn:before, .language-flags-enabled .menu-language-btn:after {
+.language-flags-enabled .menu-language-btn::before, .language-flags-enabled .menu-language-btn::after {
   left: 5px;
 }
-.menu-language-btn:hover:after {
+.menu-language-btn:hover::after {
   opacity: .8;
 }
 
 .menu-language li a {
+  display: block;
   font-size: 14px;
   line-height: 14px;
-  text-decoration: none;
-  display: block;
   color: #898989;
+  text-decoration: none;
 }
 .menu-language li a:hover {
   color: #000000;
-  background: none !important;
+  background: none;
 }
-.menu-language li a:before, .menu-language li a:after {
+.menu-language li a::before, .menu-language li a::after {
   top: 5px;
   right: 6px;
 }
@@ -886,20 +886,20 @@ body {
   padding: 11px 13px 13px 6px;
 }
 .menu-language-popover-open .menu-language {
-  display: block;
   z-index: 10;
-  text-align: right;
+  display: block;
   min-width: 122px;
+  text-align: right;
 }
 
 .menu-options button {
   display: block;
   width: 100%;
   padding: 6px;
-  text-align: right;
   font-family: inherit;
   font-size: 14px;
   color: #333333;
+  text-align: right;
   background-color: rgba(0, 0, 0, 0.1);
 }
 .menu-options button:hover {
@@ -919,23 +919,23 @@ body {
   position: relative;
   background-color: transparent;
 }
-.language-flags-enabled .ico-flags:before, .language-flags-enabled .ico-flags:after {
+.language-flags-enabled .ico-flags::before, .language-flags-enabled .ico-flags::after {
   position: absolute;
   display: block;
-  height: 15px;
   width: 21px;
+  height: 15px;
   content: '';
 }
-.ico-flags:before {
+.ico-flags::before {
   background-color: black;
 }
-.language-flags-disabled .ico-flags:before {
+.language-flags-disabled .ico-flags::before {
   display: none;
 }
-.ico-flags:after {
+.ico-flags::after {
   opacity: .95;
 }
-.language-flags-enabled .ico-flags:after {
+.language-flags-enabled .ico-flags::after {
   background-image: url("../assets/ico-flags.svg");
 }
 
