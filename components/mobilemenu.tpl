@@ -1,4 +1,4 @@
-<div id="mobile-menu" class="js-menu-lang-wrap {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
+<div id="mobile-menu" class="mobile-menu js-menu-lang-wrap {% if flags_state %}flags-enabled{% else %}flags-disabled{% endif %}">
   <a href="#" class="mobile-menu-close"></a>
   {% if editmode or site.has_many_languages? %}
     <a href="#" role="button" class="language-menu-btn">
