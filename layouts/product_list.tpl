@@ -9,9 +9,7 @@
     {% include "template-svg-spritesheet" %}
     <div class="site-container">
       <div class="wrap">
-
         {% include "site-header" %}
-        {% include "common-page-variables" %}
 
         <main class="page-content" role="main">
           {% include "product-breadcrumbs" %}
