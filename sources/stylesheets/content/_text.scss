@@ -185,6 +185,14 @@
       text-align: left;
       border-left: 2px solid $color-light;
     }
+
+    a {
+      border-bottom: 0;
+    }
+
+    .custom-btn {
+      border: 1px solid $color-body;
+    }
   }
 
   h2 {
@@ -224,7 +232,7 @@
   }
 
 
-  &.slogan
+  &.slogan,
   &.slogan {
     h1,
     h2,
@@ -283,10 +291,6 @@
     color: rgba($color-black, 1);
     text-decoration: none;
     border-bottom: 5px solid $color-link-hightlight;
-
-    .site-footer & {
-      border-bottom: 0;
-    }
 
     &:hover {
       color: rgba($color-black, 1);
@@ -394,7 +398,6 @@
       font-size: 20px;
     }
   }
-
 
   .edy-positionable-container-center,
   .edy-positionable-container-left-block,
