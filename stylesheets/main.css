@@ -27,12 +27,15 @@ body {
 }
 .site-container .wrap {
   max-width: 1000px;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 @media screen and (max-width: 640px) {
   .site-container .wrap {
     padding: 0;
   }
+}
+.wrap .page-content {
+  background: #eeeeee;
 }
 
 .content-inner {
@@ -55,18 +58,18 @@ body {
 }
 
 .article-header {
-  text-align: center;
   padding-bottom: 20px;
+  text-align: center;
 }
 .article-header .article-title {
+  padding: 0;
+  margin-bottom: 0;
   font-size: 20px;
   line-height: 1.2;
   color: #1b2124;
-  margin-bottom: 0;
-  padding: 0;
 }
 .article-header .article-title a {
-  border-bottom: none;
+  border-bottom: 0;
 }
 
 .article-info {

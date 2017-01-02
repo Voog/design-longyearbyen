@@ -29,16 +29,17 @@ body {
 
   .site-container & {
     max-width: 1000px;
-    padding: 0px 20px;
+    padding: 0 20px;
 
     @media screen and (max-width: $mobile) {
       padding: 0;
     }
   }
-}
 
-//.content-body {
-//}
+  .page-content {
+    background: $bg-color;
+  }
+}
 
 .content-inner {
   @include clearfix;
@@ -47,24 +48,25 @@ body {
   @media screen and (max-width: $tablet) {
     padding: 40px;
   }
+
   @media screen and (max-width: $tablet-1) {
     padding: 40px 25px;
   }
 }
 
 .article-header {
-  text-align: center;
   padding-bottom: 20px;
+  text-align: center;
 
   .article-title {
+    padding: 0;
+    margin-bottom: 0;
     font-size: 20px;
     line-height: 1.2;
     color: rgba($color-highlight, 1);
-    margin-bottom: 0;
-    padding: 0;
 
     a {
-      border-bottom: none;
+      border-bottom: 0;
     }
   }
 }
