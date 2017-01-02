@@ -1691,17 +1691,17 @@ body {
   hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-  font-size: 18px;
-  line-height: 1.4;
   margin: 0;
   font-family: "Futura PT W01 Heavy", Arial, sans-serif;
+  font-size: 18px;
   font-weight: 700;
+  line-height: 1.4;
 }
 .blog-news-page .article-date {
+  margin-top: 8px;
   font-size: 13px;
   color: #898989;
   text-transform: uppercase;
-  margin-top: 8px;
 }
 .blog-news-page .articles-listing {
   text-align: center;
@@ -1726,11 +1726,11 @@ body {
   }
 }
 .blog-news-page .articles-listing .articles-listing-header {
-  padding: 40px 0px 15px;
+  padding: 40px 0 15px;
   border-top: 1px solid #cacaca;
 }
 .blog-news-page .articles-listing .content-inner a {
-  border-bottom: none;
+  border-bottom: 0;
 }
 .blog-news-page .articles-listing .article-title {
   font-family: "Futura PT W01 Book", Arial, sans-serif;
