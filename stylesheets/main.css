@@ -1774,32 +1774,26 @@ body {
     display: flex;
   }
 }
-.post-nav-link {
+.post-nav-link.post-nav-link-half {
   position: relative;
   display: block;
   flex: 1;
   padding-top: 33px;
   color: currentColor;
-  border-bottom: none !important;
+  border-bottom: 0;
 }
-.post-nav-link:hover {
-  background: none !important;
+.post-nav-link.post-nav-link-half:hover {
+  background: none;
 }
 @media screen and (min-width: 480px) {
-  .post-nav-link:first-child {
+  .post-nav-link.post-nav-link-half:first-child {
     padding-right: 20px;
   }
 }
 @media screen and (min-width: 480px) {
-  .post-nav-link:last-child {
+  .post-nav-link.post-nav-link-half:last-child {
     padding-left: 20px;
   }
-}
-.post-nav-link:hover .post-nav-direction {
-  opacity: 1;
-}
-.post-nav-link:hover .post-nav-title {
-  opacity: 1;
 }
 
 @media screen and (max-width: 480px) {
