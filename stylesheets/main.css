@@ -163,9 +163,6 @@ body {
 .menu-main .menu.menu-horizontal li.selected a {
   background: transparent;
 }
-.menu-main li {
-  display: inline-block;
-}
 .menu-main li a {
   display: block;
   color: #898989;
@@ -177,6 +174,12 @@ body {
 .menu-main li.selected a {
   color: #000;
   background: #fff07f;
+}
+@media screen and (min-width: 641px) {
+  .menu-main li {
+    display: inline-block;
+    margin-right: 10px;
+  }
 }
 @media screen and (max-width: 768px) {
   .menu-main {

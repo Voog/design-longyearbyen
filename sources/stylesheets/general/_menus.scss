@@ -102,7 +102,6 @@
   }
 
   li {
-    display: inline-block;
 
     a {
       display: block;
@@ -119,6 +118,11 @@
         color: $color-black;
         background: $color-yellow;
       }
+    }
+
+    @media screen and (min-width: $mobile + 1) {
+      display: inline-block;
+      margin-right: 10px;
     }
   }
 
