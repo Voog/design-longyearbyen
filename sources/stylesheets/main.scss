@@ -24,12 +24,10 @@
 @import 'components/blog-article-comments';
 @import 'components/content-item';
 
-// CUSTOM LAYOUT STYLE
-@import 'custom-styles';
-
 // LAYOUTS
 @import 'layouts/blog-and-news';
 @import 'layouts/blog-article';
+@import 'layouts/front-page';
 
  // CONTENT AREAS
 @import 'content/text';
