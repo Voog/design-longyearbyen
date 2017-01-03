@@ -1787,17 +1787,6 @@ body {
     padding-right: 20px;
   }
 }
-@media screen and (min-width: 480px) {
-  .post-nav-link.post-nav-link-half:last-child {
-    padding-left: 20px;
-    text-align: right;
-  }
-}
-@media screen and (max-width: 480px) {
-  .post-nav-link.post-nav-link-half {
-    text-align: center;
-  }
-}
 @media screen and (max-width: 480px) {
   .post-nav-link.post-nav-link-half:first-child {
     padding-bottom: 33px;
@@ -1814,6 +1803,17 @@ body {
     border-bottom: 1px solid currentColor;
     content: '';
     opacity: .2;
+  }
+}
+@media screen and (min-width: 480px) {
+  .post-nav-link.post-nav-link-half:last-child {
+    padding-left: 20px;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 480px) {
+  .post-nav-link.post-nav-link-half {
+    text-align: center;
   }
 }
 .post-nav-link.post-nav-link-full {
