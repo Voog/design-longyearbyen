@@ -1771,6 +1771,15 @@ body {
   padding-top: 33px;
   color: currentColor;
 }
+.post-nav-link .post-nav-direction {
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: .5;
+}
+.post-nav-link .post-nav-title {
+  font-size: 20px;
+  opacity: .7;
+}
 .post-nav-link.post-nav-link-half {
   position: relative;
   display: block;
@@ -1781,6 +1790,7 @@ body {
 }
 .post-nav-link.post-nav-link-half:hover {
   background: none;
+  opacity: 1;
 }
 @media screen and (min-width: 480px) {
   .post-nav-link.post-nav-link-half:first-child {
@@ -1822,20 +1832,6 @@ body {
 }
 .post-nav-link.post-nav-link-full:hover {
   background: none;
-}
-.post-nav-link .post-nav-direction {
-  font-size: 12px;
-  text-transform: uppercase;
-  opacity: .5;
-}
-.post-nav-link .post-nav-direction:hover {
-  opacity: .9;
-}
-.post-nav-link .post-nav-title {
-  font-size: 20px;
-  opacity: .7;
-}
-.post-nav-link .post-nav-title:hover {
   opacity: .9;
 }
 
