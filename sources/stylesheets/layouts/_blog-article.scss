@@ -27,6 +27,14 @@
 }
 
 .post-nav-link {
+  position: relative;
+  display: block;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 33px;
+  color: currentColor;
+
   &.post-nav-link-half {
     position: relative;
     display: block;
@@ -48,55 +56,60 @@
     &:last-child {
       @media screen and (min-width: $mobile-1) {
         padding-left: 20px;
+        text-align: right;
       }
     }
 
-  }
-}
-
-.post-nav-link-half {
-  @media screen and (max-width: $mobile-1) {
-    text-align: center;
-  }
-
-  &:first-child {
     @media screen and (max-width: $mobile-1) {
-      padding-bottom: 33px;
+      text-align: center;
     }
 
-    &::before {
+    &:first-child {
       @media screen and (max-width: $mobile-1) {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: block;
-        border-bottom: 1px solid currentColor;
-        content: '';
-        opacity: .2;
+        padding-bottom: 33px;
+      }
+
+      &::before {
+        @media screen and (max-width: $mobile-1) {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: block;
+          border-bottom: 1px solid currentColor;
+          content: '';
+          opacity: .2;
+        }
       }
     }
   }
 
-  &:last-child {
-    @media screen and (min-width: $mobile-1) {
-      text-align: right;
+  &.post-nav-link-full {
+    text-align: center;
+    border: 0;
+
+    &:hover {
+      background: none;
     }
   }
-}
 
-.post-nav-link-full {
-  text-align: center;
-}
+  .post-nav-direction {
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: .5;
 
-.post-nav-direction {
-  font-size: 12px;
-  text-transform: uppercase;
-  opacity: .5;
-}
+    &:hover {
+      opacity: .9;
+    }
+  }
 
-.post-nav-title {
-  font-size: 20px;
-  opacity: .7;
+  .post-nav-title {
+    font-size: 20px;
+    opacity: .7;
+
+    &:hover {
+      opacity: .9;
+    }
+  }
 }
