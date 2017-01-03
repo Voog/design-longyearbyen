@@ -218,6 +218,10 @@
   padding-right: 25px;
   padding-left: 25px;
 
+  &:last-child {
+    padding-bottom: 40px;
+  }
+
   .menu-item {
     display: inline-block;
 
