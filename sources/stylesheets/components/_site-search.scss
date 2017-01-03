@@ -19,9 +19,7 @@
 }
 
 .site-search {
-
   @include transition(transform .2s);
-
   position: fixed;
   top: 0;
   right: -280px;
@@ -141,6 +139,7 @@
 
     // Single entity of the search result.
     .voog-search-modal-result {
+      // scss-lint:disable NestingDepth
       h3 {
         font-size: 19px;
         line-height: 1.3;
@@ -179,11 +178,7 @@
         font-weight: 400;
         background-color: $color-yellow;
       }
-    }
-
-    .voog-search-loader {
-      // Loader div at the end of the .voog-search-modal-inner div. By default it is shows a dot loader which is visible
-      // while search modal has class "loading".
+      // scss-lint:enable NestingDepth
     }
   }
 }

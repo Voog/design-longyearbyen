@@ -8,6 +8,9 @@
     clear: both;
   }
 
+  .form_fields {
+    font-size: 14px;
+  }
 
   .edy-fe-field,
   .form_field {
@@ -117,9 +120,11 @@
 
   .form_field_required {
     .form_field_label {
+      // scss-lint:disable NestingDepth
       &::after {
         content: '*';
       }
+      // scss-lint:enable NestingDepth
     }
   }
 
@@ -140,23 +145,23 @@
     }
 
     .form_field_checkbox {
+      // scss-lint:disable NestingDepth
       + .form_control_indicator {
-        // scss-lint:disable NestingDepth
         &::before {
           background: rgba($color-white, 1);
           border-color: rgba($color-body, 1);
           border-style: solid;
           border-width: 1px;
 
+          // scss-lint:disable SelectorDepth
           .form_field_with_errors & {
             border-color: rgba($color-error, .5);
           }
+          // scss-lint:enable SelectorDepth
         }
-        // scss-lint:enable NestingDepth
       }
 
       &:checked {
-        // scss-lint:disable NestingDepth
         + .form_control_indicator {
           &::before {
             width: 100%;
@@ -168,13 +173,13 @@
 
           }
         }
-        // scss-lint:enable NestingDepth
       }
+      // scss-lint:enable NestingDepth
     }
 
     .form_field_radio {
+      // scss-lint:disable NestingDepth
       + .form_control_indicator {
-        // scss-lint:disable NestingDepth
         &::before {
           width: 9px;
           height: 9px;
@@ -185,19 +190,17 @@
           outline-style: solid;
           outline-color: rgba($color-body, 1);
         }
-        // scss-lint:enable NestingDepth
       }
 
       &:checked {
-        // scss-lint:disable NestingDepth
         + .form_control_indicator {
           &::before {
             background-color: rgba($color-body, 1);
             opacity: .84;
           }
         }
-        // scss-lint:enable NestingDepth
       }
+      // scss-lint:enable NestingDepth
     }
 
     .form_control_indicator {
@@ -208,6 +211,7 @@
       height: 17px;
       margin-right: 7px;
 
+      // scss-lint:disable NestingDepth
       &::before {
         position: absolute;
         bottom: 0;
@@ -217,8 +221,39 @@
         height: 15px;
         content: '';
       }
+      // scss-lint:enable NestingDepth
     }
   }
 
+}
+
+// Button - custom and form submit
+.form_submit {
+  input {
+    max-width: 100%;
+    min-width: 180px;
+    padding: .61em .55em;
+    margin: 5px 0;
+    font-family: $font-main;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $color-body;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: none;
+    border: 1px solid $color-body;
+    border-radius: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+    &:hover {
+      color: $color-body;
+      background-color: transparent;
+      border: 1px solid $color-body;
+      opacity: .6;
+    }
+  }
 }
 // scss-lint:enable SelectorFormat

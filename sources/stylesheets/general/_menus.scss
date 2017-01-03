@@ -1,5 +1,4 @@
 // GENERAL SETTINGS FOR MENUS
-
 .menu-popover {
   position: absolute;
   display: none;
@@ -56,6 +55,7 @@
       padding-bottom: 5px;
       padding-left: 3px;
 
+      // scss-lint:disable NestingDepth
       &:hover {
         display: block;
         color: $color-black;
@@ -65,6 +65,7 @@
       &.untranslated {
         color: rgba($color-untranslated, .7);
       }
+      // scss-lint:enable NestingDepth
     }
   }
 
@@ -77,9 +78,13 @@
     }
 
     li {
-      &.selected a {
-        color: $color-black;
+      // scss-lint:disable NestingDepth
+      &.selected {
+        a {
+          color: $color-black;
+        }
       }
+      // scss-lint:enable NestingDepth
     }
   }
 }
@@ -91,13 +96,17 @@
 
   .menu {
     &.menu-horizontal {
+      // scss-lint:disable NestingDepth
       li {
         &.selected {
+          // scss-lint:disable SelectorDepth
           a {
             background: transparent;
           }
+          // scss-lint:enable SelectorDepth
         }
       }
+      // scss-lint:enable NestingDepth
     }
   }
 
@@ -108,16 +117,20 @@
       color: $color-light;
       text-decoration: none;
 
+      // scss-lint:disable NestingDepth
       &.untranslated {
         color: rgba($color-untranslated, .7);
       }
+      // scss-lint:enable NestingDepth
     }
 
     &.selected {
+      // scss-lint:disable NestingDepth
       a {
         color: $color-black;
         background: $color-yellow;
       }
+      // scss-lint:enable NestingDepth
     }
 
     @media screen and (min-width: $mobile + 1) {
@@ -144,6 +157,7 @@
       letter-spacing: .2px;
       vertical-align: middle;
 
+      // scss-lint:disable NestingDepth
       &:last-child {
         margin-right: 0;
       }
@@ -167,6 +181,7 @@
           color: $color-black;
         }
       }
+      // scss-lint:enable NestingDepth
 
       @media screen and (min-width: $mobile + 1) {
         display: inline-block;
@@ -289,6 +304,7 @@
     vertical-align: middle;
     list-style-type: none;
 
+    // scss-lint:disable NestingDepth, SelectorDepth
     li {
       display: block;
       padding: 15px 0;
@@ -306,6 +322,7 @@
           background: rgba($color-yellow, .9);
         }
       }
+      // scss-lint:enable NestingDepth, SelectorDepth
     }
   }
 
@@ -313,16 +330,21 @@
     display: none;
 
     ul {
+      // scss-lint:disable NestingDepth, SelectorDepth
       li {
+        // scss-lint:disable QualifyingElement
         a.active {
           color: $color-white;
         }
+        // scss-lint:enable QualifyingElement
       }
+      // scss-lint:enable NestingDepth, SelectorDepth
     }
   }
 
   .navigation-menu {
     ul {
+      // scss-lint:disable NestingDepth, SelectorDepth
       li {
         &.is-hidden {
           display: none;
@@ -332,6 +354,7 @@
           color: $color-white;
         }
       }
+      // scss-lint:enable NestingDepth, SelectorDepth
     }
   }
 
@@ -367,6 +390,7 @@
     }
 
     &::before {
+      // TODO: Remove vendor prefixes when grunt autoprefixer is implemented.
       -ms-transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
       transform: rotate(45deg);

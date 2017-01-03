@@ -40,7 +40,6 @@
 }
 
 .edys-gallery-area.edys-gallery-slider {
-  
   .edys-gallery-slider-prev {
     left: 25px;
     background: url('../assets/ico-prev.svg') center center no-repeat;
@@ -79,10 +78,12 @@
   }
 }
 
+// scss-lint:disable SelectorFormat
 .pswp__caption__center {
-  font-family: $font-main !important;
+  font-family: $font-main !important; // scss-lint:disable ImportantRule
   font-weight: 400;
 }
+// scss-lint:enable SelectorFormat
 
 // Front page content area gallery slider whitespace
 .feature-section .edy-content-element {

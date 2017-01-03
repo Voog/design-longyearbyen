@@ -74,7 +74,6 @@
  }
 
 .menu-language {
-
   li {
     a {
       display: block;
@@ -83,6 +82,7 @@
       color: $color-light;
       text-decoration: none;
 
+      // scss-lint:disable NestingDepth
       &:hover {
         color: $color-black;
         background: none;
@@ -94,6 +94,7 @@
         right: 6px;
       }
 
+      // scss-lint:disable SelectorDepth
       .language-flags-enabled & {
         padding: 7px 33px 6px 6px;
 
@@ -105,6 +106,7 @@
       .language-flags-disabled & {
         padding: 6px 10px;
        }
+       // scss-lint:enable NestingDepth, SelectorDepth
      }
 
     &.edit-btn {
@@ -189,6 +191,7 @@
  }
 
 // Language flag icons positioning in the spritemap.
+// scss-lint:disable TrailingSemicolon
 $flags:
   (sq, 0 0), // Albanian (Albania)
   (hy, -21px 0), // Armenian (Armenia)
@@ -244,10 +247,11 @@ $flags:
   // (xx, -147px, -60px), // Dutch, French, German (Kingdom of Belgium)
   // (xx, -168px, -60px), // Australian English (Commonwealth of Australia)
 ;
+// scss-lint:enable TrailingSemicolon
 
 // Loop for generationg flag classes for each flag in the $flags variable.
-@each $language_code, $position in $flags {
-  .ico-flag-#{$language_code}:after {
+@each $language-code, $position in $flags {
+  .ico-flag-#{$language-code}:after {
     background-position: $position;
   }
 }
