@@ -10,9 +10,10 @@
 
       {% if editmode %}
         {% if item.hidden_children.size > 0 %}
-          <li>{% menubtn item.hidden_children %}</li>
+          <li class="menu-item-cms">{% menubtn item.hidden_children %}</li>
         {% endif %}
-        <li class="last">{% menuadd parent="item" %}</li>
+
+        <li class="menu-item-cms">{% menuadd parent="item" %}</li>
       {% endif %}
 
     </ul>

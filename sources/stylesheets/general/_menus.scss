@@ -163,7 +163,8 @@
       }
 
       a {
-        padding: 5px 3px;
+        display: block;
+        padding: 11px 13px;
         color: $color-light;
         vertical-align: middle;
         border-bottom: 0;
@@ -194,11 +195,14 @@
 
       @media screen and (max-width: $tablet-1) {
         display: block;
-        padding: 10px;
         margin: 0;
         font-size: 18px;
         border-bottom: 1px solid $color-grey1;
       }
+    }
+
+    .menu-item-cms {
+      padding: 11px 13px 10px;
     }
 
     @media screen and (max-width: $tablet) {

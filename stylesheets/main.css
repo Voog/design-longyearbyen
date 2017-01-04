@@ -202,7 +202,8 @@ body {
   margin-right: 0;
 }
 .menu-horizontal.menu-sub li a {
-  padding: 5px 3px;
+  display: block;
+  padding: 11px 13px;
   color: #898989;
   vertical-align: middle;
   border-bottom: 0;
@@ -231,11 +232,13 @@ body {
 @media screen and (max-width: 768px) {
   .menu-horizontal.menu-sub li {
     display: block;
-    padding: 10px;
     margin: 0;
     font-size: 18px;
     border-bottom: 1px solid #cacaca;
   }
+}
+.menu-horizontal.menu-sub .menu-item-cms {
+  padding: 11px 13px 10px;
 }
 @media screen and (max-width: 1024px) {
   .menu-horizontal.menu-sub {
