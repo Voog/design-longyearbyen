@@ -257,7 +257,7 @@ body {
   padding-right: 25px;
   padding-left: 25px;
 }
-.menu-item-list:last-child {
+.editmode .menu-item-list {
   padding-bottom: 40px;
 }
 .menu-item-list .menu-item {
