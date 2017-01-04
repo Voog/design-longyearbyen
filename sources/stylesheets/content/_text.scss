@@ -309,6 +309,12 @@
   }
   // scss-lint:enable QualifyingElement
 
+  .edy-content-social-button {
+    &:hover {
+      opacity: .75;
+    }
+  }
+
   pre,
   code,
   iframe,

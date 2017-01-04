@@ -2138,6 +2138,9 @@ body {
 .content-area .edys-gallery-wall-item:hover {
   background: transparent;
 }
+.content-area .edy-content-social-button:hover {
+  opacity: .75;
+}
 .content-area pre,
 .content-area code,
 .content-area iframe,
