@@ -1739,7 +1739,7 @@ body {
   float: left;
   width: 50%;
   min-width: 200px;
-  min-height: 400px;
+  min-height: 200px;
   box-sizing: border-box;
   transition: padding 500ms;
 }
@@ -1776,6 +1776,7 @@ body {
 @media screen and (max-width: 640px) {
   .feature-section {
     width: 100%;
+    min-height: 400px;
   }
 }
 .feature-section .voog-bg-picker-btn {
