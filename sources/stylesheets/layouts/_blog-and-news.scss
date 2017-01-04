@@ -2,61 +2,81 @@
 
   .blog-article {
     padding-top: 40px;
+
     &:first-child {
-    padding-top: 0;
+      padding-top: 0;
     }
   }
 
   .article-title {
     @include hyphenate;
-    font-size: 18px;
-    line-height: 1.4;
     margin: 0;
     font-family: $font-heavy;
+    font-size: 20px;
     font-weight: 700;
+    line-height: 1.2;
   }
+
   .article-date {
+    margin-top: 8px;
     font-size: 13px;
     color: $color-light;
     text-transform: uppercase;
-    margin-top: 8px;
   }
 
   // Archive, list view
   .articles-listing {
     text-align: center;
+
     .blog-article {
       padding-top: 20px;
     }
+
     .older-post {
       padding: 1px 80px 80px;
+
       @media screen and (max-width: $tablet) {
+        // scss-lint:disable NestingDepth
         &.older-post {
           padding: 10px 40px 40px;
         }
+        // scss-lint:enable NestingDepth
       }
+
       @media screen and (max-width: $tablet-1) {
         padding: 40px 25px;
 
+        // scss-lint:disable NestingDepth
         &.older-post {
           padding: 40px 25px;
         }
+        // scss-lint:enable NestingDepth
       }
     }
+
     .articles-listing-header {
-      padding: 40px 0px 15px;
-      border-top: 1px solid #cacaca;
+      padding: 40px 0 15px;
+      border-top: 1px solid $color-grey1;
     }
-    .content-inner a {
-      border-bottom: none;
+
+    .content-inner {
+      // scss-lint:disable NestingDepth, SelectorDepth
+      a {
+        border-bottom: 0;
+      }
+      // scss-lint:enable NestingDepth, SelectorDepth
     }
+
     .article-title {
       font-family: $font-main;
       font-weight: 400;
     }
+
     @media screen and (max-width: $mobile-1) {
       margin: 0;
+
       .blog-article {
+        // scss-lint:disable NestingDepth
         &:last-child {
           margin-bottom: 0;
         }
@@ -64,11 +84,12 @@
         .article-date {
           position: static;
         }
+
         .article-title {
           margin: 0;
         }
+        // scss-lint:enable NestingDepth
       }
     }
   }
-
 }

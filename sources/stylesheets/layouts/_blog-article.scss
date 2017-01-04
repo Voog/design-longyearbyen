@@ -1,7 +1,15 @@
 .blog-article-page {
-  .article-header { padding-bottom: 25px;}
-  .article-excerpt.content-area { padding-bottom: 15px;}
-  .blog-article { padding-bottom: 0;}
+  .article-header {
+    padding-bottom: 25px;
+  }
+
+  .article-excerpt.content-area {
+    padding-bottom: 15px;
+  }
+
+  .blog-article {
+    padding-bottom: 0;
+  }
 }
 
 .post-nav {
@@ -21,79 +29,81 @@
 .post-nav-link {
   position: relative;
   display: block;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   padding-top: 33px;
   color: currentColor;
-  border-bottom: none !important;
+
+  .post-nav-direction {
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: .5;
+  }
+
+  .post-nav-title {
+    font-size: 20px;
+    opacity: .7;
+  }
+
+  &.post-nav-link-half {
+    position: relative;
+    display: block;
+    flex: 1;
+    padding-top: 33px;
+    color: currentColor;
+    border-bottom: 0;
+
     &:hover {
-      background: none !important;
-    }
-
-  &:first-child {
-    @media screen and (min-width: $mobile-1)  {
-      padding-right: 20px;
-    }
-  }
-
-  &:last-child {
-    @media screen and (min-width: $mobile-1) {
-      padding-left: 20px;
-    }
-  }
-
-  &:hover {
-    .post-nav-direction {
+      background: none;
       opacity: 1;
     }
 
-    .post-nav-title {
-      opacity: 1;
-    }
-  }
-}
+    &:first-child {
+      @media screen and (min-width: $mobile-1)  {
+        padding-right: 20px;
+      }
 
-.post-nav-link-half {
-  @media screen and (max-width: $mobile-1) {
-    text-align: center;
-  }
-  &:first-child {
-    @media screen and (max-width: $mobile-1) {
-      padding-bottom: 33px;
-    }
-
-    &::before {
       @media screen and (max-width: $mobile-1) {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: block;
-        border-bottom: 1px solid currentColor;
-        content: '';
-        opacity: .2;
+        padding-bottom: 33px;
+      }
+
+      // scss-lint:disable NestingDepth
+      &::before {
+        @media screen and (max-width: $mobile-1) {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: block;
+          border-bottom: 1px solid currentColor;
+          content: '';
+          opacity: .2;
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    &:last-child {
+      @media screen and (min-width: $mobile-1) {
+        padding-left: 20px;
+        text-align: right;
       }
     }
-  }
 
-  &:last-child {
-    @media screen and (min-width: $mobile-1) {
-      text-align: right;
+    @media screen and (max-width: $mobile-1) {
+      text-align: center;
     }
   }
-}
 
-.post-nav-link-full {
-  text-align: center;
-}
+  &.post-nav-link-full {
+    text-align: center;
+    border: 0;
 
-.post-nav-direction {
-  font-size: 12px;
-  text-transform: uppercase;
-  opacity: .5;
-}
-
-.post-nav-title {
-  font-size: 20px;
-  opacity: .7;
+    &:hover {
+      background: none;
+      opacity: 1;
+    }
+  }
 }

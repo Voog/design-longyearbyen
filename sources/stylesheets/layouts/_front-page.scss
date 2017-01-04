@@ -1,53 +1,112 @@
-//%large-text {
-//  font-size: 100px;
-//  font-weight: 700;
-//  line-height: 1.3;
-//}
-//
-//%medium-text {
-//  font-size: 50px;
-//  font-weight: 400;
-//  line-height: 1.3;
-//}
-//
-//%normal-text {
-//  font-size: 25px;
-//  font-weight: 400;
-//  line-height: 1.5;
-//}
-//
-//.front-page {
-//  .page-content {
-//    h1 {
-//      @extend %large-text;
-//    }
-//
-//    h2 {
-//      @extend %medium-text;
-//    }
-//
-//    h3 {
-//      font-size: 30px;
-//    }
-//
-//    p {
-//      @extend %normal-text;
-//    }
-//
-//    .content-header {
-//      @extend %large-text;
-//      margin-bottom: 10px;
-//      color: rgba($color-highlight, 1);
-//    }
-//
-//    .content-slogan {
-//      @extend %medium-text;
-//      margin-bottom: 80px;
-//      color: rgba($color-highlight, 1);
-//    }
-//
-//    .content-area {
-//      @extend %normal-text;
-//    }
-//  }
-//}
+// Front page bg-picker and padding switcher boxes
+.sections {
+  position: relative;
+  // TODO: Remove vendor prefixes when grunt autoprefixer is implemented.
+  // scss-lint:disable VendorPrefix
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  // scss-lint:enable VendorPrefix
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.feature-section,
+.search,
+.sections {
+  position: relative;
+}
+
+.feature-section {
+  flex-grow: 1;
+  float: left;
+  width: 50%;
+  min-width: 200px;
+  min-height: 200px;
+  box-sizing: border-box;
+  transition: padding 500ms;
+
+  &.section-with-padding {
+    display: flex;
+    // TODO: Remove vendor prefixes when grunt autoprefixer is implemented.
+    // scss-lint:disable VendorPrefix
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 80px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    // scss-lint:enable VendorPrefix
+    transition: padding 500ms;
+    -ms-flex-align: center;
+
+    @media screen and (max-width: $tablet-0) {
+      padding: 20px;
+    }
+  }
+
+  @media screen and (max-width: $tablet-0) {
+    .public & {
+      // TODO: Remove vendor prefixes when grunt autoprefixer is implemented.
+      // scss-lint:disable VendorPrefix
+      -moz-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+      -webkit-flex: 1 0 50%;
+      // scss-lint:enable VendorPrefix
+      flex: 1 0 50%;
+    }
+  }
+
+  @media screen and (max-width: $tablet-0) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    min-height: 400px;
+  }
+
+  .voog-bg-picker-btn {
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .feature-content {
+    position: relative;
+    width: 100%;
+  }
+
+  .voog-padding-switcher {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+    background: $color-paddingblue url('../assets/ico-toggle.svg') center center no-repeat;
+    border: 0;
+    border-radius: 100%;
+    opacity: .3;
+  }
+
+  .background-color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.feature-section:not(.section-with-padding) .edy-fef-bottom .edy-fef-add {
+  margin-left: 0;
+}

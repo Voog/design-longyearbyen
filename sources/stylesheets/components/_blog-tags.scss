@@ -1,108 +1,118 @@
 // Blog news layout
 .blog-news-page {
-  .blog-tags  {
-    margin-top:0;
+  .blog-tags {
+    margin-top: 0;
     margin-bottom: 20px;
   }
 
-  .menu-link:hover {
-    background: none !important;
-    color: $color-black;
+  .menu-link {
+    &:hover {
+      color: $color-black;
+      background: none;
+    }
   }
 }
 
 
 // Blog article layout
-.blog-article-page .blog-tags  {
-  margin-top: 10px;
-  text-align: center;
-  color: rgba($color-black, .7);
+.blog-article-page {
+  .blog-tags {
+    margin-top: 10px;
+    color: rgba($color-black, .7);
+    text-align: center;
 
-  .tags-editor { text-align: left;}
+    .tags-editor { text-align: left;}
 
-  .tags-toggle {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-
-  .tags-icon {
-    position: absolute;
-    top: -3px;
-    left: 0;
-    font-size: 20px;
-    line-height: 1.6;
-    fill: rgba($color-black, .7);
-  }
-
-  .tags-title {
-    padding: 0px 20px 0 25px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.6;
-    text-transform: uppercase;
-  }
-
-  .ico-arrow {
-    position: absolute;
-    right: 0;
-    top: 7px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 8px 5px 0 5px;
-    border-color: rgba($color-black, 1) transparent transparent transparent;
-
-    &.active {
-      border-width: 0 5px 8px 5px;
-      border-color: transparent transparent rgba($color-black, 1) transparent;
-    }
-  }
-
-  .tags-bottom {
-    display: none;
-
-    &.visible {
-      display: block;
-    }
-  }
-
-  // Tags menu
-  .menu {
-    display: inline-block;
-    padding-left: 0;
-
-    .menu-item {
+    .tags-toggle {
+      position: relative;
       display: inline-block;
-      margin-top: 5px;
-      vertical-align: top;
-      line-height: 1;
-
-      &:before {
-        display: none;
-      }
+      cursor: pointer;
     }
 
-    .menu-link {
-      padding: 2px 5px;
-      font-size: 12px;
-      text-decoration: none;
-      border-radius: 3px;
-      color: rgba($color-white, 1);
-      background-color: rgba(#a4a4a4, 1);
-      border-bottom: none;
-      line-height: 16px;
+    .tags-icon {
+      position: absolute;
+      top: -3px;
+      left: 0;
+      font-size: 20px;
+      line-height: 1.6;
+      fill: rgba($color-black, .7);
+    }
 
-      &:hover {
-        opacity: .7;
-        background: #eee077;
-        color: $color-black;
-      }
+    .tags-title {
+      padding: 0 20px 0 25px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.6;
+      text-transform: uppercase;
+    }
 
+    .ico-arrow {
+      position: absolute;
+      top: 7px;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-color: rgba($color-black, 1) transparent transparent;
+      border-style: solid;
+      border-width: 8px 5px 0;
+
+      // scss-lint:disable NestingDepth
       &.active {
-        color: rgba($color-white, 1);
-        background-color: rgba(#a4a4a4, 1);
+        border-color: transparent transparent rgba($color-black, 1);
+        border-width: 0 5px 8px;
       }
+      // scss-lint:enable NestingDepth
+    }
+
+    .tags-bottom {
+      display: none;
+
+      // scss-lint:disable NestingDepth
+      &.visible {
+        display: block;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    // Tags menu
+    .menu {
+      display: inline-block;
+      padding-left: 0;
+
+      // scss-lint:disable NestingDepth, SelectorDepth
+      .menu-item {
+        display: inline-block;
+        margin-top: 5px;
+        line-height: 1;
+        vertical-align: top;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      .menu-link {
+        padding: 2px 5px;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba($color-white, 1);
+        text-decoration: none;
+        background-color: rgba($color-grey, 1);
+        border-bottom: 0;
+        border-radius: 3px;
+
+        &:hover {
+          color: $color-black;
+          background: $color-link-hightlight;
+          opacity: .7;
+        }
+
+        &.active {
+          color: rgba($color-white, 1);
+          background-color: rgba($color-grey, 1);
+        }
+      }
+      // scss-lint:enable NestingDepth, SelectorDepth
     }
   }
 }

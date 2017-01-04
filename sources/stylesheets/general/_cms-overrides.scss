@@ -8,9 +8,11 @@
   .placeholder {
     color: rgba($color-white, .5);
   }
+
   .edy-content-element-hover {
     border-color: rgba($color-white, .2);
   }
+
   .edy-texteditor-active {
     outline-color: rgba($color-white, .4);
 
@@ -20,51 +22,68 @@
   }
 }
 
-.edy-tb-iconbtn { border-bottom: 0 !important;}
-
+.edy-tb-iconbtn {
+  border-bottom: 0 !important;
+}
 
 // Slider
-.edys-gallery-slider .edys-gallery-slider-next,
-.edys-gallery-slider .edys-gallery-slider-prev {
-  width:15px !important;
-  height:29px !important;
-  opacity: 1 !important;
-}
-.edys-gallery-slider .edys-gallery-slider-prev {
-  left:25px !important;
-  background: url("../assets/ico-prev.svg") center center no-repeat !important;
-}
-.edys-gallery-slider .edys-gallery-slider-next {
-  right: 25px !important;
-  background: url("../assets/ico-next.svg") center center no-repeat !important;
+.edys-gallery-slider {
+  .edys-gallery-slider-next,
+  .edys-gallery-slider-prev {
+    .editmode &,
+    .publicmode & {
+      width: 15px;
+      height: 29px;
+      opacity: 1;
+    }
+  }
 }
 
-.front-page .edys-gallery-slider-item:after {
+.edys-gallery-area.edys-gallery-slider {
+  .edys-gallery-slider-prev {
+    left: 25px;
+    background: url('../assets/ico-prev.svg') center center no-repeat;
+  }
+
+  .edys-gallery-slider-next {
+    right: 25px;
+    background: url('../assets/ico-next.svg') center center no-repeat;
+  }
+}
+
+.front-page .edys-gallery-slider-item::after {
   content: attr(data-title);
 }
-.front-page .edys-gallery-slider-item[data-title]:after {
-  display: block;
+
+.front-page .edys-gallery-slider-item[data-title]::after {
   position: absolute;
-  bottom: 0px;
   right: 0;
+  bottom: 0;
+  display: block;
+  max-width: 100%;
   padding: 15px 18px;
-  background: #fff;
-  color: #333;
   font-size: 18px;
   line-height: 1;
-  max-width: 100%;
+  color: $color-body;
+  background: $color-white;
 }
 
 // Tags
-.edy-tag-suggestions .edy-tag-suggestion {
-  padding: 4px 10px !important;
-  border-bottom: 1px solid #cacaca !important;
+.edy-tageditor {
+  .edy-tag-suggestions {
+    .edy-tag-suggestion {
+      padding: 4px 10px;
+      border-bottom: 1px solid $color-grey1;
+    }
+  }
 }
 
+// scss-lint:disable SelectorFormat
 .pswp__caption__center {
-  font-family: $font-main !important;
+  font-family: $font-main !important; // scss-lint:disable ImportantRule
   font-weight: 400;
 }
+// scss-lint:enable SelectorFormat
 
 // Front page content area gallery slider whitespace
 .feature-section .edy-content-element {

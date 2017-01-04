@@ -11,7 +11,6 @@
 @import 'modules/mixins';
 
 // GENERAL
-@import 'general/fonts';
 @import 'general/base';
 @import 'general/menus';
 @import 'general/cms-overrides';
@@ -19,17 +18,11 @@
 // COMPONENTS
 @import 'components/site-header';
 @import 'components/site-search';
-// @import 'components/site-sidebar';
-@import 'components/menu-level-1';
-@import 'components/menu-level-2';
 @import 'components/menu-language';
 @import 'components/site-footer';
 @import 'components/blog-tags';
 @import 'components/blog-article-comments';
 @import 'components/content-item';
-
-// CUSTOM LAYOUT STYLE
-@import 'custom-styles';
 
 // LAYOUTS
 @import 'layouts/blog-and-news';

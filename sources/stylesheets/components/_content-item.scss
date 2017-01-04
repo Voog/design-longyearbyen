@@ -136,9 +136,7 @@
 
   .top-inner {
     @include hyphenate;
-    // scss-lint:disable ImportantRule
-    display: flex !important;
-    // scss-lint:enable ImportantRule
+    display: flex !important; // scss-lint:disable ImportantRule
     align-items: center;
     justify-content: center;
     font-weight: 300;
@@ -148,8 +146,7 @@
     .publicmode & {
       overflow: hidden;
 
-      // scss-lint:disable SelectorDepth
-      // scss-lint:disable NestingDepth
+      // scss-lint:disable SelectorDepth, NestingDepth
       .image-landscape {
         &.not-cropped {
           width: 100%;
@@ -180,8 +177,7 @@
         width: 100%;
         height: auto;
       }
-      // scss-lint:enable NestingDepth
-      // scss-lint:enable SelectorDepth
+      // scss-lint:enable SelectorDepth, NestingDepth
     }
 
     .with-image & {
@@ -216,9 +212,7 @@
   }
 
   .image-drop-area {
-    // scss-lint:disable ImportantRule
-    background-position: center !important;
-    // scss-lint:enable ImportantRule
+    background-position: center !important; // scss-lint:disable ImportantRule
     background-repeat: no-repeat;
 
     &.not-cropped {
@@ -230,9 +224,11 @@
       border-style: dashed;
       border-width: 1px;
 
+      // scss-lint:disable NestingDepth
       &:hover {
         border-style: solid;
       }
+      // scss-lint:enable NestingDepth
     }
 
     .edy-img-drop-area-placeholder {
