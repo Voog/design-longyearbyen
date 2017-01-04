@@ -45,10 +45,6 @@
     transition: padding 500ms;
     -ms-flex-align: center;
 
-    .editmode & {
-      padding: 79px;
-    }
-
     @media screen and (max-width: $tablet-0) {
       padding: 20px;
     }
