@@ -1552,126 +1552,6 @@ body {
   }
 }
 
-.sections {
-  position: relative;
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
-}
-
-.feature-section,
-.search,
-.sections {
-  position: relative;
-}
-
-.feature-section {
-  flex-grow: 1;
-  float: left;
-  width: 50%;
-  min-width: 200px;
-  min-height: 400px;
-  box-sizing: border-box;
-  transition: padding 500ms;
-}
-.feature-section.section-with-padding {
-  display: flex;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-  align-items: center;
-  padding: 80px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  transition: padding 500ms;
-  -ms-flex-align: center;
-}
-.editmode .feature-section.section-with-padding {
-  padding: 79px;
-}
-@media screen and (max-width: 960px) {
-  .feature-section.section-with-padding {
-    padding: 20px;
-  }
-}
-@media screen and (max-width: 960px) {
-  .public .feature-section {
-    -moz-flex: 1 0 50%;
-    -ms-flex: 1 0 50%;
-    -webkit-flex: 1 0 50%;
-    flex: 1 0 50%;
-  }
-}
-@media screen and (max-width: 960px) {
-  .feature-section {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 640px) {
-  .feature-section {
-    width: 100%;
-  }
-}
-.feature-section .voog-padding-switcher {
-  top: 0;
-  right: 0;
-}
-.feature-section .voog-bg-picker-btn {
-  top: 0;
-  left: 0;
-  z-index: 999;
-}
-
-.feature-section:not(.section-with-padding) .edy-fef-bottom .edy-fef-add {
-  margin-left: 0;
-}
-
-.feature-content {
-  position: relative;
-  width: 100%;
-}
-
-.background-color {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.front-page .content .background-color {
-  z-index: 0;
-}
-
-.wrap_s {
-  width: 100%;
-}
-
-.container,
-.wrap_s {
-  position: relative;
-}
-
-.voog-padding-switcher {
-  position: absolute;
-  z-index: 999;
-  width: 45px;
-  height: 45px;
-  padding: 0;
-  margin: 10px 10px 0 0;
-  cursor: pointer;
-  background: #06b url("../assets/ico-toggle.svg") center center no-repeat;
-  border: 0;
-  border-radius: 100%;
-  opacity: .3;
-}
-
 .blog-news-page .blog-article {
   padding-top: 40px;
 }
@@ -1836,6 +1716,106 @@ body {
 .post-nav-link.post-nav-link-full:hover {
   background: none;
   opacity: 1;
+}
+
+.sections {
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.feature-section,
+.search,
+.sections {
+  position: relative;
+}
+
+.feature-section {
+  flex-grow: 1;
+  float: left;
+  width: 50%;
+  min-width: 200px;
+  min-height: 200px;
+  box-sizing: border-box;
+  transition: padding 500ms;
+}
+.feature-section.section-with-padding {
+  display: flex;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 80px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  transition: padding 500ms;
+  -ms-flex-align: center;
+}
+@media screen and (max-width: 960px) {
+  .feature-section.section-with-padding {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .public .feature-section {
+    -moz-flex: 1 0 50%;
+    -ms-flex: 1 0 50%;
+    -webkit-flex: 1 0 50%;
+    flex: 1 0 50%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .feature-section {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .feature-section {
+    width: 100%;
+    min-height: 400px;
+  }
+}
+.feature-section .voog-bg-picker-btn {
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.feature-section .feature-content {
+  position: relative;
+  width: 100%;
+}
+.feature-section .voog-padding-switcher {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+  background: #06b url("../assets/ico-toggle.svg") center center no-repeat;
+  border: 0;
+  border-radius: 100%;
+  opacity: .3;
+}
+.feature-section .background-color {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.feature-section:not(.section-with-padding) .edy-fef-bottom .edy-fef-add {
+  margin-left: 0;
 }
 
 .content-area {

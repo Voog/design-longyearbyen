@@ -26,7 +26,7 @@
   float: left;
   width: 50%;
   min-width: 200px;
-  min-height: 400px;
+  min-height: 200px;
   box-sizing: border-box;
   transition: padding 500ms;
 
@@ -45,15 +45,10 @@
     transition: padding 500ms;
     -ms-flex-align: center;
 
-    .editmode & {
-      padding: 79px;
-    }
-
     @media screen and (max-width: $tablet-0) {
       padding: 20px;
     }
   }
-
 
   @media screen and (max-width: $tablet-0) {
     .public & {
@@ -73,11 +68,7 @@
 
   @media screen and (max-width: $mobile) {
     width: 100%;
-  }
-
-  .voog-padding-switcher {
-    top: 0;
-    right: 0;
+    min-height: 400px;
   }
 
   .voog-bg-picker-btn {
@@ -85,50 +76,37 @@
     left: 0;
     z-index: 999;
   }
+
+  .feature-content {
+    position: relative;
+    width: 100%;
+  }
+
+  .voog-padding-switcher {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+    background: $color-paddingblue url('../assets/ico-toggle.svg') center center no-repeat;
+    border: 0;
+    border-radius: 100%;
+    opacity: .3;
+  }
+
+  .background-color {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .feature-section:not(.section-with-padding) .edy-fef-bottom .edy-fef-add {
   margin-left: 0;
-}
-
-.feature-content {
-  position: relative;
-  width: 100%;
-}
-
-.background-color {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.front-page .content .background-color {
-  z-index: 0;
-}
-
-// scss-lint:disable SelectorFormat
-.wrap_s {
-  width: 100%;
-}
-
-.container,
-.wrap_s {
-  position: relative;
-}
-// scss-lint:enable SelectorFormat
-
-.voog-padding-switcher {
-  position: absolute;
-  z-index: 999;
-  width: 45px;
-  height: 45px;
-  padding: 0;
-  margin: 10px 10px 0 0;
-  cursor: pointer;
-  background: $color-paddingblue url('../assets/ico-toggle.svg') center center no-repeat;
-  border: 0;
-  border-radius: 100%;
-  opacity: .3;
 }
