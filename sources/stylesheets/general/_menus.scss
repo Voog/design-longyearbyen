@@ -426,13 +426,6 @@
 }
 
 .mobile-menu-toggler {
-  //position: absolute;
-  //top: 31px;
-  //right: 25px;
-  //display: none;
-  //width: 43px;
-  //height: 43px;
-
   position: absolute;
   top: 20px;
   right: 20px;
@@ -444,23 +437,13 @@
   span,
   span::after,
   span::before {
-    //position: absolute;
-    //top: calc(50% - 22px);
-    //right: 0;
-    //display: block;
-    //width: 20px;
-    //height: 3px;
-    //background: rgba($color-black, .87);
-    //border-radius: 5px;
-    //content: '';
-
     position: absolute;
     top: 8px;
     right: 5px;
     display: block;
     width: 20px;
     height: 3px;
-    background: rgba(0,0,0,.87);
+    background-color: rgba($color-black, .87);
     border-radius: 5px;
     content: '';
   }
