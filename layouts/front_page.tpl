@@ -17,7 +17,7 @@
               <div class="sections {% if site.branding.enabled %}voog-reference-enabled{% endif %}">
                 {% if feature_1_has_content or content_bg_1_color or editmode %}
                   <div class="feature-section {{ feature_1_section_padding_class }} js-bg-picker-area feature-1" data-section-name="feature_1">
-                    <div class="background-color js-background-color" style="background-color: {{ content_bg_1_color }};"></div>
+                    <div class="background-color js-background-color" style="background-color: {% if content_bg_1_color %}{{ content_bg_1_color }}{% else %}transparent{% endif %};"></div>
 
                     {% if editmode %}
                       <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_1" data-bg="{{ content_bg_1_str | escape }}"></button>
@@ -30,7 +30,7 @@
 
                 {% if feature_2_has_content or content_bg_2_color or editmode %}
                   <div class="feature-section {{ feature_2_empty }} {{ feature_2_section_padding_class }} js-bg-picker-area feature-2" data-section-name="feature_2" data-bg-global="main_bg" data-bg-global-boolean="{{ content_2_global_bg_boolean }}">
-                    <div class="background-color js-background-color" style="background-color: {{ content_bg_2_color }};"></div>
+                    <div class="background-color js-background-color" style="background-color: {% if content_bg_2_color %}{{ content_bg_2_color }}{% else %}transparent{% endif %};"></div>
 
                     {% if editmode %}
                       <button class="voog-bg-picker-btn js-background-settings" data-bg-key="content_bg_2" data-bg="{{ content_bg_2_str | escape }}"></button>
