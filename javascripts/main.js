@@ -11023,18 +11023,18 @@ return jQuery;
   // ===========================================================================
   // Toggles product categories visibility in main menu.
   // ===========================================================================
-  var bindRootItemSettings = function(valuesObj) {
-    if (!('hide_categories_from_main_menu' in valuesObj)) {
-      valuesObj.hide_categories_from_main_menu = false;
+  var bindRootItemSettings = function(rootItemValuesObj) {
+    if (!('show_product_related_pages_in_main_menu' in rootItemValuesObj)) {
+      rootItemValuesObj.show_product_related_pages_in_main_menu = false;
     }
 
     $('.js-root-item-settings-toggle').each(function(index, languageMenuSettingsButton) {
       var rootItemSettingsEditor = new Edicy.SettingsEditor(languageMenuSettingsButton, {
         menuItems: [
           {
-            "title": "Hide categories from main menu",
+            "titleI18n": "show_in_main_menu",
             "type": "checkbox",
-            "key": "hide_categories_from_main_menu",
+            "key": "show_product_related_pages_in_main_menu",
             "states": {
               "on": true,
               "off": false
@@ -11044,19 +11044,17 @@ return jQuery;
 
         buttonTitleI18n: "settings",
 
-        values: valuesObj,
+        values: rootItemValuesObj,
 
         containerClass: ['js-root-item-settings-popover', 'js-prevent-sideclick'],
 
         preview: function(data) {
-          if (data.hide_categories_from_main_menu === true) {
-            $.each($('.js-menu-item-category'), function() {
-              $(this).addClass('is-hidden');
-            });
+          if (!data.show_product_related_pages_in_main_menu === true) {
+            console.log(11);
+            $('.js-menu-item-products').addClass('is-hidden');
           } else {
-            $.each($('.js-menu-item-category'), function() {
-              $(this).removeClass('is-hidden');
-            });
+            console.log(22);
+            $('.js-menu-item-products').removeClass('is-hidden');
           }
         },
 
