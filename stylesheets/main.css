@@ -274,7 +274,6 @@ body {
 }
 .menu-item-list .menu-item.current a {
   color: #000;
-  background: #fff07f;
 }
 .menu-item-list .menu-item a {
   display: block;
