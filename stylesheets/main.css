@@ -427,9 +427,7 @@ body {
   height: 17px;
   padding: 7px 5px 7px 4px;
 }
-.mobile-menu-toggler span,
-.mobile-menu-toggler span::after,
-.mobile-menu-toggler span::before {
+.mobile-menu-toggler span, .mobile-menu-toggler span::before, .mobile-menu-toggler span::after {
   position: absolute;
   top: 8px;
   right: 5px;
