@@ -32,14 +32,15 @@
         <li class="menu-item menu-item-cms">{% menubtn site.root_item.hidden_children %}</li>
       {% endif %}
 
+      {% unless site.root_item.layout_title == product_layout %}
         <li class="menu-item menu-item-cms">{% menuadd %}</li>
+      {% endunless %}
 
-        {% if site.root_item.selected? %}
-          <li class="menu-item menu-item-cms float-right">
-            <a class="js-root-item-settings-toggle"></a>
-          </li>
-        {% endif %}
-      </ul>
+      {% if site.root_item.selected? %}
+        <li class="menu-item menu-item-cms float-right">
+          <a class="js-root-item-settings-toggle"></a>
+        </li>
+      {% endif %}
     {% endif %}
   {% else %}
     {% for level_1 in site.visible_menuitems %}
@@ -53,7 +54,9 @@
             <li class="menu-item menu-item-cms">{% menubtn level_1.hidden_children %}</li>
           {% endif %}
 
-          <li class="menu-item menu-item-cms">{% menuadd parent="level_1" %}</li>
+          {% unless level_1.layout_title == product_layout %}
+            <li class="menu-item menu-item-cms">{% menuadd parent="level_1" %}</li>
+          {% endunless %}
         {% endif %}
 
         {% for level_2 in level_1.visible_children_with_data %}
@@ -67,7 +70,9 @@
                 <li class="menu-item menu-item-cms">{% menubtn level_1.hidden_children %}</li>
               {% endif %}
 
-              <li class="menu-item menu-item-cms">{% menuadd parent="level_2" %}</li>
+              {% unless level_2.layout_title == product_layout %}
+                <li class="menu-item menu-item-cms">{% menuadd parent="level_2" %}</li>
+              {% endunless %}
             {% endif %}
           {% endif %}
         {% endfor %}
