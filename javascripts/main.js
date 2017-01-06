@@ -10736,7 +10736,6 @@ return jQuery;
 
   // BG-Picker background image and color preview logic function.
   var bgPickerPreview = function(bgPickerArea, data) {
-    console.log(data);
     $(bgPickerArea).find('.js-background-color').css({'background-color' : data.color ? data.color : 'transparent'});
   };
 
