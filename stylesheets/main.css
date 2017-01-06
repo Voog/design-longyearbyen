@@ -1815,6 +1815,12 @@ body {
   border-radius: 100%;
   opacity: .3;
 }
+.feature-section .voog-padding-switcher:hover {
+  opacity: 1;
+}
+.feature-section .voog-padding-switcher:focus {
+  outline: none;
+}
 .feature-section .background-color {
   position: absolute;
   top: 0;

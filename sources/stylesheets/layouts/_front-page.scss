@@ -96,6 +96,14 @@
     border: 0;
     border-radius: 100%;
     opacity: .3;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .background-color {
