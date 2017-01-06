@@ -163,11 +163,18 @@
       }
 
       a {
-        display: block;
-        padding: 11px 13px;
         color: $color-light;
         vertical-align: middle;
         border-bottom: 0;
+
+        @media screen and (max-width: $tablet-1) {
+          display: block;
+          padding: 11px 13px;
+        }
+
+        @media screen and (min-width: $tablet-1 + 1) {
+          padding: 5px 3px;
+        }
 
         &:hover {
           color: $color-black;
@@ -195,10 +202,6 @@
 
       @media screen and (max-width: $tablet-1) {
         display: block;
-      }
-
-      @media screen and (max-width: $tablet-1) {
-        display: block;
         margin: 0;
         font-size: 18px;
         border-bottom: 1px solid $color-grey1;
@@ -206,7 +209,11 @@
     }
 
     .menu-item-cms {
-      padding: 11px 13px 10px;
+      margin-left: 0;
+
+      @media screen and (max-width: $tablet-1) {
+        padding: 11px 13px 10px;
+      }
     }
 
     @media screen and (max-width: $tablet) {
