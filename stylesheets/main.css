@@ -2241,7 +2241,7 @@ body {
 .content-area .edy-texteditor-container-wrapper-right {
   margin-left: 20px;
 }
-.content-area .edy-image-container-with-title::after::after {
+.content-area .edy-image-container-with-title::after {
   display: block;
   padding: 4px;
   font-size: 12px;

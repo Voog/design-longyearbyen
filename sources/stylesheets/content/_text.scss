@@ -430,7 +430,7 @@
   }
 
   // Content area image title
-  .edy-image-container-with-title::after {
+  .edy-image-container-with-title {
     &::after {
       display: block;
       padding: 4px;
