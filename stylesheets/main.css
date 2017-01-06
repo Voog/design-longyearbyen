@@ -208,15 +208,18 @@ body {
   vertical-align: middle;
   border-bottom: 0;
 }
-.menu-horizontal.menu-sub li a.active {
-  color: #000;
-}
 .menu-horizontal.menu-sub li a:hover {
   color: #000;
   background: #eee077;
 }
+.menu-horizontal.menu-sub li a.active {
+  color: #000;
+}
 .menu-horizontal.menu-sub li a.current {
   color: #000;
+}
+.menu-horizontal.menu-sub li a.untranslated {
+  color: rgba(161, 155, 75, 0.7);
 }
 @media screen and (min-width: 641px) {
   .menu-horizontal.menu-sub li {

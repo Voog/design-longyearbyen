@@ -169,17 +169,21 @@
         vertical-align: middle;
         border-bottom: 0;
 
-        &.active {
-          color: $color-black;
-        }
-
         &:hover {
           color: $color-black;
           background: $color-link-hightlight;
         }
 
+        &.active {
+          color: $color-black;
+        }
+
         &.current {
           color: $color-black;
+        }
+
+        &.untranslated {
+          color: rgba($color-untranslated, .7);
         }
       }
       // scss-lint:enable NestingDepth
