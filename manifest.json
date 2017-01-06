@@ -6,18 +6,18 @@
   "author": "Tõnu Runnel",
   "layouts": [
     {
-      "content_type": "blog",
+      "content_type": "page",
       "component": false,
-      "file": "layouts/blog___news.tpl",
-      "layout_name": "blog",
-      "title": "Blog & News"
+      "file": "layouts/product.tpl",
+      "layout_name": "product",
+      "title": "Product"
     },
     {
-      "content_type": "blog_article",
+      "content_type": "page",
       "component": false,
-      "file": "layouts/blog_article.tpl",
-      "layout_name": "blog_article",
-      "title": "Blog article"
+      "file": "layouts/product_list.tpl",
+      "layout_name": "product_list",
+      "title": "Product list"
     },
     {
       "content_type": "page",
@@ -34,53 +34,18 @@
       "title": "Front page"
     },
     {
-      "content_type": "page",
+      "content_type": "blog",
       "component": false,
-      "file": "layouts/product.tpl",
-      "layout_name": "product",
-      "title": "Product"
+      "file": "layouts/blog___news.tpl",
+      "layout_name": "blog",
+      "title": "Blog & News"
     },
     {
-      "content_type": "page",
+      "content_type": "blog_article",
       "component": false,
-      "file": "layouts/product_list.tpl",
-      "layout_name": "product_list",
-      "title": "Product list"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-level-2.tpl",
-      "layout_name": "menu-level-2",
-      "title": "menu-level-2"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-article-tags.tpl",
-      "layout_name": "blog-article-tags",
-      "title": "blog-article-tags"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-article-template.tpl",
-      "layout_name": "blog-article-template",
-      "title": "blog-article-template"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/blog-news-tags.tpl",
-      "layout_name": "blog-news-tags",
-      "title": "blog-news-tags"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-language-popover.tpl",
-      "layout_name": "menu-language-popover",
-      "title": "menu-language-popover"
+      "file": "layouts/blog_article.tpl",
+      "layout_name": "blog_article",
+      "title": "Blog article"
     },
     {
       "content_type": "component",
@@ -92,9 +57,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/blog-article-comments.tpl",
-      "layout_name": "blog-article-comments",
-      "title": "blog-article-comments"
+      "file": "components/menu-level-2.tpl",
+      "layout_name": "menu-level-2",
+      "title": "menu-level-2"
     },
     {
       "content_type": "component",
@@ -179,6 +144,41 @@
       "file": "components/template-variables.tpl",
       "layout_name": "template-variables",
       "title": "template-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-article-comments.tpl",
+      "layout_name": "blog-article-comments",
+      "title": "blog-article-comments"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-article-tags.tpl",
+      "layout_name": "blog-article-tags",
+      "title": "blog-article-tags"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-article-template.tpl",
+      "layout_name": "blog-article-template",
+      "title": "blog-article-template"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/blog-news-tags.tpl",
+      "layout_name": "blog-news-tags",
+      "title": "blog-news-tags"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-language-popover.tpl",
+      "layout_name": "menu-language-popover",
+      "title": "menu-language-popover"
     }
   ],
   "assets": [
