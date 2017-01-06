@@ -89,3 +89,11 @@
 .feature-section .edy-content-element {
   border: 0;
 }
+
+// Mobile menu, '+Add' button background color-white
+.mobile-menu {
+  .edy-cbtn>span::before,
+  .edy-cbtn>div::before {
+    background: $color-body !important; // scss-lint:disable ImportantRule
+  }
+}

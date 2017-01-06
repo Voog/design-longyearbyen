@@ -539,6 +539,11 @@ body {
   border: 0;
 }
 
+.mobile-menu .edy-cbtn > span::before,
+.mobile-menu .edy-cbtn > div::before {
+  background: #333 !important;
+}
+
 .site-header {
   padding: 18px 25px 75px;
 }
