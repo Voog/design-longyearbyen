@@ -679,6 +679,9 @@ body {
 .site-search .search-input::-webkit-search-decoration, .site-search .search-input::-webkit-search-cancel-button, .site-search .search-input::-webkit-search-results-button, .site-search .search-input::-webkit-search-results-decoration {
   display: none;
 }
+.site-search .search-input::-ms-clear {
+  display: none;
+}
 .site-search .search-input:focus {
   outline: none;
 }

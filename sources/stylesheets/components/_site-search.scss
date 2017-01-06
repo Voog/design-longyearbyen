@@ -73,6 +73,10 @@
       display: none;
     }
 
+    &::-ms-clear {
+      display: none;
+    }
+
     &:focus {
       outline: none;
     }
