@@ -1,16 +1,16 @@
 {
-  "description": "Icy fresh wonder",
-  "name": "Longyearbyen",
+  "description": "New design",
+  "name": "New design",
   "preview_medium": "",
   "preview_small": "",
-  "author": "Tõnu Runnel",
+  "author": "",
   "layouts": [
     {
       "content_type": "page",
       "component": false,
       "file": "layouts/blog___news.tpl",
       "layout_name": "page_default",
-      "title": "Blog & news"
+      "title": "Blog   news"
     },
     {
       "content_type": "page",
