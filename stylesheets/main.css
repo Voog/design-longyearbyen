@@ -713,7 +713,7 @@ body {
 @media screen and (max-width: 640px) {
   .site-search .voog-search-modal {
     width: 100%;
-    height: calc(100% - 115px);
+    height: calc(100% - 57px);
     padding-top: 28px;
   }
 }
