@@ -151,6 +151,11 @@
     margin: 0;
     text-align: center;
 
+    .item-list-page & {
+      padding-top: 0px;
+      padding-bottom: 20px;
+    }
+
     li {
       margin-right: 18px;
       font-size: 20px;
