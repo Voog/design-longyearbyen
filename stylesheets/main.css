@@ -1545,6 +1545,9 @@ body {
 .content-illustrations {
   font-size: 0;
 }
+.content-illustrations .content-item-box {
+  padding-right: 0;
+}
 @media screen and (min-width: 641px) {
   .content-illustrations {
     flex: 1;
