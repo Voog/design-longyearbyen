@@ -404,7 +404,7 @@
   // ===========================================================================
   // Binds editmode image drop areas.
   // ===========================================================================
-  var bindItemImgDropAreas = function(placeholderText) {
+  var bindItemImgDropAreas = function() {
     $('.js-img-drop-area').each(function(index, imgDropAreaTarget) {
       var $imgDropAreaTarget = $(imgDropAreaTarget),
           $contentItemBox = $imgDropAreaTarget.closest('.js-content-item-box'),
@@ -424,7 +424,6 @@
         positionable: false,
         target_width: 1280,
         removeBtn: '',
-        placeholder: '<div class="edy-img-drop-area-placeholder">' + placeholderText + '</div>',
 
         change: function(data) {
           var $bgPickerButton = $contentItemBox.find('.js-bg-picker-btn');

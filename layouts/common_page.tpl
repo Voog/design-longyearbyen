@@ -12,7 +12,6 @@
         {% include "site-header" %}
 
         <main class="page-content" role="main">
-          {% comment %}<!-- TODO: Non-{% content %}-area related items should not depend on ".content-area" class{% endcomment %}
           <section class="content-area">
             <div class="content-body" data-search-indexing-allowed="true">
               {% include "menu-level-2" %}

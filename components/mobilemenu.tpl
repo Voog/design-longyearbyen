@@ -69,7 +69,9 @@
                 {% menulink level_1 wrapper-tag="li" %}
               {% endunless %}
             {% else %}
-              {% menulink level_1 wrapper-tag="li" %}
+              {% unless level_1.layout_title == product_layout %}
+                {% menulink level_1 wrapper-tag="li" %}
+              {% endunless %}
             {% endunless %}
           {% endif %}
         {% else %}

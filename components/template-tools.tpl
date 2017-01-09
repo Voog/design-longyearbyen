@@ -44,7 +44,7 @@
 
     {% if items_page %}
       template.bindItemBgPickers();
-      template.bindItemImgDropAreas('{{ "drag_picture_for_product_here" | lc }}');
+      template.bindItemImgDropAreas();
       template.bindItemImageCropToggle();
 
       {%if site.data.settings_root_item %}
