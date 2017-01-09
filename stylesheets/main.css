@@ -64,16 +64,15 @@ body {
 .article-header .article-title {
   padding: 0;
   margin-bottom: 0;
-  font-family: "Futura PT W01 Heavy", Arial, sans-serif;
   font-size: 20px;
-  font-weight: 700;
   line-height: 1.2;
   color: #1b2124;
 }
 .article-header .article-title a {
   border-bottom: 0;
 }
-.article-header .article-info {
+
+.article-info {
   font-size: 13px;
   color: #898989;
   text-transform: uppercase;
@@ -1574,56 +1573,72 @@ body {
   }
 }
 
-.blog-and-news-page .blog-article {
+.blog-news-page .blog-article {
   padding-top: 40px;
 }
-.blog-and-news-page .blog-article:first-child {
+.blog-news-page .blog-article:first-child {
   padding-top: 0;
 }
-.blog-and-news-page .articles-listing {
+.blog-news-page .article-title {
+  hyphens: auto;
+  word-break: break-word;
+  word-wrap: break-word;
+  margin: 0;
+  font-family: "Futura PT W01 Heavy", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.blog-news-page .article-date {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #898989;
+  text-transform: uppercase;
+}
+.blog-news-page .articles-listing {
   text-align: center;
 }
-.blog-and-news-page .articles-listing .blog-article {
+.blog-news-page .articles-listing .blog-article {
   padding-top: 20px;
 }
-.blog-and-news-page .articles-listing .older-post {
+.blog-news-page .articles-listing .older-post {
   padding: 1px 80px 80px;
 }
 @media screen and (max-width: 1024px) {
-  .blog-and-news-page .articles-listing .older-post.older-post {
+  .blog-news-page .articles-listing .older-post.older-post {
     padding: 10px 40px 40px;
   }
 }
 @media screen and (max-width: 768px) {
-  .blog-and-news-page .articles-listing .older-post {
+  .blog-news-page .articles-listing .older-post {
     padding: 40px 25px;
   }
-  .blog-and-news-page .articles-listing .older-post.older-post {
+  .blog-news-page .articles-listing .older-post.older-post {
     padding: 40px 25px;
   }
 }
-.blog-and-news-page .articles-listing .articles-listing-header {
+.blog-news-page .articles-listing .articles-listing-header {
   padding: 40px 0 15px;
   border-top: 1px solid #cacaca;
 }
-.blog-and-news-page .articles-listing .content-inner a {
+.blog-news-page .articles-listing .content-inner a {
   border-bottom: 0;
 }
-.blog-and-news-page .articles-listing .article-title {
+.blog-news-page .articles-listing .article-title {
   font-family: "Futura PT W01 Book", Arial, sans-serif;
   font-weight: 400;
 }
 @media screen and (max-width: 480px) {
-  .blog-and-news-page .articles-listing {
+  .blog-news-page .articles-listing {
     margin: 0;
   }
-  .blog-and-news-page .articles-listing .blog-article:last-child {
+  .blog-news-page .articles-listing .blog-article:last-child {
     margin-bottom: 0;
   }
-  .blog-and-news-page .articles-listing .blog-article .article-date {
+  .blog-news-page .articles-listing .blog-article .article-date {
     position: static;
   }
-  .blog-and-news-page .articles-listing .blog-article .article-title {
+  .blog-news-page .articles-listing .blog-article .article-title {
     margin: 0;
   }
 }
