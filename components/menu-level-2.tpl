@@ -3,9 +3,13 @@
 
     <ul class="menu-horizontal menu-sub">
       {% for subitem in item.visible_children %}
-        <li>
-          {% menulink subitem %}
-        </li>
+        {% if hide_product_related_pages %}
+          {% unless subitem.layout_title == product_list_layout or subitem.layout_title == product_layout %}
+            <li>{% menulink subitem %}</li>
+          {% endunless %}
+        {% else %}
+          <li>{% menulink subitem %}</li>
+        {% endif %}
       {% endfor %}
 
       {% if editmode %}
