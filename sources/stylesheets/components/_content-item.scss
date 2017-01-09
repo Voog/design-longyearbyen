@@ -332,6 +332,10 @@
 .content-illustrations {
   font-size: 0;
 
+  .content-item-box {
+    padding-right: 0;
+  }
+
   @media screen and (min-width: $mobile + 1) {
     flex: 1;
     max-width: 520px;

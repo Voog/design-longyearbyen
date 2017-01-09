@@ -1,4 +1,4 @@
-{% if site.has_language_tags? %}
+{% if blog and blog.has_tags? %}
   <div class="tagged-list-header">
     <nav class="tags">
       <ul class="menu-horizontal menu-sub">

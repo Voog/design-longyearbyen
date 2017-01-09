@@ -1,4 +1,4 @@
-.blog-news-page {
+.blog-and-news-page {
 
   .blog-article {
     padding-top: 40px;
@@ -69,6 +69,7 @@
 
     .article-title {
       font-family: $font-main;
+      font-size: 18px;
       font-weight: 400;
     }
 
@@ -80,7 +81,7 @@
         &:last-child {
           margin-bottom: 0;
         }
-
+        // scss-lint:disable SelectorDepth
         .article-date {
           position: static;
         }
@@ -88,8 +89,14 @@
         .article-title {
           margin: 0;
         }
+        // scss-lint:enable SelectorDepth
         // scss-lint:enable NestingDepth
       }
+    }
+
+    .article-date {
+      margin: 0;
+      color: $color-light;
     }
   }
 }
