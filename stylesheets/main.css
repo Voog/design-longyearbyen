@@ -192,10 +192,6 @@ body {
   margin: 0;
   text-align: center;
 }
-.item-list-page .menu-horizontal.menu-sub {
-  padding-top: 0px;
-  padding-bottom: 20px;
-}
 .menu-horizontal.menu-sub li {
   margin-right: 18px;
   font-size: 20px;

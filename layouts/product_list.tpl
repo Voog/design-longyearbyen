@@ -14,13 +14,6 @@
         <main class="page-content" role="main">
           {% include "product-breadcrumbs" %}
 
-          {% comment %}<!-- TODO: Non-{% content %}-area related items should not depend on ".content-area" class{% endcomment %}
-          <div class="content-area">
-            <div class="content-body" data-search-indexing-allowed="true">
-              {% include "menu-level-2" hide_product_related_pages: true %}
-            </div>
-          </div>
-
           <section class="content-item-boxes">
             {% if site.root_item.selected? %}
               {% for level_1 in site.visible_menuitems_with_data %}
