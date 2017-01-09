@@ -1,4 +1,4 @@
-.blog-news-page {
+.blog-and-news-page {
 
   .blog-article {
     padding-top: 40px;
@@ -6,22 +6,6 @@
     &:first-child {
       padding-top: 0;
     }
-  }
-
-  .article-title {
-    @include hyphenate;
-    margin: 0;
-    font-family: $font-heavy;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-
-  .article-date {
-    margin-top: 8px;
-    font-size: 13px;
-    color: $color-light;
-    text-transform: uppercase;
   }
 
   // Archive, list view

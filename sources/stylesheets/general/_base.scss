@@ -61,7 +61,9 @@ body {
   .article-title {
     padding: 0;
     margin-bottom: 0;
+    font-family: $font-heavy;
     font-size: 20px;
+    font-weight: 700;
     line-height: 1.2;
     color: rgba($color-highlight, 1);
 
@@ -69,12 +71,12 @@ body {
       border-bottom: 0;
     }
   }
-}
 
-.article-info {
-  font-size: 13px;
-  color: $color-light;
-  text-transform: uppercase;
+  .article-info {
+    font-size: 13px;
+    color: $color-light;
+    text-transform: uppercase;
+  }
 }
 
 .svg-spritesheet {
