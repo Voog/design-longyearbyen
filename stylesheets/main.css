@@ -556,19 +556,19 @@ body {
   background: #333 !important;
 }
 
-.content-area ul,
-.content-area ol,
-.content-area dl {
+.content-inner ul,
+.content-inner ol,
+.content-inner dl {
   text-align: left !important;
 }
-.content-area ul li,
-.content-area ol li,
-.content-area dl li {
+.content-inner ul li,
+.content-inner ol li,
+.content-inner dl li {
   text-align: left !important;
 }
-.content-area ul li div,
-.content-area ol li div,
-.content-area dl li div {
+.content-inner ul li div,
+.content-inner ol li div,
+.content-inner dl li div {
   text-align: left !important;
 }
 
