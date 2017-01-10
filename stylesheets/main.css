@@ -556,6 +556,22 @@ body {
   background: #333 !important;
 }
 
+.edy-content-element ul,
+.edy-content-element ol,
+.edy-content-element dl {
+  text-align: left !important;
+}
+.edy-content-element ul li,
+.edy-content-element ol li,
+.edy-content-element dl li {
+  text-align: left !important;
+}
+.edy-content-element ul li div,
+.edy-content-element ol li div,
+.edy-content-element dl li div {
+  text-align: left !important;
+}
+
 .site-header {
   padding: 18px 25px 75px;
 }
@@ -2144,12 +2160,6 @@ body {
   color: #898989;
   text-align: center;
   text-transform: uppercase;
-}
-.content-area ul,
-.content-area ol,
-.content-area dl {
-  padding: 0;
-  list-style-position: inside;
 }
 .content-area a {
   color: black;

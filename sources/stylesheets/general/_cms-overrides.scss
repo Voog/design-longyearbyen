@@ -97,3 +97,20 @@
     background: $color-body !important; // scss-lint:disable ImportantRule
   }
 }
+
+
+.edy-content-element {
+  ul,
+  ol,
+  dl {
+    text-align: left !important; // scss-lint:disable ImportantRule
+
+    li {
+      text-align: left !important; // scss-lint:disable ImportantRule
+
+      div {
+        text-align: left !important; // scss-lint:disable ImportantRule
+      }
+    }
+  }
+}
