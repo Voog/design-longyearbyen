@@ -556,19 +556,19 @@ body {
   background: #333 !important;
 }
 
-.edy-content-element ul,
-.edy-content-element ol,
-.edy-content-element dl {
+.content-area ul,
+.content-area ol,
+.content-area dl {
   text-align: left !important;
 }
-.edy-content-element ul li,
-.edy-content-element ol li,
-.edy-content-element dl li {
+.content-area ul li,
+.content-area ol li,
+.content-area dl li {
   text-align: left !important;
 }
-.edy-content-element ul li div,
-.edy-content-element ol li div,
-.edy-content-element dl li div {
+.content-area ul li div,
+.content-area ol li div,
+.content-area dl li div {
   text-align: left !important;
 }
 

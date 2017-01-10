@@ -23,7 +23,7 @@
 }
 
 .edy-tb-iconbtn {
-  border-bottom: 0 !important;
+  border-bottom: 0 !important; // scss-lint:disable ImportantRule
 }
 
 // Slider
@@ -99,7 +99,7 @@
 }
 
 
-.edy-content-element {
+.content-area {
   ul,
   ol,
   dl {
@@ -108,9 +108,11 @@
     li {
       text-align: left !important; // scss-lint:disable ImportantRule
 
+      // scss-lint:disable NestingDepth, SelectorDepth
       div {
         text-align: left !important; // scss-lint:disable ImportantRule
       }
+      // scss-lint:enable NestingDepth, SelectorDepth
     }
   }
 }
