@@ -23,7 +23,7 @@
 }
 
 .edy-tb-iconbtn {
-  border-bottom: 0 !important;
+  border-bottom: 0 !important; // scss-lint:disable ImportantRule
 }
 
 // Slider
@@ -85,15 +85,29 @@
 }
 // scss-lint:enable SelectorFormat
 
-// Front page content area gallery slider whitespace
-.feature-section .edy-content-element {
-  border: 0;
-}
-
 // Mobile menu, '+Add' button background color-white
 .mobile-menu {
   .edy-cbtn>span::before,
   .edy-cbtn>div::before {
     background: $color-body !important; // scss-lint:disable ImportantRule
+  }
+}
+
+
+.content-inner {
+  ul,
+  ol,
+  dl {
+    text-align: left !important; // scss-lint:disable ImportantRule
+
+    li {
+      text-align: left !important; // scss-lint:disable ImportantRule
+
+      // scss-lint:disable NestingDepth, SelectorDepth
+      div {
+        text-align: left !important; // scss-lint:disable ImportantRule
+      }
+      // scss-lint:enable NestingDepth, SelectorDepth
+    }
   }
 }

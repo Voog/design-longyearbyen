@@ -301,6 +301,7 @@ body {
 }
 .menu-item-cms.float-right {
   float: right;
+  font-size: 17px;
 }
 
 .mobile-menu {
@@ -547,13 +548,25 @@ body {
   font-weight: 400;
 }
 
-.feature-section .edy-content-element {
-  border: 0;
-}
-
 .mobile-menu .edy-cbtn > span::before,
 .mobile-menu .edy-cbtn > div::before {
   background: #333 !important;
+}
+
+.content-inner ul,
+.content-inner ol,
+.content-inner dl {
+  text-align: left !important;
+}
+.content-inner ul li,
+.content-inner ol li,
+.content-inner dl li {
+  text-align: left !important;
+}
+.content-inner ul li div,
+.content-inner ol li div,
+.content-inner dl li div {
+  text-align: left !important;
 }
 
 .site-header {
@@ -2165,12 +2178,6 @@ body {
   color: #898989;
   text-align: center;
   text-transform: uppercase;
-}
-.content-area ul,
-.content-area ol,
-.content-area dl {
-  padding: 0;
-  list-style-position: inside;
 }
 .content-area a {
   color: black;
