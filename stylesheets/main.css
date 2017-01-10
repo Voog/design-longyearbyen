@@ -301,6 +301,7 @@ body {
 }
 .menu-item-cms.float-right {
   float: right;
+  font-size: 17px;
 }
 
 .mobile-menu {
