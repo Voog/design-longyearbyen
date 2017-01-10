@@ -36,7 +36,7 @@
         <li class="menu-item menu-item-cms">{% menuadd %}</li>
       {% endunless %}
 
-      {% if site.root_item.selected? %}
+      {% if site.root_item.selected? and site.root_item.layout_title == product_list_layout %}
         <li class="menu-item menu-item-cms float-right">
           <a class="js-root-item-settings-toggle"></a>
         </li>
