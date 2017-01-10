@@ -58,9 +58,7 @@
     background-position: right 10px center;
     background-repeat: no-repeat;
     border-radius: 0;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -webkit-appearance: none;
+    appearance: none;
   }
 
   .form_field_textfield,

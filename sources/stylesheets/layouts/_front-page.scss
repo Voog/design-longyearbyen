@@ -1,15 +1,7 @@
 // Front page bg-picker and padding switcher boxes
 .sections {
   position: relative;
-  // TODO: Remove vendor prefixes when grunt autoprefixer is implemented.
-  // scss-lint:disable VendorPrefix
   display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  // scss-lint:enable VendorPrefix
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
@@ -32,18 +24,9 @@
 
   &.section-with-padding {
     display: flex;
-    // TODO: Remove vendor prefixes when grunt autoprefixer is implemented.
-    // scss-lint:disable VendorPrefix
-    -moz-align-items: center;
-    -webkit-align-items: center;
     align-items: center;
     padding: 80px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    // scss-lint:enable VendorPrefix
     transition: padding 500ms;
-    -ms-flex-align: center;
 
     @media screen and (max-width: $tablet-0) {
       padding: 20px;
@@ -52,12 +35,6 @@
 
   @media screen and (max-width: $tablet-0) {
     .public & {
-      // TODO: Remove vendor prefixes when grunt autoprefixer is implemented.
-      // scss-lint:disable VendorPrefix
-      -moz-flex: 1 0 50%;
-      -ms-flex: 1 0 50%;
-      -webkit-flex: 1 0 50%;
-      // scss-lint:enable VendorPrefix
       flex: 1 0 50%;
     }
   }

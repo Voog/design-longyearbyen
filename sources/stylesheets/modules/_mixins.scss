@@ -24,9 +24,7 @@
 }
 
 @mixin input-ios-reset {
-  // TODO: Remove vendor prefixes when grunt autoprefixer is implemented.
-  -webkit-appearance: none;
-  -webkit-border-radius: 0; // scss-lint:disable VendorPrefix
+  appearance: none;
   border-radius: 0;
 }
 

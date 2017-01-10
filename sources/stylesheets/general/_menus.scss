@@ -408,15 +408,10 @@
     }
 
     &::before {
-      // TODO: Remove vendor prefixes when grunt autoprefixer is implemented.
-      -ms-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
       transform: rotate(45deg);
     }
 
     &::after {
-      -ms-transform: rotate(-45deg);
-      -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
     }
   }
