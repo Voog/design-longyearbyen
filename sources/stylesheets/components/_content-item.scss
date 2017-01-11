@@ -9,6 +9,7 @@
 
 .content-item-box {
   color: rgba($color-black, .8);
+  text-decoration: none;
 
   .item-list-page & {
     padding-top: 15px;
@@ -279,6 +280,7 @@
 
   .item-link {
     color: inherit;
+    text-decoration: none;
 
     .content-item-box & {
       display: block;
