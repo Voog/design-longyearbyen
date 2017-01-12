@@ -16,6 +16,8 @@
 // CMS menu
 .menu-horizontal {
   &.menu-cms {
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 15px;
 
     @media screen and (min-width: $mobile + 1) {
@@ -288,7 +290,6 @@
   z-index: 1000;
   display: none;
   overflow: auto;
-  font-family: $font-main;
   font-weight: 400;
   background-color: $color-black;
   -webkit-overflow-scrolling: touch;

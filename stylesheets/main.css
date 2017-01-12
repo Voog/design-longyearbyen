@@ -8,7 +8,6 @@ html.site-search-opened {
 
 body {
   margin: 0;
-  font-family: "Futura PT W01 Book", Arial, sans-serif;
   font-weight: 400;
   color: #333;
 }
@@ -26,7 +25,6 @@ body {
   margin-left: auto;
 }
 .site-container .wrap {
-  max-width: 1000px;
   padding: 0 20px;
 }
 @media screen and (max-width: 640px) {
@@ -104,6 +102,8 @@ body {
 }
 
 .menu-horizontal.menu-cms {
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 15px;
 }
 @media screen and (min-width: 641px) {
@@ -313,7 +313,6 @@ body {
   z-index: 1000;
   display: none;
   overflow: auto;
-  font-family: "Futura PT W01 Book", Arial, sans-serif;
   font-weight: 400;
   background-color: #000;
   -webkit-overflow-scrolling: touch;
@@ -544,7 +543,6 @@ body {
 }
 
 .pswp__caption__center {
-  font-family: "Futura PT W01 Book", Arial, sans-serif !important;
   font-weight: 400;
 }
 
@@ -1660,7 +1658,6 @@ body {
   border-bottom: 0;
 }
 .blog-and-news-page .articles-listing .article-title {
-  font-family: "Futura PT W01 Book", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -2058,7 +2055,6 @@ body {
   }
 }
 .content-area.introtext, .content-area.introtext h1, .content-area.introtext h2, .content-area.introtext h3 {
-  font-family: "Futura PT W01 Book", Arial, sans-serif;
   font-weight: 400;
   text-align: left;
   text-transform: none;
@@ -2486,7 +2482,6 @@ body {
   min-width: 180px;
   padding: .61em .55em;
   margin: 5px 0;
-  font-family: "Futura PT W01 Book", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;

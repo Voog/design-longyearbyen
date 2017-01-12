@@ -14,12 +14,66 @@
 @import '../../stylesheets/modules/variables';
 
 // =============================================================================
-// Design editor configuration.
+// Default stylesheet override styles.
 // =============================================================================
-:root {
-  // scss-lint:disable Comment, Indentation
 
-  // ENTER CONTROLLERS DECLARATIONS HERE
-
-  // scss-lint:enable Comment, Indentation
+// =============================================================================
+// GENERAL
+// =============================================================================
+// Base
+.wrap {
+  .site-container & {
+    max-width: var(--wrap-max-width);
+  }
 }
+
+body {
+  font-family: var(--main-font-family);
+}
+
+// Menus
+.mobile-menu {
+  font-family: var(--main-font-family);
+}
+
+// CMS overrides
+// scss-lint:disable SelectorFormat
+.pswp__caption__center {
+  font-family: var(--main-font-family);
+}
+// scss-lint:enable SelectorFormat
+
+
+//==============================================================================
+// LAYOUTS
+//==============================================================================
+// Blog and news
+.blog-and-news-page {
+  .articles-listing {
+    .article-title {
+      font-family: var(--main-font-family);
+    }
+  }
+}
+
+//==============================================================================
+// CONTENT AREAS
+//==============================================================================
+// Text
+.content-area {
+  &.introtext,
+  &.introtext h1,
+  &.introtext h2,
+  &.introtext h3 {
+    font-family: var(--main-font-family);
+  }
+}
+
+// Form
+// scss-lint:disable SelectorFormat
+.form_submit {
+  input {
+    font-family: var(--main-font-family);
+  }
+}
+// scss-lint:enable SelectorFormat
