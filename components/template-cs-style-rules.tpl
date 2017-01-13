@@ -44,6 +44,12 @@ body {
 .content-area.introtext, .content-area.introtext h1, .content-area.introtext h2, .content-area.introtext h3 {
   font-family: var(--main-font-family);
 }
+.content-area a {
+  border-bottom: 5px solid var(--content-link-color);
+}
+.content-area a:hover {
+  background: var(--content-link-color);
+}
 
 .form_submit input {
   font-family: var(--main-font-family);

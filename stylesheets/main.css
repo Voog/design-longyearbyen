@@ -2165,11 +2165,9 @@ body {
 .content-area a {
   color: black;
   text-decoration: none;
-  border-bottom: 5px solid #eee077;
 }
 .content-area a:hover {
   color: black;
-  background: #eee077;
 }
 .content-area .edy-content-social-button,
 .content-area a.edys-gallery-grid-item,

@@ -280,11 +280,9 @@
   a {
     color: rgba($color-black, 1);
     text-decoration: none;
-    border-bottom: 5px solid $color-link-hightlight;
 
     &:hover {
       color: rgba($color-black, 1);
-      background: $color-link-hightlight;
     }
   }
 

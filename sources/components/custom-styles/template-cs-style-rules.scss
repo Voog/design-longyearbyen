@@ -118,6 +118,14 @@ body {
   &.introtext h3 {
     font-family: var(--main-font-family);
   }
+
+  a {
+    border-bottom: 5px solid var(--content-link-color);
+
+    &:hover {
+      background: var(--content-link-color);
+    }
+  }
 }
 
 // Form

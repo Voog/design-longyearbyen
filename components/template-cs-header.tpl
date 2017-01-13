@@ -77,4 +77,27 @@
     ]
   */
   --menu-sub-active-color: #000;
+  /* VoogStyle
+    "pathI18n": ["content", "link", "normal"],
+    "titleI18n": "color",
+    "type": "text",
+    "editor": "colorPicker",
+    "featured": true,
+    "scope": "global",
+    "boundVariables": [
+      "--content-link-hover-color"
+    ]
+  */
+  --content-link-color: #eee077;
+  /* VoogStyle
+    "pathI18n": ["content", "link", "hover"],
+    "titleI18n": "color",
+    "type": "text",
+    "editor": "colorPicker",
+    "scope": "global",
+    "boundVariables": [
+      "--content-link-color"
+    ]
+  */
+  --content-link-hover-color: #eee077;
 }

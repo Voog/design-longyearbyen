@@ -105,6 +105,18 @@
     */
     --menu-sub-active-color: $color-black;
 
+    /* VoogStyle
+      "pathI18n": ["content", "link", "normal"],
+      "titleI18n": "color",
+      "type": "text",
+      "editor": "colorPicker",
+      "featured": true,
+      "scope": "global",
+      "boundVariables": [
+        "--content-link-hover-color"
+      ]
+    */
+    --content-link-color: $color-link-hightlight;
 
   // scss-lint:enable Comment, Indentation
 }
