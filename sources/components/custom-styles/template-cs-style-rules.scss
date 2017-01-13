@@ -36,6 +36,57 @@ body {
   font-family: var(--main-font-family);
 }
 
+.menu:not(.menu-vertical) {
+  li {
+    a {
+      // scss-lint:disable NestingDepth
+      &:hover {
+        color: var(--menu-main-hover-color);
+        background: var(--content-background-color);
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+}
+
+.menu-main {
+  li {
+    a {
+      color: var(--menu-main-color);
+    }
+
+    &.selected {
+      // scss-lint:disable NestingDepth
+      a {
+        color: var(--menu-main-active-color);
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+}
+
+.menu-horizontal {
+  &.menu-sub {
+    li {
+
+      // scss-lint:disable NestingDepth
+      a {
+        color: var(--menu-sub-color);
+
+        &:hover {
+          color: var(--menu-sub-hover-color);
+          background: var(--submenu-link-background-color);
+        }
+
+        &.current {
+          color: var(--menu-sub-active-color);
+        }
+      }
+      // scss-lint:enable NestingDepth
+    }
+  }
+}
+
 // CMS overrides
 // scss-lint:disable SelectorFormat
 .pswp__caption__center {

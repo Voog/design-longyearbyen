@@ -19,7 +19,92 @@
 :root {
   // scss-lint:disable Comment, Indentation
 
-  // ENTER CONTROLLERS DECLARATIONS HERE
+  /* VoogStyle
+    "pathI18n": ["header", "main_menu", "normal"],
+    "titleI18n": "color",
+    "type": "text",
+    "editor": "colorPicker",
+    "featured": true,
+    "scope": "global",
+    "boundVariables": [
+      "--menu-main-hover-color",
+      "--menu-main-active-color"
+    ]
+  */
+  --menu-main-color: $color-light;
+
+    /* VoogStyle
+      "pathI18n": ["header", "main_menu", "hover"],
+      "titleI18n": "color",
+      "type": "text",
+      "editor": "colorPicker",
+      "scope": "global"
+    */
+    --menu-main-hover-color: $color-black;
+
+    /* VoogStyle
+      "pathI18n": ["header", "main_menu", "hover"],
+      "titleI18n": "background_color",
+      "editor": "colorPicker",
+      "scope": "global"
+    */
+    --content-background-color: $color-yellow;
+
+    /* VoogStyle
+      "pathI18n": ["header", "main_menu", "active"],
+      "titleI18n": "color",
+      "type": "text",
+      "editor": "colorPicker",
+      "scope": "global",
+      "boundVariables": [
+        "--menu-main-hover-color"
+      ]
+    */
+    --menu-main-active-color: $color-black;
+
+  /* VoogStyle
+    "pathI18n": ["header", "sub_menu", "normal"],
+    "titleI18n": "color",
+    "type": "text",
+    "editor": "colorPicker",
+    "featured": true,
+    "scope": "global",
+    "boundVariables": [
+      "--menu-sub-hover-color",
+      "--menu-sub-active-color"
+    ]
+  */
+  --menu-sub-color: $color-light;
+
+    /* VoogStyle
+      "pathI18n": ["header", "sub_menu", "hover"],
+      "titleI18n": "color",
+      "type": "text",
+      "editor": "colorPicker",
+      "scope": "global"
+    */
+    --menu-sub-hover-color: $color-black;
+
+    /* VoogStyle
+      "pathI18n": ["header", "sub_menu", "hover"],
+      "titleI18n": "background_color",
+      "editor": "colorPicker",
+      "scope": "global"
+    */
+    --submenu-link-background-color: $color-link-hightlight;
+
+    /* VoogStyle
+      "pathI18n": ["header", "sub_menu", "active"],
+      "titleI18n": "color",
+      "type": "text",
+      "editor": "colorPicker",
+      "scope": "global",
+      "boundVariables": [
+        "--menu-sub-hover-color"
+      ]
+    */
+    --menu-sub-active-color: $color-black;
+
 
   // scss-lint:enable Comment, Indentation
 }

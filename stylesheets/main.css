@@ -142,8 +142,6 @@ body {
 }
 .menu li a:hover {
   display: block;
-  color: #000;
-  background: #fff07f;
 }
 .menu li a.untranslated {
   color: rgba(161, 155, 75, 0.7);
@@ -165,15 +163,10 @@ body {
 }
 .menu-main li a {
   display: block;
-  color: #898989;
   text-decoration: none;
 }
 .menu-main li a.untranslated {
   color: rgba(161, 155, 75, 0.7);
-}
-.menu-main li.selected a {
-  color: #000;
-  background: #fff07f;
 }
 @media screen and (min-width: 641px) {
   .menu-main li {
@@ -202,7 +195,6 @@ body {
   margin-right: 0;
 }
 .menu-horizontal.menu-sub li a {
-  color: #898989;
   vertical-align: middle;
   border-bottom: 0;
 }
@@ -217,14 +209,7 @@ body {
     padding: 5px 3px;
   }
 }
-.menu-horizontal.menu-sub li a:hover {
-  color: #000;
-  background: #eee077;
-}
 .menu-horizontal.menu-sub li a.active {
-  color: #000;
-}
-.menu-horizontal.menu-sub li a.current {
   color: #000;
 }
 .menu-horizontal.menu-sub li a.untranslated {
