@@ -32,12 +32,15 @@ body {
 }
 
 // Menus
+
 .mobile-menu {
   font-family: var(--main-font-family);
 }
 
 .menu:not(.menu-vertical) {
   li {
+    font-size: var(--menu-main-font-size);
+
     a {
       // scss-lint:disable NestingDepth
       &:hover {
@@ -68,6 +71,7 @@ body {
 .menu-horizontal {
   &.menu-sub {
     li {
+      font-size: var(--menu-sub-font-size);
 
       // scss-lint:disable NestingDepth
       a {

@@ -1,5 +1,16 @@
 :root {
   /* VoogStyle
+  "pathI18n": ["content", "sub_menu", "normal"],
+  "titleI18n": "size",
+  "editor": "rangePicker",
+  "min": 12,
+  "max": 25,
+  "unit": "px",
+  "featured": true,
+  "scope": "global"
+*/
+  --menu-sub-font-size: 20px;
+  /* VoogStyle
     "pathI18n": ["content", "sub_menu", "normal"],
     "titleI18n": "color",
     "type": "text",

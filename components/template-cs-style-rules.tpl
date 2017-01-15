@@ -10,6 +10,9 @@ body {
   font-family: var(--main-font-family);
 }
 
+.menu:not(.menu-vertical) li {
+  font-size: var(--menu-main-font-size);
+}
 .menu:not(.menu-vertical) li a:hover {
   color: var(--menu-main-hover-color);
   background: var(--content-background-color);
@@ -22,6 +25,9 @@ body {
   color: var(--menu-main-active-color);
 }
 
+.menu-horizontal.menu-sub li {
+  font-size: var(--menu-sub-font-size);
+}
 .menu-horizontal.menu-sub li a {
   color: var(--menu-sub-color);
 }

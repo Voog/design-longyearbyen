@@ -43,7 +43,6 @@
   }
 
   li {
-    font-size: 13px;
     line-height: 1;
     text-transform: uppercase;
 
@@ -143,7 +142,6 @@
 
     li {
       margin-right: 18px;
-      font-size: 20px;
       letter-spacing: .2px;
       vertical-align: middle;
 
@@ -183,7 +181,7 @@
       @media screen and (max-width: $tablet-1) {
         display: block;
         margin: 0;
-        font-size: 18px;
+        font-size: 18px !important; // scss-lint:disable ImportantRule
         border-bottom: 1px solid $color-grey1;
       }
     }
