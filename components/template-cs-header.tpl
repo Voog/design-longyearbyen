@@ -30,7 +30,7 @@
     "editor": "colorPicker",
     "scope": "global",
     "boundVariables": [
-        "--menu-main-active-color"
+      "--menu-main-active-color"
     ]
   */
   --menu-main-hover-color: #000;

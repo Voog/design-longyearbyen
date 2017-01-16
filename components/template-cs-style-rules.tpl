@@ -43,10 +43,30 @@ body {
   font-family: var(--main-font-family);
 }
 
+.blog-and-news-page .article-title {
+  font-family: var(--headings-font-family);
+}
 .blog-and-news-page .articles-listing .article-title {
   font-family: var(--main-font-family);
 }
 
+.content-area h1,
+.content-area h2,
+.content-area h3,
+.content-area h4,
+.content-area h5,
+.content-area h6 {
+  font-family: var(--headings-font-family);
+}
+.content-area.header-content h1 {
+  font-family: var(--headings-font-family);
+}
+.content-area.header-content h2 {
+  font-family: var(--headings-font-family);
+}
+.content-area.header-content h3 {
+  font-family: var(--headings-font-family);
+}
 .content-area.introtext, .content-area.introtext h1, .content-area.introtext h2, .content-area.introtext h3 {
   font-family: var(--main-font-family);
 }

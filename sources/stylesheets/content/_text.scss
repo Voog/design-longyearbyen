@@ -64,14 +64,12 @@
 
     b,
     strong {
-      font-family: $font-heavy;
       font-weight: 700;
     }
   }
 
   b,
   strong {
-    font-family: $font-heavy;
     font-weight: 700;
   }
 
@@ -82,7 +80,6 @@
   h5,
   h6 {
     margin: 45px 0 35px;
-    font-family: $font-heavy;
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
@@ -119,7 +116,6 @@
 
   &.header-content h1 {
     padding: 0;
-    font-family: $font-heavy;
     font-size: 50px;
     font-weight: 700;
     line-height: 1.1;
@@ -198,7 +194,6 @@
 
   &.header-content h2 {
     padding: 0;
-    font-family: $font-heavy;
     font-weight: 700;
     line-height: 1.1;
     text-transform: none;
@@ -216,7 +211,6 @@
 
   &.header-content h3 {
     padding: 0;
-    font-family: $font-heavy;
     font-weight: 700;
     line-height: 1.1;
     text-transform: none;

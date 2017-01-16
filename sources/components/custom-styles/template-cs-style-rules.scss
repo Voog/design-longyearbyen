@@ -32,7 +32,6 @@ body {
 }
 
 // Menus
-
 .mobile-menu {
   font-family: var(--main-font-family);
 }
@@ -104,6 +103,10 @@ body {
 //==============================================================================
 // Blog and news
 .blog-and-news-page {
+  .article-title {
+    font-family: var(--headings-font-family);
+  }
+
   .articles-listing {
     .article-title {
       font-family: var(--main-font-family);
@@ -116,6 +119,28 @@ body {
 //==============================================================================
 // Text
 .content-area {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--headings-font-family);
+  }
+
+  &.header-content h1 {
+    font-family: var(--headings-font-family);
+  }
+
+  &.header-content h2 {
+    font-family: var(--headings-font-family);
+  }
+
+  &.header-content h3 {
+    font-family: var(--headings-font-family);
+  }
+
   &.introtext,
   &.introtext h1,
   &.introtext h2,

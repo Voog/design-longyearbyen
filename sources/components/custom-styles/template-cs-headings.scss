@@ -19,7 +19,15 @@
 :root {
   // scss-lint:disable Comment, Indentation
 
-  // ENTER CONTROLLERS DECLARATIONS HERE
+  /* VoogStyle
+    "pathI18n": ["headings"],
+    "titleI18n": "font",
+    "editor": "listPicker",
+    "list": {{ base_font_set }},
+    "featured": true,
+    "scope": "global"
+  */
+  --headings-font-family: $font-heavy;
 
   // scss-lint:enable Comment, Indentation
 }

@@ -1225,10 +1225,6 @@ body {
   margin-bottom: 10px;
   font-size: 16px;
 }
-.article-comments .comment-author {
-  font-family: "Futura PT W01 Heavy", Arial, sans-serif;
-  font-weight: 700;
-}
 .article-comments .comment-date,
 .article-comments .comment-author {
   font-size: 14px;
@@ -1615,7 +1611,6 @@ body {
   word-break: break-word;
   word-wrap: break-word;
   margin: 0;
-  font-family: "Futura PT W01 Heavy", Arial, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
@@ -1998,12 +1993,10 @@ body {
 .content-area code strong,
 .content-area table b,
 .content-area table strong {
-  font-family: "Futura PT W01 Heavy", Arial, sans-serif;
   font-weight: 700;
 }
 .content-area b,
 .content-area strong {
-  font-family: "Futura PT W01 Heavy", Arial, sans-serif;
   font-weight: 700;
 }
 .content-area h1,
@@ -2013,7 +2006,6 @@ body {
 .content-area h5,
 .content-area h6 {
   margin: 45px 0 35px;
-  font-family: "Futura PT W01 Heavy", Arial, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
@@ -2041,7 +2033,6 @@ body {
 }
 .content-area.header-content h1 {
   padding: 0;
-  font-family: "Futura PT W01 Heavy", Arial, sans-serif;
   font-size: 50px;
   font-weight: 700;
   line-height: 1.1;
@@ -2109,7 +2100,6 @@ body {
 }
 .content-area.header-content h2 {
   padding: 0;
-  font-family: "Futura PT W01 Heavy", Arial, sans-serif;
   font-weight: 700;
   line-height: 1.1;
   text-transform: none;
@@ -2124,7 +2114,6 @@ body {
 }
 .content-area.header-content h3 {
   padding: 0;
-  font-family: "Futura PT W01 Heavy", Arial, sans-serif;
   font-weight: 700;
   line-height: 1.1;
   text-transform: none;
