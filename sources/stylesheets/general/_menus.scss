@@ -114,10 +114,25 @@
     a {
       display: block;
       text-decoration: none;
+      opacity: .6;
+
+      // scss-lint:disable NestingDepth
+      &:hover {
+        opacity: 1;
+      }
+      // scss-lint:enable NestingDepth
 
       // scss-lint:disable NestingDepth
       &.untranslated {
-        color: rgba($color-untranslated, .7);
+        color: $color-untranslated;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+    &.selected {
+      // scss-lint:disable NestingDepth
+      a {
+        opacity: 1;
       }
       // scss-lint:enable NestingDepth
     }
@@ -153,6 +168,7 @@
       a {
         vertical-align: middle;
         border-bottom: 0;
+        opacity: .5;
 
         @media screen and (max-width: $tablet-1) {
           display: block;
@@ -163,12 +179,21 @@
           padding: 5px 3px;
         }
 
+        &:hover {
+          opacity: 1;
+        }
+
         &.active {
           color: $color-black;
+          opacity: 1;
+        }
+
+        &.current {
+          opacity: 1;
         }
 
         &.untranslated {
-          color: rgba($color-untranslated, .7);
+          color: $color-untranslated;
         }
       }
       // scss-lint:enable NestingDepth

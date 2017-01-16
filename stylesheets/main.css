@@ -163,9 +163,16 @@ body {
 .menu-main li a {
   display: block;
   text-decoration: none;
+  opacity: .6;
+}
+.menu-main li a:hover {
+  opacity: 1;
 }
 .menu-main li a.untranslated {
-  color: rgba(161, 155, 75, 0.7);
+  color: #a19b4b;
+}
+.menu-main li.selected a {
+  opacity: 1;
 }
 @media screen and (min-width: 641px) {
   .menu-main li {
@@ -195,6 +202,7 @@ body {
 .menu-horizontal.menu-sub li a {
   vertical-align: middle;
   border-bottom: 0;
+  opacity: .5;
 }
 @media screen and (max-width: 768px) {
   .menu-horizontal.menu-sub li a {
@@ -207,11 +215,18 @@ body {
     padding: 5px 3px;
   }
 }
+.menu-horizontal.menu-sub li a:hover {
+  opacity: 1;
+}
 .menu-horizontal.menu-sub li a.active {
   color: #000;
+  opacity: 1;
+}
+.menu-horizontal.menu-sub li a.current {
+  opacity: 1;
 }
 .menu-horizontal.menu-sub li a.untranslated {
-  color: rgba(161, 155, 75, 0.7);
+  color: #a19b4b;
 }
 @media screen and (min-width: 641px) {
   .menu-horizontal.menu-sub li {

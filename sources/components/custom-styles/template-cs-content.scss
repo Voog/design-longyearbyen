@@ -43,14 +43,17 @@
       "--menu-sub-active-color"
     ]
   */
-  --menu-sub-color: $color-light;
+  --menu-sub-color: $color-black;
 
     /* VoogStyle
       "pathI18n": ["content", "sub_menu", "hover"],
       "titleI18n": "color",
       "type": "text",
       "editor": "colorPicker",
-      "scope": "global"
+      "scope": "global",
+      "boundVariables": [
+        "--menu-sub-active-color"
+      ]
     */
     --menu-sub-hover-color: $color-black;
 
@@ -67,10 +70,7 @@
       "titleI18n": "color",
       "type": "text",
       "editor": "colorPicker",
-      "scope": "global",
-      "boundVariables": [
-        "--menu-sub-hover-color"
-      ]
+      "scope": "global"
     */
     --menu-sub-active-color: $color-black;
 

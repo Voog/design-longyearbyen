@@ -22,13 +22,16 @@
       "--menu-main-active-color"
     ]
   */
-  --menu-main-color: #898989;
+  --menu-main-color: #000;
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "hover"],
     "titleI18n": "color",
     "type": "text",
     "editor": "colorPicker",
-    "scope": "global"
+    "scope": "global",
+    "boundVariables": [
+        "--menu-main-active-color"
+    ]
   */
   --menu-main-hover-color: #000;
   /* VoogStyle
@@ -43,10 +46,7 @@
     "titleI18n": "color",
     "type": "text",
     "editor": "colorPicker",
-    "scope": "global",
-    "boundVariables": [
-      "--menu-main-hover-color"
-    ]
+    "scope": "global"
   */
   --menu-main-active-color: #000;
 }
