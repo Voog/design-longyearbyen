@@ -1,6 +1,9 @@
 .site-container .wrap {
   max-width: var(--wrap-max-width);
 }
+.wrap .page-content {
+  background: var(--content-background-color);
+}
 
 body {
   font-family: var(--main-font-family);

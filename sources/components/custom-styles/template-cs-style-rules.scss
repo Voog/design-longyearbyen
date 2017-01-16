@@ -25,6 +25,10 @@
   .site-container & {
     max-width: var(--wrap-max-width);
   }
+
+  .page-content {
+    background: var(--content-background-color);
+  }
 }
 
 body {

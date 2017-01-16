@@ -40,7 +40,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --content-background-color: #fff07f;
+  --menu-main-background-color: #fff07f;
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "active"],
     "titleI18n": "color",
