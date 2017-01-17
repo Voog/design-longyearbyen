@@ -160,19 +160,21 @@
       }
 
       &:checked {
+        // scss-lint:disable NestingDepth
         + .form_control_indicator {
           &::before {
             width: 100%;
             height: 100%;
-            background-color: rgba($color-body, 1);
+            background-color: rgba($color-black, 1);
+            background-image: url('../images/ico-check.png');
             background-position: left bottom;
             background-repeat: no-repeat;
+            background-size: 17px 19px;
             border-style: none;
-
           }
         }
+        // scss-lint:enable NestingDepth
       }
-      // scss-lint:enable NestingDepth
     }
 
     .form_field_radio {
