@@ -18,5 +18,5 @@
   "featured": true,
   "scope": "global"
 */
-  --main-font-family: "Futura PT W01 Book", Arial, sans-serif;
+  --main-font-family: "PT Sans", Arial, sans-serif;
 }

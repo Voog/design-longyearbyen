@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-search/latest/edicy-search.css">
 {% endif %}
 
-<link rel="stylesheet" href="http://fast.fonts.net/cssapi/eeb38f59-b7d9-49cc-9a81-1c3f2ac6ccb0.css">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
 {% customstyle %}
   {% include "template-cs-main-styles" %}
