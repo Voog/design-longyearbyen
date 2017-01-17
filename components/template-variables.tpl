@@ -191,4 +191,49 @@
     ]
   {% endcapture %}
 
+  {% capture base_number_of_columns_set %}
+    [
+      {
+        "title": "1",
+        "value": "100%"
+      },
+      {
+        "title": "2",
+        "value": "50%"
+      },
+      {
+        "title": "3",
+        "value": "33.3%"
+      },
+      {
+        "title": "4",
+        "value": "25%"
+      },
+      {
+        "title": "5",
+        "value": "20%"
+      },
+      {
+        "title": "6",
+        "value": "16.6%"
+      },
+      {
+        "title": "7",
+        "value": "14.2%"
+      },
+      {
+        "title": "8",
+        "value": "12.5%"
+      },
+      {
+        "title": "9",
+        "value": "11.1%"
+      },
+      {
+        "title": "10",
+        "value": "10%"
+      }
+    ]
+  {% endcapture %}
+
 {% endcapture %}

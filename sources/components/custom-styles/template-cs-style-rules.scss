@@ -18,6 +18,49 @@
 // =============================================================================
 
 // =============================================================================
+// COMPONENTS
+// =============================================================================
+// Content item
+.content-item-box {
+  .item-list-page & {
+    @media screen and (min-width: $mobile + 1) {
+      width: var(--product-list-box-width);
+    }
+  }
+}
+
+.item-top {
+  .top-inner {
+    border-radius: var(--product-box-image-radius);
+  }
+}
+
+.item-placeholder {
+  color: var(--product-list-box-color);
+}
+
+.item-title {
+  line-height: var(--product-box-line-height);
+
+  .item-link {
+    text-decoration: var(--product-box-text-decoration);
+  }
+
+  .item-list-page & {
+    font-style: var(--product-box-font-style);
+    text-transform: var(--product-box-text-transform);
+  }
+
+  .content-item-box & {
+    color: var(--product-list-box-color);
+
+    @media screen and (min-width: $mobile + 1) {
+      font-size: var(--product-box-font-size);
+    }
+  }
+}
+
+// =============================================================================
 // GENERAL
 // =============================================================================
 // Base
