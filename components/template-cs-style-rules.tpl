@@ -51,7 +51,7 @@ body {
 }
 .menu:not(.menu-vertical) li a:hover {
   color: var(--menu-main-hover-color);
-  background: var(--content-background-color);
+  background: var(--menu-main-background-color);
 }
 
 .menu-main li a {
