@@ -615,10 +615,13 @@ body {
   display: block;
   max-width: 100%;
   padding: 15px 18px;
+  overflow: hidden;
   font-size: 18px;
   line-height: 1;
   color: rgba(0, 0, 0, 0.8);
+  text-overflow: ellipsis;
   background: #fff;
+  box-sizing: border-box;
 }
 
 .edy-tageditor .edy-tag-suggestions .edy-tag-suggestion {

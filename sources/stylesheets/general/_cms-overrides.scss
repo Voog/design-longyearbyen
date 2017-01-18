@@ -62,10 +62,13 @@
   display: block;
   max-width: 100%;
   padding: 15px 18px;
+  overflow: hidden;
   font-size: 18px;
   line-height: 1;
   color: rgba($color-black, .8);
+  text-overflow: ellipsis;
   background: $color-white;
+  box-sizing: border-box;
 }
 
 // Tags
