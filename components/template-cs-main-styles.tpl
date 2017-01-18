@@ -16,7 +16,10 @@
   "editor": "listPicker",
   "list": {{ base_font_set }},
   "featured": true,
-  "scope": "global"
+  "scope": "global",
+  "boundVariables": [
+    "--headings-font-family"
+  ]
 */
   --main-font-family: "PT Sans", Arial, sans-serif;
   /* VoogStyle
