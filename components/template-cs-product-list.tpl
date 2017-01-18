@@ -1,6 +1,6 @@
 :root {
   /* VoogStyle
-    "pathI18n": ["product"],
+    "pathI18n": ["product_list"],
     "titleI18n": "max_nr_of_columns",
     "editor": "listPicker",
     "list": {{ base_number_of_columns_set }},
@@ -9,7 +9,7 @@
   */
   --product-list-box-width: 33.3%;
   /* VoogStyle
-    "pathI18n": ["product", "article_box"],
+    "pathI18n": ["product_list", "article_box"],
     "titleI18n": "image_radius",
     "editor": "rangePicker",
     "min": 0,
@@ -20,7 +20,7 @@
   */
   --product-box-image-radius: 0;
   /* VoogStyle
-    "pathI18n": ["product", "article_box", "normal"],
+    "pathI18n": ["product_list", "article_box", "normal"],
     "titleI18n": "line_height",
     "editor": "rangePicker",
     "min": 1,
@@ -31,7 +31,7 @@
   */
   --product-box-line-height: 1.2;
   /* VoogStyle
-    "pathI18n": ["product", "article_box", "normal"],
+    "pathI18n": ["product_list", "article_box", "normal"],
     "titleI18n": "size",
     "editor": "rangePicker",
     "min": 10,
@@ -42,7 +42,7 @@
   */
   --product-box-font-size: 18px;
   /* VoogStyle
-    "pathI18n": ["product", "article_box", "normal"],
+    "pathI18n": ["product_list", "article_box", "normal"],
     "titleI18n": "font_style",
     "type": "button",
     "editor": "toggleIcon",
@@ -55,7 +55,7 @@
   */
   --product-box-font-style: normal;
   /* VoogStyle
-    "pathI18n": ["product", "article_box", "normal"],
+    "pathI18n": ["product_list", "article_box", "normal"],
     "titleI18n": "text_decoration",
     "type": "button",
     "editor": "toggleIcon",
@@ -68,7 +68,7 @@
   */
   --product-box-text-decoration: none;
   /* VoogStyle
-    "pathI18n": ["product", "article_box", "normal"],
+    "pathI18n": ["product_list", "article_box", "normal"],
     "titleI18n": "text_transform",
     "type": "button",
     "editor": "toggleIcon",
@@ -81,7 +81,7 @@
   */
   --product-box-text-transform: none;
   /* VoogStyle
-    "pathI18n": ["product", "article_box", "normal"],
+    "pathI18n": ["product_list", "article_box", "normal"],
     "titleI18n": "color",
     "type": "button",
     "editor": "colorPicker",
