@@ -134,13 +134,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-header.tpl",
-      "layout_name": "template-cs-header",
-      "title": "template-cs-header"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/template-cs-headings.tpl",
       "layout_name": "template-cs-headings",
       "title": "template-cs-headings"
@@ -151,6 +144,13 @@
       "file": "components/template-cs-list.tpl",
       "layout_name": "template-cs-list",
       "title": "template-cs-list"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-main-menu.tpl",
+      "layout_name": "template-cs-main-menu",
+      "title": "template-cs-main-menu"
     },
     {
       "content_type": "component",

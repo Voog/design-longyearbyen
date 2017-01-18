@@ -28,7 +28,7 @@
 
 {% customstyle %}
   {% include "template-cs-main-styles" %}
-  {% include "template-cs-header" %}
+  {% include "template-cs-main-menu" %}
   {% include "template-cs-headings" %}
   {% if template-head == "product_list_page" %}
     {% include "template-cs-product-list" %}

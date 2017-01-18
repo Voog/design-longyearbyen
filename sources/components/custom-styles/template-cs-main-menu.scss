@@ -20,7 +20,7 @@
   // scss-lint:disable Comment, Indentation
 
   /* VoogStyle
-    "pathI18n": ["header", "main_menu", "normal"],
+    "pathI18n": ["main_menu", "normal"],
     "titleI18n": "size",
     "editor": "rangePicker",
     "min": 12,
@@ -32,7 +32,7 @@
   --menu-main-font-size: 13px;
 
   /* VoogStyle
-    "pathI18n": ["header", "main_menu", "normal"],
+    "pathI18n": ["main_menu", "normal"],
     "titleI18n": "color",
     "type": "text",
     "editor": "colorPicker",
@@ -46,10 +46,11 @@
   --menu-main-color: $color-black;
 
     /* VoogStyle
-      "pathI18n": ["header", "main_menu", "hover"],
+      "pathI18n": ["main_menu", "hover"],
       "titleI18n": "color",
       "type": "text",
       "editor": "colorPicker",
+      "featured": true,
       "scope": "global",
       "boundVariables": [
         "--menu-main-active-color"
@@ -58,16 +59,17 @@
     --menu-main-hover-color: $color-black;
 
     /* VoogStyle
-      "pathI18n": ["header", "main_menu", "hover"],
+      "pathI18n": ["main_menu", "hover"],
       "titleI18n": "background_color",
+      "featured": true,
       "editor": "colorPicker",
       "scope": "global"
     */
     --menu-main-background-color: $color-link-hightlight;
 
     /* VoogStyle
-      "pathI18n": ["header", "main_menu", "active"],
-      "titleI18n": "color",
+      "pathI18n": ["main_menu"],
+      "titleI18n": "active",
       "type": "text",
       "editor": "colorPicker",
       "scope": "global"

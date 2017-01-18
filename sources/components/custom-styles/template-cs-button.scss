@@ -106,9 +106,9 @@
   */
   --content-button-color: #{rgba($color-black, .8)};
 
-  /* VoogStyle
-      "pathI18n": ["button", "hover"],
-      "titleI18n": "color",
+    /* VoogStyle
+      "pathI18n": ["button"],
+      "titleI18n": "hover",
       "type": "text",
       "editor": "colorPicker",
       "scope": "global"
