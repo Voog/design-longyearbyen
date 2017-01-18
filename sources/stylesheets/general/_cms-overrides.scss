@@ -34,6 +34,7 @@
     .publicmode & {
       width: 15px;
       height: 29px;
+      padding: 10px;
       opacity: 1;
     }
   }
@@ -41,12 +42,12 @@
 
 .edys-gallery-area.edys-gallery-slider {
   .edys-gallery-slider-prev {
-    left: 25px;
+    left: 15px;
     background: url('../assets/ico-prev.svg') center center no-repeat;
   }
 
   .edys-gallery-slider-next {
-    right: 25px;
+    right: 15px;
     background: url('../assets/ico-next.svg') center center no-repeat;
   }
 }
