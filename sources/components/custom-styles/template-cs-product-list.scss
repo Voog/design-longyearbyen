@@ -63,7 +63,7 @@
     "featured": true,
     "scope": "global"
   */
-  --product-box-font-size: $base-font-size;
+  --product-box-font-size: #{$base-font-size};
 
   /* VoogStyle
     "pathI18n": ["product", "article_box", "normal"],
@@ -115,7 +115,7 @@
     "featured": true,
     "scope": "global"
   */
-  --product-list-box-color: rgba($color-black, .8);
+  --product-list-box-color: #{rgba($color-black, .8)};
 
   // scss-lint:enable Comment, Indentation
 }

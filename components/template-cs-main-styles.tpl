@@ -21,7 +21,7 @@
     "--headings-font-family"
   ]
 */
-  --main-font-family: "PT Sans", Arial, sans-serif;
+  --main-font-family: font-main;
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
     "titleI18n": "primary_color",
@@ -53,7 +53,7 @@
       "--menu-sub-active-color"
     ]
   */
-  --secondary-color: #000;
+  --secondary-color: color-black;
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
     "titleI18n": "third_color",
@@ -66,7 +66,7 @@
       "--content-link-hover-color"
     ]
   */
-  --third-color: #eee077;
+  --third-color: color-link-hightlight;
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
     "titleI18n": "background_color",
@@ -74,5 +74,5 @@
     "featured": true,
     "scope": "global"
   */
-  --body-background-color: #fff;
+  --body-background-color: color-white;
 }

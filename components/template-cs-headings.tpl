@@ -7,5 +7,5 @@
     "featured": true,
     "scope": "global"
   */
-  --headings-font-family: "PT Sans", Arial, sans-serif;
+  --headings-font-family: PT Sans, Arial, sans-serif;
 }
