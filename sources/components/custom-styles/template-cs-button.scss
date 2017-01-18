@@ -104,7 +104,7 @@
       "--content-button-hover-color"
     ]
   */
-  --content-button-color: rgba($color-black, .8);
+  --content-button-color: #{rgba($color-black, .8)};
 
   /* VoogStyle
       "pathI18n": ["button", "hover"],
@@ -113,7 +113,7 @@
       "editor": "colorPicker",
       "scope": "global"
     */
-    --content-button-hover-color: rgba($color-black, .8);
+    --content-button-hover-color: #{rgba($color-black, .8)};
 
   // scss-lint:enable Comment, Indentation
 }
