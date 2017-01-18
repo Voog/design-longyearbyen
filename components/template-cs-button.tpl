@@ -78,7 +78,7 @@
       "--content-button-hover-color"
     ]
   */
-  --content-button-color: #333;
+  --content-button-color: rgba(0, 0, 0, 0.8);
   /* VoogStyle
       "pathI18n": ["button", "hover"],
       "titleI18n": "color",
@@ -86,5 +86,5 @@
       "editor": "colorPicker",
       "scope": "global"
     */
-  --content-button-hover-color: #333;
+  --content-button-hover-color: rgba(0, 0, 0, 0.8);
 }

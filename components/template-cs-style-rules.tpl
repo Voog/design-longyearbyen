@@ -1,3 +1,7 @@
+.site-container {
+  background-color: var(--body-background-color);
+}
+
 @media screen and (min-width: 641px) {
   .item-list-page .content-item-box {
     width: var(--product-list-box-width);
@@ -51,7 +55,7 @@ body {
 }
 .menu:not(.menu-vertical) li a:hover {
   color: var(--menu-main-hover-color);
-  background: var(--menu-main-background-color);
+  background-color: var(--menu-main-background-color);
 }
 
 .menu-main li a {

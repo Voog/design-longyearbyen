@@ -339,8 +339,8 @@
         text-decoration: none;
 
         &:hover {
-          color: $color-body;
-          background: rgba($color-yellow, .9);
+          color: rgba($color-black, .8);
+          background: $color-link-hightlight;
         }
       }
       // scss-lint:enable NestingDepth, SelectorDepth

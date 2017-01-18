@@ -7,7 +7,7 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 1.6;
-  color: $color-body;
+  color: rgba($color-black, .8);
 
   // Resets the top margin for the first element and bottom margin for the last element in the content area (to prevent unwanted white-space at the beginning and the end of a content-area).
   h1,
@@ -55,7 +55,7 @@
   code,
   table {
     .front-page & {
-      color: $color-body;
+      color: rgba($color-black, .8);
     }
 
     .content-page & {
@@ -138,7 +138,7 @@
   &.introtext h1 {
     font-size: 50px;
     line-height: 1.3;
-    color: $color-body;
+    color: rgba($color-black, .8);
 
     @media screen and (max-width: $tablet-1) {
       font-size: 45px;
@@ -184,7 +184,12 @@
     }
 
     .custom-btn {
-      border: 1px solid $color-body;
+      border-style: solid;
+      border-width: 1px;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
@@ -202,7 +207,7 @@
   &.introtext h2 {
     font-size: 35px;
     line-height: 1.3;
-    color: $color-body;
+    color: rgba($color-black, .8);
   }
 
   h3 {
@@ -219,7 +224,7 @@
   &.introtext h3 {
     font-size: 25px;
     line-height: 1.3;
-    color: $color-body;
+    color: rgba($color-black, .8);
   }
 
 
@@ -257,7 +262,7 @@
 
   &.header-content,
   &.header-content p {
-    color: $color-body;
+    color: rgba($color-black, .8);
     text-align: center;
     text-transform: none;
   }
@@ -346,7 +351,7 @@
   blockquote {
     padding-left: 20px;
     margin: 20px 40px 20px 0;
-    border-left: 2px solid $color-body;
+    border-left: 2px solid rgba($color-black, .8);
   }
 
   &.header-content blockquote {
@@ -370,7 +375,7 @@
     line-height: 24px;
     text-align: center;
     cursor: pointer;
-    border: 1px solid $color-body;
+    border: 1px solid rgba($color-black, .8);
     box-sizing: border-box;
 
     &:hover {

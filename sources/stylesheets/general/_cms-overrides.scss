@@ -64,7 +64,7 @@
   padding: 15px 18px;
   font-size: 18px;
   line-height: 1;
-  color: $color-body;
+  color: rgba($color-black, .8);
   background: $color-white;
 }
 
@@ -88,7 +88,7 @@
 .mobile-menu {
   .edy-cbtn>span::before,
   .edy-cbtn>div::before {
-    background: $color-body !important; // scss-lint:disable ImportantRule
+    background: rgba($color-black, .8) !important; // scss-lint:disable ImportantRule
   }
 }
 

@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   font-weight: 400;
-  color: $color-body;
+  color: rgba($color-black, .8);
 }
 
 .voog-bg-picker-btn:not(.edy-bgpicker-toggle-button) {

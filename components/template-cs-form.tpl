@@ -70,7 +70,7 @@
     "scope": "global",
     "featured": true
   */
-  --form-field-color: black;
+  --form-field-color: rgba(0, 0, 0, 0.8);
   /* VoogStyle
     "pathI18n": ["form"],
     "titleI18n": "background_color",

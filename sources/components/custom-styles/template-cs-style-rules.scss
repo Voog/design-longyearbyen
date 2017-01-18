@@ -15,7 +15,12 @@
 
 // =============================================================================
 // Default stylesheet override styles.
+//
+// COMPONENTS
 // =============================================================================
+.site-container {
+  background-color: var(--body-background-color);
+}
 
 // =============================================================================
 // COMPONENTS
@@ -91,7 +96,7 @@ body {
       // scss-lint:disable NestingDepth
       &:hover {
         color: var(--menu-main-hover-color);
-        background: var(--menu-main-background-color);
+        background-color: var(--menu-main-background-color);
       }
       // scss-lint:enable NestingDepth
     }

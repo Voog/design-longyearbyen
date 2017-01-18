@@ -8,6 +8,13 @@
     {
       "content_type": "page",
       "component": false,
+      "file": "layouts/product_list.tpl",
+      "layout_name": "product_list",
+      "title": "Product list"
+    },
+    {
+      "content_type": "page",
+      "component": false,
       "file": "layouts/common_page.tpl",
       "layout_name": "page_default",
       "title": "Common page"
@@ -25,13 +32,6 @@
       "file": "layouts/product.tpl",
       "layout_name": "product",
       "title": "Product"
-    },
-    {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/product_list.tpl",
-      "layout_name": "product_list",
-      "title": "Product list"
     },
     {
       "content_type": "blog",
@@ -102,13 +102,6 @@
       "file": "components/site-search.tpl",
       "layout_name": "site-search",
       "title": "site-search"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-blog-list.tpl",
-      "layout_name": "template-cs-blog-list",
-      "title": "template-cs-blog-list"
     },
     {
       "content_type": "component",

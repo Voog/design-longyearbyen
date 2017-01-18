@@ -88,5 +88,5 @@
     "featured": true,
     "scope": "global"
   */
-  --product-list-box-color: #333;
+  --product-list-box-color: rgba(0, 0, 0, 0.8);
 }
