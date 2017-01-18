@@ -202,13 +202,40 @@ body {
       background: var(--content-link-color);
     }
   }
+
+  .custom-btn {
+    padding: calc(var(--content-button-padding) - 8px) var(--content-button-padding);
+    font-size: var(--content-button-font-size);
+    font-style: var(--content-button-font-style);
+    color: var(--content-button-color);
+    text-decoration: var(--content-button-text-decoration);
+    text-transform: var(--content-button-text-transform);
+    background: var(--content-button-background-color);
+
+    &:hover {
+      color: var(--content-button-hover-color);
+      background-color: var(--content-button-background-color);
+    }
+  }
 }
 
 // Form
 // scss-lint:disable SelectorFormat
 .form_submit {
   input {
+    padding: calc(var(--content-button-padding) - 8px) var(--content-button-padding);
     font-family: var(--main-font-family);
+    font-size: var(--content-button-font-size);
+    font-style: var(--content-button-font-style);
+    color: var(--content-button-color);
+    text-decoration: var(--content-button-text-decoration);
+    text-transform: var(--content-button-text-transform);
+    background: var(--content-button-background-color);
+
+    &:hover {
+      color: var(--content-button-hover-color);
+      background-color: var(--content-button-background-color);
+    }
   }
 }
 // scss-lint:enable SelectorFormat

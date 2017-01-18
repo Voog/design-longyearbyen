@@ -232,24 +232,17 @@
   input {
     max-width: 100%;
     min-width: 180px;
-    padding: .61em .55em;
     margin: 5px 0;
-    font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    color: $color-body;
     text-align: center;
-    text-transform: uppercase;
     cursor: pointer;
-    background: none;
     border: 1px solid $color-body;
     border-radius: 0;
     outline: 0;
     box-sizing: border-box;
 
     &:hover {
-      color: $color-body;
-      background-color: transparent;
       border: 1px solid $color-body;
       opacity: .6;
     }
