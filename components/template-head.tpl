@@ -56,3 +56,6 @@
 
 {% comment %}TODO: Add functionality after the CMS is going to support it{% endcomment %}
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
+
+{% comment %}Voog's statistics{% endcomment %}
+{{ site.stats_header }}
