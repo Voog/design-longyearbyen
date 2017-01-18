@@ -171,6 +171,8 @@ body {
 //==============================================================================
 // Text
 .content-area {
+  color: var(--content-body-color);
+
   h1,
   h2,
   h3,
@@ -200,10 +202,11 @@ body {
   }
 
   a {
-    border-bottom: 5px solid var(--content-link-color);
+    color: var(--content-link-color);
+    border-bottom: 5px solid var(--content-link-hover-color);
 
     &:hover {
-      background: var(--content-link-color);
+      background: var(--content-link-hover-color);
     }
   }
 

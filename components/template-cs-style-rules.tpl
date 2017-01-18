@@ -90,6 +90,9 @@ body {
   font-family: var(--main-font-family);
 }
 
+.content-area {
+  color: var(--content-body-color);
+}
 .content-area h1,
 .content-area h2,
 .content-area h3,
@@ -111,10 +114,11 @@ body {
   font-family: var(--main-font-family);
 }
 .content-area a {
-  border-bottom: 5px solid var(--content-link-color);
+  color: var(--content-link-color);
+  border-bottom: 5px solid var(--content-link-hover-color);
 }
 .content-area a:hover {
-  background: var(--content-link-color);
+  background: var(--content-link-hover-color);
 }
 .content-area .custom-btn {
   padding: calc(var(--content-button-padding) - 8px) var(--content-button-padding);

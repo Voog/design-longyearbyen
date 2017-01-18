@@ -26,6 +26,8 @@
     "featured": true,
     "scope": "global",
     "boundVariables": [
+      "--content-body-color",
+      "--content-link-color",
       "--product-list-box-color",
       "--form-field-color",
       "--content-button-color",
@@ -58,7 +60,7 @@
     "boundVariables": [
       "--menu-main-background-color",
       "--submenu-link-background-color",
-      "--content-link-color"
+      "--content-link-hover-color"
     ]
   */
   --third-color: #eee077;
