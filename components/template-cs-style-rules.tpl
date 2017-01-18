@@ -113,6 +113,31 @@ body {
   background: var(--content-link-color);
 }
 
-.form_submit input {
+.content-area .form_field_textfield,
+.content-area .form_field_textarea,
+.content-area .form_field_select {
+  font-size: var(--form-field-font-size);
+  font-style: var(--form-field-font-style);
+  font-weight: var(--form-field-font-weight);
+  color: var(--form-field-color);
+  text-decoration: var(--form-field-text-decoration);
+  text-transform: var(--form-field-text-transform);
+  background-color: var(--form-field-background-color);
+}
+.content-area label .form_field_checkbox + .form_control_indicator::before {
+  background-color: var(--form-field-background-color);
+  border-color: var(--secondary-color);
+}
+.content-area label .form_field_checkbox:checked + .form_control_indicator::before {
+  background-color: var(--secondary-color);
+}
+.content-area label .form_field_radio + .form_control_indicator::before {
+  border-color: var(--form-field-background-color);
+  outline-color: var(--secondary-color);
+}
+.content-area label .form_field_radio:checked + .form_control_indicator::before {
+  background-color: var(--secondary-color);
+}
+.content-area .form_submit input {
   font-family: var(--main-font-family);
 }

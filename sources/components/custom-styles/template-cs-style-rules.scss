@@ -166,7 +166,6 @@ body {
 //==============================================================================
 // Text
 .content-area {
-
   h1,
   h2,
   h3,
@@ -204,11 +203,71 @@ body {
   }
 }
 
-// Form
-// scss-lint:disable SelectorFormat
-.form_submit {
-  input {
-    font-family: var(--main-font-family);
+//==============================================================================
+// "Form" type content area.
+//==============================================================================
+.content-area {
+  // scss-lint:disable SelectorFormat
+  .form_field_textfield,
+  .form_field_textarea,
+  .form_field_select {
+    font-size: var(--form-field-font-size);
+    font-style: var(--form-field-font-style);
+    font-weight: var(--form-field-font-weight);
+    color: var(--form-field-color);
+    text-decoration: var(--form-field-text-decoration);
+    text-transform: var(--form-field-text-transform);
+    background-color: var(--form-field-background-color);
+  }
+
+  label {
+    .form_field_checkbox {
+      + .form_control_indicator {
+        // scss-lint:disable NestingDepth
+        &::before {
+          background-color: var(--form-field-background-color);
+          border-color: var(--secondary-color);
+        }
+        // scss-lint:enable NestingDepth
+      }
+
+      &:checked {
+        // scss-lint:disable NestingDepth
+        + .form_control_indicator {
+          &::before {
+            background-color: var(--secondary-color);
+          }
+        }
+        // scss-lint:enable NestingDepth
+      }
+    }
+
+    .form_field_radio {
+      // scss-lint:disable NestingDepth
+      + .form_control_indicator {
+        &::before {
+          border-color: var(--form-field-background-color);
+          outline-color: var(--secondary-color);
+        }
+        // scss-lint:enable NestingDepth
+      }
+
+      &:checked {
+        // scss-lint:disable NestingDepth
+        + .form_control_indicator {
+          &::before {
+            background-color: var(--secondary-color);
+          }
+        }
+        // scss-lint:enable NestingDepth
+      }
+    }
+  }
+
+  .form_submit {
+    input {
+      font-family: var(--main-font-family);
+    }
   }
 }
 // scss-lint:enable SelectorFormat
