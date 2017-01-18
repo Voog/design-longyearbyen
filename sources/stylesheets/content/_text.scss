@@ -366,20 +366,14 @@
     display: inline-block;
     max-width: 100%;
     min-width: 180px;
-    padding: .61em .55em;
     margin: 5px 0;
-    font-size: 18px;
     line-height: 24px;
-    color: $color-body;
     text-align: center;
-    text-transform: uppercase;
     cursor: pointer;
-    background-color: transparent;
     border: 1px solid $color-body;
     box-sizing: border-box;
 
     &:hover {
-      background-color: transparent;
       opacity: .6;
     }
 

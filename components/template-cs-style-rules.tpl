@@ -112,6 +112,19 @@ body {
 .content-area a:hover {
   background: var(--content-link-color);
 }
+.content-area .custom-btn {
+  padding: calc(var(--content-button-padding) - 8px) var(--content-button-padding);
+  font-size: var(--content-button-font-size);
+  font-style: var(--content-button-font-style);
+  color: var(--content-button-color);
+  text-decoration: var(--content-button-text-decoration);
+  text-transform: var(--content-button-text-transform);
+  background: var(--content-button-background-color);
+}
+.content-area .custom-btn:hover {
+  color: var(--content-button-hover-color);
+  background-color: var(--content-button-background-color);
+}
 
 .content-area .form_field_textfield,
 .content-area .form_field_textarea,
@@ -139,5 +152,16 @@ body {
   background-color: var(--secondary-color);
 }
 .content-area .form_submit input {
+  padding: calc(var(--content-button-padding) - 8px) var(--content-button-padding);
   font-family: var(--main-font-family);
+  font-size: var(--content-button-font-size);
+  font-style: var(--content-button-font-style);
+  color: var(--content-button-color);
+  text-decoration: var(--content-button-text-decoration);
+  text-transform: var(--content-button-text-transform);
+  background: var(--content-button-background-color);
+}
+.content-area .form_submit input:hover {
+  color: var(--content-button-hover-color);
+  background-color: var(--content-button-background-color);
 }
