@@ -91,12 +91,8 @@
         "title": "Sans Serif",
         "list": [
           {
-            "title": "Futura Heavy",
-            "value": "\"Futura PT W01 Heavy\", Arial, sans-serif"
-          },
-          {
-            "title": "Futura Pt",
-            "value": "\"Futura PT W01 Book\", Arial, sans-serif"
+            "title": "PT Sans",
+            "value": "\"PT Sans\", Arial, sans-serif"
           },
           {
             "title": "Avenir Next",
