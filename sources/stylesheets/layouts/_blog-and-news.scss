@@ -19,7 +19,7 @@
   .article-date {
     margin-top: 8px;
     font-size: 13px;
-    color: $color-light;
+    color: rgba($color-black, .46);
     text-transform: uppercase;
   }
 
@@ -94,7 +94,7 @@
 
     .article-date {
       margin: 0;
-      color: $color-light;
+      color: rgba($color-black, .46);
     }
   }
 }

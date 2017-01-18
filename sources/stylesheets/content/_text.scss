@@ -7,7 +7,6 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 1.6;
-  color: rgba($color-black, .8);
 
   // Resets the top margin for the first element and bottom margin for the last element in the content area (to prevent unwanted white-space at the beginning and the end of a content-area).
   h1,
@@ -54,14 +53,6 @@
   pre,
   code,
   table {
-    .front-page & {
-      color: rgba($color-black, .8);
-    }
-
-    .content-page & {
-      color: rgba($color-highlight, 1);
-    }
-
     b,
     strong {
       font-weight: 700;
@@ -152,31 +143,31 @@
   .site-footer & {
     margin: 0;
     font-size: 13px;
-    color: $color-light;
+    color: rgba($color-black, .46);
     text-align: center;
 
     h1 {
       margin: 0;
-      color: $color-light;
+      color: rgba($color-black, .46);
       text-transform: none;
     }
 
     h2 {
       margin: 0;
-      color: $color-light;
+      color: rgba($color-black, .46);
       text-transform: none;
     }
 
     h3 {
       margin: 0;
-      color: $color-light;
+      color: rgba($color-black, .46);
       text-transform: none;
     }
 
     blockquote {
-      color: $color-light;
+      color: rgba($color-black, .46);
       text-align: left;
-      border-left: 2px solid $color-light;
+      border-left: 2px solid rgba($color-black, .46);
     }
 
     a {
@@ -234,14 +225,14 @@
     h2,
     h3 {
       letter-spacing: .5px;
-      color: $color-light;
+      color: rgba($color-black, .46);
       text-align: center;
       text-transform: uppercase;
     }
 
     blockquote {
       text-align: left;
-      border-left: 2px solid $color-light;
+      border-left: 2px solid rgba($color-black, .46);
     }
   }
 
@@ -255,14 +246,13 @@
     .site-footer & {
       margin: 0;
       font-size: 13px;
-      color: $color-light;
+      color: rgba($color-black, .46);
       text-align: center;
     }
   }
 
   &.header-content,
   &.header-content p {
-    color: rgba($color-black, .8);
     text-align: center;
     text-transform: none;
   }
@@ -271,7 +261,7 @@
   &.slogan p {
     font-size: 13px;
     letter-spacing: .5px;
-    color: $color-light;
+    color: rgba($color-black, .46);
     text-align: center;
     text-transform: uppercase;
   }

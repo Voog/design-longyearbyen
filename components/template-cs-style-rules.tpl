@@ -90,7 +90,8 @@ body {
   font-family: var(--main-font-family);
 }
 
-.content-area {
+.content-area,
+.content-area p {
   color: var(--content-body-color);
 }
 .content-area h1,

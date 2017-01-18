@@ -18,8 +18,11 @@
 .blog-article-page {
   .blog-tags {
     margin-top: 10px;
-    color: rgba($color-black, .7);
     text-align: center;
+
+    .publicmode & {
+      color: rgba($color-black, .7);
+    }
 
     .tags-editor { text-align: left;}
 

@@ -57,7 +57,6 @@ body {
     margin-bottom: 0;
     font-size: 20px;
     line-height: 1.2;
-    color: rgba($color-highlight, 1);
 
     a {
       border-bottom: 0;
@@ -67,7 +66,7 @@ body {
 
 .article-info {
   font-size: 13px;
-  color: $color-light;
+  color: rgba($color-black, .46);
   text-transform: uppercase;
 }
 
