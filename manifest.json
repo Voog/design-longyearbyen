@@ -6,14 +6,14 @@
   "author": "Tõnu Runnel",
   "layouts": [
     {
-      "content_type": "page",
+      "content_type": "blog",
       "component": false,
       "file": "layouts/blog___news.tpl",
       "layout_name": "blog",
       "title": "Blog & news"
     },
     {
-      "content_type": "page",
+      "content_type": "blog_article",
       "component": false,
       "file": "layouts/blog_article.tpl",
       "layout_name": "blog_article",
