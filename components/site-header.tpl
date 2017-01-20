@@ -1,9 +1,12 @@
 <header class="site-header">
   <div class="header-top">
     {% include "menu-level-1" %}
-    <div class="site-options">
-      <button class="menu-language-btn ico-flags ico-flag-{{ page.language_code }} js-toggle-menu-language js-prevent-sideclick">{{ current_language_title }}</button>
-    </div>
+
+    {% if editmode or site.has_many_languages? %}
+      <div class="site-options">
+        <button class="menu-language-btn ico-flags ico-flag-{{ page.language_code }} js-toggle-menu-language js-prevent-sideclick">{{ current_language_title }}</button>
+      </div>
+    {% endif %}
 
     <a href="#" class="mobile-menu-toggler"><span></span></a>
 
