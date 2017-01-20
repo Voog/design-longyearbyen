@@ -8,6 +8,14 @@
   font-weight: 400;
   line-height: 1.6;
 
+  &.header-content {
+    padding: 0;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: none;
+  }
+
   // Resets the top margin for the first element and bottom margin for the last element in the content area (to prevent unwanted white-space at the beginning and the end of a content-area).
   h1,
   h2,
@@ -177,9 +185,11 @@
       border-style: solid;
       border-width: 1px;
 
+      // scss-lint:disable NestingDepth
       &:hover {
         opacity: 1;
       }
+      // scss-lint:enable NestingDepth
     }
   }
 

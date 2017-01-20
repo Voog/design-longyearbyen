@@ -1985,6 +1985,13 @@ body {
   content: "";
   display: table;
 }
+.content-area.header-content {
+  padding: 0;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: none;
+}
 .content-area h1:first-child,
 .content-area h2:first-child,
 .content-area h3:first-child,
