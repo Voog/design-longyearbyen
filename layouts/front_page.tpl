@@ -24,7 +24,7 @@
                       <button class="voog-padding-switcher" type="button" name="button"></button>
                     {% endif %}
 
-                    <section class="feature-content content-area introtext" data-search-indexing-allowed="true">{% content name="feature_1" %}</section>
+                    <section class="feature-content content-area introtext" data-search-indexing-allowed="true">{% content %}</section>
                   </div>
                 {% endif %}
 
