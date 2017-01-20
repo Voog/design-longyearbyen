@@ -46,6 +46,10 @@ body {
   @media screen and (max-width: $tablet-1) {
     padding: 40px 25px;
   }
+
+  &:empty {
+    display: none;
+  }
 }
 
 .article-header {

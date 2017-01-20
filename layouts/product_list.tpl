@@ -14,6 +14,8 @@
         <main class="page-content" role="main">
           {% include "product-breadcrumbs" %}
 
+          <div class="content-inner content-area" data-search-indexing-allowed="true">{% content %}</div>
+
           <section class="content-item-boxes">
             {% if site.root_item.selected? %}
               {% for level_1 in site.visible_menuitems_with_data %}

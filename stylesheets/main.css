@@ -51,6 +51,9 @@ body {
     padding: 40px 25px;
   }
 }
+.content-inner:empty {
+  display: none;
+}
 
 .article-header {
   padding-bottom: 20px;
@@ -1329,8 +1332,9 @@ body {
 }
 
 .content-item-boxes {
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 2%;
+  padding-bottom: 25px;
+  padding-left: 2%;
   font-size: 0;
 }
 
@@ -1680,6 +1684,11 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.item-list-page .content-inner {
+  padding-top: 0;
+  padding-bottom: 3%;
 }
 
 .blog-and-news-page .blog-article {
