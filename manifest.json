@@ -6,18 +6,18 @@
   "author": "Tõnu Runnel",
   "layouts": [
     {
-      "content_type": "blog",
+      "content_type": "page",
       "component": false,
-      "file": "layouts/blog___news.tpl",
-      "layout_name": "blog",
-      "title": "Blog & news"
+      "file": "layouts/product_list.tpl",
+      "layout_name": "product_list",
+      "title": "Product list"
     },
     {
-      "content_type": "blog_article",
+      "content_type": "page",
       "component": false,
-      "file": "layouts/blog_article.tpl",
-      "layout_name": "blog_article",
-      "title": "Blog article"
+      "file": "layouts/product.tpl",
+      "layout_name": "product",
+      "title": "Product"
     },
     {
       "content_type": "page",
@@ -34,18 +34,18 @@
       "title": "Front page"
     },
     {
-      "content_type": "page",
+      "content_type": "blog",
       "component": false,
-      "file": "layouts/product.tpl",
-      "layout_name": "product",
-      "title": "Product"
+      "file": "layouts/blog___news.tpl",
+      "layout_name": "blog",
+      "title": "Blog & news"
     },
     {
-      "content_type": "page",
+      "content_type": "blog_article",
       "component": false,
-      "file": "layouts/product_list.tpl",
-      "layout_name": "product_list",
-      "title": "Product list"
+      "file": "layouts/blog_article.tpl",
+      "layout_name": "blog_article",
+      "title": "Blog article"
     },
     {
       "content_type": "component",
