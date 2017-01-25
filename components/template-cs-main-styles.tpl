@@ -21,7 +21,7 @@
     "--headings-font-family"
   ]
 */
-  --main-font-family: PT Sans, Arial, sans-serif;
+  --main-font-family: "PT Sans", Arial, sans-serif;
   /* VoogStyle
     "pathI18n": ["main_styles", "colors"],
     "titleI18n": "primary_color",
