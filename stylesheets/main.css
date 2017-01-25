@@ -1203,9 +1203,9 @@ body {
 .site-footer .inner {
   padding: 90px 40px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .site-footer .inner {
-    padding: 40px 25px;
+    padding: 40px 20px;
   }
 }
 .site-footer .voog-reference {
@@ -1907,7 +1907,7 @@ body {
 }
 @media screen and (max-width: 960px) {
   .feature-section.section-with-padding {
-    padding: 20px;
+    padding: 60px 20px;
   }
 }
 @media screen and (max-width: 960px) {

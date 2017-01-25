@@ -7,8 +7,8 @@
   .inner {
     padding: 90px 40px;
 
-    @media screen and (max-width: $tablet-1) {
-      padding: 40px 25px;
+    @media screen and (max-width: $tablet-0) {
+      padding: 40px 20px;
     }
   }
 
