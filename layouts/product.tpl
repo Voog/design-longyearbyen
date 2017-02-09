@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 {% include "template-variables" %}
 
@@ -34,7 +35,7 @@
 
         <main class="page-content" role="main">
           <section class="content-body">
-            {% include "product-breadcrumbs" %}
+            {% include "menu-breadcrumbs" %}
 
             <div class="content-inner items-body" {{ edy_intro_edit_text }}>
               <div class="content-illustrations">
