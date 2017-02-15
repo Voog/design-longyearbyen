@@ -380,6 +380,10 @@ body {
   text-decoration: none;
 }
 
+.menu-separator:first-child {
+  display: none;
+}
+
 .menu-item-cms {
   margin-left: 15px;
 }
