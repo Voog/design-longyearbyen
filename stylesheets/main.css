@@ -2011,12 +2011,14 @@ body {
 .content-area iframe:first-child,
 .content-area table:first-child,
 .content-area form:first-child,
+.content-area .table-container:first-child,
 .content-area .edy-positionable-container-left-block:first-child,
 .content-area .edy-positionable-container-center-block:first-child,
 .content-area .edy-positionable-container-right-block:first-child,
 .content-area .edy-texteditor-container-wrapper-left-block:first-child,
 .content-area .edy-texteditor-container-wrapper-center:first-child,
-.content-area .edy-texteditor-container-wrapper-right-block:first-child {
+.content-area .edy-texteditor-container-wrapper-right-block:first-child,
+.content-area .edy-positionable-container-maxwidth:first-child {
   margin-top: 0;
 }
 .content-area h1:last-child,
@@ -2035,12 +2037,14 @@ body {
 .content-area iframe:last-child,
 .content-area table:last-child,
 .content-area form:last-child,
+.content-area .table-container:last-child,
 .content-area .edy-positionable-container-left-block:last-child,
 .content-area .edy-positionable-container-center-block:last-child,
 .content-area .edy-positionable-container-right-block:last-child,
 .content-area .edy-texteditor-container-wrapper-left-block:last-child,
 .content-area .edy-texteditor-container-wrapper-center:last-child,
-.content-area .edy-texteditor-container-wrapper-right-block:last-child {
+.content-area .edy-texteditor-container-wrapper-right-block:last-child,
+.content-area .edy-positionable-container-maxwidth:last-child {
   margin-bottom: 0;
 }
 .content-area h1 b,
