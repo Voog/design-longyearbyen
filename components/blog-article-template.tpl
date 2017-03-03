@@ -10,6 +10,7 @@
       </header>
       <div class="article-excerpt content-area">{% editable article.excerpt %}</div>
       <div class="article-body content-area">{% editable article.body %}</div>
+      <div class="article-body content-area">{% content name="additional_body" bind="Article" %}</div>
     </div>
   {% else %}
     <header class="article-header">
