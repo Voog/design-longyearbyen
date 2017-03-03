@@ -1988,6 +1988,9 @@ body {
   content: "";
   display: table;
 }
+.content-area:empty {
+  display: none;
+}
 .content-area.header-content {
   padding: 0;
   font-size: 50px;
