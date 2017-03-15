@@ -17,6 +17,16 @@
     margin-bottom: 20px;
   }
 
+  .form_field {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   .edy-fe-label,
   .form_field_label {
     display: block;

@@ -220,11 +220,16 @@ body {
     color: var(--content-button-color);
     text-decoration: var(--content-button-text-decoration);
     text-transform: var(--content-button-text-transform);
-    background: var(--content-button-background-color);
 
-    &:hover {
-      color: var(--content-button-hover-color);
-      background-color: var(--content-button-background-color);
+    &:not(.custom-btn-disabled) {
+      background: var(--content-button-background-color);
+
+      // scss-lint:disable NestingDepth
+      &:hover {
+        color: var(--content-button-hover-color);
+        background-color: var(--content-button-background-color);
+      }
+      // scss-lint:enable NestingDepth
     }
   }
 }

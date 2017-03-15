@@ -2340,8 +2340,16 @@ body {
   border: 1px solid;
   box-sizing: border-box;
 }
-.content-area .custom-btn:hover {
+.content-area .custom-btn:not(.custom-btn-disabled):hover {
   opacity: .6;
+}
+.publicmode .content-area .custom-btn {
+  cursor: pointer;
+}
+.publicmode .content-area .custom-btn-disabled {
+  cursor: default;
+  color: #ccc;
+  border-color: #ccc;
 }
 @media screen and (min-width: 1400px) {
   .content-area .custom-btn {
@@ -2400,6 +2408,12 @@ body {
 .content-area .edy-fe-field,
 .content-area .form_field {
   margin-bottom: 20px;
+}
+.content-area .form_field:first-child {
+  margin-top: 0;
+}
+.content-area .form_field:last-child {
+  margin-bottom: 0;
 }
 .content-area .edy-fe-label,
 .content-area .form_field_label {

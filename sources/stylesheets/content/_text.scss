@@ -392,8 +392,27 @@
     border: 1px solid;
     box-sizing: border-box;
 
-    &:hover {
-      opacity: .6;
+    &:not(.custom-btn-disabled) {
+      // scss-lint:disable NestingDepth
+      &:hover {
+        opacity: .6;
+      }
+      // scss-lint:enable NestingDepth
+    }
+
+
+    .publicmode & {
+      cursor: pointer;
+    }
+
+    &-disabled {
+      // scss-lint:disable NestingDepth
+      .publicmode & {
+        cursor: default;
+        color: $color-disabled;
+        border-color: $color-disabled;
+      }
+      // scss-lint:enable NestingDepth
     }
 
     @media screen and (min-width: $large) {

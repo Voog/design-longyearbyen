@@ -128,9 +128,11 @@ body {
   color: var(--content-button-color);
   text-decoration: var(--content-button-text-decoration);
   text-transform: var(--content-button-text-transform);
+}
+.content-area .custom-btn:not(.custom-btn-disabled) {
   background: var(--content-button-background-color);
 }
-.content-area .custom-btn:hover {
+.content-area .custom-btn:not(.custom-btn-disabled):hover {
   color: var(--content-button-hover-color);
   background-color: var(--content-button-background-color);
 }
