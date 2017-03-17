@@ -232,6 +232,12 @@ body {
       // scss-lint:enable NestingDepth
     }
   }
+
+  .article-read-more-btn {
+    font-style: var(--content-button-font-style);
+    text-decoration: var(--content-button-text-decoration);
+    text-transform: var(--content-button-text-transform);
+  }
 }
 
 //==============================================================================

@@ -23,6 +23,7 @@
 
     <div class="article-content">
       <div class="article-excerpt content-area">{{ article.excerpt }}</div>
+      <div class="article-readmore "><a class="article-read-more-btn" href="{{ article.url }}">{{ "read_more" | lc }}</a></div>
     </div>
   {% endif %}
 </article>

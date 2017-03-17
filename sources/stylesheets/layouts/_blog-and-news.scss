@@ -23,6 +23,29 @@
     text-transform: uppercase;
   }
 
+  .article-excerpt {
+    margin-bottom: 20px;
+  }
+
+  .article-readmore {
+    text-align: center;
+  }
+
+  .article-read-more-btn {
+    display: inline-block;
+    padding: 11px 15px;
+    font-size: 13px;
+    color: rgba($color-black, .46);
+    cursor: pointer;
+    border: 1px solid rgba($color-black, .46);
+    box-sizing: border-box;
+
+    &:hover {
+      background: transparent;
+      opacity: .6;
+    }
+  }
+
   // Archive, list view
   .articles-listing {
     text-align: center;

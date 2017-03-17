@@ -136,6 +136,11 @@ body {
   color: var(--content-button-hover-color);
   background-color: var(--content-button-background-color);
 }
+.content-area .article-read-more-btn {
+  font-style: var(--content-button-font-style);
+  text-decoration: var(--content-button-text-decoration);
+  text-transform: var(--content-button-text-transform);
+}
 
 .content-area .form_field_textfield,
 .content-area .form_field_textarea,
