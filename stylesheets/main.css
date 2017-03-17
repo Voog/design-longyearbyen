@@ -1726,11 +1726,12 @@ body {
 }
 .blog-and-news-page .article-read-more-btn {
   display: inline-block;
-  padding: 11px 15px;
+  padding: 0 15px;
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.46);
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.46);
+  border: 1px solid;
   box-sizing: border-box;
 }
 .blog-and-news-page .article-read-more-btn:hover {
