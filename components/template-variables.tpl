@@ -82,7 +82,7 @@
   {% assign show_product_related_pages_in_main_menu = site.data.settings_root_item.show_product_related_pages_in_main_menu %}
 
   {% comment %}=================================================================
-  || Design editor variables.
+  | Design editor variables.
   ============================================================= {% endcomment %}
   {% capture base_font_set %}
     [
@@ -91,12 +91,8 @@
         "title": "Sans Serif",
         "list": [
           {
-            "title": "PT Sans",
-            "value": "\"PT Sans\", Arial, sans-serif"
-          },
-          {
             "title": "Avenir Next",
-            "value": "\"Avenir Next\", \"Helvetica Neue\", \"Helvetica\", \"Segoe UI\", sans-serif"
+            "value": "\"Avenir Next\", \"Avenir\", \"Helvetica Neue\", \"Helvetica\", \"Segoe UI\", sans-serif"
           },
           {
             "title": "Fira Sans",
@@ -108,11 +104,19 @@
           },
           {
             "title": "Montserrat",
-            "value": "\"Montserrat\", Helvetica, Arial, sans-serif"
+            "value": "\"Montserrat\", sans-serif"
           },
           {
             "title": "Open Sans",
             "value": "\"Open Sans\", sans-serif"
+          },
+          {
+            "title": "PT Sans",
+            "value": "\"PT Sans\", sans-serif"
+          },
+          {
+            "title": "Raleway",
+            "value": "\"Raleway\", sans-serif"
           },
           {
             "title": "Roboto",
@@ -139,6 +143,10 @@
           {
             "title": "Crimson Text",
             "value": "\"Crimson Text\", serif"
+          },
+          {
+            "title": "Georgia",
+            "value": "\"Georgia\", serif"
           },
           {
             "title": "Lora",
