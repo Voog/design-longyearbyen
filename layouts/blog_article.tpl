@@ -14,7 +14,10 @@
           <section class="blog-article content-area">
             <div class="content-body" data-search-indexing-allowed="true">
               <div class="content-inner">
+                {% include "blog-article-variables" %}
+
                 {% include "blog-article-template" blog_article_page: true %}
+                
                 {% include "blog-article-tags" %}
 
                 {% if article.older or article.newer %}
