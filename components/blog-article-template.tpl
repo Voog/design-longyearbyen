@@ -4,7 +4,8 @@
       <header class="article-header">
         <h1 class="article-title">{% editable article.title %}</a></h1>
         <div class="article-info">
-          <time class="article-date" datetime="{{ article.created_at | date: "%Y-%m-%d" }}">{{ article.created_at | format_date: "long" }}</time> &mdash;
+          {% assign article_year = article.created_at | format_date: "%Y" | to_num %}
+          <time class="article-date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{% if article_year == current_year %}{{ article.created_at | format_date: "long_without_year" }}{% else %}{{ article.created_at | format_date: "long" }}{% endif %}</time>
           <span class="article-author">{{ article.author.name }}</span>
         </div>
       </header>
@@ -16,7 +17,8 @@
     <header class="article-header">
       <h1 class="article-title"><a href="{{ article.url }}">{{ article.title }}</a></h1>
       <div class="article-info">
-        <time class="article-date" datetime="{{ article.created_at | date: "%Y-%m-%d" }}">{{ article.created_at | format_date: "long" }}</time> &mdash;
+        {% assign article_year = article.created_at | format_date: "%Y" | to_num %}
+        <time class="article-date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{% if article_year == current_year %}{{ article.created_at | format_date: "long_without_year" }}{% else %}{{ article.created_at | format_date: "long" }}{% endif %}</time>
         <span class="article-author">{{ article.author.name }}</span>
       </div>
     </header>

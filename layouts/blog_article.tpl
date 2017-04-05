@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
+{% include "blog-article-variables" %}
 <html class="blog-page blog-article-page content-page {{ view_mode }} site-search-closed {{ language_flags_mode }}" lang="{{ page.language_code }}">
   <head prefix="og: http://ogp.me/ns#">
     {% include "template-head" %}
@@ -15,6 +16,7 @@
             <div class="content-body" data-search-indexing-allowed="true">
               <div class="content-inner">
                 {% include "blog-article-template" blog_article_page: true %}
+
                 {% include "blog-article-tags" %}
 
                 {% if article.older or article.newer %}
