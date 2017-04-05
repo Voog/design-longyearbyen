@@ -2389,15 +2389,15 @@ body {
 .content-area .form_fields {
   font-size: 14px;
 }
-.content-area .edy-fe-field,
 .content-area .form_field {
-  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .content-area .form_field:first-child {
-  margin-top: 0;
+  padding-top: 0;
 }
 .content-area .form_field:last-child {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .content-area .edy-fe-label,
 .content-area .form_field_label {
@@ -2424,7 +2424,7 @@ body {
 }
 .content-area .form_field_select {
   position: relative;
-  padding: 6px 7px;
+  padding: 6px 25px 6px 7px;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
@@ -2557,4 +2557,12 @@ body {
 }
 .form_submit input:hover {
   opacity: .8;
+}
+
+.content-area .edy-buy-button-variants .form_field {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.content-area .edy-buy-button-variants .form_field_select {
+  width: initial;
 }
