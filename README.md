@@ -1,4 +1,4 @@
-#The Longyearbyen design template for [Voog](https://www.voog.com)
+# The Longyearbyen design template for [Voog](https://www.voog.com)
 
 ## Setup
 ### The developing environment
@@ -12,7 +12,7 @@ To set up the local developing environment, clone this repository and run the fo
 
 To sync the template with your **Voog** sites, set up the [Voog Developer Toolkit](http://www.voog.com/developers/kit)
 
-###Watch and update modifications
+### Watch and update modifications
 * To watch (and synchronize) modified files in real time (**on the default site**) start the Grunt watcher task:
   * **Example:** ```grunt watch```
   * **Notes:**
