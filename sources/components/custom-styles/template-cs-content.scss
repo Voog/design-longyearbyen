@@ -29,7 +29,7 @@
   "featured": true,
   "scope": "global"
 */
---menu-sub-font-size: 20px;
+#{--menu-sub-font-size}: 20px;
 
   /* VoogStyle
     "pathI18n": ["content", "sub_menu", "normal"],
@@ -43,7 +43,7 @@
       "--menu-sub-active-color"
     ]
   */
-  --menu-sub-color: #{$color-black};
+  #{--menu-sub-color}: #{$color-black};
 
     /* VoogStyle
       "pathI18n": ["content", "sub_menu", "hover"],
@@ -55,7 +55,7 @@
         "--menu-sub-active-color"
       ]
     */
-    --menu-sub-hover-color: #{$color-black};
+    #{--menu-sub-hover-color}: #{$color-black};
 
     /* VoogStyle
       "pathI18n": ["content", "sub_menu", "hover"],
@@ -63,7 +63,7 @@
       "editor": "colorPicker",
       "scope": "global"
     */
-    --submenu-link-background-color: #{$color-link-hightlight};
+    #{--submenu-link-background-color}: #{$color-link-hightlight};
 
     /* VoogStyle
       "pathI18n": ["content", "sub_menu", "active"],
@@ -72,7 +72,7 @@
       "editor": "colorPicker",
       "scope": "global"
     */
-    --menu-sub-active-color: #{$color-black};
+    #{--menu-sub-active-color}: #{$color-black};
 
     /* VoogStyle
       "pathI18n": ["content", "text"],
@@ -81,7 +81,7 @@
       "featured": true,
       "scope": "global"
     */
-    --content-body-color: #{rgba($color-black, .8)};
+    #{--content-body-color}: #{rgba($color-black, .8)};
 
   /* VoogStyle
     "pathI18n": ["content", "link"],
@@ -90,7 +90,7 @@
     "featured": true,
     "scope": "global"
   */
-  --content-link-color: #{rgba($color-black, .8)};
+  #{--content-link-color}: #{rgba($color-black, .8)};
 
       /* VoogStyle
         "pathI18n": ["content", "link"],
@@ -98,7 +98,7 @@
         "editor": "colorPicker",
         "scope": "global"
       */
-      --content-link-hover-color: #{$color-link-hightlight};
+      #{--content-link-hover-color}: #{$color-link-hightlight};
 
     /* VoogStyle
       "pathI18n": ["content"],
@@ -106,7 +106,7 @@
       "editor": "colorPicker",
       "scope": "global"
     */
-    --content-background-color: #{$bg-color};
+    #{--content-background-color}: #{$bg-color};
 
   // scss-lint:enable Comment, Indentation
 }

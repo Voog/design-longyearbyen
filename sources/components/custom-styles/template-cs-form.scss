@@ -29,7 +29,7 @@
     "scope": "global",
     "featured": true
   */
-  --form-field-font-size: 18px;
+  #{--form-field-font-size}: 18px;
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -43,7 +43,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --form-field-font-weight: 400;
+  #{--form-field-font-weight}: 400;
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -57,7 +57,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --form-field-font-style: normal;
+  #{--form-field-font-style}: normal;
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -71,7 +71,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --form-field-text-decoration: none;
+  #{--form-field-text-decoration}: none;
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -85,7 +85,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --form-field-text-transform: none;
+  #{--form-field-text-transform}: none;
 
   /* VoogStyle
     "pathI18n": ["form", "text"],
@@ -95,7 +95,7 @@
     "scope": "global",
     "featured": true
   */
-  --form-field-color: #{rgba($color-black, .8)};
+  #{--form-field-color}: #{rgba($color-black, .8)};
 
   /* VoogStyle
     "pathI18n": ["form"],
@@ -103,7 +103,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --form-field-background-color: #{rgba($color-white, 1)};
+  #{--form-field-background-color}: #{rgba($color-white, 1)};
 
   // scss-lint:enable Comment, Indentation
 }

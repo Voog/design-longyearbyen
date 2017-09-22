@@ -27,7 +27,7 @@
     "featured": true,
     "scope": "global"
   */
-  --product-list-box-width: 33.3%;
+  #{--product-list-box-width}: 33.3%;
 
   /* VoogStyle
     "pathI18n": ["product_list", "article_box"],
@@ -39,7 +39,7 @@
     "unit": "%",
     "scope": "global"
   */
-  --product-box-image-radius: 0;
+  #{--product-box-image-radius}: 0;
 
   /* VoogStyle
     "pathI18n": ["product_list", "article_box", "normal"],
@@ -51,7 +51,7 @@
     "unit": "",
     "scope": "global"
   */
-  --product-box-line-height: 1.2;
+  #{--product-box-line-height}: 1.2;
 
   /* VoogStyle
     "pathI18n": ["product_list", "article_box", "normal"],
@@ -63,7 +63,7 @@
     "featured": true,
     "scope": "global"
   */
-  --product-box-font-size: #{$base-font-size};
+  #{--product-box-font-size}: #{$base-font-size};
 
   /* VoogStyle
     "pathI18n": ["product_list", "article_box", "normal"],
@@ -77,7 +77,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --product-box-font-style: normal;
+  #{--product-box-font-style}: normal;
 
   /* VoogStyle
     "pathI18n": ["product_list", "article_box", "normal"],
@@ -91,7 +91,7 @@
     "icon": "underline",
     "scope": "global"
   */
-  --product-box-text-decoration: none;
+  #{--product-box-text-decoration}: none;
 
   /* VoogStyle
     "pathI18n": ["product_list", "article_box", "normal"],
@@ -105,7 +105,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --product-box-text-transform: none;
+  #{--product-box-text-transform}: none;
 
   /* VoogStyle
     "pathI18n": ["product_list", "article_box", "normal"],
@@ -115,7 +115,7 @@
     "featured": true,
     "scope": "global"
   */
-  --product-list-box-color: #{rgba($color-black, .8)};
+  #{--product-list-box-color}: #{rgba($color-black, .8)};
 
   // scss-lint:enable Comment, Indentation
 }
