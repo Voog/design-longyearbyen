@@ -20,7 +20,8 @@
   line-height: var(--product-box-line-height);
 }
 .item-title .item-link {
-  text-decoration: var(--product-box-text-decoration);
+  -webkit-text-decoration: var(--product-box-text-decoration);
+          text-decoration: var(--product-box-text-decoration);
 }
 .item-list-page .item-title {
   font-style: var(--product-box-font-style);
@@ -126,7 +127,8 @@ body {
   font-size: var(--content-button-font-size);
   font-style: var(--content-button-font-style);
   color: var(--content-button-color);
-  text-decoration: var(--content-button-text-decoration);
+  -webkit-text-decoration: var(--content-button-text-decoration);
+          text-decoration: var(--content-button-text-decoration);
   text-transform: var(--content-button-text-transform);
 }
 .content-area .custom-btn:not(.custom-btn-disabled) {
@@ -139,7 +141,8 @@ body {
 .content-area .article-read-more-btn {
   font-style: var(--content-button-font-style);
   color: var(--content-button-color);
-  text-decoration: var(--content-button-text-decoration);
+  -webkit-text-decoration: var(--content-button-text-decoration);
+          text-decoration: var(--content-button-text-decoration);
   text-transform: var(--content-button-text-transform);
   background: var(--content-button-background-color);
 }
@@ -155,7 +158,8 @@ body {
   font-style: var(--form-field-font-style);
   font-weight: var(--form-field-font-weight);
   color: var(--form-field-color);
-  text-decoration: var(--form-field-text-decoration);
+  -webkit-text-decoration: var(--form-field-text-decoration);
+          text-decoration: var(--form-field-text-decoration);
   text-transform: var(--form-field-text-transform);
   background-color: var(--form-field-background-color);
 }
@@ -179,7 +183,8 @@ body {
   font-size: var(--content-button-font-size);
   font-style: var(--content-button-font-style);
   color: var(--content-button-color);
-  text-decoration: var(--content-button-text-decoration);
+  -webkit-text-decoration: var(--content-button-text-decoration);
+          text-decoration: var(--content-button-text-decoration);
   text-transform: var(--content-button-text-transform);
   background: var(--content-button-background-color);
 }
