@@ -28,6 +28,6 @@
     {% endif %}
   </div>
 
-  <div class="content-area header-content">{% editable site.header %}</div>
+  <div class="content-area header-content" {{ edy_intro_edit_text }}>{% editable site.header %}</div>
   <div class="content-area slogan">{% xcontent name="slogan" %}</div>
 </header>

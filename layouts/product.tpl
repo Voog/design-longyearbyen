@@ -37,7 +37,7 @@
           <section class="content-body">
             {% include "menu-breadcrumbs" %}
 
-            <div class="content-inner items-body" {{ edy_intro_edit_text }}>
+            <div class="content-inner items-body">
               <div class="content-illustrations">
                 {% if editmode %}
                   <div class="content-item-box {{ page_image_state }} js-content-item-box" data-item-type="page" data-item-id="{{ page.page_id }}">
