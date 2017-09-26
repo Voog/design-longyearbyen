@@ -4,7 +4,7 @@
 
     {% if editmode or site.has_many_languages? %}
       <div class="site-options">
-        <button class="menu-language-btn ico-flags ico-flag-{{ page.language_code }} js-toggle-menu-language js-prevent-sideclick">{{ current_language_title }}</button>
+        <button class="menu-language-btn ico-flags ico-flag-{{ page.language_code }} js-toggle-menu-language js-prevent-sideclick" {{ edy_intro_add_lang }}>{{ current_language_title }}</button>
       </div>
     {% endif %}
 
