@@ -77,7 +77,7 @@
               <div class="content-body-inner">
                 <header class="content-header">
                   <div class="content-area">
-                    <h1 class="content-item-title">{% contentblock name="content_header" publish_default_content="true" single="plaintext" %}{{ page.title }}{% endcontentblock %}</h1>
+                    <div class="content-item-title">{% contentblock name="content_header_test" publish_default_content="true" %}<h1>{{ page.title }}</h1>{% endcontentblock %}</div>
                   </div>
                 </header>
 
