@@ -14,11 +14,11 @@
 {% endif %}
 
 {% comment %}STYLESHEETS{% endcomment %}
-{% stylesheet_link "main.min.css" %}
-{% comment %}{% stylesheet_link "main.css" %}{% endcomment %}
 {% if editmode %}
   <link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">
 {% endif %}
+{% stylesheet_link "main.min.css" %}
+{% comment %}{% stylesheet_link "main.css" %}{% endcomment %}
 
 {% if site.search.enabled %}
   <link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-search/latest/edicy-search.css">
