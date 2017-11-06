@@ -43,7 +43,6 @@
     });
 
     {% if items_page %}
-      template.bindContentItemBgPickers();
       template.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc }}');
       template.bindContentItemImageCropToggle();
 
