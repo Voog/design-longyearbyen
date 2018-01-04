@@ -26,7 +26,7 @@
     {% assign feature_1_section_padding_class = "section-with-padding" %}
   {% endunless %}
 
-  {% capture feature_1_html %}{% unless editmode %}{% content name="feature_1" %}{% endunless %}{% endcapture %}
+  {% capture feature_1_html %}{% unless editmode %}{% content %}{% endunless %}{% endcapture %}
   {% capture feature_1_size %}{{ feature_1_html | size | minus : 1 }}{% endcapture %}
 
   {% unless feature_1_size contains "-" %}
