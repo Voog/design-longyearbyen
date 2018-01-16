@@ -18,6 +18,7 @@
               {% include "blog-news-tags" %}
 
               <div class="content-inner">
+                <div style="padding-bottom: 20px" {{ edy_intro_edit_text }}>{% content %}</div>
                 {% addbutton %}
 
                 {% for article in articles limit: 5 %}
