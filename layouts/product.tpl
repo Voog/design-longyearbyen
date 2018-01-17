@@ -69,13 +69,13 @@
                   {% endif %}
                 {% endif %}
 
-                <div class="content-gallery content-area" data-search-indexing-allowed="true">{% content name="gallery" %}</div>
+                <div class="content-gallery content-area">{% content name="gallery" %}</div>
               </div>
 
               <div class="content-body-inner">
                 <header class="content-header">
                   <div class="content-area">
-                    <div class="content-item-title" data-search-indexing-allowed="true">{% contentblock name="content_header_test" publish_default_content="true" %}<h1>{{ page.title }}</h1>{% endcontentblock %}</div>
+                    <div class="content-item-title">{% contentblock name="content_header_test" publish_default_content="true" %}<h1>{{ page.title }}</h1>{% endcontentblock %}</div>
                   </div>
                 </header>
 
