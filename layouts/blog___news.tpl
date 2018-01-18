@@ -16,9 +16,9 @@
           <section class="blog-articles content-area">
             <div class="content-body" data-search-indexing-allowed="true">
               {% include "blog-news-tags" %}
-
-              <div class="content-inner">
-                <div style="padding-bottom: 20px" {{ edy_intro_edit_text }}>{% content %}</div>
+              <div class="content-inner"> 
+                <div class="blog-intro-content" {{ edy_intro_edit_text }}>{% content %}</div>
+               
                 {% addbutton %}
 
                 {% for article in articles limit: 5 %}

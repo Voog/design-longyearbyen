@@ -1754,6 +1754,9 @@ body {
 .blog-and-news-page .blog-article:first-child {
   padding-top: 0;
 }
+.blog-and-news-page .blog-article .blog-intro-content {
+  padding-bottom: 25px;
+}
 .blog-and-news-page .article-title {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
