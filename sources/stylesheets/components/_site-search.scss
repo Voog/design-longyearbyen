@@ -19,7 +19,7 @@
 }
 
 .site-search {
-  @include transition(transform .2s);
+  transition: transform .2s;
   position: fixed;
   top: 0;
   right: -280px;
@@ -29,7 +29,7 @@
   background-color: rgba($color-white, 1);
 
   .site-search-opened & {
-    @include transform(translate3d(-280px, 0, 0));
+    transform: translate3d(-280px, 0, 0);
     background: $color-white;
     box-shadow: -9px 0 9px rgba($color-black, .1);
   }
@@ -62,8 +62,8 @@
     font-size: 13px;
     border: 0;
 
-    @include placeholder() {
-      font-weight: 400;
+    &::placeholder {
+        font-weight: 400;
     }
 
     &::-webkit-search-decoration,
