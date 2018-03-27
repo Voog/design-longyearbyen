@@ -1748,6 +1748,9 @@ body {
   padding-bottom: 3%;
 }
 
+.blog-and-news-page .blog-intro-content {
+  padding-bottom: 25px;
+}
 .blog-and-news-page .blog-article {
   padding-top: 40px;
 }
