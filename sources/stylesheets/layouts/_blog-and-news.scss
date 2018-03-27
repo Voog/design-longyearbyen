@@ -1,14 +1,14 @@
 .blog-and-news-page {
 
+  .blog-intro-content {
+    padding-bottom: 25px;
+  }
+  
   .blog-article {
     padding-top: 40px;
 
     &:first-child {
       padding-top: 0;
-    }
-
-    .blog-intro-content {
-      padding-bottom: 25px;
     }
   }
 
