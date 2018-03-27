@@ -20,7 +20,7 @@
     //==========================================================================
     // Binds custom styles under wysihtml editor.
     //==========================================================================
-    template.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale }}');
+    template.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale | escape }}');
 
     //==========================================================================
     // Binds "Front page" color pickers.
@@ -43,7 +43,7 @@
     });
 
     {% if items_page %}
-      template.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc }}');
+      template.bindContentItemImgDropAreas('{{ "drag_picture_for_product_here" | lc | escape }}');
       template.bindContentItemImageCropToggle();
 
       {%if site.data.settings_root_item %}
