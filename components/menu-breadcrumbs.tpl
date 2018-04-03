@@ -26,6 +26,12 @@
       {% endif %}
     {% endif %}
   {% else %}
-    {% include "menu-breadcrumbs-buttons-loop" menu_items: site.visible_menuitems %}
+    {% if editmode %}
+      {% assign breadcrumbsMenuItem = site.menuitems %}
+    {% else %}
+        {% assign breadcrumbsMenuItem = site.visible_menuitems %}
+    {% endif %}
+
+    {% include "menu-breadcrumbs-buttons-loop" menu_items: breadcrumbsMenuItem %}
   {% endif %}
 </ul>

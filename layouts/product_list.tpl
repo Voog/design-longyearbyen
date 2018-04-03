@@ -24,7 +24,13 @@
                 {% endif %}
               {% endfor %}
             {% else %}
-              {% include "product-list-loop" menu_items: site.visible_menuitems %}
+              {% if editmode %}
+                {% assign productListMenuItem = site.menuitems %}
+              {% else %}
+                  {% assign productListMenuItem = site.visible_menuitems %}
+              {% endif %}
+
+              {% include "product-list-loop" menu_items: productListMenuItem %}
             {% endif %}
           </section>
         </main>
