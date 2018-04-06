@@ -24,9 +24,7 @@
                 {% endif %}
               {% endfor %}
             {% else %}
-
-                {% include "product-list-loop" %}
-
+              {% include "product-list-loop" %}
             {% endif %}
 
           </section>
