@@ -36,7 +36,7 @@
     {% include "mobilemenu" %}
     {% include "menu-language-popover" %}
     {% include "site-search" %}
-
+    {% include "site-signout" %}
     {% include "template-javascripts" %}
     {% include "template-tools" items_page: true %}
 
