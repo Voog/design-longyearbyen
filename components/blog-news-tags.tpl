@@ -3,7 +3,7 @@
     <nav class="tags">
       <ul class="menu-horizontal menu-sub">
         <li class="menu-item">
-          <a class="menu-link {% unless tags.size > 0 %} active{% endunless %}" href="/{{ page.path }}">{{ 'all_posts' | lc }}</a>
+          <a class="menu-link {% unless tags.size > 0 %} active{% endunless %}" href="/{{ blog.page.path_with_lang }}">{{ 'all_posts' | lc }}</a>
         </li>
         {% for tag in blog.tags %}
           {% assign activestr = "" %}
