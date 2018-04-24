@@ -125,7 +125,7 @@ body {
 .not-loaded .loader, .is-loaded .loader {
   margin-top: calc((20px / 2) * -1);
   margin-left: calc((20px / 2) * -1);
-  border: 1px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0);
   -webkit-animation: rotation .7s infinite linear;
           animation: rotation .7s infinite linear;
 }
@@ -598,9 +598,8 @@ body {
   border-bottom: 0 !important;
 }
 
-.editmode .edys-gallery-slider .edys-gallery-slider-next, .publicmode .edys-gallery-slider .edys-gallery-slider-next, .editmode
-.edys-gallery-slider .edys-gallery-slider-prev, .publicmode
-.edys-gallery-slider .edys-gallery-slider-prev {
+.editmode .edys-gallery-slider .edys-gallery-slider-next, .publicmode .edys-gallery-slider .edys-gallery-slider-next,
+.editmode .edys-gallery-slider .edys-gallery-slider-prev, .publicmode .edys-gallery-slider .edys-gallery-slider-prev {
   width: 15px;
   height: 29px;
   padding: 10px;
@@ -726,11 +725,11 @@ body {
 }
 
 .site-search {
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  -o-transition: transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   position: fixed;
   top: 0;
   right: -280px;
@@ -741,7 +740,8 @@ body {
 }
 .site-search-opened .site-search {
   -webkit-transform: translate3d(-280px, 0, 0);
-          transform: translate3d(-280px, 0, 0);
+  -ms-transform: translate3d(-280px, 0, 0);
+  transform: translate3d(-280px, 0, 0);
   background: #fff;
   -webkit-box-shadow: -9px 0 9px rgba(0, 0, 0, 0.1);
           box-shadow: -9px 0 9px rgba(0, 0, 0, 0.1);
@@ -781,13 +781,13 @@ body {
 .site-search .search-input::-webkit-input-placeholder {
   font-weight: 400;
 }
+.site-search .search-input::-moz-placeholder {
+  font-weight: 400;
+}
+.site-search .search-input:-moz-placeholder {
+  font-weight: 400;
+}
 .site-search .search-input:-ms-input-placeholder {
-  font-weight: 400;
-}
-.site-search .search-input::-ms-input-placeholder {
-  font-weight: 400;
-}
-.site-search .search-input::placeholder {
   font-weight: 400;
 }
 .site-search .search-input::-webkit-search-decoration, .site-search .search-input::-webkit-search-cancel-button, .site-search .search-input::-webkit-search-results-button, .site-search .search-input::-webkit-search-results-decoration {
@@ -1748,9 +1748,50 @@ body {
   padding-bottom: 3%;
 }
 
-.blog-and-news-page .blog-intro-content {
-  padding-bottom: 25px;
+.signout-btn-wrap {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  z-index: 10000;
+  white-space: nowrap;
+  background-color: #eeeeee;
+  height: 35px;
+  border-radius: 3px;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
 }
+.signout-btn-wrap:hover {
+  background-color: #c4c4c4;
+}
+.signout-btn-wrap .signout-link {
+  position: relative;
+  z-index: 10;
+  display: block;
+  padding: 0 10px;
+}
+.signout-btn-wrap .signout-name {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Avenir Next", "AvenirX";
+  line-height: 37px;
+  padding-left: 8px;
+  color: rgba(27, 33, 36, 0.8);
+}
+.signout-btn-wrap .signout-name:hover {
+  color: rgba(27, 33, 36, 0.9);
+}
+.signout-btn-wrap .signout-ico {
+  height: 35px;
+  display: inline-block;
+  color: rgba(27, 33, 36, 0.7);
+}
+.signout-btn-wrap .signout-svg {
+  margin-top: 3px;
+}
+
 .blog-and-news-page .blog-article {
   padding-top: 40px;
 }
@@ -2173,12 +2214,12 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-.site-header .content-area h1:first-child, .site-header
-.content-area h2:first-child {
+.site-header .content-area h1:first-child,
+.site-header .content-area h2:first-child {
   margin-top: 0;
 }
-.site-header .content-area h1:last-child, .site-header
-.content-area h2:last-child {
+.site-header .content-area h1:last-child,
+.site-header .content-area h2:last-child {
   margin-bottom: 0;
 }
 .content-area h1 {
@@ -2305,16 +2346,13 @@ body {
   text-align: left;
   border-left: 2px solid rgba(0, 0, 0, 0.46);
 }
-.content-area p,
-.content-area ul,
-.content-area ol,
-.content-area dl {
+.content-area p, .content-area ul, .content-area ol, .content-area dl {
   font-size: 20px;
 }
-.site-footer .content-area p, .site-footer
-.content-area ul, .site-footer
-.content-area ol, .site-footer
-.content-area dl {
+.site-footer .content-area p,
+.site-footer .content-area ul,
+.site-footer .content-area ol,
+.site-footer .content-area dl {
   margin: 0;
   font-size: 13px;
   color: rgba(0, 0, 0, 0.46);

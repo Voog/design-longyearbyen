@@ -79,7 +79,7 @@
                   </div>
                 </header>
 
-                <div class="content-area area-normal" data-search-indexing-allowed="true">{% contentblock %}{{ "write_product_description_here" | lc }}{% endcontentblock %}</div>
+                <div class="content-area area-normal" data-search-indexing-allowed="true">{% contentblock %}{{ "write_product_description_here" | lc: editor_locale }}{% endcontentblock %}</div>
               </div>
             </div>
           </section>
@@ -92,7 +92,7 @@
     {% include "mobilemenu" %}
     {% include "menu-language-popover" %}
     {% include "site-search" %}
-
+    {% include "site-signout" %}
     {% include "template-javascripts" %}
     {% include "template-tools" items_page: true %}
 

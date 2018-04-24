@@ -180,32 +180,25 @@
   //============================================================================
   // Binds site search functionality.
   //============================================================================
-  var bindSiteSearch = function(searchForm, languageCode) {
+  var bindSiteSearch = function(searchForm, languageCode, noResultsString) {
     if (searchForm) {
       var search = new VoogSearch(searchForm, {
         // Results are lazy-loaded on scroll.
         // This defines the number of results per query.
         per_page: 10,
-
-        // Language code for restricting the search to page language
+        // Language code for restricting the search to page language.
         lang: languageCode,
-
-        // If given an DOM element results are rendered inside that element
+        // If given, an DOM element results are rendered inside that element
         // instead of modal (with scroll lazy load support).
-        // Example: resultsContainer: $('.custom-search-container').get(0),
-        // Uncomment the <div class="custom-search-container"></div> element in
-        // the "components/site-search.tpl" or add your own container to proper
-        // place in the code if custom container is used.
         resultsContainer: $('.js-voog-search-modal').get(0),
-
-        // Defines if modal should close on sideclick
+        // Defines if modal should close on sideclick.
         sideclick: true,
-
-        // Mobile checkpoint (adds class "voog-search-mobile-mode" if <= nr)
+        // Mobile checkpoint (adds class "voog-search-mobile-mode" if <= nr).
         mobileModeWidth: 640,
-
-        // Updates results on every keypress
-        updateOnKeypress: false
+        // Updates results on every keypress.
+        updateOnKeypress: true,
+        // String for feedback if no results are found.
+        noResults: noResultsString
       });
     }
   };

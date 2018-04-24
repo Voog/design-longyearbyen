@@ -53,6 +53,7 @@
     {% include "menu-language-popover" %}
     {% include "template-tools" %}
     {% include "site-search" %}
+    {% include "site-signout" %}
     {% include "template-javascripts" %}
 
     <script>template.initFrontPage();</script>

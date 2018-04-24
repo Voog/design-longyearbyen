@@ -4,6 +4,7 @@
 
 // Font family.
 $font-main: 'PT Sans', sans-serif;
+$avenir: 'Avenir Next', 'AvenirX';
 $base-font-size: 18px;
 
 // Basic colors.
@@ -26,6 +27,11 @@ $color-lightgrey1: #f4f4f4;
 $color-lightgrey2: #e5e5e5;
 $color-untranslated: #a19b4b;
 $color-science-blue: #06b;
+
+// Sign out button
+$color-common-gray: rgb(27,33,36);
+$color-toolbar-bg: rgb(238,238,238);
+$color-silver-2: rgb(196,196,196);
 
 // Media query breakpoints.
 $large: 1400px;
