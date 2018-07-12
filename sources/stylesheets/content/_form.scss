@@ -64,6 +64,10 @@
     background-repeat: no-repeat;
     border-radius: 0;
     appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
   }
 
   .form_field_textfield,
