@@ -49,6 +49,10 @@
 
 {% comment %}MISC{% endcomment %}
 {% include "template-meta" %}
+
+{% comment %}BREADCRUMBS{% endcomment %}
+{% sd_breadcrumbs %}
+
 {% if blog %}{{ blog.rss_link }}{% endif %}
 
 {% comment %}TODO: Add functionality after the CMS is going to support it{% endcomment %}
