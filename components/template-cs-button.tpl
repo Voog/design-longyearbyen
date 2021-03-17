@@ -80,11 +80,11 @@
   */
   --content-button-color: rgba(0, 0, 0, 0.8);
   /* VoogStyle
-    "pathI18n": ["button"],
-    "titleI18n": "hover",
-    "type": "text",
-    "editor": "colorPicker",
-    "scope": "global"
-  */
+      "pathI18n": ["button"],
+      "titleI18n": "hover",
+      "type": "text",
+      "editor": "colorPicker",
+      "scope": "global"
+    */
   --content-button-hover-color: rgba(0, 0, 0, 0.8);
 }
