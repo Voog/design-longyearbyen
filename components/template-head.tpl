@@ -34,6 +34,7 @@
   {% if template-head == "product_list_page" %}
     {% include "template-cs-product-list" %}
   {% endif %}
+  {% include "template-cs-product" %}    
   {% include "template-cs-content" %}
   {% include "template-cs-button" %}
   {% include "template-cs-form" %}
@@ -51,7 +52,10 @@
 {% include "template-meta" %}
 
 {% comment %}BREADCRUMBS{% endcomment %}
-{% sd_breadcrumbs %}
+{%- capture breadcrumbsScript -%}
+  {%- sd_breadcrumbs -%}
+{%- endcapture -%}
+{{ breadcrumbsScript }}
 
 {% if blog %}{{ blog.rss_link }}{% endif %}
 
