@@ -1,0 +1,90 @@
+.item-page {
+  .content-item-title:not(.product-item-title) {
+    margin-bottom: 15px;
+  }
+
+  .product-price {
+    padding-bottom: 24px;
+
+    &-divider {
+      margin: 0 4px;
+    }
+  }
+
+  .content-product-description {
+    margin-bottom: 12px;
+  }
+
+  .product-content {
+    .without-image .item-top {
+      background-image: url("../assets/ico-placeholder.svg");
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #F2F2F2;
+    }
+
+    .item-top {
+      .top-inner {
+      background-color: transparent;
+
+        .item-image {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .buy-btn-content {
+      margin-bottom: 24px;
+    }
+  }
+
+  .flex-col {
+    width: 100%;
+
+    @media screen and (min-width: $mobile) {
+      max-width: 50%;
+    }
+
+    .content-body {
+      position: sticky;
+      top: 64px;
+
+      @media screen and (min-width: $mobile) {
+        margin-top: -32px;
+      }
+    }
+
+    .content-illustrations {
+      max-width: 100%;
+    }
+  }
+  
+  .content-product-wide {
+    padding: 0 80px 80px 80px;
+    margin-top: -40px;
+
+    @media screen and (max-width: $tablet) {
+      padding: 0 40px 40px 40px;
+      margin-top: -20px;
+    }
+
+    @media screen and (max-width: $tablet-1) {
+      padding: 0 25px 40px 25px;
+      margin-top: -20px;
+    }
+
+    @media screen and (max-width: $mobile) {
+      padding: 0 25px 40px 25px;
+      margin-top: -20px;
+    }
+  }
+}
+
+.editmode {
+  .product-image {
+    cursor: pointer;
+  }
+}

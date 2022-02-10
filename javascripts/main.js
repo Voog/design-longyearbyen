@@ -490,6 +490,50 @@
   };
 
   // ===========================================================================
+  // Change product image position on narrower screens (mobile devices)
+  // ===========================================================================
+
+  var handleProductPageContent = function () {
+    $(document).ready(function () {
+      changeProductImagePos();
+    });
+
+    $(window).resize(debounce(function () {
+      changeProductImagePos();
+    }, 25));
+
+    var changeProductImagePos = function () {
+      var productGallery = $('.js-product-gallery');
+      var productImageContentBox = $('.js-content-item-box');
+      var productRightContent = $('.js-product-right-content');
+
+      if ($('.js-buy-btn-content .edy-buy-button-container').length >= 1) {
+        if ($(window).width() < 640) {
+          if ($('.js-product-right-content + .js-product-gallery').length === 0) {
+            productRightContent.append(productGallery);
+          }
+        } else {
+          if ($('.js-content-item-box + .js-product-gallery').length === 0) {
+            productImageContentBox.parent().append(productGallery);
+          }
+        }
+      }
+    }
+  };
+
+  // ===========================================================================
+  // Opens product admin view on product image click
+  // ===========================================================================
+
+  var handleProductImageClick = function(product_id) {
+    if (editmode()) {
+      $('.product-content .product-image').click(function() {
+        window.open('/admin/ecommerce/products/' + product_id, '_blank').focus();
+      });
+    }
+  };
+
+  // ===========================================================================
   // Toggles product categories visibility in main menu.
   // ===========================================================================
   var bindRootItemSettings = function(rootItemValuesObj) {
@@ -589,7 +633,9 @@
     bgPickerCommit: bgPickerCommit,
     bindContentItemImgDropAreas: bindContentItemImgDropAreas,
     bindContentItemImageCropToggle: bindContentItemImageCropToggle,
-    bindRootItemSettings: bindRootItemSettings
+    bindRootItemSettings: bindRootItemSettings,
+    handleProductPageContent: handleProductPageContent,
+    handleProductImageClick: handleProductImageClick
   });
 
   init();

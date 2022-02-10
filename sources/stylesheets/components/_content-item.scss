@@ -377,7 +377,9 @@
 }
 
 .content-illustrations {
-  font-size: 0;
+  .item-page:not(.product-page) {
+    font-size: 0;
+  }
 
   .content-item-box {
     padding-right: 0;

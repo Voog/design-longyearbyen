@@ -14,6 +14,8 @@
 @import 'general/base';
 @import 'general/menus';
 @import 'general/cms-overrides';
+// BROWSER HACKS
+@import 'general/browser-hacks';
 
 // COMPONENTS
 @import 'components/site-header';
@@ -29,6 +31,7 @@
 @import 'layouts/blog-and-news';
 @import 'layouts/blog-article';
 @import 'layouts/front-page';
+@import 'layouts/auto-generated-product';
 
  // CONTENT AREAS
 @import 'content/text';
