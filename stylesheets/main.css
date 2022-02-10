@@ -2502,6 +2502,10 @@ body {
   }
 }
 
+.editmode .product-image {
+  cursor: pointer;
+}
+
 .content-area {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 {% include "template-variables" %}
 
@@ -42,7 +41,7 @@
               <div class="flex-col flex-col-left">
                 <div class="content-illustrations">
                   <div class="content-item-box {{ product_image_state }} js-content-item-box">
-                    <div class="item-top">
+                    <div class="item-top product-image">
                       {%- if product.image != blank -%}
                         <div class="top-inner aspect-ratio-inner">
                           {%- assign image_class = "item-image not-cropped" -%}
@@ -121,6 +120,10 @@
     <script>
       if (template) {
         template.handleProductPageContent();
+
+        {%- if product and editmode -%}
+          template.handleProductImageClick({{ product.id }});
+        {% endif %}
       }
     </script>
   </body>
