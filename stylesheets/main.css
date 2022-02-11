@@ -2464,6 +2464,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 64px;
+  z-index: 10601;
 }
 
 @media screen and (min-width: 640px) {
