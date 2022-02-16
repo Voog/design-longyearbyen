@@ -236,6 +236,23 @@
     ]
   {% endcapture %}
 
+  {% capture base_alignment_set %}
+    [
+      {
+        "titleI18n": "left",
+        "value": "left"
+      },
+      {
+        "titleI18n": "center",
+        "value": "center"
+      },
+      {
+        "titleI18n": "right",
+        "value": "right"
+      }
+    ]
+  {% endcapture %}
+
   {% comment %}VOOG intro popover targets. Add them where applicable popovers should appear.{% endcomment %}
   {% capture edy_intro_add_page %}{% if editmode %}data-edy-intro-popover="edy-add-page"{% endif %}{% endcapture %}
   {% capture edy_intro_add_lang %}{% if editmode %}data-edy-intro-popover="edy-add-lang"{% endif %}{% endcapture %}
