@@ -1,8 +1,13 @@
 {%- assign breadcrumbsString = breadcrumbsScript | replace: '<script type="application/ld+json">', '' | replace: "</script>", '' | replace: site.url, '' | replace: '@', '' -%}
 {%- assign breadcrumbsObj = breadcrumbsString | json_parse -%}
+{%- if breadcrumbsObj.itemListElement.size > 2 -%}
+  {%- assign breadcrumbsOffset = 1 -%}
+{%- else -%}
+  {%- assign breadcrumbsOffset = 0 -%}
+{%- endif -%}
 
 <ul class="menu menu-item-list">
-  {%- for listItem in breadcrumbsObj.itemListElement %}
+  {%- for listItem in breadcrumbsObj.itemListElement offset: breadcrumbsOffset %}
     <span class="menu-separator">/</span>
     <li class="menu-item{% if forloop.last %} current{% endif %}">
       <a href="/{{listItem.item.id}}">{{ listItem.item.name }}</a>
