@@ -77,7 +77,7 @@
 
                       <div class="formatted area-normal" data-search-indexing-allowed="true">
                         {%- if editmode or product.description != blank -%}
-                          <div class="content-product-description">
+                          <div class="content-product-description content-area">
                             {%- editable product.description -%}
                           </div>
                         {%- endif -%}

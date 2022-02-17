@@ -236,12 +236,16 @@ body {
 }
 
 .product-page .formatted .content-product-description {
-  color: var(--product-description-color);
   font-size: var(--product-description-size);
   font-weight: var(--product-description-font-weight);
   font-style: var(--product-description-font-style);
   -webkit-text-decoration: var(--product-description-font-text-decoration);
           text-decoration: var(--product-description-font-text-decoration);
+}
+
+.product-page .formatted .content-product-description,
+.product-page .formatted .content-product-description a {
+  color: var(--product-description-color);
 }
 
 .product-page .product-price {
