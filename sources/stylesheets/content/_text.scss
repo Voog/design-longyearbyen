@@ -189,7 +189,8 @@
       border-bottom: 0;
     }
 
-    .custom-btn {
+    .custom-btn,
+    .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
       border-style: solid;
       border-width: 1px;
 
@@ -381,7 +382,8 @@
     }
   }
 
-  .custom-btn {
+  .custom-btn,
+  .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
     display: inline-block;
     max-width: 100%;
     min-width: 180px;
