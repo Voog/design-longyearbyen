@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-{% include "template-variables" %}
+{%- include "template-settings" -%}
+{%- include "template-variables" -%}
 <html class="common-page content-page {{ view_mode }} site-search-closed {{ language_flags_mode }}" lang="{{ page.language_code }}">
   <head prefix="og: http://ogp.me/ns#">
     {% include "template-head" %}

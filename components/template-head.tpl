@@ -17,7 +17,7 @@
 {% if editmode %}
   <link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">
 {% endif %}
-{% stylesheet_link "main.min.css?v=longyearbyen-1.2.1" %}
+<link href="{{ stylesheets_path }}/main.min.css?v={{ template_settings.version }}" media="screen" rel="stylesheet" type="text/css"/>
 {% comment %}{% stylesheet_link "main.css" %}{% endcomment %}
 
 {% if site.search.enabled %}
