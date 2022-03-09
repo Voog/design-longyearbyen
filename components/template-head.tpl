@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">
 {% endif %}
 <link href="{{ stylesheets_path }}/main.min.css?v={{ template_settings.version }}" media="screen" rel="stylesheet" type="text/css"/>
-{% comment %}{% stylesheet_link "main.css" %}{% endcomment %}
+{% comment %}<link href="{{ stylesheets_path }}/main.css?v={{ template_settings.version }}" media="screen" rel="stylesheet" type="text/css"/>{% endcomment %}
 
 {% if site.search.enabled %}
   <link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-search/latest/edicy-search.css">
