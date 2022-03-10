@@ -1,3 +1,3 @@
 {
-  "version": "longyearbyen-1.2.1"
+  "version": "longyearbyen-1.2.2"
 }
