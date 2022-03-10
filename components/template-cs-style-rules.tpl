@@ -144,7 +144,8 @@ body {
   background: var(--content-link-hover-color);
 }
 
-.content-area .custom-btn {
+.content-area .custom-btn,
+.content-area .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   padding: calc(var(--content-button-padding) - 8px) var(--content-button-padding);
   font-size: var(--content-button-font-size);
   font-style: var(--content-button-font-style);
@@ -154,11 +155,13 @@ body {
   text-transform: var(--content-button-text-transform);
 }
 
-.content-area .custom-btn:not(.custom-btn-disabled) {
+.content-area .custom-btn:not(.custom-btn-disabled),
+.content-area .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:not(.custom-btn-disabled) {
   background: var(--content-button-background-color);
 }
 
-.content-area .custom-btn:not(.custom-btn-disabled):hover {
+.content-area .custom-btn:not(.custom-btn-disabled):hover,
+.content-area .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:not(.custom-btn-disabled):hover {
   color: var(--content-button-hover-color);
   background-color: var(--content-button-background-color);
 }
