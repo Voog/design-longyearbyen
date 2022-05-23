@@ -2427,6 +2427,10 @@ body {
   margin-bottom: 12px;
 }
 
+.item-page .product-cross-page-info {
+  margin-bottom: 32px;
+}
+
 .item-page .product-content .without-image .item-top {
   background-image: url("../assets/ico-placeholder.svg");
   background-size: 40px;

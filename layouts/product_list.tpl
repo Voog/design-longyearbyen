@@ -15,7 +15,11 @@
         <main class="page-content" role="main">
           {% include "menu-breadcrumbs" %}
 
-          <div class="content-inner content-area" data-search-indexing-allowed="true">{% content %}</div>
+          <div class="content-inner content-area" data-search-indexing-allowed="true">
+            {%- assign content_default_title = "content" | lce -%}
+            {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+            {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+          </div>
 
           <section class="content-item-boxes">
             {% if site.root_item.selected? %}

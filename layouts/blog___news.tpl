@@ -18,7 +18,11 @@
             <div class="content-body" data-search-indexing-allowed="true">
               {% include "blog-news-tags" %}
               <div class="content-inner">
-                <div class="content-area blog-intro-content" {{ edy_intro_edit_text }}>{% content %}</div>
+                <div class="content-area blog-intro-content">
+                  {%- assign content_default_title = "content" | lce -%}
+                  {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+                  {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+                </div>
 
                 {% addbutton %}
 
