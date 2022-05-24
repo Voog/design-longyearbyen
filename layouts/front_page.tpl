@@ -11,6 +11,8 @@
     <div class="site-container">
       <div class="wrap">
         {% include "site-header" %}
+        {%- assign content_default_title = "content" | lce -%}
+        {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
 
         <main class="page-content" role="main">
           <section class="content-area">
@@ -25,7 +27,9 @@
                       <button class="voog-padding-switcher" type="button" name="button"></button>
                     {% endif %}
 
-                    <section class="feature-content content-area introtext" data-search-indexing-allowed="true">{% content %}</section>
+                    <section class="feature-content content-area introtext" data-search-indexing-allowed="true">
+                      {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+                    </section>
                   </div>
                 {% endif %}
 
@@ -38,7 +42,9 @@
                       <button class="voog-padding-switcher" type="button" name="button"></button>
                     {% endif %}
 
-                    <section class="feature-content content-area introtext" data-search-indexing-allowed="true">{% content name="feature_2" %}</section>
+                    <section class="feature-content content-area introtext" data-search-indexing-allowed="true">
+                      {% content name="feature_2" title=content_default_title title_tooltip=content_default_title_tooltip %}
+                    </section>
                   </div>
                 {% endif %}
               </div>

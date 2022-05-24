@@ -29,6 +29,15 @@
     {%- endcapture -%}
 
     {%- assign gallery_content_size = gallery_content_html | strip | size -%}
+
+    {%- capture product_social_html -%}
+      {%- unless editmode -%}
+        {%- xcontent name="product-social" -%}
+      {%- endunless -%}
+    {%- endcapture -%}
+
+    {%- assign product_social_size = product_social_html | strip | size -%}
+
     {% include "template-svg-spritesheet" %}
     <div class="site-container">
       <div class="wrap">
@@ -51,10 +60,12 @@
                       {%- endif -%}
                     </div>
                   </div>
-                    
+
                   {%- if gallery_content_size > 0 or editmode -%}
                     <div class="formatted js-product-gallery content-area" data-search-indexing-allowed="true">
-                      {% content bind=product name="gallery" %}
+                      {%- assign gallery_title = "gallery" | lce -%}
+                      {%- assign gallery_title_tooltip = "content_tooltip_additional_images" | lce -%}
+                      {% content bind=product name="gallery" title=gallery_title title_tooltip=gallery_title_tooltip %}
                     </div>
                   {%- endif -%}
                   </div>
@@ -86,24 +97,37 @@
                         <div class="buy-btn-content js-buy-btn-content content-area">
                           {% include "buy-button" %}
                         </div>
+
+                        {%- if editmode or product_social_size > 0 -%}
+                          <div class="product-cross-page-info">
+                            {%- assign cross_page_info_title = "cross_page_info" | lce  -%}
+                            {%- assign cross_page_info_title_tooltip = "content_tooltip_all_pages_same_type" | lce -%}
+                            {% xcontent name="product-social" title=cross_page_info_title title_tooltip=cross_page_info_title_tooltip %}
+                          </div>
+                        {%- endif -%}
+
                         <div class="content-area">
-                          {% content bind=product %}
+                          {%- assign content_default_title = "content" | lce -%}
+                          {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+                          {% content bind=product title=content_default_title title_tooltip=content_default_title_tooltip %}
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                 
+
               </div>
-              
-            {%- if bottom_content_size > 0 or editmode -%}
+
+              {%- if bottom_content_size > 0 or editmode -%}
                 <section
                   class="content-product-wide content-area"
                   data-search-indexing-allowed="true">
-                  {% content bind=product name="content" %}
+                  {%- assign bottom_content_title = "additional_content" | lce -%}
+                  {%- assign bottom_content_title_tooltip = "content_tooltip_additional_information" | lce -%}
+                  {% content bind=product name="content" title=bottom_content_title title_tooltip=bottom_content_title_tooltip %}
                 </section>
               {%- endif -%}
-            
+
           </section>
         </main>
 

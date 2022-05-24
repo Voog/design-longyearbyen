@@ -70,7 +70,11 @@
                   {% endif %}
                 {% endif %}
 
-                <div class="content-gallery content-area" data-search-indexing-allowed="true">{% content name="gallery" %}</div>
+                <div class="content-gallery content-area" data-search-indexing-allowed="true">
+                  {%- assign gallery_title = "gallery" | lce -%}
+                  {%- assign gallery_title_tooltip = "content_tooltip_additional_images" | lce -%}
+                  {% content name="gallery" title=gallery_title title_tooltip=gallery_title_tooltip %}
+                </div>
               </div>
 
               <div class="content-body-inner">
@@ -80,7 +84,13 @@
                   </div>
                 </header>
 
-                <div class="content-area area-normal" data-search-indexing-allowed="true">{% contentblock %}{{ "write_product_description_here" | lc: editor_locale }}{% endcontentblock %}</div>
+                <div class="content-area area-normal" data-search-indexing-allowed="true">
+                  {%- assign content_default_title = "content" | lce -%}
+                  {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+                  {% contentblock title=content_default_title title_tooltip=content_default_title_tooltip %}
+                    {{ "write_product_description_here" | lc: editor_locale }}
+                  {% endcontentblock %}
+                </div>
               </div>
             </div>
           </section>

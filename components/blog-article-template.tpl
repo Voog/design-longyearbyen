@@ -19,7 +19,12 @@
       </header>
       <div class="article-excerpt content-area">{% editable article.excerpt %}</div>
       <div class="article-body content-area">{% editable article.body %}</div>
-      <div class="article-body content-area">{% content name="additional_body" bind="Article" %}</div>
+
+      {%- assign bottom_content_title = "additional_content" | lce -%}
+      {%- assign bottom_content_title_tooltip = "content_tooltip_additional_information" | lce -%}
+      <div class="article-body content-area">
+        {% content name="additional_body" bind="Article" title=bottom_content_title title_tooltip=bottom_content_title_tooltip %}
+      </div>
     </div>
   {% else %}
     <header class="article-header">

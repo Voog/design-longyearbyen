@@ -28,6 +28,8 @@
     {% endif %}
   </div>
 
-  <div class="content-area header-content" {{ edy_intro_edit_text }}>{% editable site.header %}</div>
-  <div class="content-area slogan">{% xcontent name="slogan" %}</div>
+  <div class="content-area header-content">{% editable site.header %}</div>
+  {%- assign cross_page_info_title = "cross_page_info" | lce  -%}
+  {%- assign cross_page_info_title_tooltip = "content_tooltip_all_pages_same_language" | lce -%}
+  <div class="content-area slogan">{% xcontent name="slogan" title=cross_page_info_title title_tooltip=cross_page_info_title_tooltip %}</div>
 </header>

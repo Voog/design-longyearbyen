@@ -13,12 +13,15 @@
         {% include "site-header" %}
 
         <main class="page-content" role="main">
-          {% comment %}<!-- TODO: Non-{% content %}-area related items should not depend on ".content-area" class{% endcomment %}
           <section class="content-area">
             <div class="content-body" data-search-indexing-allowed="true">
               {% include "menu-level-2" %}
 
-              <div class="content-inner">{% content %}</div>
+              {%- assign content_default_title = "content" | lce -%}
+              {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+              <div class="content-inner">
+                {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+              </div>
             </div>
           </section>
         </main>
