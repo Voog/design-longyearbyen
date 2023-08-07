@@ -11,6 +11,8 @@
 <html class="common-page item-page content-page product-page {{ view_mode }} site-search-closed {{ language_flags_mode }}" lang="{{ page.language_code }}">
   <head prefix="og: http://ogp.me/ns#">
     {% include "template-head" %}
+
+    {% sd_product %}
   </head>
 
   <body>
