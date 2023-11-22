@@ -166,6 +166,11 @@ body {
   background-color: var(--content-button-background-color);
 }
 
+.content-area .edy-buy-button-price-container .edy-buy-button-effective-price,
+.content-area .edy-buy-button-price-container .edy-buy-button-price-original {
+  color: var(--content-body-color);
+}
+
 .content-area .article-read-more-btn {
   font-style: var(--content-button-font-style);
   color: var(--content-button-color);

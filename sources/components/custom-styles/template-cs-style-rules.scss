@@ -234,6 +234,13 @@ body {
     }
   }
 
+  .edy-buy-button-price-container {
+    .edy-buy-button-effective-price,
+    .edy-buy-button-price-original {
+      color: var(--content-body-color);
+    }
+  }
+
   .article-read-more-btn {
     font-style: var(--content-button-font-style);
     color: var(--content-button-color);
@@ -343,11 +350,11 @@ body {
 }
 
 .product-page .formatted .content-product-description {
-  &, 
+  &,
   a {
     color: var(--product-description-color);
   }
-  
+
   font-size: var(--product-description-size);
   font-weight: var(--product-description-font-weight);
   font-style: var(--product-description-font-style);

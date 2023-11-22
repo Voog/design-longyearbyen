@@ -2924,8 +2924,14 @@ body {
   padding-bottom: 24px;
 }
 
-.item-page .product-price-divider {
-  margin: 0 4px;
+.item-page .product-price .product-price-original {
+  display: inline-block;
+  padding-right: 4px;
+  opacity: .4;
+}
+
+.item-page .product-price .product-price-final {
+  display: inline-block;
 }
 
 .item-page .content-product-description {
@@ -3748,4 +3754,8 @@ body {
 
 .content-area .edy-buy-button-variants .form_field_select {
   width: initial;
+}
+
+.content-area .edy-buy-button-price-container .edy-buy-button-price-original {
+  opacity: .4;
 }
