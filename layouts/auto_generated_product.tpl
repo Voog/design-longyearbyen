@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 {%- include "template-settings" -%}
 {%- include "template-variables" -%}
-
-{%- if product.image == blank -%}
-  {%- assign product_image_state = "without-image" -%}
+s
+{%- if product.photos != blank -%}
+  {%- assign product_image_state = "with-images" -%}
 {%- else -%}
-  {%- assign product_image_state = "with-image" -%}
+  {%- assign product_image_state = "without-images" -%}
 {%- endif -%}
 
 <html class="common-page item-page content-page product-page {{ view_mode }} site-search-closed {{ language_flags_mode }}" lang="{{ page.language_code }}">
@@ -53,14 +53,11 @@
               <div class="flex-col flex-col-left">
                 <div class="content-illustrations">
                   <div class="content-item-box {{ product_image_state }} js-content-item-box">
-                    <div class="item-top product-image">
-                      {%- if product.image != blank -%}
-                        <div class="top-inner aspect-ratio-inner">
-                          {%- assign image_class = "item-image not-cropped" -%}
-                          {% image product.image target_width: "600" class: image_class loading: "lazy" %}
-                        </div>
-                      {%- endif -%}
-                    </div>
+                    {%- if product.photos == blank -%}
+                      <div class="item-top"></div>
+                    {%- else -%}
+                      {% gallery product layout="product_slider" %}
+                    {%- endif -%}
                   </div>
 
                   {%- if gallery_content_size > 0 or editmode -%}
@@ -167,10 +164,6 @@
     <script>
       if (template) {
         template.handleProductPageContent();
-
-        {%- if product and editmode -%}
-          template.handleProductImageClick({{ product.id }});
-        {% endif %}
       }
     </script>
   </body>
