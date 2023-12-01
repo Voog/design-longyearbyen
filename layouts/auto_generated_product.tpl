@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {%- include "template-settings" -%}
 {%- include "template-variables" -%}
-s
+
 {%- if product.photos != blank -%}
   {%- assign product_image_state = "with-images" -%}
 {%- else -%}
