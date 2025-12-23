@@ -1907,12 +1907,16 @@ body {
 
 .site-footer .voog-reference {
   padding: 0 0 40px;
-  color: black;
   text-align: center;
-  opacity: .55;
 }
 
-.site-footer .voog-reference:hover {
+.site-footer .voog-reference a {
+  color: black;
+  opacity: .55;
+  text-decoration: none;
+}
+
+.site-footer .voog-reference a:hover {
   opacity: .8;
 }
 

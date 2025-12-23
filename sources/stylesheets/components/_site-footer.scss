@@ -14,12 +14,16 @@
 
   .voog-reference {
     padding: 0 0 40px;
-    color: rgba($color-black, 1);
     text-align: center;
-    opacity: .55;
 
-    &:hover {
-      opacity: .8;
+    a {
+      color: rgba($color-black, 1);
+      opacity: .55;
+      text-decoration: none;
+
+      &:hover {
+        opacity: .8;
+      }
     }
   }
 }
