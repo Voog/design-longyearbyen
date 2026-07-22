@@ -72,6 +72,13 @@
   box-sizing: border-box;
 }
 
+.front-page .edys-gallery-slider-item .edy-gallery-settings-menu {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
 // Tags
 .edy-tageditor {
   .edy-tag-suggestions {
